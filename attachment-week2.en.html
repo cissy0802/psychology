@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychology Week 2: Attachment Theory — Your Relationship Operating System</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item b{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
+.eng b{color:#d8a8d8;font-style:normal}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice b{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.tool-link{display:inline-block;background:#e8d8e8;color:#7a3e8c;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;margin-top:8px;margin-right:8px}
+.tool-link:hover{background:#d8b8d8}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.axes{position:relative;padding:36px 16px 16px 56px;background:#fff;border-radius:10px}
+.axes .y-label{position:absolute;left:8px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;font-size:0.78rem;color:#7a3e8c;font-weight:700;letter-spacing:1px;white-space:nowrap}
+.axes .x-label{text-align:center;font-size:0.78rem;color:#7a3e8c;font-weight:700;letter-spacing:1px;margin-top:8px}
+.quad{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.quad-cell{padding:14px 12px;border-radius:8px;font-size:0.86rem;min-height:96px;position:relative}
+.quad-cell b{display:block;font-size:0.95rem;margin-bottom:4px;color:#fff}
+.quad-cell p{font-size:0.82rem;color:rgba(255,255,255,0.92);line-height:1.5}
+.q1{background:linear-gradient(135deg,#7fb069,#5a9050)}
+.q2{background:linear-gradient(135deg,#e89a4a,#c8743a)}
+.q3{background:linear-gradient(135deg,#5a8ac8,#4a6aa8)}
+.q4{background:linear-gradient(135deg,#9a5a5a,#6a3a3a)}
+.axis-marker{display:flex;justify-content:space-between;font-size:0.72rem;color:#8a6a8a;margin-top:6px;padding:0 4px}
+.ladder{margin-top:10px}
+.ladder-step{display:flex;align-items:center;padding:10px 14px;margin-bottom:8px;border-radius:8px;font-size:0.9rem}
+.ladder-step .step-num{width:28px;height:28px;border-radius:50%;background:#7a3e8c;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;margin-right:12px;flex-shrink:0;font-size:0.85rem}
+.ladder-step.s1{background:#fbf3fb}
+.ladder-step.s2{background:#f5e3f5}
+.ladder-step.s3{background:#e8d8e8}
+.ladder-step.s4{background:#d8b8d8}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.quad{grid-template-columns:1fr}.axes{padding:16px}.axes .y-label{display:none}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">WEEK 02 · DEVELOPMENTAL / RELATIONSHIP PSYCHOLOGY</div>
+<h1>Attachment Theory: Your Relationship Operating System</h1>
+<div class="meta">2026.05.26 · BigCat's Inner World</div>
+<div class="intro">Why do you keep falling into the same patterns in intimate relationships? Why do some people "vanish" in conflict while others "chase"? Attachment theory is the most solid finding of the last 70 years in relationship psychology — it tells you that roughly 60% of the template for your adult love and fear was written before age 2. But it is not fate.</div>
+</header>
+
+<!-- Concept 1: Four attachment styles -->
+<div class="card">
+<h2>The Four Attachment Styles: What the Strange Situation Revealed<span class="en">The Four Attachment Styles</span></h2>
+<span class="tag">developmental psychology · foundation</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>How an infant handles the moment a parent briefly leaves and returns predicts that person's lifelong strategy for relational uncertainty. This isn't "personality" — it's a <b>predictive model the brain has learned</b>: Is love available? If I call for help, will I get a response? The answer gets encoded in the nervous system and becomes a lifelong "relationship operating system".</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p>John Bowlby's three-volume <i>Attachment and Loss</i> (1969-1980) framed attachment as an evolutionary adaptation — infants are not passive recipients of care but <b>actively maintain proximity to caregivers</b> in order to survive. Mary Ainsworth (1978) used the Strange Situation to systematically identify three styles; Main & Solomon (1986) later added the fourth, "disorganized" style. <b>Cross-cultural replication is high, making it one of the most robust findings in developmental psychology</b> — alongside the Big Five, one of the few areas not overturned by the replication crisis.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The two dimensions of adult attachment (Brennan, Clark & Shaver, 1998)</div>
+<div class="axes">
+<div class="y-label">Anxiety ↑</div>
+<div class="quad">
+<div class="quad-cell q3"><b>Preoccupied / Anxious (~20%)</b><p>"I need more reassurance. Have they stopped loving me?" Low self-worth, high other-worth. Craves fusion, can't tolerate distance.</p></div>
+<div class="quad-cell q4"><b>Fearful / Disorganized (~5%)</b><p>"I both crave and fear closeness." High anxiety, high avoidance. Often linked to early trauma.</p></div>
+<div class="quad-cell q1"><b>Secure (~55%)</b><p>"Closeness feels good, so does independence." Low anxiety, low avoidance. Can repair after conflict.</p></div>
+<div class="quad-cell q2"><b>Avoidant / Dismissive (~20%)</b><p>"I don't need anyone." High self-worth, low other-worth. Suppresses needs; independence equals safety.</p></div>
+</div>
+<div class="axis-marker"><span>← low avoidance</span><span>Avoidance →</span></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Each style is fundamentally a <b>strategy</b>, not a verdict — it's the optimal solution the 0-3-year-old found <b>in that specific caregiving environment</b>. Mother sometimes responsive, sometimes not? Over-activate the call-for-help system (anxious) — crying more loudly increases the chance of being attended to. Mother emotionally shut down? Down-regulate the system (avoidant) — appear independent to avoid punishment. Consistent warm care? Secure — the call gets answered, no need to distort. Disorganized is the hardest: the caregiver is both the source of fear and the source of safety, and the child's strategy system collapses.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Identify your "default operating system". Not to label yourself, but so that under stress you can <b>see</b> the automatic response — "I'm hyperactivating right now".</div>
+<div class="role-item"><b>Parenting</b>Winnicott's "good enough mother" doesn't mean perfect responsiveness — it means <b>being attuned roughly 30% of the time</b> plus the capacity to repair ruptures.</div>
+<div class="role-item"><b>Partner</b>Classic combo: anxious + avoidant ("pursue-withdraw" cycle). The more one chases, the more the other flees; the flight then triggers more chase. Naming the cycle is itself the intervention.</div>
+<div class="role-item"><b>Team</b>A report's "over-seeking attention" or "extreme independence" may not be work style — it's the attachment system showing up at work. Avoidant reports don't need "more communication"; they need <b>predictability</b>.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tools</span>
+<a class="tool-link" href="https://yourpersonality.net/attachment/" target="_blank">ECR-R (Fraley)</a>
+<a class="tool-link" href="https://www.attachmentproject.com/attachment-style-test/" target="_blank">Attachment Project Quiz</a>
+<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">Professor Fraley's ECR-R is the academic gold standard. The Attachment Project test is a friendlier version with consistent results. Note: adult attachment is <b>dimensional</b> (your position on two axes), not a discrete type.</p>
+</div>
+
+<div class="misq">
+<b>Common misconception:</b> "I'm anxious, so I'm doomed to be this way" — wrong. Mikulincer & Shaver's meta-analyses show attachment style can change in adulthood, especially through the "earned secure attachment" path (see concept 4).
+</div>
+
+<div class="refs">
+<b>Key references</b> · John Bowlby, <i>A Secure Base</i> · Mary Ainsworth, <i>Patterns of Attachment</i> (1978) · Mikulincer & Shaver, <i>Attachment in Adulthood</i> (2016, 2nd ed.)
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "Attachment is not a feeling. It is a <b>regulatory system</b>." Attachment isn't an emotion — it's a regulatory system the brain built for survival.
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>After taking the ECR-R, record your anxiety and avoidance scores. Then think back to the biggest "relational discomfort" you felt this week — was your reaction activation (anxious questioning) or deactivation (avoidant withdrawal)? Write it down without judgment. That's the moment your "default program" got executed.
+</div>
+</div>
+
+<!-- Concept 2: Adult attachment -->
+<div class="card">
+<h2>Adult Attachment: How Childhood Templates Replay in Love<span class="en">Adult Romantic Attachment</span></h2>
+<span class="tag">relationship psychology · clinical</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Your reactions in romantic relationships — how quickly you "act out", how easily you "go cold", whether you can directly say "I need you" — are <b>not personality</b>. They are childhood attachment templates being re-activated in intimate contexts. But adult relationships are also the best place to <b>rewrite</b> that template: a secure partner plus 5-7 years of stable relationship can "reprogram" the attachment system.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p>Hazan & Shaver's 1987 Denver Post newspaper survey created the paradigm of "using childhood attachment frameworks to study adult romance" — now cited tens of thousands of times. Phillip Shaver, Chris Fraley and Mario Mikulincer later used the ECR-R to validate it systematically: roughly 70% of adult attachment continuity comes from childhood, 30% from later relational experience. Building on this, Sue Johnson developed Emotionally Focused Therapy (EFT) — one of the most evidence-based approaches to couples therapy, with meta-analyses showing 70-75% of couples improving post-treatment.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Romantic intimacy activates the <b>same attachment circuits</b> — the amygdala, anterior cingulate, vagus nerve. When a partner hasn't replied for 30 minutes:<br>· Secure brain: low-noise activation, "they must be busy"<br>· Anxious brain: amygdala alarm spikes, "have they stopped loving me?" — triggers protest behavior<br>· Avoidant brain: inhibitory activation, "I never needed them anyway" — withdrawal<br>These responses happen within 100-300 milliseconds, <b>before consciousness arrives</b>. That's why "I know better but still react this way" is true — you are fighting a neural predictive model.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Separate "reality" from "activation". Before sending that confronting text, ask: "Is the intensity of my reaction proportional to this event, or is history being activated?"</div>
+<div class="role-item"><b>Parenting</b>If you over-react to certain behaviors in your child (especially when they "need you" or "push you away"), it's often your own attachment wound being activated. Handle yourself first, then respond to the child.</div>
+<div class="role-item"><b>Partner</b>Use "attachment language": not "you're being cold again" but "my call-for-help system is activated, I need you to come close". Naming directly is far more effective than blaming.</div>
+<div class="role-item"><b>Team</b>Leadership research: securely attached leaders give their teams a "secure base" — people can take risks, fail, ask for help. This is the invisible foundation of high-performance teams.</div>
+</div>
+</div>
+
+<div class="callout">
+<b>The pursue-withdraw cycle:</b> Gottman lab data shows this is the <b>second-strongest predictor of divorce</b> (after contempt). The key to breaking it isn't getting the pursuer to stop pursuing or the withdrawer to stop withdrawing — it's getting both to <b>see the cycle itself</b>. "We're in it again" is ten times more effective than "you're being cold again".
+</div>
+
+<div class="misq">
+<b>Common misconception:</b> "Secure partners are the easiest to find" — but research shows that anxious and avoidant individuals actually <b>attract each other</b> (each confirming the other's existing template). Secure partners can feel "boring" because there's no drama. Choosing them is a deliberate act of maturity.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Sue Johnson, <i>Hold Me Tight</i> · Amir Levine, <i>Attached</i> · Mario Mikulincer & Phillip Shaver, <i>Attachment in Adulthood</i>
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "Effective dependency is a sign of strength, not weakness." — Sue Johnson. <b>Effective dependency</b> is a mark of strength, not weakness.
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Identify the one argument cycle you and your partner fall into most often (pursue-withdraw / mutual withdrawal / anxious-anxious). Next time it's about to start, press "pause" with a single sentence: "We're starting that cycle again — let's stop for 10 minutes." The goal isn't to resolve the conflict; it's to <b>recognize the pattern</b>.
+</div>
+</div>
+
+<!-- Concept 3: Parenting -->
+<div class="card">
+<h2>Parenting: How to Become Your Child's "Secure Base"<span class="en">Secure Base & Sensitive Responsiveness</span></h2>
+<span class="tag">parenting psychology · application</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Secure attachment doesn't require "perfect parents" — it requires <b>sensitivity + repair</b>. Ed Tronick's Still Face experiment showed that <b>disconnection</b> is inevitable; what matters is <b>how quickly you reconnect</b>. Research shows that secure attachment only requires roughly 30% attuned moments plus active repair.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p>In Edward Tronick's (1975) Still Face experiment, mothers were asked to hold a blank expression for two minutes; within two minutes, 100% of infants showed severe distress, and within 1-2 minutes of the mother re-attuning, the infants recovered — establishing the "rupture-repair" model. Daniel Siegel's <i>The Whole-Brain Child</i> (2011) integrates neuroscience and proposes the "connect then redirect" principle. The Circle of Security project (Marvin, Cooper, Hoffman, Powell) developed a teachable parenting model now used in over 30 countries. Meta-analyses show interventions raise children's secure attachment rates by 20-30%.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">Circle of Security: a child's two needs</div>
+<div class="ladder">
+<div class="ladder-step s1"><div class="step-num">Out</div><div><b>Going Out</b>: exploring the world. Parents provide the Secure Base — "I support you going". Needs: watch, don't intervene, offer tools, celebrate achievement.</div></div>
+<div class="ladder-step s2"><div class="step-num">In</div><div><b>Coming In</b>: seeking comfort. Parents provide the Safe Haven — "come back to me". Needs: welcome, protect, soothe, organize feelings.</div></div>
+<div class="ladder-step s3"><div class="step-num">Be</div><div><b>Always</b>: Be Bigger, Stronger, Wiser, and Kind. Bigger, stronger, wiser, and gentler than the child. Not controlling — carrying responsibility.</div></div>
+<div class="ladder-step s4"><div class="step-num">Fix</div><div><b>Repair</b>: when you lose it and yell at your child — come back and say, "I was too tired, I shouldn't have yelled. It wasn't because you're bad." Repair matters more than never breaking.</div></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>From parents, a child learns three things: (1) <b>my emotions can be handled</b> — by being named and regulated; (2) <b>a ruptured relationship isn't a terminated relationship</b> — through repeated repair; (3) <b>I am cherished</b> — by being seen and remembered. Daniel Siegel calls these the "4S": <b>S</b>een, <b>S</b>afe, <b>S</b>oothed, <b>S</b>ecure. They are not parenting techniques — they are the raw material from which a child's brain constructs concepts of self and other.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>If you notice you're stuck in a particular parenting pattern (controlling / withdrawing / anxious), it's usually an unmet part of your own childhood being activated. Do your own "re-parenting" work first.</div>
+<div class="role-item"><b>Parenting</b>Starting today: when a child melts down, <b>name the feeling first</b> ("you're disappointed"), then deal with the behavior. This is Siegel's "name it to tame it".</div>
+<div class="role-item"><b>Partner</b>Partners also need the 4S. A partner who feels "seen" and "soothed" by you reports significantly higher relationship satisfaction. Intimacy at its core is being a mutual secure base.</div>
+<div class="role-item"><b>Team</b>Translate "Bigger, Stronger, Wiser, Kind" into the team: as a leader, in uncertainty you stay <b>steadier</b> than the team, but never arrogant. That's the foundation of psychological safety.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tools</span>
+<a class="tool-link" href="https://www.circleofsecurityinternational.com/" target="_blank">Circle of Security</a>
+<a class="tool-link" href="https://drdansiegel.com/" target="_blank">Dr Dan Siegel resources</a>
+<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">Circle of Security offers a parent-facing video series. Siegel's <i>Parenting from the Inside Out</i> and <i>The Whole-Brain Child</i> are accessible and highly practical.</p>
+</div>
+
+<div class="misq">
+<b>Common misconception:</b> "I have to be a perfect parent" — research consistently shows that perfectionist parents tend to raise anxious children. Winnicott's "good enough mother" is the gold standard: <b>real, prone to mistakes, capable of repair</b>.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Daniel Siegel, <i>Parenting from the Inside Out</i>, <i>The Whole-Brain Child</i> · Cooper, Hoffman, Powell, <i>The Circle of Security Intervention</i> · Ed Tronick, <i>The Neurobehavioral and Social-Emotional Development of Infants and Children</i>
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "<b>Rupture and repair</b> is the heartbeat of secure attachment." — Daniel Siegel. Rupture and repair are the heartbeat of secure attachment. A relationship without rupture isn't real; rupture without repair is what's dangerous.
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Watch for one "rupture" with your child this week — a moment you lost it, were too busy, ignored them. Within 24 hours, do an explicit "repair" conversation: kneel down, meet their eyes, say "I'm sorry, I reacted too strongly." Don't explain the reasons, don't attach conditions. Record how the child responds.
+</div>
+</div>
+
+<!-- Concept 4: Earned Secure -->
+<div class="card">
+<h2>Self-Repair: Earned Secure Attachment in Adulthood<span class="en">Earned Secure Attachment</span></h2>
+<span class="tag">clinical psychology · paths of change</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>If your parents didn't give you secure attachment, it doesn't mean you're insecure for life. <b>"Earned Secure"</b> is one of the most important clinical findings in attachment research: through sustained repair-oriented relationships + trauma integration + a coherent self-narrative, the adult brain can rebuild the "secure template". The cost: it's a 3-7-year project, not a 21-day program.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Foundation</span>
+<p>Mary Main and colleagues' Adult Attachment Interview (AAI) assesses not "how your childhood was" but "<b>how you talk about your childhood</b>" — the <b>coherence</b> of the narrative predicts whether you can pass secure attachment to the next generation. Pearson, Cohn, Cowan & Cowan (1994) found: adults with insecure childhoods but coherent narratives parent at a quality <b>indistinguishable</b> from never-traumatized secure adults — that's earned secure. Bessel van der Kolk's <i>The Body Keeps the Score</i> (2014) explains how trauma is stored in the body and requires modalities like EMDR, Somatic Experiencing, and IFS to integrate. Dan Siegel in <i>Mindsight</i> proposes that <b>narrative integration</b> is the core mechanism of repair.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Repair operates on three levels, all required:<br>· <b>Cognitive</b>: understanding what happened, why your parents were that way, that it wasn't your fault. This is conscious-level story reconstruction.<br>· <b>Somatic</b>: childhood trauma is stored in the autonomic nervous system (Stephen Porges' polyvagal theory). Yoga, breath work, and somatic practices help the body "know" it's safe now.<br>· <b>Relational</b>: in a safe relationship (therapist, partner, deep friend), <b>repeatedly experience</b> that "calls for help get answered" — this is how new neural circuits form.<br>The brain's predictive model only updates when all three move together. "Just understanding it" isn't enough — the amygdala doesn't listen to reason.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Start writing your "coherent narrative": not complaining about childhood, but <b>integrating</b> — "My mother behaved that way because of X, it created Y in me, I now choose Z". AAI research shows that the narrative quality itself is healing.</div>
+<div class="role-item"><b>Parenting</b>"Intergenerational transmission" research: if you don't repair your own attachment wounds, you'll unconsciously pass them on. This isn't a threat — it's motivation. Repairing yourself is the biggest gift you give your child.</div>
+<div class="role-item"><b>Partner</b>Choose a partner who can be a "repair relationship" (secure, or becoming secure). Two equally insecure people rarely repair each other; they confirm each other's wounds.</div>
+<div class="role-item"><b>Team</b>Identify "secure-base" colleagues and mentors; protect those relationships actively. Research shows that 2-3 secure attachment figures (not necessarily family) are enough to buffer most adult stress.</div>
+</div>
+</div>
+
+<div class="callout">
+<b>Three milestones of repair:</b> (1) being able to talk about childhood pain without defensiveness; (2) being able to say "I need you" or "I have a limit" in a relationship without falling apart; (3) being able to <b>pause</b> in the triggered moment (even for 3 seconds) and choose response over reaction. On average, these three capacities take 3-7 years of work. The timeline is honest — not to pressure you, but to give you patience.
+</div>
+
+<div class="section">
+<span class="label">Self-Assessment Tools</span>
+<a class="tool-link" href="https://www.psychalive.org/adult-attachment-interview/" target="_blank">AAI introduction</a>
+<a class="tool-link" href="https://drdansiegel.com/wheel-of-awareness/" target="_blank">Siegel Wheel of Awareness</a>
+<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">A full AAI requires a trained clinical interviewer, but you can ask yourself the 7 core questions in its structure (see the appendix of Siegel's <i>Parenting from the Inside Out</i>). The Wheel of Awareness is a free meditation practice developed by Siegel that supports narrative integration.</p>
+</div>
+
+<div class="misq">
+<b>Common misconception:</b> "Re-parenting yourself = being gentle with yourself" — that's part of it, but not enough. Real earned secure always includes <b>one or more genuine repair relationships</b> (therapist, partner, deep friendship). Self-talk cannot fully substitute for attunement from another.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Daniel Siegel, <i>Mindsight</i>, <i>Parenting from the Inside Out</i> · Bessel van der Kolk, <i>The Body Keeps the Score</i> · Diana Fosha, <i>The Transforming Power of Affect</i> · Pearson et al., <i>Earned- and continuous-security in adult attachment</i> (1994)
+</div>
+
+<div class="eng">
+<b>English Insight:</b> "You are not your history. You are <b>what you do with your history</b>." You are not your history; you are what you do with it. That's the essence of earned secure.
+</div>
+
+<div class="practice">
+<b>This Week's Practice</b>Spend 20 minutes writing "My Attachment Narrative v1":<br>1. Who was my primary attachment figure in childhood? What usually happened when I called for help?<br>2. What "relational predictive model" did that leave me with?<br>3. Which of my current reactions are that model still running?<br>4. What do I want my next-version narrative to look like?<br>Don't chase perfection — a stumbling first draft beats not writing. This is a document you'll be revising for the next 5 to 10 years.
+</div>
+</div>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Weekly index</a></nav>
+
+</div>
+</body></html>
