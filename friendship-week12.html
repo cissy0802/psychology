@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心理学 Week 12：友谊心理学 — 为什么成年后朋友越来越少</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.layers{display:flex;flex-direction:column;gap:8px}
+.layer-row{display:flex;align-items:center;gap:12px;font-size:0.88rem}
+.layer-num{width:54px;flex-shrink:0;text-align:center;font-weight:700;color:#fff;padding:8px 0;border-radius:8px;font-size:0.92rem}
+.layer-num.l5{background:#5a2a6a}.layer-num.l15{background:#7a3e8c}.layer-num.l50{background:#a85aa8}.layer-num.l150{background:#c98ac9}
+.layer-desc{flex:1;color:#3a2a3a}
+.layer-desc b{color:#7a3e8c}
+.hours{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.hours-row{display:flex;align-items:center;font-size:0.88rem}
+.hours-label{width:96px;color:#5a4a5a;font-weight:600;flex-shrink:0;font-size:0.85rem}
+.hours-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.hours-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#fff;font-size:0.78rem;font-weight:600}
+.ties{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.tie-cell{background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:14px;font-size:0.88rem}
+.tie-cell b{display:block;margin-bottom:6px;font-size:0.95rem}
+.tie-cell.strong{border-color:#7a3e8c}.tie-cell.strong b{color:#7a3e8c}
+.tie-cell.weak{border-color:#e89a4a}.tie-cell.weak b{color:#c47a2a}
+details{margin-top:12px;background:#fbf3fb;border-radius:10px;padding:12px 16px}
+details summary{cursor:pointer;font-weight:600;color:#7a3e8c;font-size:0.95rem}
+details > div{margin-top:10px;font-size:0.92rem;color:#3a2a3a;line-height:1.7}
+.deep{margin-top:32px;padding:24px 22px;background:#fff;border-radius:14px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+.deep h3{color:#7a3e8c;font-size:1.1rem;margin-bottom:8px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.ties{grid-template-columns:1fr}.layer-num{width:46px;font-size:0.82rem}.hours-label{width:80px;font-size:0.78rem}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">WEEK 12 · 友谊与社会网络</div>
+<h1>友谊心理学：为什么成年后朋友越来越少</h1>
+<div class="meta">2026.05.31 · BigCat's Inner World</div>
+<div class="intro">25 岁之后，多数人的朋友圈悄悄缩小，"找时间见个面"变成一年一次的奢侈。这不是你冷漠了，是友谊的默认基础设施消失了。本期把友谊从"自然发生的好东西"还原为可观测、可设计的系统。</div>
+</header>
+
+<!-- 概念 1: 成年友谊衰退 -->
+<div class="card">
+<h2>成年友谊衰退：不是你的错，是结构在变<span class="en">The Adult Friendship Decline</span></h2>
+<span class="tag">生命周期 · 社会网络</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>社交网络规模在 <strong>25 岁见顶</strong>，之后单调衰减。德国 SOEP 纵向数据显示成年人每 7 年朋友数减少约 25%。多数人把这当成"自己变内向了"或"朋友不真心"——其实是结构性现象。</p>
+</div>
+
+<div class="section">
+<span class="label">研究基础</span>
+<p>Wrzus et al. (2013, Psychological Bulletin) 元分析 277 项纵向研究：网络规模 25 岁约 16-20 人，55 岁降到 ~10 人。Bhattacharya & Dunbar (2016) 用手机通话频次复现同一曲线。Sarkisian & Gerstel (2016) 命名了 <strong>"greedy marriage"</strong>：婚姻和育儿系统性挤压外部友谊。Putnam《Bowling Alone》把这升级为社会资本结构衰退。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p>三股力同时推：(1) <strong>时间稀缺</strong>——伴侣+孩子+职业把可调度时间压到接近零；(2) <strong>地理流动</strong>——换城市换工作让物理共处的"被动接触"消失；(3) <strong>维护方式跃迁</strong>——青少年友谊靠"同场所同活动"被动生成（学校、宿舍、社团），成年后必须主动调度，认知/协调成本高 5-10 倍。<strong>友谊没变难，是它的免费基础设施被拆了</strong>。</p>
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>把"朋友少"重新框定为结构性现象，停止内疚式归因。下一步是"主动设计"，不是"逼自己外向"。</div>
+<div class="role-item"><b>伴侣</b>把所有情感需求放在一个人身上，关系压力指数级上升。健康的伴侣关系需要双方各有"伴侣之外的圈"。</div>
+<div class="role-item"><b>育儿</b>不想孩子重复你的成年孤立？教社交技巧无效，<strong>稳定的同伴接触环境</strong>（社区、长期班）最有效——友谊靠重复暴露生长。</div>
+<div class="role-item"><b>团队</b>远程团队默认没有"被动接触"。不主动设计 watercooler，所谓"团队感"是幻觉。</div>
+</div>
+</div>
+
+<div class="misq">
+<b>常见误区：</b>"我朋友少是因为我内向。"研究反复显示，外向度对成年朋友数量的影响远小于通勤距离与育儿阶段。<strong>结构 &gt;&gt; 性格</strong>。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · Wrzus et al.《Social Network Changes and Life Events Across the Lifespan》(2013) · Sarkisian & Gerstel《Does singlehood isolate or integrate?》(2016) · Robert Putnam《Bowling Alone》(2000)
+</div>
+
+<div class="practice">
+<b>本周练习</b>列出 5 个"想保持但没在维持"的人，直接发一条无目的的消息（"突然想到你"足够）。<b>思考</b>：为什么"无目的的接触"在成年世界变得这么难？是怕被看穿"有所图"，还是已经习惯了所有接触都需要理由？
+</div>
+</div>
+
+<!-- 概念 2: Dunbar 数与圈层 -->
+<div class="card">
+<h2>Dunbar 数：你的大脑只装得下 150 个人<span class="en">Dunbar's Number & Social Layers</span></h2>
+<span class="tag">进化神经科学 · 社交带宽</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>Robin Dunbar 通过灵长类<strong>新皮层比例 × 社群规模</strong>回归推算：人类稳定社群上限约 <strong>150</strong>。后在狩猎部落、罗马军连队、企业自然分组、Facebook 强互动数据中反复重现。更关键的是——这 150 不是平的，是 <strong>5 / 15 / 50 / 150</strong> 的分层结构。</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">Dunbar 数列：4 层社交圈带宽</div>
+<div class="layers">
+<div class="layer-row"><div class="layer-num l5">5</div><div class="layer-desc"><b>核心支持圈</b>危机时半夜会找的人。每周深度接触，情感同步成本极高。</div></div>
+<div class="layer-row"><div class="layer-num l15">15</div><div class="layer-desc"><b>同情圈</b>"日常关心"。每月接触，能讨论非表面话题。</div></div>
+<div class="layer-row"><div class="layer-num l50">50</div><div class="layer-desc"><b>朋友圈</b>会主动约的人，每季度见。共同活动维系。</div></div>
+<div class="layer-row"><div class="layer-num l150">150</div><div class="layer-desc"><b>稳定关系网</b>能叫出名字+一段共同历史，年度接触级。</div></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">研究基础</span>
+<p>Dunbar (1992) 新皮层假说原始论文；Hill & Dunbar (2003) 圣诞贺卡研究、Roberts et al. (2009) 手机通话频率聚类、Mac Carron, Kaski & Dunbar (2016) Twitter 互动数据——都稳定收敛到 ~150，5/15/50/150 层级跨数据集稳定。这是少有的<strong>横跨进化生物学、考古学、数字社交</strong>互相印证的发现。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p>每层对应不同的<strong>注意力分配</strong>：内 5 需持续情感同步（高带宽、低节点数），外层成本低容量大。<strong>真正的瓶颈不是记忆容量，是情感投资能力</strong>。150 外的"好友"对大脑而言几乎等同于陌生人——他们不进入你的心智模型。这与神经科学中默认模式网络（DMN）模拟他人意图的能耗限制吻合。</p>
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>画自己的 5/15/50/150 图。哪一层是空的，就是下一步要投入的层。</div>
+<div class="role-item"><b>伴侣</b>核心 5 人圈如果只剩伴侣，关系承受了不该承受的重量。"伴侣之外的核心圈"是关系减压阀。</div>
+<div class="role-item"><b>育儿</b>青春期孩子的核心 5 圈往往不包括父母——这是发育正常，不是疏远。你的目标是稳坐 15 圈。</div>
+<div class="role-item"><b>团队</b>超过 ~150 的组织自然会断裂。亚马逊"两个比萨团队"、Spotify 的 Squad 都是 Dunbar 限制的隐式遵守。</div>
+</div>
+</div>
+
+<div class="misq">
+<b>常见误区：</b>把 LinkedIn 5000 好友当社交资本。超过 150 的"联系"对认知系统而言是<strong>噪声</strong>，不是资源——浏览一次他们的动态不代表关系存在。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · Dunbar《Neocortex size as a constraint on group size in primates》(1992) · Mac Carron et al.《Calling Dunbar's numbers》(2016) · Dunbar《Friends: Understanding the Power of Our Most Important Relationships》(2021)
+</div>
+
+<div class="practice">
+<b>本周练习</b>写下你认为属于"内 5"的人，对每个问：上一次实质对话是什么时候？<b>思考</b>：你的内 5 是否包括非伴侣、非家人？如果不是，意味着什么？
+</div>
+</div>
+
+<!-- 概念 3: 弱链接 -->
+<div class="card">
+<h2>弱链接的力量：你最重要的机会不来自最好的朋友<span class="en">The Strength of Weak Ties</span></h2>
+<span class="tag">社会网络 · 信息扩散</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>Mark Granovetter (1973) 调查"你现在的工作是怎么找到的"，发现 <strong>56%</strong> 来自偶尔见面或更少接触的<strong>弱链接</strong>，而非每周见的强链接。机制反直觉：强链接的人和你共享同样的信息池，弱链接连接到<strong>不重叠的信息圈</strong>。</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">两种链接的功能分工</div>
+<div class="ties">
+<div class="tie-cell strong"><b>强链接</b>高频、深度、情感投资重。<br>给你：情感支持、安全感、共担风险。<br><span style="color:#8a6a8a">瓶颈：信息冗余——你们知道的世界高度重叠。</span></div>
+<div class="tie-cell weak"><b>弱链接</b>低频、浅度、低维护成本。<br>给你：非冗余信息、新机会、新视角。<br><span style="color:#8a6a8a">机制：连接你接触不到的圈层，作为网络中的"桥"。</span></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">研究基础</span>
+<p>Granovetter《The Strength of Weak Ties》是社会学被引用最多的论文之一（80,000+ 次）。Rajkumar et al. (2022, Science) 用 LinkedIn 大规模随机实验（2000 万人、5 年）严格因果验证：<strong>中等弱的链接</strong>对换工作机会的因果效应最大——首次大规模 RCT 风格证据。Sandstrom & Dunn (2014) 另一条线：仅与星巴克咖啡师多说两句，当日 wellbeing 都会显著上升——"最小社交剂量"也有效。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p>Ronald Burt 的 "<strong>structural holes</strong>" 理论补充了 Granovetter：桥接两个互不连接群体的人，在创新和升迁上有结构性优势——不是因为更聪明，而是因为坐在<strong>信息流的瓶颈位置</strong>。这与分布式系统中"跨集群通信链路"的价值同构——长程稀疏链接是网络鲁棒性与创新性的关键。封闭的小团体生成 attractor state，弱链接是逃出局部最优的唯一通道。</p>
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>分清两类需求：情感支持靠强链接（5/15 圈），新机会与视角靠弱链接（50/150 圈）。两者维护方式不同。</div>
+<div class="role-item"><b>团队</b>跨部门的"桥"型同事是隐性高价值角色——他们让组织避免局部最优。识别并保护他们。</div>
+<div class="role-item"><b>育儿</b>让孩子和"不一样的人"接触（不同学校、不同社区），不是培养"广撒网社交"，是早期建立弱链接资本。</div>
+<div class="role-item"><b>伴侣</b>双方各自维护弱链接不是关系威胁，是关系健康。封闭社交圈反而提升伴侣压力。</div>
+</div>
+</div>
+
+<div class="misq">
+<b>常见误区：</b>"只有深度关系才有价值。" 这在情感层面是真相，在<strong>信息和机会扩散</strong>层面恰好相反。弱链接的价值是结构性的——它不替代强链接，是另一类资本。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · Granovetter《The Strength of Weak Ties》(1973, AJS) · Rajkumar et al.《A causal test of the strength of weak ties》(2022, Science) · Burt《Structural Holes》(1992)
+</div>
+
+<div class="practice">
+<b>本周练习</b>主动重激活 2 个"3 年没联系"的弱链接（前同事、老同学）——一条短消息即可。<b>思考</b>：什么让你避免"无理由的接触"？害怕被看穿"有所图"，还是预设"对方凭什么回我"？
+</div>
+</div>
+
+<!-- 概念 4: 维护机制 -->
+<div class="card">
+<h2>友谊维护：不是被找到的，是被维护出来的<span class="en">Friendship Maintenance</span></h2>
+<span class="tag">关系机制 · 系统设计</span>
+
+<div class="section">
+<span class="label">核心洞察</span>
+<p>Jeffrey Hall (2018) 严密计算：从陌生人到"普通朋友"约需 <strong>50 小时</strong>共处；到"朋友" <strong>90 小时</strong>；到"亲密朋友" <strong>200+ 小时</strong>。<strong>没有捷径</strong>。"我没朋友"通常不是命运，是从没投足够的小时数。</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">从陌生人到亲密朋友所需共处小时（Hall 2018）</div>
+<div class="hours">
+<div class="hours-row"><div class="hours-label">认识</div><div class="hours-track"><div class="hours-fill" style="width:18%">~10h</div></div></div>
+<div class="hours-row"><div class="hours-label">普通朋友</div><div class="hours-track"><div class="hours-fill" style="width:30%">~50h</div></div></div>
+<div class="hours-row"><div class="hours-label">朋友</div><div class="hours-track"><div class="hours-fill" style="width:50%">~90h</div></div></div>
+<div class="hours-row"><div class="hours-label">亲密朋友</div><div class="hours-track"><div class="hours-fill" style="width:95%">200h+</div></div></div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">研究基础</span>
+<p>Hall (2018, JSPR)《How many hours does it take to make a friend?》访谈 355 名最近搬家者，回归出小时阈值。Oswald, Clark & Kelly (2004)《Friendship Maintenance Behaviors》量表给出 4 维度：积极性、自我披露、互动性、支持。Holt-Lunstad et al. (2010) 元分析（148 项研究、30 万人）：<strong>弱社交连接使死亡风险增加约 50%</strong>，效应量与吸烟同级。友谊不是"软价值"——是与吸烟同量级的健康变量。</p>
+</div>
+
+<div class="section">
+<span class="label">机制解读</span>
+<p>维护需要 4 个组件同时在线：(1) <strong>频率</strong>——任何朋友超 ~90 天无接触就进入"休眠态"，重启成本陡升；(2) <strong>自我披露</strong>——交换非表面信息是亲密的核心货币；(3) <strong>共同活动</strong>——纯聊天的友谊脆弱，需要"并肩做事"的共构经历；(4) <strong>仪式</strong>——"每月固定一次"远比"有空就约"稳定。这与 Gottman 的 bids 在亲密关系中的作用同构——日常微互动 &gt; 重大事件。</p>
+</div>
+
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>把"维护"写进日历——每周 20 分钟"朋友时段"。靠记起的友谊是消耗品，靠系统的友谊是持续品。</div>
+<div class="role-item"><b>伴侣</b>双方各自的友谊不是奢侈品，是关系减压阀。同意"朋友夜"是高 ROI 投入。</div>
+<div class="role-item"><b>育儿</b>示范"父母有朋友且在维护"——比说教社交技巧重要 100 倍。孩子模仿你的实际行为，不是你的指导。</div>
+<div class="role-item"><b>团队</b>远程协作里刻意设计"非工作微互动"（5 分钟开场闲聊、共享非工作频道）——这是组织 bids，不是时间浪费。</div>
+</div>
+</div>
+
+<div class="callout">
+<b>关键发现：</b>"<strong>共构经历</strong>"是 AI 朋友目前最难提供的——一起爬山时膝盖疼、一起搞砸一场演出、一起照顾生病的猫。共同<strong>风险承担</strong>是友谊密度的物理基础，而风险需要真实的"另一个有生命的存在"。
+</div>
+
+<div class="misq">
+<b>常见误区：</b>"真朋友不需要维护。" 研究否定。所有友谊都遵守接触衰减曲线。不维护的友谊不会立刻死亡——它<strong>慢慢凋零</strong>，到你想重启时已经需要 2 倍的能量。
+</div>
+
+<div class="refs">
+<b>关键参考</b> · Hall《How many hours does it take to make a friend?》(2018) · Oswald, Clark & Kelly《Friendship Maintenance》(2004) · Holt-Lunstad et al.《Social Relationships and Mortality Risk》(2010, PLOS Medicine)
+</div>
+
+<div class="practice">
+<b>本周练习</b>建一个"友谊低带宽通道"——3-5 人小群，约定每周一次"今天遇到的一件小事"轻量分享。<b>思考</b>：你是不是仍在用青少年时期的友谊模型（自然发生、不需经营）应对成年世界？
+</div>
+</div>
+
+<!-- 深入思考 -->
+<div class="deep">
+<h3>【深入思考】</h3>
+
+<details><summary>1. 友谊衰退在东亚集体主义文化里是否同样严重？</summary>
+<div>Bhattacharya & Dunbar 跨文化数据显示 150 数与 5/15/50/150 分层<strong>跨文化稳定</strong>。东亚的不同在结构：家族/同事/邻里作为强制性强链接密度更高，<strong>结构性社交</strong>不缺；但<strong>自主选择的友谊</strong>反而稀少——网络饱和却缺深度选择。结果是"被联系包围却孤独"，与 Putnam 描述的西方"独自打保龄"症状不同，问题相同。</div></details>
+
+<details><summary>2. AI 伴侣/AI 朋友能填补这个空缺吗？</summary>
+<div>功能层（倾诉、被听到）AI 能提供约 70% 体验，对内心独白型孤独有真实缓解。但 Hall 的"共构经历"和 Dunbar 的"情感共振"目前 AI 无法提供——因为缺<strong>真实风险共担</strong>：朋友会评判你、会被你伤害、ta 也有自己的人生。AI 可能成为"过渡客体"（Winnicott），但替代核心 5 人圈在生物学上不太可能——直到 AI 也面对损失与不确定性。AI 当弱链接补充合理，当核心圈替代品危险。</div></details>
+
+<details><summary>3. 友谊与佛学"善知识"概念如何呼应？</summary>
+<div>阿难曾问佛陀："善知识（kalyāṇa-mitta）是修行的一半吗？"答："不，是<strong>全部</strong>。"与现代研究"社交关系是最强健康预测变量"惊人一致。佛学强调的不是数量，是<strong>对方对你心识方向的影响</strong>。这与心理学的情绪传染（Christakis-Fowler 网络研究）同源：你的体重、抑郁、戒烟成功率都受三度社交圈影响。慎选 5 人圈，既是修行问题也是数据问题。</div></details>
+
+<details><summary>4. 算法社交时代，弱链接价值是被放大还是压扁？</summary>
+<div>双向。<strong>放大</strong>：LinkedIn/Twitter 让 Dunbar 150 外的人持续浅接触，弱链接池数量上扩大。<strong>压扁</strong>：推荐算法只投喂相似圈层内容，同温层化让弱链接失去了"带来不重叠信息"的本质功能。链接数量上升，<strong>结构性桥的密度</strong>下降。对抗方式：定期 follow 与你视角不同的人，主动跨入异质圈层——与分布式系统"注入熵防过拟合"同构。</div></details>
+
+<details><summary>5. 友谊维护与分布式系统的"心跳协议"是否同构？</summary>
+<div>几乎一字不差。节点用 heartbeat 维持连接活性——周期性、低成本、刻意发送；友谊里 90 天无接触就进入"超时回收"。Gossip 协议中保留弱连接应对网络分区——对应友谊网络里弱链接的"桥"功能。把友谊当系统设计而非"自然发生的好东西"，效率提升一个数量级。这个映射不是比喻，是<strong>同一类问题的两个领域</strong>。</div></details>
+
+</div>
+
+<nav class="back"><a href="index.html">← 返回 Psychology Weekly 目录</a></nav>
+
+</div>
+</body></html>
