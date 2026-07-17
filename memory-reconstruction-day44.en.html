@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychology Day 44: The Reconstruction of Memory — Half of What You Remember, You Built Just Now</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
+.eng b{color:#d8a8d8;font-style:normal}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.flow{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap;justify-content:center}
+.flow-step{flex:1;min-width:150px;background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:12px 14px;font-size:0.86rem}
+.flow-step b{color:#7a3e8c;display:block;margin-bottom:4px}
+.flow-arrow{align-self:center;color:#a85aa8;font-weight:700;font-size:1.2rem}
+.bar-row{display:flex;align-items:center;margin-bottom:10px;font-size:0.88rem}
+.bar-label{width:120px;color:#5a4a5a;font-weight:600;flex-shrink:0}
+.bar-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.78rem;font-weight:600}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:14px;font-size:0.86rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+details{margin-top:12px;background:#f5edf5;border-radius:10px;padding:4px 16px}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:10px 0;font-size:0.95rem}
+details > div{font-size:0.92rem;color:#4a3a4a;padding:0 0 12px}
+.deep-title{text-align:center;color:#7a3e8c;font-size:1.1rem;font-weight:700;margin:40px 0 4px;letter-spacing:1px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}.flow-arrow{transform:rotate(90deg)}}
+</style></head><body>
+<div class="container">
+
+<header>
+<div class="week-tag">DAY 44 · PSYCHOLOGY OF MEMORY</div>
+<h1>The Reconstruction of Memory: Half of What You Remember, You Built Just Now</h1>
+<div class="meta">2026.07.17 · BigCat's Inner World</div>
+<div class="intro">Memory feels like replaying a recording. In fact, every act of recall is an on-the-spot rebuild — assembled on the fly from fragments, schemas, and your present mood. What does that mean for your self-narrative, for parenting, for the "but you clearly said…" of intimate life, and for eyewitness testimony in court?</div>
+</header>
+
+<!-- Concept 1 -->
+<div class="card">
+<h2>Memory Is Not a Recording — It's a Rebuild<span class="en">Reconstructive Memory</span></h2>
+<span class="tag">Cognitive Psychology · Memory</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>The brain doesn't store a "video file." It stores <strong>fragmentary gist</strong>, and at retrieval it reconstructs the whole scene using schemas. The key corollary: <strong>every act of recall slightly rewrites the memory itself</strong>. The more you remember something, the further you may drift from the original event.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Frederic Bartlett's 1932 <em>Remembering</em> had British participants retell an unfamiliar Native American story, "The War of the Ghosts" — they systematically dropped or rewrote details that didn't fit their own cultural schema. Daniel Schacter's <em>The Seven Sins of Memory</em> treats this constructiveness as a <strong>design feature, not a bug</strong>. On the neuroscience side, Karim Nader's <strong>reconsolidation</strong>: when a memory is retrieved it briefly returns to an unstable state and must be re-stabilized — and in that window it can be altered.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The Three Stages of Memory · Each One Distorts</div>
+<div class="flow">
+<div class="flow-step"><b>Encoding</b>Only the gist is stored; masses of detail are never recorded — much of what you "saw" is inferred.</div>
+<div class="flow-arrow">→</div>
+<div class="flow-step"><b>Storage</b>Over time it quietly fuses with later information and others' retellings; edges blur.</div>
+<div class="flow-arrow">→</div>
+<div class="flow-step"><b>Retrieval</b>The brain "predictively fills" the gaps with schema plus present mood, rebuilding a coherent version.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>What goes in is <strong>gist, not detail</strong>; what comes out is completed by "what most likely happened," and the current emotion, belief, and the very wording of a question all seep into that rebuild. Memory isn't read — it's <strong>re-produced</strong>, a little differently each time.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>"I remember it clearly" is not "it happened that way." Hold even vivid memories with a little <strong>epistemic humility</strong>.</div>
+<div class="role-item"><b>Parenting</b>Repeatedly asking "did the man touch you?" can implant a memory that never happened. Ask <strong>open questions</strong>; don't feed the answer.</div>
+<div class="role-item"><b>Partner</b>"You clearly said this last time" — both people's memories have been rewritten by present emotion. Litigating who's right is often unwinnable.</div>
+<div class="role-item"><b>Team</b>Don't run a post-mortem on memory alone. <strong>Record in the moment</strong>, because later recall gets reshaped by the known outcome (hindsight).</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Self-check + Common Myth:</b> Recall a childhood scene — do you see it <strong>first-person</strong>, or as an observer "watching yourself"? An observer-perspective memory has almost certainly been reconstructed — you could never have seen yourself from outside your own body at the time. The myth: equating "vivid = true." Clarity and accuracy are two different things.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Frederic Bartlett, <em>Remembering</em> (1932) · Daniel Schacter, <em>The Seven Sins of Memory</em> · Karim Nader on amygdala reconsolidation (2000, Nature)
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Take a shared family event; each of you writes down 5 details independently, then compare — the discrepancies make "reconstruction" viscerally real. Reflect: if memory is rebuilt, how reliable is the "who I am" self-narrative that rests on top of it?
+</div>
+</div>
+
+<!-- Concept 2 -->
+<div class="card">
+<h2>False Memory: A Past That Was Planted<span class="en">False Memory</span></h2>
+<span class="tag">Cognitive Psychology · Source Monitoring</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Something that never happened can be implanted as a memory that is <strong>detailed, emotional, and firmly believed</strong>. False memories aren't vague blurs — they're often more vivid than real ones.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Elizabeth Loftus's "lost in the mall" study: with a family member's help suggesting a fake childhood event, about <strong>one in four</strong> adults "remembered" being lost in a mall as a child and rescued by a stranger — and spontaneously added details. The DRM paradigm (Roediger &amp; McDermott 1995): read a list of related words (bed, rest, nap…) and people confidently "remember" seeing "sleep," which never appeared. The misinformation effect (Loftus &amp; Palmer 1974): change the question from cars that "hit" to cars that "smashed," and participants not only overestimate speed but a week later invent broken glass that was never there.</p>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>A memory's "content" and its "source" are stored separately. People often keep the content but <strong>misattribute the source</strong> (source-monitoring error) — mistaking imagination, someone's words, a dream, or the news for firsthand experience. Suggestion, repeated imagining, and authoritative questioning gradually "burn" the fabricated into a sense of the real.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>The more vividly and repeatedly you tell a story, the more it gets <strong>polished away</strong> from fact — the telling is itself a rewrite.</div>
+<div class="role-item"><b>Parenting</b>Don't rehash a negative event in front of a child; repetition can harden and even exaggerate it, reshaping their version.</div>
+<div class="role-item"><b>Relationships/Work</b>Stay wary of "I remember it perfectly" accusations, especially after many rounds of retelling by many people.</div>
+<div class="role-item"><b>Public info</b>A rumor you keep encountering breeds a "familiar-so-true" illusory memory — you feel you witnessed it, but you only scrolled past it.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Self-check + Common Myth:</b> The myth — "it's so specific and so emotional, it can't be fake." False memories can be exactly that: highly specific and emotionally charged. Practice: next time you're utterly certain, run a <strong>source check</strong> — did I see this firsthand, or hear it, imagine it, or infer it?
+</div>
+
+<div class="refs">
+<b>Key references</b> · Elizabeth Loftus, <em>The Myth of Repressed Memory</em> · Loftus &amp; Palmer, "Reconstruction of Automobile Destruction" (1974) · Roediger &amp; McDermott, the DRM paradigm (1995)
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Recall an event you're "sure" of; label each detail's source: lived / heard / photo / inferred. Reflect: last century's "recovered repressed trauma memory" therapy produced many wrongful cases (the "memory wars") — how should a therapist balance believing the client against guarding against suggestive implantation?
+</div>
+</div>
+
+<!-- Concept 3 -->
+<div class="card">
+<h2>Flashbulb Memory: Vivid Is Not Accurate<span class="en">Flashbulb Memory</span></h2>
+<span class="tag">Emotion &amp; Memory</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>The memory of the moment you learned of a major event feels unusually vivid, detail-rich, and supremely confident — yet research shows it <strong>drifts with time just like ordinary memory</strong>. The only difference: we're far more confident when we're wrong.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Brown &amp; Kulik coined "flashbulb memory" in 1977. Ulric Neisser &amp; Nicole Harsch tracked the <em>Challenger</em> space shuttle explosion: comparing the same people's memories the <strong>next day</strong> versus <strong>2.5 years later</strong> — nearly half the details were rewritten, some people were completely wrong about where they were, yet their confidence ratings stayed sky-high. Follow-ups on 9/11 and others converge: high vividness plus high confidence, accuracy no better than everyday memory.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The Challenger Study · Confidence Diverges from Accuracy</div>
+<div class="bar-row"><div class="bar-label">Confidence</div><div class="bar-track"><div class="bar-fill" style="width:90%">≈ very certain</div></div></div>
+<div class="bar-row"><div class="bar-label">Detail accuracy</div><div class="bar-track"><div class="bar-fill" style="width:40%">nearly half rewritten</div></div></div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Emotional arousal (with the amygdala involved) does strengthen the <strong>subjective sense</strong> of "I've got this locked in" and consolidates the core gist — but peripheral details drift all the same. Add rounds of social retelling — discussing it, re-watching the news — and it's continually reconstructed. <strong>Vivid ≠ accurate</strong> is the one line to keep here.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Leave room even for "I'll never forget that moment" — vividness is a stamp from emotion, not proof of accuracy.</div>
+<div class="role-item"><b>Relationships</b>That family members' versions of a big moment (a fight, a farewell) differ yet each feels certain is <strong>normal</strong> — no need to fight over who's right.</div>
+<div class="role-item"><b>Team</b>A group's "we all remember it" about a crisis is heavily shaped by the media narrative and debrief story that followed.</div>
+<div class="role-item"><b>Parenting</b>A child's "I definitely remember" of a scary event can also be distorted; soothing beats interrogating "what exactly happened."</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Self-check + Common Myth:</b> The myth — "it's seared in, so it must be right." Practice: recall one of your "flashbulb" moments, list 3 peripheral details (weather, who was there, what you wore), and rate how sure you are of each — most people find it far hazier than they assumed.
+</div>
+
+<div class="refs">
+<b>Key references</b> · Brown &amp; Kulik, "Flashbulb Memories" (1977) · Neisser &amp; Harsch, the Challenger study (1992) · Talarico &amp; Rubin, longitudinal 9/11 study (2003)
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Pick one major memory, write it out, mark which parts are core gist and which are peripheral detail. Reflect: why does emotion boost subjective confidence without boosting accuracy? What does that mean for treating <strong>trauma memories</strong> — vivid yet potentially distorted?
+</div>
+</div>
+
+<!-- Concept 4 -->
+<div class="card">
+<h2>Eyewitness Testimony: Most Persuasive, Least Reliable<span class="en">Eyewitness Testimony</span></h2>
+<span class="tag">Legal Psychology · Applied</span>
+
+<div class="section">
+<span class="label">Core Insight</span>
+<p>An eyewitness identifying someone in court is among the most persuasive evidence there is — and among the least reliable. Of U.S. wrongful convictions overturned by DNA, about <strong>seventy percent</strong> involved a mistaken eyewitness identification.</p>
+</div>
+
+<div class="section">
+<span class="label">Research Base</span>
+<p>Innocence Project data: about <strong>69%</strong> of DNA exonerees had a mistaken eyewitness ID. Gary Wells's decades of research exposed systematic sources of contamination: question wording, an officer's unintended cues, the design of the lineup, and post-identification feedback ("you got the right one") all <strong>artificially inflate a witness's confidence</strong>. Add the own-race identification disadvantage (own-race bias), and accuracy falls further.</p>
+</div>
+
+<div class="viz">
+<div class="viz-title">The Lineup · Contaminating Practice vs Reformed Practice</div>
+<div class="matrix">
+<div class="matrix-cell"><b>Simultaneous lineup</b>Seeing everyone at once invites "pick whoever looks most like it" (relative judgment).<br>→ Reform: <strong>sequential</strong>, judging yes/no on each face independently.</div>
+<div class="matrix-cell"><b>Case officer administers</b>Their tone and face leak unintended cues.<br>→ Reform: <strong>double-blind</strong> administrator who doesn't know who the suspect is.</div>
+<div class="matrix-cell"><b>Post-ID feedback</b>"You got it right" turns hesitation into "I'm 100% sure."<br>→ Reform: <strong>record initial confidence</strong> on the spot, no feedback after.</div>
+<div class="matrix-cell"><b>Poor fillers</b>If only the suspect fits the description, it's a rigged ID.<br>→ Reform: fillers who all <strong>plausibly match</strong>.</div>
+</div>
+</div>
+
+<div class="section">
+<span class="label">Mechanism</span>
+<p>From witnessing to testifying, every step reconstructs: stress and "weapon focus" narrow encoding → later information contaminates storage → a suggestive lineup steers retrieval → one line of feedback <strong>hardens</strong> uncertainty into conviction. Confidence can be manipulated; it is not a reliable index of accuracy.</p>
+</div>
+
+<div class="section">
+<span class="label">Self-Application</span>
+<div class="roles">
+<div class="role-item"><b>Self / citizen</b>Don't take "stated with total certainty" as the standard for truth — in court or in daily life.</div>
+<div class="role-item"><b>Team/management</b>When investigating a dispute, drop leading questions ("did he hit first?") for <strong>open, neutral</strong> ones; record separately before confronting.</div>
+<div class="role-item"><b>Parenting</b>Likewise, don't "interrogate" a child with suggestive questions — your wording reshapes their memory.</div>
+<div class="role-item"><b>Decisions</b>Gather key statements <strong>independently</strong> first, so people don't "align" into one contaminated shared version.</div>
+</div>
+</div>
+
+<div class="misq">
+<b>Self-check + Common Myth:</b> The myth — "I'll never forget that face." Under high stress, recognition of a stranger's face is precisely the least reliable. Practice: run the "three neutral-questioning rules" over a confrontation you once ran — did I ask open questions? Did I unintentionally hint at the answer? Did I <strong>record confidence first</strong>?
+</div>
+
+<div class="refs">
+<b>Key references</b> · Gary Wells's lineup-reform research program · Innocence Project wrongful-conviction data · Elizabeth Loftus, <em>Eyewitness Testimony</em> (1979)
+</div>
+
+<div class="practice">
+<b>This Week's Practice + Reflection</b>Notice whether you used a "leading question" this week (on a child, colleague, partner); try an open, neutral version once instead. Reflect: given how fragile eyewitness memory is, how should the law weight it? Cross-disciplinary: how does this echo the theory of <strong>constructed emotion</strong> (emotion is also built) and the arising of "consciousness/vijñāna" in Buddhist thought?
+</div>
+</div>
+
+<div class="deep-title">Going Deeper</div>
+
+<details><summary>1. If every recall rewrites the memory, does "not remembering" actually preserve the truth better?</summary><div>In theory, retrieval triggers reconsolidation, so fewer retrievals means fewer chances to rewrite; but memory also decays naturally, and the brain never stored memory to "archive" it — it stored it to guide future action. Schacter argues memory's constructiveness exists precisely so we can flexibly <strong>imagine the future</strong> (one system both recalls the past and simulates what's ahead). So "keeping it fresh" was never the design goal — memory is built to be rewritten and recombined.</div></details>
+
+<details><summary>2. Are the constructiveness of memory, the theory of constructed emotion (Barrett), and predictive processing different faces of one brain principle?</summary><div>Very likely. Perception, emotion, and memory are increasingly seen as constructs the brain generates on the fly from "prior predictions + fragmentary evidence": perception predicts the present, emotion constructs interoception, memory rebuilds the past. All three share one <strong>predictive-construction</strong> engine. This means "objectively reading reality" holds on no time axis — the brain is always telling a self-consistent story.</div></details>
+
+<details><summary>3. The self-narrative rests on reconstructable memory — how does this echo Buddhist "no-self / vijñāna"?</summary><div>Autobiographical memory is the bedrock of "who I am," yet it is itself a continually rebuilt construct — resonating with the Buddhist view of memory and habit as <strong>saṃskāra</strong> (formations) and of the self-narrative as dependently arisen rather than a substance; "impermanence and no-self" gain a concrete cognitive-science footnote. But this needn't lead to nihilism: seeing the plasticity of the self-narrative can instead let a person <strong>loosen their grip</strong> on rigid identities and old trauma stories.</div></details>
+
+<details><summary>4. Can the reconsolidation window be used therapeutically — to rewrite the emotional load of a trauma memory?</summary><div>This is an active research direction. A memory is briefly unstable after retrieval, so in that window one might in principle "rewrite" its emotional intensity (reconsolidation blockade, and possibly part of the EMDR mechanism, may relate to this). The promise: not erasing the content, but <strong>offloading its painful charge</strong>. It also raises an ethical boundary: how far should we allow the rewriting of a real memory? Memory is both a burden and part of identity.</div></details>
+
+<details><summary>5. How will the digital age's external memory (photos, chat logs, lifelogs) change human memory?</summary><div>There's tension between precise external records and internally constructed memory. Intriguingly, taking a photo itself impairs firsthand memory of the moment (the <strong>photo-taking impairment effect</strong>) — we outsource "remembering" to the device and thus remember less; and the photo then replaces and reshapes our memory of that moment. For anyone pursuing an "AI super-individual," this is a real question: does offloading memory to AI strengthen self-continuity, or hand over the authorship of "who I am" along with it?</div></details>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Index</a></nav>
+
+</div>
+</body></html>
