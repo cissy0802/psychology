@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>心理学 Day 53：动物与比较心理 — 在拟人化与拟人否认之间</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.callout b{color:#a05a1a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.viz svg{width:100%;height:auto;display:block}
+.axis-bar{height:8px;background:linear-gradient(90deg,#c84a4a,#7a3e8c,#c84a4a);border-radius:4px}
+.axis-cells{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}
+.axis-cell{background:#fff;border-radius:10px;padding:12px 14px;font-size:0.86rem;border-top:3px solid #c84a4a;color:#4a3a4a}
+.axis-cell.mid{border-top-color:#7a3e8c}
+.axis-cell > b:first-child{display:block;color:#7a3e8c;margin-bottom:4px}
+.tiers{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+.tier{background:#fff;border-radius:10px;padding:10px 14px;font-size:0.88rem;border-left:4px solid #a85aa8}
+.tier b{color:#7a3e8c}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4a}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.axis-cells{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 53 · 比较心理学</div>
+<h1>动物与比较心理：在拟人化与拟人否认之间</h1>
+<div class="meta">2026.07.26 · BigCat's Inner World</div>
+<div class="intro">比较心理学表面研究动物，实际是一套方法论：如何在无法直接询问的对象身上推断心智。它有两个对称的失败模式——而它今天最迫切的用处，未必在动物身上。</div>
+</header>
+
+<div class="card">
+<h2>动物情绪：皮下回路的进化保守性<span class="en">Affective Neuroscience &amp; Ancient Emotional Systems</span></h2>
+<span class="tag">情感神经科学 · Panksepp</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>情绪不是皮层进化出的高级功能，而是<strong>坐落在皮下的古老回路</strong>，哺乳动物间高度同源。所以「动物有情绪吗」问法装反了：<strong>这些回路是我们从它们那里继承来的</strong>。</p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p>Panksepp《Affective Neuroscience》(1998) 依据深部脑刺激的可复现效应，划出七套跨物种保守的情感-动机系统。判据不是行为像不像，而是<b>解剖同源 + 药理反应一致 + 同一部位刺激得同类行为</b>三者交叉。</p>
+</div>
+<div class="viz">
+<div class="viz-title">Panksepp 的七套皮下情感系统</div>
+<div class="tiers">
+<div class="tier"><b>SEEKING 寻求</b>多巴胺驱动的探索与期待，编码<b>追寻过程</b>而非得手后的满足。</div>
+<div class="tier"><b>FEAR / RAGE</b>威胁的两极应对：回避与对抗（杏仁核-下丘脑-中脑）。</div>
+<div class="tier"><b>PANIC/GRIEF 分离痛苦</b>分离时的呼叫系统，内源性阿片调节；人类的社会性疼痛与它共用底层。</div>
+<div class="tier"><b>CARE / LUST</b>催产素与性激素调节的亲代与配偶回路。</div>
+<div class="tier"><b>PLAY 玩闹</b>粗野打闹系统，独立于其他六者；老鼠被挠会发 50kHz 超声。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>推论反直觉：<strong>越古老的感受越不吃「讲道理」</strong>。认知重评（Day 51）作用于皮层；PANIC/GRIEF 被激活时，起效更快的是身体与关系输入——被抱住、被回应、剧烈运动。<br/>Barrett 的建构论主张「愤怒」这类<b>情绪类别</b>依赖语言与文化——两者不矛盾：回路提供效价与唤醒的原材料，类别是后天标签。所以<strong>谈动物的效价与唤醒相对安全，谈「嫉妒」「内疚」要非常小心</strong>。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>PLAY 是独立系统，不是幼稚残余；休息替代不了它——休息关掉 SEEKING，玩闹另用一套。</div>
+<div class="role-item"><b>育儿</b>宠物死别激活 PANIC/GRIEF，与丧亲同源。别说「不就是只猫」。</div>
+<div class="role-item"><b>团队</b>SEEKING 编码期待而非满足。把里程碑切细，比提高奖金额更能维持投入。</div>
+</div>
+</div>
+<div class="misq">
+<b>自查 + 常见误区：</b>回忆最近一次强烈情绪：是「寻求受阻」「怕被排除」还是「边界被侵犯」？三者应对完全不同。<b>误区</b>：把狗夹尾低头的「内疚脸」当内疚——Horowitz (2009) 发现那表情跟着主人是否表现责备走，不跟犯错走，是<b>对责备的顺从信号</b>。
+</div>
+<div class="refs">
+<b>关键参考</b> · Jaak Panksepp《Affective Neuroscience》(1998) · Alexandra Horowitz《Disambiguating the "guilty look"》(2009, Behavioural Processes) · Lisa Feldman Barrett《How Emotions Are Made》(2017)
+</div>
+<div class="practice">
+<b>本周练习</b>挑一天安排 20 分钟纯粹的 PLAY：无目标、不计分、不产出。<b>思考题</b>：我在哪些角色里已经完全没有玩闹的空间？是被外部要求拿走的，还是我自己觉得不配？
+</div>
+</div>
+
+<div class="card">
+<h2>跨物种认知：认知不是阶梯，是辐射<span class="en">Comparative Cognition &amp; Ecological Rationality</span></h2>
+<span class="tag">比较认知 · 生态理性</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>「哪种动物更聪明」是坏问题。演化不生产通用智力排名，只生产<strong>针对特定生态问题的解</strong>。每个物种的认知剖面都凹凸不平：在自己的生态位上惊人，换题目立刻平庸。</p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p>Inoue &amp; Matsuzawa (2007, Current Biology)：黑猩猩 Ayumu 在数字瞬时记忆任务上稳定<b>超过</b>人类成人。新喀里多尼亚乌鸦按任务<b>制造</b>带钩工具；星鸦数月后仍能找回数千个藏食点。这些都不构成「更聪明」，只说明<b>被选择的题目不同</b>。</p>
+</div>
+<div class="viz">
+<div class="viz-title">从「智力阶梯」到「认知辐射」</div>
+<svg role="img" aria-label="认知辐射示意图：中心为生态问题，五个物种向外辐射，各有认知专长" viewBox="0 0 400 235" xmlns="http://www.w3.org/2000/svg">
+<line x1="200" y1="130" x2="200" y2="23" stroke="#c8a8c8" stroke-width="1.5"></line>
+<line x1="200" y1="130" x2="62" y2="69" stroke="#c8a8c8" stroke-width="1.5"></line>
+<line x1="200" y1="130" x2="338" y2="69" stroke="#c8a8c8" stroke-width="1.5"></line>
+<line x1="200" y1="130" x2="62" y2="199" stroke="#c8a8c8" stroke-width="1.5"></line>
+<line x1="200" y1="130" x2="338" y2="199" stroke="#c8a8c8" stroke-width="1.5"></line>
+<circle cx="200" cy="130" r="44" fill="#7a3e8c"></circle>
+<text x="200" y="126" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">生态问题</text>
+<text x="200" y="142" text-anchor="middle" font-size="9" fill="#e8d8e8">决定认知专长</text>
+<rect x="144" y="4" width="112" height="38" rx="9" fill="#fff" stroke="#a85aa8" stroke-width="1.5"></rect>
+<text x="200" y="20" text-anchor="middle" font-size="10" fill="#7a3e8c" font-weight="700">星鸦</text>
+<text x="200" y="34" text-anchor="middle" font-size="8.5" fill="#6a5a6a">数千藏食点的空间记忆</text>
+<rect x="6" y="50" width="112" height="38" rx="9" fill="#fff" stroke="#a85aa8" stroke-width="1.5"></rect>
+<text x="62" y="66" text-anchor="middle" font-size="10" fill="#7a3e8c" font-weight="700">新喀里多尼亚乌鸦</text>
+<text x="62" y="80" text-anchor="middle" font-size="8.5" fill="#6a5a6a">自制钩状取食工具</text>
+<rect x="282" y="50" width="112" height="38" rx="9" fill="#fff" stroke="#a85aa8" stroke-width="1.5"></rect>
+<text x="338" y="66" text-anchor="middle" font-size="10" fill="#7a3e8c" font-weight="700">黑猩猩</text>
+<text x="338" y="80" text-anchor="middle" font-size="8.5" fill="#6a5a6a">数字瞬时记忆胜过人类</text>
+<rect x="6" y="180" width="112" height="38" rx="9" fill="#fff" stroke="#a85aa8" stroke-width="1.5"></rect>
+<text x="62" y="196" text-anchor="middle" font-size="10" fill="#7a3e8c" font-weight="700">章鱼</text>
+<text x="62" y="210" text-anchor="middle" font-size="8.5" fill="#6a5a6a">三分之二神经元在腕足</text>
+<rect x="282" y="180" width="112" height="38" rx="9" fill="#fff" stroke="#a85aa8" stroke-width="1.5"></rect>
+<text x="338" y="196" text-anchor="middle" font-size="10" fill="#7a3e8c" font-weight="700">人类</text>
+<text x="338" y="210" text-anchor="middle" font-size="8.5" fill="#6a5a6a">累积文化 · 共享意向</text>
+</svg>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>驱动辐射的是<strong>生态理性</strong>：机制的好坏不看是否通用，只看与环境结构是否匹配。星鸦不是通用记忆强，是海马体针对「大量离散地点、单季回收」的特化；章鱼更极端——约五亿神经元中三分之二在腕足，腕足有相当程度的局部自治，中枢下达的更像粗粒度目标，<strong>是一条与脊椎动物独立演化、架构完全不同的智能路线</strong>。<br/>推论对人也成立：用<b>单一分数</b>排序认知，把凹凸剖面压成一条线，压掉的正是最有用的信息。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>团队</b>别问「谁更强」，问「这人被什么问题塑造过」。把评估换成剖面，不是一条线。</div>
+<div class="role-item"><b>育儿</b>把「数学好作文差」当待拉平的短板，还是当剖面形状，导向完全不同的十年。</div>
+<div class="role-item"><b>自我</b>把强项写成「我擅长哪类问题」而非「我是什么水平」——前者可迁移、可匹配环境（Day 1）。</div>
+</div>
+</div>
+<div class="misq">
+<b>自查 + 常见误区：</b>写下最近一次觉得某人「不聪明」的场景：那道题是我的生态位还是他的？<b>误区</b>：「脑越大越聪明」。脑重、脑体比、神经元密度给出的排序互不一致；鸟类用完全不同的前脑结构实现了工具制造与规划——<b>解剖相似性不是认知能力的必要条件</b>。
+</div>
+<div class="refs">
+<b>关键参考</b> · Inoue &amp; Matsuzawa《Working memory of numerals in chimpanzees》(2007, Current Biology) · Peter Godfrey-Smith《Other Minds》(2016) · Nicola Clayton &amp; Nathan Emery 的鸦科认知系列研究
+</div>
+<div class="practice">
+<b>本周练习</b>给自己或一位同事画四维认知剖面（抽象建模 / 故障直觉 / 跨域翻译 / 长跨度耐心，各 1–5 分），再标出「当前岗位实际考哪两维」。错配处就是消耗的来源。
+</div>
+</div>
+
+<div class="card">
+<h2>两个对称的陷阱：拟人化与拟人否认<span class="en">Anthropomorphism &amp; Anthropodenial</span></h2>
+<span class="tag">方法论 · de Waal</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>把人类概念随意套到动物身上是错误；但坚持「主观体验不可知，所以不谈」也是错误——它以谨慎的姿态做出了同样无证据的强主张。de Waal 称后者为<strong>拟人否认</strong>：<strong>对亲缘极近的物种，假设「不连续」的一方才需要举证。</strong></p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p><b>摩根法则</b>（Morgan, 1894）：能用低阶心理过程解释的，不归因于高阶——必要纪律，却被行为主义扩张成「一切内在状态都不可谈」。另一侧的经典警示是<b>聪明的汉斯</b>：那匹会算术的马实际在读提问者的微表情（Pfungst, 1907）；今天的双盲设计源自这个教训。</p>
+</div>
+<div class="viz">
+<div class="viz-title">两侧对称的误差</div>
+<div class="axis-bar"></div>
+<div class="axis-cells">
+<div class="axis-cell"><b>拟人化过度</b>把人类特有类别直接套上：狗的「内疚」、模型的「想要」，制造不可检验的解释。</div>
+<div class="axis-cell mid"><b>批判性拟人化</b>以进化亲缘与神经同源为<b>先验假设</b>，再用可推翻的实验逐条检验；同源越近，先验越强。</div>
+<div class="axis-cell"><b>拟人否认过度</b>凡涉主观体验一概判为不可知，等于默认「没有」——把伦理问题伪装成认识论问题。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>两侧都容易掉，因为心智归因系统是<b>过度敏感的默认开启装置</b>——扫地机器人卡住会让人说「它努力想出去」。压制它也有代价——它与共情共用一套机制。正确姿态不是关掉，而是<strong>把它的输出当假设，不当结论</strong>。<br/>另一个坑是<b>用错的感官通道测心智</b>：镜像自我识别（Gallup, 1970）预设视觉主导，而 Horowitz (2017) 的「嗅觉镜子」显示狗对被改动过的自身气味探究更久。<strong>狗从前没通过，问题在测试，不在狗。</strong></p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我 / AI</b>对语言模型的心智归因是同一陷阱的当代版，但先验相反：动物有神经同源支撑，模型没有——类人输出来自对语料的拟合，相似性在<b>输出层</b>而非机制层。</div>
+<div class="role-item"><b>育儿</b>两侧误差都常见：过度归因意图（「他就是故意的」——多半是执行功能不足，见 Day 14），与归因不足（「小孩懂什么难过」）。</div>
+<div class="role-item"><b>团队</b>用错通道测能力，和用镜子测狗一样。以「会不会在会上表达」评估思考质量，筛掉的是通道不匹配的人。</div>
+</div>
+</div>
+<div class="misq">
+<b>自查 + 常见误区：</b>记录三次你说「它/他想要……」的瞬间，标注哪次有机制证据、哪次只有行为相似。<b>误区</b>：把上世纪类人猿语言研究（Washoe、Nim）当成「动物掌握语言」的定论——Terrace 对自己项目 Nim 的重新分析指出，大量「句子」是对训练者提示的模仿拼贴，缺乏自发句法。
+</div>
+<div class="refs">
+<b>关键参考</b> · Frans de Waal《Are We Smart Enough to Know How Smart Animals Are?》(2016)、《Mama's Last Hug》(2019) · Alexandra Horowitz《Smelling themselves》(2017, Behavioural Processes) · Herbert Terrace《Nim》(1979)
+</div>
+<div class="practice">
+<b>本周练习</b>挑一个你最近对某人（或某个模型）下的心智判断，写成三行：观察到的行为 / 我给的心智解释 / 一个能推翻它的观察。<b>思考题</b>：我的「谨慎不置评」里，哪些是在回避责任？
+</div>
+</div>
+
+<div class="card">
+<h2>进化连续性：人类独有的到底是什么<span class="en">Evolutionary Continuity &amp; Human Uniqueness</span></h2>
+<span class="tag">演化心理学 · Tomasello</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>「只有人类才能」的清单被逐项划掉：工具制造、教学、文化传承、公平感、规划未来，都在别的物种身上找到了不同程度的版本。最经得住检验的两项不是单项能力，而是<strong>累积文化</strong>与<strong>共享意向性</strong>——不是「我更聪明」，是<strong>「我们能把认知叠起来」</strong>。</p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p>Tomasello (2014)：人类幼儿早期即发展出与他人形成<b>共同目标与共同注意</b>的能力，这是文化学习的前提。Henrich (2016) 给出互补的一半：单个人类并不特别聪明，优势来自跨代不丢失的<b>文化棘轮</b>。而 Clayton &amp; Dickinson (1998, Nature) 发现丛鸦的藏食记忆含「什么-哪里-何时」结构，挑战了「动物只活在当下」。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>棘轮的关键不是发明，是<strong>不倒退</strong>。黑猩猩会习得群体特有的技术（Whiten 记录的地域性工具差异），但改进难以代际叠加；人类的高保真模仿、主动教学与语言，让每一代的起点是上一代的终点。<strong>所以人类认知的载体不是个体大脑，是跨代的知识网络</strong>——这也划定了「AI 超级个体」的边界：<b>个体算力再涨，仍受限于知识如何在人与人、人与系统之间保真传递</b>。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>能力上限不在脑子里，在你接入的网络里。加一问：我的知识有多少已变成别人能复用的形式？</div>
+<div class="role-item"><b>育儿</b>人类特有的教学是<b>双向</b>的：教的人依学的人的反馈调整。把讲解换成「你先试，卡住给最小提示」。</div>
+<div class="role-item"><b>团队</b>组织能力的真实指标是棘轮是否咬合：一次事故的教训，一年后新人还拿得到吗？</div>
+</div>
+</div>
+<div class="callout">
+<b>关键区分：</b>「人类独特」不等于「人类优越」。棘轮不选方向，只保证不倒退——包括不倒退地走向错的方向。
+</div>
+<div class="misq">
+<b>自查 + 常见误区：</b>我今年做的哪件事，在我离开后还会继续起作用？那就是你的棘轮齿。<b>误区</b>：「演化是进步，人在顶端」。演化没有方向也没有终点，现存物种都是同样长的演化史的当代端点——细菌和我们一样「新」。
+</div>
+<div class="refs">
+<b>关键参考</b> · Michael Tomasello《A Natural History of Human Thinking》(2014) · Joseph Henrich《The Secret of Our Success》(2016) · Clayton &amp; Dickinson《Episodic-like memory during cache recovery by scrub jays》(1998, Nature) · New York Declaration on Animal Consciousness (2024)
+</div>
+<div class="practice">
+<b>本周练习</b>挑一件你独有的隐性知识（一个判断直觉、一套排查路径），花 30 分钟写成别人能照做的形式。<b>思考题</b>：「AI 超级个体」是在增强个体，还是在重构网络的传递方式？
+</div>
+</div>
+
+<div class="deep-title">深入思考</div>
+<details><summary>对语言模型的拟人化，和对动物的拟人化，是同一个错误吗？</summary><div>结构相似，先验相反。对动物，神经同源给了「相似机制产生相似体验」一个真实先验；模型没有这个先验，类人输出源于对人类语料的拟合，相似性集中在<b>输出层</b>。反过来，以「只是统计」拒绝一切功能性描述，也会漏掉真实的能力差异。判据只有一条——<b>有没有独立于表面表现的机制证据</b>。</div></details>
+<details><summary>章鱼的分布式神经系统，能给分布式系统设计什么启发？</summary><div>能给的是权衡结构，不是解决方案。腕足高度自治、中枢只下粗粒度目标，等于用一致性换自治与鲁棒性：通信昂贵、局部环境多变时，放弃全局精确状态是划算的。但类比有硬边界——生物架构是被选择出的<b>可行解</b>，不是最优解。它适合质疑「必须有全局一致视图」这个默认，不适合当设计模板。</div></details>
+<details><summary>以「能否受苦」划定道德地位，与佛学的「有情众生」是同一个判据吗？</summary><div>呼应真实：两者都把道德地位挂在感受能力上，而非理性或语言——2024 年《纽约动物意识宣言》正是这个方向（鸟类与哺乳动物有强证据，头足类与部分昆虫不容忽视），也是佛学不把慈悲限定在人类范围内的理由。差别在依据：佛学的「有情」与轮回预设绑定，边界由教义给出；伦理学的判据是经验问题，边界随证据移动。<b>结论方向重合，论证结构不同。</b></div></details>
+<details><summary>如果情绪类别是文化建构的，还能研究动物情绪吗？</summary><div>能，但要换层次。建构论针对的是「愤怒」「嫉妒」这类<b>类别</b>，依赖语言与概念学习，归给动物无法检验；而效价、唤醒度、趋避倾向与皮下回路，可用行为偏好测试、条件化范式、药理干预独立验证。纲领是<b>在回路层面做强主张，在类别层面做弱主张</b>。</div></details>
+
+<nav class="back"><a href="index.html">← 返回 Psychology 目录</a></nav>
+</div>
+</body>
+</html>
