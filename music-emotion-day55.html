@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>心理学 Day 55：音乐与情绪心理 — 你听的是声音，感动的是预测</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.callout b{color:#a05a1a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.matrix-cell{background:#fff;border:2px solid #e8d8e8;border-radius:10px;padding:12px 14px;font-size:0.86rem;color:#4a3a4a}
+.matrix-cell.bad{border-color:#e8b0b0}
+.matrix-cell.good{border-color:#a85aa8}
+.matrix-cell > b:first-child{display:block;color:#7a3e8c;margin-bottom:4px;font-size:0.84rem}
+.axis-note{font-size:0.8rem;color:#8a6a8a;text-align:center;margin-top:10px}
+.bar-row{display:flex;align-items:center;margin-bottom:10px;font-size:0.88rem}
+.bar-label{width:104px;color:#5a4a5a;font-weight:600;flex-shrink:0}
+.bar-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.76rem;font-weight:600;white-space:nowrap}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4a}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:80px;font-size:0.8rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 55 · 音乐心理学</div>
+<h1>音乐与情绪心理：你听的是声音，感动的是预测</h1>
+<div class="meta">2026.07.28 · BigCat's Inner World</div>
+<div class="intro">音乐不指称任何东西，却能可靠地让人落泪、起鸡皮疙瘩、想起十五岁的夏天。这不是玄学——它是预测系统、奖赏回路与记忆编码共同作用的可测现象，是心理学少数能把「审美」搬进实验室的入口。</div>
+</header>
+
+
+<div class="card">
+<h2>音乐为何动人：预期、误差与奖赏<span class="en">Musical Expectancy &amp; Predictive Reward</span></h2>
+<span class="tag">音乐认知 · 预测加工</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>音乐没有语义、不指向任何事物，却能稳定引发强烈情绪。最有解释力的答案是：听音乐时大脑在<strong>持续预测下一个音</strong>，作曲者操纵的是预测何时被满足、何时被推迟。感动你的不是声音，是<strong>预测误差被安全地制造与解决</strong>。</p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p>Meyer (1956) 提出「预期受阻产生情绪」，Huron (2006) 将其形式化。Salimpoor 与 Zatorre (2011) 发现：高潮<strong>之前的期待期</strong>与<strong>高潮瞬间</strong>分别在尾状核与伏隔核释放多巴胺——首次证明抽象的、非生物必需的刺激能调动与食物、成瘾物质同一条奖赏回路。2013 年的后续显示，伏隔核对陌生曲目的反应可预测被试愿花多少钱买它，取决于它与听觉皮层已有模板的连接强度。</p>
+</div>
+<div class="viz">
+<div class="viz-title">预测何时被解决 → 情绪结果</div>
+<div class="matrix">
+<div class="matrix-cell"><b>可预测、立即解决</b>流畅舒适但峰值低——好背景音乐，也是听腻的原因。</div>
+<div class="matrix-cell good"><b>推迟后解决</b>悬置和声、渐强、鼓点延后——期待期的多巴胺在此累积。</div>
+<div class="matrix-cell good"><b>违背但事后合理</b>转调、意外和弦：先惊讶，随即被重新理解——战栗多发于此。</div>
+<div class="matrix-cell bad"><b>持续违背、无法解决</b>模型始终对不上，唤醒无处落地——就是「难听」。</div>
+</div>
+<div class="axis-note">落在哪一格取决于听者的统计模型——「好听」是关系，不是属性</div>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>听觉系统是一台统计学习机器：听过的音乐塑造了「接下来该出现什么」的概率模型。<strong>命中</strong>带来流畅感，<strong>被违背又被优雅解决</strong>带来奖赏峰值。关键变量是安全：预测误差在音乐里没有真实代价，大脑才敢把留给危险的唤醒系统开到最大。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b><b>要专注</b>用极熟悉、无人声的曲目（预测误差低，不抢资源）；<b>要情绪启动</b>用陌生但风格熟悉的曲目。方向选反是最常见的失误。</div>
+<div class="role-item"><b>团队</b>会前音乐设定的是唤醒水平：发散讨论前用节奏中等的陌生曲；要收敛决策时，安静优于任何背景乐。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>练习：找一首让你有过明显反应的曲子，标出那一瞬的秒数，问：发生了什么<strong>音乐事件</strong>？人声进入？转调？突然安静？多数人的感动点集中在一两类事件上——那是你预测模型的指纹。</p>
+</div>
+<div class="misq">
+<b>常见误区：</b>把「我喜欢的音乐更高级」当审美判断。偏好主要由暴露史决定，复杂度与喜爱度呈倒 U 型，曲线随熟悉度右移。
+</div>
+<div class="refs">
+<b>关键参考</b> · David Huron《Sweet Anticipation》(2006) · Salimpoor &amp; Zatorre (2011, Nature Neuroscience) · Salimpoor et al. (2013, Science)
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>挑一首没听过、但属于你熟悉风格的曲子完整听一遍，不做别的事。<b>思考题：</b>你「听懂」某类音乐的那刻，是先喜欢，还是先熟悉？
+</div>
+</div>
+
+<div class="card">
+<h2>起鸡皮疙瘩：一次可测量的奖赏峰值<span class="en">Musical Chills / Frisson</span></h2>
+<span class="tag">情绪神经科学 · 个体差异</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>音乐性战栗（chills）不是修辞，而是皮肤电、心率、脑活动同时可测的生理事件，是研究审美快感最好的抓手。它的<strong>个体差异极大</strong>：有人每周多次，也有约 3–5% 的人从不发生。</p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p>Blood &amp; Zatorre (2001, PNAS) 用被试自选的曲子发现：战栗强度与眶额皮层、腹侧纹状体活动正相关，与<strong>杏仁核活动负相关</strong>——奖赏上升的同时威胁系统下降。战栗频率与 Big Five 的<strong>开放性</strong>稳定相关（Nusbaum &amp; Silvia, 2011），与外向性无关；Sachs 等 (2016) 发现高战栗者的听觉皮层与内侧前额叶间白质纤维更密。另一端是<strong>特异性音乐快感缺失</strong>：其他奖赏正常，唯独音乐不带来快感。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>触发事件相当固定：突然的响度变化、意外和声、人声进入，共同点是<strong>违背预期 + 立刻被解决</strong>。竖毛反应本是哺乳类应对寒冷与威胁的古老反射，被音乐「劫持」——它是进化上的<strong>副产品</strong>。杏仁核下调是关键：同样的刺激缺乏安全感时会变成恐惧。这与敬畏（Day 34）同构：威胁下调，自我边界松动。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>战栗少不代表「感受力差」。有用的问法是：<b>什么刺激</b>让你有类似反应——文字？代码的优雅？一个证明？那才是你的奖赏通道。</div>
+<div class="role-item"><b>关系</b>不要求伴侣在同一处被打动。音乐快感缺失是真实表型，不是冷漠。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>练习：一周内记录每次战栗的曲目、秒数与音乐事件类型。三次以上就能看出模式——你被打动的是<strong>结构</strong>，不是「好听」这种笼统评价。</p>
+</div>
+<div class="misq">
+<b>常见误区：</b>(1) 把「听歌会哭」当情绪不稳的证据——它与神经质无关，与开放性相关。(2) 把 ASMR 与音乐战栗当同一现象——两者的触发物、时程与脑区并不重合。
+</div>
+<div class="refs">
+<b>关键参考</b> · Blood &amp; Zatorre (2001, PNAS) · Nusbaum &amp; Silvia《Shivers and Timbres》(2011) · Sachs, Ellis, Schlaug &amp; Loui (2016, SCAN) · Mas-Herrero et al. 关于 specific musical anhedonia 的系列研究
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>建一份「战栗歌单」，只放真触发过生理反应的曲子（多数人凑不满 10 首）。<b>思考题：</b>其中反复出现的是什么音乐事件？像不像你在别处被打动的方式？
+</div>
+</div>
+
+<div class="card">
+<h2>音乐与记忆：为什么老歌能打开整段人生<span class="en">Music-Evoked Autobiographical Memory</span></h2>
+<span class="tag">记忆 · 老化</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>音乐是已知最强的自传记忆触发器之一，而它唤起的记忆<strong>分布极不均匀</strong>：青春期到成年早期听过的歌，记忆密度远高于其他时期。阿尔茨海默病中音乐记忆的保存也真实存在，但常被过度演绎。</p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p>Janata (2009) 发现内侧前额叶皮层同时追踪音乐的调性结构与被唤起的自传记忆，是「歌—记忆」绑定的枢纽。Krumhansl &amp; Zupnick (2013) 发现<strong>级联式怀旧高峰</strong>：年轻被试对<strong>父母</strong>青春期的音乐也出现次级高峰，说明它部分由暴露而非年龄决定。Jacobsen 等 (2015) 显示，编码长期音乐记忆的脑区在阿尔茨海默病中受损较轻——这解释了「话说不出来但歌还能唱」。</p>
+</div>
+<div class="viz">
+<div class="viz-title">自传记忆密度：歌曲初次接触的年龄段（相对强度）</div>
+<div class="bar-row"><div class="bar-label">0–9 岁</div><div class="bar-track"><div class="bar-fill" style="width:22%">低</div></div></div>
+<div class="bar-row"><div class="bar-label">10–19 岁</div><div class="bar-track"><div class="bar-fill" style="width:92%">峰值</div></div></div>
+<div class="bar-row"><div class="bar-label">20–29 岁</div><div class="bar-track"><div class="bar-fill" style="width:72%">次高</div></div></div>
+<div class="bar-row"><div class="bar-label">30–49 岁</div><div class="bar-track"><div class="bar-fill" style="width:38%">明显下降</div></div></div>
+<div class="bar-row"><div class="bar-label">50 岁以后</div><div class="bar-track"><div class="bar-fill" style="width:26%">低</div></div></div>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>不是「那时候的歌更好」。三个因素叠加：<strong>身份形成期</strong>的经验编码更深，因为它们参与定义「我是谁」；那阶段首次经验密集；反复共听强化了提取路径。音乐的特殊之处是<strong>同时携带时间结构、情绪与运动模式</strong>。但它提取的记忆更完整、情绪更强，<strong>并不因此更准确</strong>（Day 44）。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>用歌单做定向回忆：复盘某段经历前先放当时听的音乐十分钟，可提取的细节会明显增多。</div>
+<div class="role-item"><b>照护</b>陪伴认知退化的长辈，选<b>他本人</b>十几到二十几岁时的歌，而不是「经典老歌」这种笼统类别。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>练习：列出 3 首能立刻唤起<strong>具体场景</strong>（不是笼统情绪）的歌，写下你当时几岁。多数人落在十几到二十几岁——那就是你的怀旧高峰。</p>
+</div>
+<div class="misq">
+<b>常见误区：</b>「莫扎特效应」。Pietschnig 等 (2010) 的元分析纳入近 40 项研究，效应量趋近于零；最初的结果可由<strong>唤醒与心境提升</strong>解释（Thompson &amp; Schellenberg）。学乐器与认知的相关也主要由家庭背景与自选择解释——学音乐值得，但别用错理由。
+</div>
+<div class="refs">
+<b>关键参考</b> · Janata (2009, Cerebral Cortex) · Krumhansl &amp; Zupnick (2013, Psychological Science) · Jacobsen et al. (2015, Brain) · Pietschnig, Voracek &amp; Formann《Mozart effect–Shmozart effect: A meta-analysis》(2010, Intelligence)
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>为一位长辈整理一份「他十几到二十几岁时的歌单」，一起听一次。<b>思考题：</b>如果一段旋律能随机打开你的一段记忆，你希望是哪段？为什么是它？
+</div>
+</div>
+
+<div class="card">
+<h2>音乐治疗：证据在哪里强，在哪里弱<span class="en">Music Therapy: The Evidence Map</span></h2>
+<span class="tag">临床证据 · 节律夹带</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>「音乐治疗」不是一件事，而是一组差别巨大的干预，混为一谈是最常见的误读。节律刺激改善帕金森步态的证据相当扎实，音乐降低术后疼痛与焦虑有稳定的中小效应，而「改善痴呆患者<strong>认知</strong>」基本不成立。</p>
+</div>
+<div class="section">
+<span class="label">研究基础</span>
+<p>Hole 等 (2015, The Lancet) 对 73 项 RCT 的元分析显示，围手术期播放音乐显著降低术后疼痛、焦虑与镇痛药用量，患者麻醉时仍有效应。Cochrane 痴呆综述 (van der Steen 等, 2018) 则谨慎：对抑郁与行为问题可能有小到中等改善，对认知证据不足。另一条强证据是<strong>节律听觉刺激</strong>（RAS）：Thaut 等显示外部稳定节拍能改善帕金森病与卒中后的步速与步幅对称性。</p>
+</div>
+<div class="viz">
+<div class="viz-title">不同用途的证据强度（粗略分级）</div>
+<div class="bar-row"><div class="bar-label">术后疼痛焦虑</div><div class="bar-track"><div class="bar-fill" style="width:88%">大样本 RCT 元分析</div></div></div>
+<div class="bar-row"><div class="bar-label">帕金森步态</div><div class="bar-track"><div class="bar-fill" style="width:80%">机制清晰、重复性好</div></div></div>
+<div class="bar-row"><div class="bar-label">抑郁辅助</div><div class="bar-track"><div class="bar-fill" style="width:58%">有 RCT，样本偏小</div></div></div>
+<div class="bar-row"><div class="bar-label">痴呆情绪行为</div><div class="bar-track"><div class="bar-fill" style="width:46%">小到中等，异质性大</div></div></div>
+<div class="bar-row"><div class="bar-label">痴呆认知</div><div class="bar-track"><div class="bar-fill" style="width:14%">证据不足</div></div></div>
+<div class="bar-row"><div class="bar-label">提升智力</div><div class="bar-track"><div class="bar-fill" style="width:6%">已被元分析否定</div></div></div>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>这些效应不共享同一机制，所以不能一概而论。RAS 靠<strong>听觉—运动耦合</strong>：听觉与辅助运动区的连接极快且不经意识，外部节拍相当于给受损的内部计时器加一个「外挂」，绕开基底节。术后镇痛靠的是注意分配与自主神经唤醒下降。抑郁与痴呆中的音乐治疗则大量依赖<strong>关系与非语言表达</strong>，治疗师在场本身就是活性成分。另外，人类的<strong>集体同步</strong>本身就有效：共同音乐活动后，4 岁儿童的自发助人显著增加 (Kirschner &amp; Tomasello, 2010)。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>把音乐当工具而非氛围：<b>启动身体</b>用略快于当前步频的稳定节拍；<b>降唤醒</b>用慢于心率、无歌词、动态小的曲目。</div>
+<div class="role-item"><b>育儿</b>孩子写作业时听<b>带歌词</b>的音乐会损害阅读理解（语音通道冲突），纯器乐影响小得多。这不是纪律问题，是通道占用。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>练习：建三份<strong>功能歌单</strong>——启动、专注、降唤醒，各不超过 8 首，一周只用它们，看是否比随机播放可靠。歌单的价值在于<strong>可预测</strong>，别频繁换曲。</p>
+</div>
+<div class="misq">
+<b>常见误区：</b>(1) 把「我听了感觉好多了」当治疗证据——个人体验与临床有效性是两个层级。(2) 以为音乐治疗就是「放点音乐」：它的核心是受训治疗师与结构化目标，与被动播放（music medicine）是两回事。
+</div>
+<div class="refs">
+<b>关键参考</b> · Hole et al.《Music as an aid for postoperative recovery in adults》(2015, The Lancet) · van der Steen et al., Cochrane Review (2018) · Thaut 关于 rhythmic auditory stimulation 的系列研究 · Patel《Music, Language, and the Brain》(2008) · Kirschner &amp; Tomasello (2010)
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>选一件你反复拖延的<strong>身体性</strong>任务，配一段固定 BPM 的纯器乐，音乐一响就开始。<b>思考题：</b>你那些「动不了」的时刻，缺的是动机，还是一个外部节拍？
+</div>
+</div>
+
+<div class="deep-title">深入思考</div>
+<details><summary>音乐引发的情绪，有多少是普遍的，多少是文化学习的？</summary><div>答案是分层的。Fritz 等对几乎未接触西方音乐的喀麦隆 Mafa 族的研究显示，他们对快乐、悲伤、恐惧的识别高于随机——提示<strong>低层声学线索</strong>（速度、响度、音色粗糙度）有跨文化基础，很可能与语音韵律同源。但<strong>高层结构</strong>依赖学习：大调等于快乐并不普遍。所以可迁移的是机制，不是曲目。</div></details>
+<details><summary>音乐的奖赏为何存在——是适应，还是「听觉奶酪蛋糕」？</summary><div>Pinker 的副产品说主张音乐搭了语言、听觉与奖赏系统的便车；Patel、Dunbar 一侧指出集体音乐的社会同步与群体凝聚可能构成独立的选择压力。目前无法判决——音乐不留化石，普遍性证据两边都能解释。可操作的区分是：若纯属副产品，音乐能力的遗传结构应完全嵌套于语言与听觉之内；现有证据显示存在部分独立成分。</div></details>
+<details><summary>若美感来自「可解的预测误差」，这对审美意味着什么？</summary><div>直接推论是：审美不是对象的属性，而是<strong>对象与观者模型之间的关系</strong>。它给出可检验预测——专业度提升把最优复杂度往右推，专家需要更大的预测误差才能获得同等愉悦，与倒 U 曲线随熟悉度右移一致。风险是它过于强大，几乎任何现象都能事后解释；要成为科学，得给出<strong>会失败</strong>的预测。</div></details>
+<details><summary>AI 生成的音乐会削弱音乐的情绪力量吗？</summary><div>从预测编码看不会：感动来自结构，与来源无关，盲听下 AI 音乐可触发同样的生理反应。但音乐还有第二个价值来源——它是<strong>他人心智存在的证据</strong>，涉及意图归因，这解释了为什么「被告知是 AI 作曲」会改变评价却不改变声音。由此可预测：AI 音乐能在情绪唤醒上追平，在意义感与重听意愿上落后。</div></details>
+
+<nav class="back"><a href="index.html">← 返回 Psychology 目录</a></nav>
+</div>
+</body>
+</html>

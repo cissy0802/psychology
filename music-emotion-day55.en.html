@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Psychology Day 55: Music &amp; Emotion — You Hear Sound, You're Moved by Prediction</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.callout b{color:#a05a1a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.matrix-cell{background:#fff;border:2px solid #e8d8e8;border-radius:10px;padding:12px 14px;font-size:0.86rem;color:#4a3a4a}
+.matrix-cell.bad{border-color:#e8b0b0}
+.matrix-cell.good{border-color:#a85aa8}
+.matrix-cell > b:first-child{display:block;color:#7a3e8c;margin-bottom:4px;font-size:0.84rem}
+.axis-note{font-size:0.8rem;color:#8a6a8a;text-align:center;margin-top:10px}
+.bar-row{display:flex;align-items:center;margin-bottom:10px;font-size:0.88rem}
+.bar-label{width:120px;color:#5a4a5a;font-weight:600;flex-shrink:0}
+.bar-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.72rem;font-weight:600;white-space:nowrap}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4a}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:92px;font-size:0.8rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 55 · MUSIC PSYCHOLOGY</div>
+<h1>Music &amp; Emotion: You Hear Sound, You're Moved by Prediction</h1>
+<div class="meta">2026.07.28 · BigCat's Inner World</div>
+<div class="intro">Music refers to nothing, yet it reliably brings tears, chills, and the summer you were fifteen. This isn't mysticism — it's a measurable product of prediction, reward circuitry, and memory encoding, and one of the few doorways psychology has for taking aesthetics into the lab.</div>
+</header>
+
+<div class="card">
+<h2>Why Music Moves Us: Expectancy, Error, Reward<span class="en">Musical Expectancy &amp; Predictive Reward</span></h2>
+<span class="tag">Music Cognition · Predictive Processing</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Music has no semantics and points at nothing, yet it reliably produces strong emotion. The most explanatory account: while listening, your brain is <strong>continuously predicting the next note</strong>, and what the composer manipulates is when those predictions get satisfied and when they get delayed. What moves you isn't the sound — it's <strong>prediction error being generated and resolved in safety</strong>.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Meyer (1956) proposed that blocked expectation produces emotion; Huron (2006) formalized it. Salimpoor and Zatorre (2011) found that the <strong>anticipation period before a peak</strong> and the <strong>peak itself</strong> release dopamine in the caudate and nucleus accumbens respectively — the first demonstration that an abstract, biologically non-essential stimulus recruits the same reward circuit as food and addictive drugs. Their 2013 follow-up showed that accumbens response to <em>unfamiliar</em> tracks predicts how much money listeners will pay for them, and depends on its connectivity with templates already stored in auditory cortex.</p>
+</div>
+<div class="viz">
+<div class="viz-title">When the Prediction Resolves → Emotional Outcome</div>
+<div class="matrix">
+<div class="matrix-cell"><b>Predictable, resolves at once</b>Smooth and comfortable but low peak — good background music, and the reason you tire of it.</div>
+<div class="matrix-cell good"><b>Resolves after delay</b>Suspended harmony, crescendo, a late drum entry — anticipatory dopamine accumulates here.</div>
+<div class="matrix-cell good"><b>Violated but justified</b>Key change, unexpected chord: surprise, then re-understanding — chills cluster in this cell.</div>
+<div class="matrix-cell bad"><b>Violated with no resolution</b>The model never locks on, arousal has nowhere to land — this is what "bad music" means.</div>
+</div>
+<div class="axis-note">Which cell a piece lands in depends on the listener's statistical model — "good" is a relation, not a property</div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>The auditory system is a statistical learning machine: everything you've heard shapes a probability model of what should come next. <strong>Hits</strong> feel fluent; <strong>violations that are then elegantly resolved</strong> produce the reward peak. The critical variable is safety: in music, prediction error carries no real cost, so the brain can push the arousal system it normally reserves for danger all the way up.</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b><b>To focus</b>, use deeply familiar instrumental tracks (low prediction error, no resource competition); <b>to prime emotion</b>, use unfamiliar pieces in a familiar style. Getting this backwards is the common error.</div>
+<div class="role-item"><b>Team</b>Pre-meeting music sets arousal level: unfamiliar mid-tempo material before divergent discussion; for convergent decisions, silence beats any background track.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Misreadings</span>
+<p>Exercise: take a track that has visibly affected you, mark the timestamp of that moment, and ask what <strong>musical event</strong> occurred there. Vocal entry? Key change? Sudden silence? Most people find their moving points cluster in one or two event types — that's the fingerprint of your prediction model.</p>
+</div>
+<div class="misq">
+<b>Common misreading:</b> treating "the music I like is more sophisticated" as an aesthetic judgment. Preference is largely set by exposure history; complexity and liking follow an inverted U, and that curve shifts right with familiarity.
+</div>
+<div class="refs">
+<b>Key references</b> · David Huron, <i>Sweet Anticipation</i> (2006) · Salimpoor &amp; Zatorre (2011, Nature Neuroscience) · Salimpoor et al. (2013, Science)
+</div>
+<div class="practice">
+<b>This Week + A Question</b>Pick one track you've never heard but in a style you know well, and listen to it end to end doing nothing else. <b>Question:</b> the moment you "got" a genre — did liking come first, or familiarity?
+</div>
+</div>
+
+<div class="card">
+<h2>Chills: A Measurable Reward Peak<span class="en">Musical Chills / Frisson</span></h2>
+<span class="tag">Affective Neuroscience · Individual Differences</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Musical chills are not a figure of speech but a physiological event measurable in skin conductance, heart rate, and brain activity at once — which makes them the best handle we have on aesthetic pleasure. Their <strong>individual variation is enormous</strong>: some people get them weekly, and roughly 3–5% never do.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Blood &amp; Zatorre (2001, PNAS), using listener-selected music, found chill intensity correlated positively with orbitofrontal and ventral striatal activity and <strong>negatively with amygdala activity</strong> — reward rising as the threat system stands down. Chill frequency correlates stably with Big Five <strong>Openness</strong> (Nusbaum &amp; Silvia, 2011) and not with Extraversion; Sachs et al. (2016) found denser white-matter tracts between auditory cortex and medial prefrontal regions in high-chill responders. At the other end sits <strong>specific musical anhedonia</strong>: other rewards work normally, music alone produces no pleasure.</p>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>The triggering events are quite fixed: a sudden loudness change, an unexpected harmony, a voice entering — all sharing the structure <strong>expectation violated + immediately resolved</strong>. Piloerection itself is an ancient mammalian reflex for cold and threat, hijacked by music: an evolutionary <strong>byproduct</strong>, not a function selected for music. The amygdala downshift is the key — the same stimulus, without safety, becomes fear. This is structurally the same as awe (Day 34): threat down, self-boundaries loosened.</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Few chills doesn't mean "low sensitivity." The useful question is: <b>what kind of stimulus</b> does this to you — prose? elegant code? a proof? That's your reward channel.</div>
+<div class="role-item"><b>Relationship</b>Don't require a partner to be moved at the same bar. Musical anhedonia is a real phenotype, not coldness.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Misreadings</span>
+<p>Exercise: for one week, log every chill — track, timestamp, and the type of musical event at that point. Three entries are enough to see the pattern: what moves you is <strong>structure</strong>, not the vague verdict "good song."</p>
+</div>
+<div class="misq">
+<b>Common misreadings:</b> (1) Treating crying at music as evidence of emotional instability — it's unrelated to Neuroticism and related to Openness. (2) Filing ASMR and musical chills as one phenomenon — their triggers, time course, and associated regions don't overlap.
+</div>
+<div class="refs">
+<b>Key references</b> · Blood &amp; Zatorre (2001, PNAS) · Nusbaum &amp; Silvia, <i>Shivers and Timbres</i> (2011) · Sachs, Ellis, Schlaug &amp; Loui (2016, SCAN) · Mas-Herrero et al. on specific musical anhedonia
+</div>
+<div class="practice">
+<b>This Week + A Question</b>Build a "chills playlist" containing only tracks that have actually produced a physical response (most people can't reach ten). <b>Question:</b> which musical event recurs across them — and does it resemble how you're moved elsewhere?
+</div>
+</div>
+
+<div class="card">
+<h2>Music &amp; Memory: Why an Old Song Opens a Whole Era<span class="en">Music-Evoked Autobiographical Memory</span></h2>
+<span class="tag">Memory · Aging</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Music is among the strongest known triggers of autobiographical memory, and the memories it evokes are <strong>very unevenly distributed</strong>: songs first heard from adolescence into early adulthood carry far higher memory density than any other period. The relative sparing of musical memory in Alzheimer's disease is also real — and routinely oversold.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Janata (2009) found that medial prefrontal cortex tracks a piece's tonal structure and the autobiographical memory it evokes at the same time — the hub binding song to memory. Krumhansl &amp; Zupnick (2013) documented a <strong>cascading reminiscence bump</strong>: young listeners show a secondary peak for music from their <strong>parents'</strong> adolescence, indicating the bump is set partly by exposure rather than age alone. Jacobsen et al. (2015) showed that regions encoding long-term musical memory are relatively less damaged in Alzheimer's — which explains "can't find the words, can still sing the song."</p>
+</div>
+<div class="viz">
+<div class="viz-title">Autobiographical Memory Density by Age at First Exposure (relative)</div>
+<div class="bar-row"><div class="bar-label">Ages 0–9</div><div class="bar-track"><div class="bar-fill" style="width:22%">low</div></div></div>
+<div class="bar-row"><div class="bar-label">Ages 10–19</div><div class="bar-track"><div class="bar-fill" style="width:92%">peak</div></div></div>
+<div class="bar-row"><div class="bar-label">Ages 20–29</div><div class="bar-track"><div class="bar-fill" style="width:72%">second highest</div></div></div>
+<div class="bar-row"><div class="bar-label">Ages 30–49</div><div class="bar-track"><div class="bar-fill" style="width:38%">clear decline</div></div></div>
+<div class="bar-row"><div class="bar-label">Age 50+</div><div class="bar-track"><div class="bar-fill" style="width:26%">low</div></div></div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>It isn't that the music was better then. Three factors stack: experiences in the <strong>identity-forming period</strong> encode more deeply because they help define who you are; first-time experiences are dense in that window; and repeated shared listening strengthens retrieval routes. What's distinctive about music is that it <strong>carries temporal structure, emotion, and motor pattern at once</strong>. But note: memories music retrieves are fuller and more emotional — and <strong>no more accurate for it</strong> (Day 44).</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Use playlists for targeted recall: before reviewing a period of your life, play the music from that period for ten minutes first — retrievable detail rises noticeably.</div>
+<div class="role-item"><b>Caregiving</b>With an elder in cognitive decline, choose the music of <b>their own</b> teens and twenties, not a vague category like "old classics."</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Misreadings</span>
+<p>Exercise: list 3 songs that instantly summon a <strong>specific scene</strong> (not a vague mood) and note how old you were. Most people land in their teens and twenties — that's where your own reminiscence bump sits.</p>
+</div>
+<div class="misq">
+<b>Common misreading:</b> the "Mozart effect." The Pietschnig et al. (2010) meta-analysis covering nearly 40 studies puts the effect size near zero; the original result is explained by <strong>arousal and mood elevation</strong> (Thompson &amp; Schellenberg). The correlation between music lessons and cognitive ability is likewise driven mostly by family background and self-selection — learning an instrument is worth it, just not for that reason.
+</div>
+<div class="refs">
+<b>Key references</b> · Janata (2009, Cerebral Cortex) · Krumhansl &amp; Zupnick (2013, Psychological Science) · Jacobsen et al. (2015, Brain) · Pietschnig, Voracek &amp; Formann, <i>Mozart effect–Shmozart effect: A meta-analysis</i> (2010, Intelligence)
+</div>
+<div class="practice">
+<b>This Week + A Question</b>Assemble a playlist from an elder's teens and twenties and listen to it together once. <b>Question:</b> if one melody could open one stretch of your memory at random, which would you want it to be — and why that one?
+</div>
+</div>
+
+<div class="card">
+<h2>Music Therapy: Where the Evidence Is Strong and Where It Isn't<span class="en">Music Therapy: The Evidence Map</span></h2>
+<span class="tag">Clinical Evidence · Rhythmic Entrainment</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>"Music therapy" is not one thing but a set of wildly different interventions, and collapsing them is the standard misreading. Rhythmic stimulation for Parkinsonian gait rests on solid evidence; music for post-operative pain and anxiety has a stable small-to-moderate effect; and "music improves <strong>cognition</strong> in dementia" largely does not hold.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Hole et al. (2015, The Lancet) meta-analyzed 73 RCTs and found perioperative music significantly reduces post-operative pain, anxiety, and analgesic use — with effects present even when patients were under anesthesia. The Cochrane dementia review (van der Steen et al., 2018) is more guarded: possible small-to-moderate improvement in depressive symptoms and behavior, insufficient evidence for cognition. The other strong line is <strong>rhythmic auditory stimulation</strong> (RAS): Thaut and colleagues show that a steady external beat improves gait speed and stride symmetry in Parkinson's disease and after stroke.</p>
+</div>
+<div class="viz">
+<div class="viz-title">Evidence Strength by Use (rough tiers)</div>
+<div class="bar-row"><div class="bar-label">Post-op pain</div><div class="bar-track"><div class="bar-fill" style="width:88%">large RCT meta-analysis</div></div></div>
+<div class="bar-row"><div class="bar-label">Parkinson gait</div><div class="bar-track"><div class="bar-fill" style="width:80%">clear mechanism, replicates</div></div></div>
+<div class="bar-row"><div class="bar-label">Depression adjunct</div><div class="bar-track"><div class="bar-fill" style="width:58%">RCTs, small samples</div></div></div>
+<div class="bar-row"><div class="bar-label">Dementia: mood</div><div class="bar-track"><div class="bar-fill" style="width:46%">small–moderate, heterogeneous</div></div></div>
+<div class="bar-row"><div class="bar-label">Dementia: cognition</div><div class="bar-track"><div class="bar-fill" style="width:14%">insufficient</div></div></div>
+<div class="bar-row"><div class="bar-label">Raising IQ</div><div class="bar-track"><div class="bar-fill" style="width:6%">refuted by meta-analysis</div></div></div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>These effects don't share a mechanism, which is exactly why they can't be lumped together. RAS works through <strong>auditory–motor coupling</strong>: the link from auditory areas to the supplementary motor area is fast and pre-conscious, so a steady external beat acts as an external clock for a damaged internal one, bypassing the basal ganglia. Post-operative analgesia works through attention allocation and reduced autonomic arousal. Music therapy in depression and dementia leans heavily on <strong>relationship and non-verbal expression</strong> — the trained therapist's presence is itself an active ingredient. Separately, <strong>collective synchrony</strong> does real work: after joint music-making, spontaneous helping in 4-year-olds rises sharply (Kirschner &amp; Tomasello, 2010).</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Treat music as a tool, not an atmosphere: <b>to start the body</b>, use a steady beat slightly faster than your current cadence; <b>to lower arousal</b>, use tracks slower than your heart rate, no lyrics, small dynamic range.</div>
+<div class="role-item"><b>Parenting</b>Lyric music during homework impairs reading comprehension (phonological channel conflict); instrumental music does far less damage. This is a channel-occupancy problem, not a discipline problem.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Misreadings</span>
+<p>Exercise: build three <strong>functional playlists</strong> — start, focus, wind-down — of no more than 8 tracks each, use only those for a week, and check whether they beat shuffle. Their value lies in being <strong>predictable</strong>, so don't keep swapping tracks.</p>
+</div>
+<div class="misq">
+<b>Common misreadings:</b> (1) Taking "music made me feel better" as clinical evidence — personal experience and clinical efficacy are claims at different levels. (2) Assuming music therapy means "putting on some music": its core is a trained therapist working toward structured goals, which is a different thing from passive playback (music medicine).
+</div>
+<div class="refs">
+<b>Key references</b> · Hole et al., <i>Music as an aid for postoperative recovery in adults</i> (2015, The Lancet) · van der Steen et al., Cochrane Review (2018) · Thaut on rhythmic auditory stimulation · Patel, <i>Music, Language, and the Brain</i> (2008) · Kirschner &amp; Tomasello (2010)
+</div>
+<div class="practice">
+<b>This Week + A Question</b>Take one <strong>physical</strong> task you keep postponing, pair it with a fixed-BPM instrumental track, and start the moment the music does. <b>Question:</b> in those moments you "can't move," is what's missing motivation — or an external beat?
+</div>
+</div>
+
+<div class="deep-title">Going Deeper</div>
+<details><summary>How much of music's emotional effect is universal, and how much is culturally learned?</summary><div>The answer is layered. Fritz et al. studied the Mafa of Cameroon, who had almost no exposure to Western music, and found above-chance recognition of happiness, sadness, and fear — suggesting <strong>low-level acoustic cues</strong> (tempo, loudness, timbral roughness) have a cross-cultural base, likely shared with vocal prosody. But <strong>higher-level structure</strong> is learned: major equals happy is not universal. What transfers is the mechanism, not the repertoire.</div></details>
+<details><summary>Why does musical reward exist — adaptation, or "auditory cheesecake"?</summary><div>Pinker's byproduct view holds that music free-rides on language, audition, and reward. Patel, Dunbar and others argue that the social synchrony and group cohesion of collective music-making constitute independent selection pressure. It can't currently be adjudicated: music leaves no fossils, and universality evidence fits both stories. One workable test: if music were a pure byproduct, the genetic architecture of musical ability should nest entirely within language and auditory ability — existing evidence suggests partly independent components.</div></details>
+<details><summary>If beauty comes from "resolvable prediction error," what does that say about aesthetics?</summary><div>The direct implication: beauty is not a property of the object but a <strong>relation between the object and the perceiver's model</strong>. That yields testable predictions — expertise pushes optimal complexity rightward, so specialists need larger prediction error for equal pleasure, consistent with the inverted-U curve shifting right with familiarity. The risk is that the framework is too powerful: almost anything can be explained after the fact. To be science rather than metaphor, it has to name predictions that <strong>can fail</strong>.</div></details>
+<details><summary>Will AI-generated music weaken music's emotional power?</summary><div>From a predictive-coding standpoint, no: what moves you is structure, independent of origin, so under blind listening AI music can produce the same physiological response. But music has a second source of value — it is <strong>evidence of another mind</strong>, which involves intention attribution, and that is why "you were told it's AI-composed" changes the evaluation without changing the sound. A prediction follows: AI music will match on arousal measures and lag on felt meaning and long-term relistening.</div></details>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Index</a></nav>
+</div>
+</body>
+</html>
