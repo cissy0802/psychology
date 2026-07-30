@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Psychology Day 56: The Digital Age — It's Not Screen Time, It's What Screens Replace</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.callout b{color:#a05a1a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.matrix-cell{background:#fff;border:2px solid #e8d8e8;border-radius:10px;padding:12px 14px;font-size:0.86rem;color:#4a3a4a}
+.matrix-cell.bad{border-color:#e8b0b0}
+.matrix-cell.good{border-color:#a85aa8}
+.matrix-cell > b:first-child{display:block;color:#7a3e8c;margin-bottom:4px;font-size:0.84rem}
+.axis-note{font-size:0.8rem;color:#8a6a8a;text-align:center;margin-top:10px}
+.bar-row{display:flex;align-items:center;margin-bottom:10px;font-size:0.88rem}
+.bar-label{width:104px;color:#5a4a5a;font-weight:600;flex-shrink:0}
+.bar-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.76rem;font-weight:600;white-space:nowrap}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4a}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:80px;font-size:0.8rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 56 · DIGITAL PSYCHOLOGY</div>
+<h1>The Digital Age: It's Not Screen Time, It's What Screens Replace</h1>
+<div class="meta">2026.07.30 · BigCat's Inner World</div>
+<div class="intro">One camp says phones destroyed a generation; the other says the data show no effect at all. Both are pressing the same wrong question — is it harmful? — onto a phenomenon that can only be answered in layers. This issue separates three things: how strong the evidence is, which mechanism is doing the work, and which interventions actually operate.</div>
+</header>
+
+
+<div class="card">
+<h2>Social Media &amp; Mental Health: A Fight About Effect Sizes<span class="en">The Effect-Size Debate</span></h2>
+<span class="tag">Developmental Psychology · Evidence Appraisal</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Across samples of hundreds of thousands, the correlation between social media use and adolescent well-being is only <strong>r ≈ −0.04</strong> — under 0.4% of the variance. But a small average can also mean <strong>positive and negative effects cancelling out</strong>. The question worth asking isn't whether it harms, but <strong>whom it harms, and under which pattern of use</strong>.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Orben &amp; Przybylski (2019) ran specification curve analysis (exhausting every defensible analytic path to see whether a conclusion holds) across three datasets and roughly 350,000 participants: the negative association is counterintuitively small (see below). Haidt's <em>The Anxious Generation</em> (2024) argues smartphones are the main cause of the post-2012 decline in adolescent mental health; Odgers' review in Nature counters on three points: cross-national trends don't line up, co-moving time series can't establish causation, and part of the clinical rise reflects changes in help-seeking and diagnostic practice.</p>
+</div>
+<div class="viz">
+<div class="viz-title">Strength of negative association with adolescent well-being (relative, after Orben &amp; Przybylski 2019)</div>
+<div class="bar-row"><div class="bar-label">Being bullied</div><div class="bar-track"><div class="bar-fill" style="width:92%">strongest</div></div></div>
+<div class="bar-row"><div class="bar-label">Sleep loss</div><div class="bar-track"><div class="bar-fill" style="width:80%">strong</div></div></div>
+<div class="bar-row"><div class="bar-label">Social media</div><div class="bar-track"><div class="bar-fill" style="width:26%">very small</div></div></div>
+<div class="bar-row"><div class="bar-label">Wearing glasses</div><div class="bar-track"><div class="bar-fill" style="width:16%">very small</div></div></div>
+<div class="bar-row"><div class="bar-label">Eating potatoes</div><div class="bar-track"><div class="bar-fill" style="width:6%">near zero</div></div></div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Three variables explain far more than duration. <strong>Pattern of use</strong>: passive browsing predicts declining well-being; active interaction is null or even positive (Verduyn et al.). <strong>Displacement</strong>: screens crowd out sleep and face-to-face time, and sleep is the most robust mediator we have. <strong>Content and vulnerability</strong>: appearance-focused and self-harm content is amplified for those already struggling. Which is why "screen time" has no predictive power — it compresses structurally different behaviors into one number.</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Stop tracking how long. Track which bucket: <b>active exchange / passive browsing / creative output</b>. They point in different emotional directions; averaged together they tell you nothing.</div>
+<div class="role-item"><b>Parenting</b>The enforceable rule isn't minutes per day, it's three displacement boundaries: no device in the bedroom, no screens in the hour before sleep, no screens at meals. Managing the mediator beats managing the total.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Errors</span>
+<p>Exercise: screenshot your usage breakdown for three days and tag each app <strong>A (active exchange) / P (passive browsing) / C (creating)</strong>. Most people find P above 70% while their impression was "socializing" — that gap is the intervention point.</p>
+</div>
+<div class="misq">
+<b>Common errors:</b> reading "small effect size" as "no problem" is exactly as common as reading a trend correlation as "causation established." One more trap: most studies rely on <strong>self-reported</strong> use, which correlates only moderately with objective logs (about r≈0.4).
+</div>
+<div class="refs">
+<b>Key sources</b> · Orben &amp; Przybylski (2019, Nature Human Behaviour) · Haidt, <em>The Anxious Generation</em> (2024) and Odgers' Nature review · Verduyn et al. (2017) · Parry et al. (2021, meta-analysis of self-report vs logs)
+</div>
+<div class="practice">
+<b>This Week's Practice + Question</b>Do exactly one thing: move the phone out of the bedroom for 7 nights and use a separate alarm clock. <b>Question:</b> if the effect runs mainly through what screens replace, which hour of yours most needs protecting?
+</div>
+</div>
+
+<div class="card">
+<h2>Social Comparison &amp; FOMO: The Comparison Pool Went Infinite<span class="en">Social Comparison &amp; Fear of Missing Out</span></h2>
+<span class="tag">Social Psychology · Self-Determination Theory</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Social comparison isn't a bad habit; it's an <strong>automatic self-evaluation mechanism</strong> (Festinger, 1954) — absent an objective standard, other people are the only available yardstick. Social media didn't change that tendency. It changed three parameters: <strong>the pool became unbounded, the information became asymmetric</strong> (their highlights against all of your reality), and <strong>the dimension of comparison is preset by the platform</strong>.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Przybylski et al. (2013) first quantified FOMO and found the key thing: people high in FOMO report lower satisfaction of the three basic needs — <strong>autonomy, competence, relatedness</strong>. FOMO looks more like an <strong>indicator</strong> of thwarted needs (self-determination theory, Deci &amp; Ryan) than a character flaw. Beyens and Valkenburg (2020), using intensive longitudinal sampling, found that the same platform affects different adolescents in <strong>opposite directions</strong>.</p>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>The core is a self-sustaining loop: when autonomy and competence run low, you lean harder on external metrics to locate yourself → more scrolling → more upward comparison → needs more thwarted. So this is not a willpower problem, it's a <strong>motivational-structure</strong> problem. It separates from envy (Day 35): envy targets a person, FOMO targets <strong>the possibility you didn't choose</strong>. Buddhism has a precise name for this species of suffering: <strong>conceit</strong> (māna) — not vanity, but any self-location on the axis of better-than / worse-than / equal-to. The <strong>decentering</strong> trained in mindfulness aims exactly there.</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Don't unfollow individuals; unfollow <b>a whole dimension</b> (e.g. "peer achievement broadcasts"). The comparison pool is designable; any given person is just a sample from a dimension.</div>
+<div class="role-item"><b>Team</b>Public individual rankings externalize the competence need: short-term throughput, long-term motivation loss. If you must publish something, publish team progress and each person's progress <b>relative to themselves</b>.</div>
+<div class="role-item"><b>Parenting</b>When a child says "everyone else has one," don't evaluate the sentence — ask "what do you think you'd miss without it?" That unpacks vague FOMO back into a specific relatedness need, which can often be met another way.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Errors</span>
+<p>Reflection: think of last week's most uncomfortable scroll. <strong>What dimension was being compared?</strong> Did you choose it, or did the platform choose it for you? Most people discover they lost on a dimension they never actually claimed.</p>
+</div>
+<div class="misq">
+<b>Common errors:</b> (1) "Just don't compare" is useless advice — comparison is automatic; only the target and the dimension are controllable. (2) Treating FOMO as a youth phenomenon: the adult version is called industry anxiety, same mechanism, different dimension.
+</div>
+<div class="refs">
+<b>Key sources</b> · Festinger, <em>A Theory of Social Comparison Processes</em> (1954) · Przybylski, Murayama, DeHaan &amp; Gladwell (2013) · Beyens et al. (2020, Scientific Reports)
+</div>
+<div class="practice">
+<b>This Week's Practice + Question</b>Run a dimension audit: write down which dimensions the last 20 emotionally charged posts belonged to, then unfollow <strong>every</strong> source feeding one of them. <b>Question:</b> if no one could see your output, would you still do it?
+</div>
+</div>
+
+<div class="card">
+<h2>The Attention Economy: Uncertain Rewards Are the Hardest to Quit<span class="en">Variable Reinforcement</span></h2>
+<span class="tag">Learning Theory · Reward Systems</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Platforms don't optimize your happiness, they optimize your next tap. The strongest mechanism they invoke is Skinner's <strong>variable-ratio reinforcement</strong>: when reward is unpredictable, behavior runs at the highest rate and is the most resistant to extinction. What keeps you scrolling isn't that the content is good — it's that <strong>you don't know what the next item is</strong>.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Reinforcement schedules are among the most replicable findings in behavioral science. Schultz showed that dopamine encodes <strong>reward prediction error</strong>, not pleasure itself; Berridge separated <strong>wanting</strong> from <strong>liking</strong> — carried by different systems and dissociable, which precisely explains "that wasn't enjoyable and I still want more." Leroy (2009) named <strong>attention residue</strong>: switching before completion leaves cognitive load that degrades the next task.</p>
+</div>
+<div class="viz">
+<div class="viz-title">Reinforcement schedule → behavioral signature</div>
+<div class="matrix">
+<div class="matrix-cell"><b>Fixed ratio (every N)</b>Predictable, with a post-reward pause. Easy to stop naturally.</div>
+<div class="matrix-cell bad"><b>Variable ratio (the next one might be good)</b>Highest rate, most extinction-resistant — the structure of infinite scroll, pull-to-refresh, push.</div>
+<div class="matrix-cell good"><b>Extinction (reward reliably absent)</b>Behavior drops fast — which is why making outcomes predictable beats relying on will.</div>
+</div>
+<div class="axis-note">What's actually modifiable isn't willpower — it's reward predictability and the existence of a stopping point</div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Three layers stack. <strong>Variable-ratio reinforcement</strong> supplies an extinction-resistant floor. <strong>Stopping points are removed</strong> — infinite scroll deletes natural boundaries like "the episode ended," and people stop at boundaries, not at timers. <strong>Cues are everywhere</strong> — badges and buzzes trigger wanting without passing through any decision. For deep technical work, attention residue is the expensive part: the cost of "just a quick look" isn't those 30 seconds, it's <strong>rebuilding context</strong>.</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Put the stopping point back: use a <b>fixed count</b> rather than a fixed duration ("ten items," not "ten minutes"), and during deep work leave the phone in another room rather than face-down on the desk.</div>
+<div class="role-item"><b>Team</b>@-mentions and read-receipt expectations are a team-level source of variable-ratio reinforcement. A written response norm (non-urgent within four hours) lowers everyone's sustained vigilance at once — better than any amount of individual discipline.</div>
+<div class="role-item"><b>Parenting</b>Give children content with a <b>built-in ending</b> (an episode, a level, a book) rather than an infinitely scrolling feed. The reinforcement structures differ, and that matters more than total minutes.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Errors</span>
+<p>Exercise: for one day, count the unlocks where you <strong>can't recall the purpose</strong> (both mobile systems report unlock counts). That number reflects cue-driven behavior far better than screen time, and it responds faster to environmental changes.</p>
+</div>
+<div class="misq">
+<b>Common errors:</b> (1) "Dopamine detox" is not a scientific concept — dopamine doesn't deplete and needs no reset; the only active ingredient in those protocols is reduced cue exposure. (2) Blaming low self-control: variable-ratio reinforcement is engineered to resist extinction, so this is an environment-design problem. Explaining it via ego depletion doesn't work either — that model failed large multi-lab replication.
+</div>
+<div class="refs">
+<b>Key sources</b> · B. F. Skinner on reinforcement schedules · Wolfram Schultz on dopamine and reward prediction error · Kent Berridge on the wanting/liking dissociation · Sophie Leroy, <em>Why is it so hard to do my work?</em> (2009, OBHDP)
+</div>
+<div class="practice">
+<b>This Week's Practice + Question</b>Take your most frequent app and turn off <strong>all</strong> of its notifications for 7 days. <b>Question:</b> the last time deep focus broke, was the real loss those few minutes — or rebuilding the context?
+</div>
+</div>
+
+<div class="card">
+<h2>Digital Detox: What Works Was Never Going Offline<span class="en">Digital Detox: What Actually Works</span></h2>
+<span class="tag">Intervention Evidence · Behavior Design</span>
+<div class="section">
+<span class="label">Core Insight</span>
+<p>Treating the phone as a toxin and abstinence as purification is the wrong model. RCTs show full deactivation does yield measurable benefit, but the <strong>effect is small and comes with real losses</strong>. Targeted structural changes have a better return — kill notifications, delete the single worst platform, no device in the bedroom — and they're far easier to sustain.</p>
+</div>
+<div class="section">
+<span class="label">Research Base</span>
+<p>Allcott et al. (2020, AER) randomly deactivated Facebook for nearly 3,000 people for four weeks: subjective well-being rose slightly, political polarization fell, and usage stayed lower long after the study — but the well-being gain was a small fraction of a psychotherapy-sized effect. Hunt et al. (2018) capped each platform at 10 minutes a day and saw loneliness and depression fall over three weeks. Vanman et al. (2018), though, found that a week off lowered cortisol <strong>and</strong> lowered life satisfaction — cutting the platform also cut a genuine social function.</p>
+</div>
+<div class="viz">
+<div class="viz-title">Intervention vs evidence and sustainability (rough grading)</div>
+<div class="bar-row"><div class="bar-label">No bedroom device</div><div class="bar-track"><div class="bar-fill" style="width:88%">clear sleep-mediated mechanism</div></div></div>
+<div class="bar-row"><div class="bar-label">Kill non-human alerts</div><div class="bar-track"><div class="bar-fill" style="width:76%">directly cuts interruptions</div></div></div>
+<div class="bar-row"><div class="bar-label">Delete one platform</div><div class="bar-track"><div class="bar-fill" style="width:60%">RCT-backed, small effect</div></div></div>
+<div class="bar-row"><div class="bar-label">Dopamine detox</div><div class="bar-track"><div class="bar-fill" style="width:8%">pseudo-concept</div></div></div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>The active ingredient isn't "less screen," it's three specific things: <strong>sleep restored, high-bandwidth face-to-face contact restored, cue density lowered</strong>. That explains why detox results are so uneven — freed time without a replacement activity usually gets filled by another form of passive consumption. The goal is to <strong>trade passive consumption for active connection</strong>, not for blankness.</p>
+</div>
+<div class="section">
+<span class="label">Applying It</span>
+<div class="roles">
+<div class="role-item"><b>Self</b>Run a <b>notification audit</b> instead of a detox: sort alerts into three kinds — a person is addressing me / the system must inform me / a platform is bidding for me. Keep only the first.</div>
+<div class="role-item"><b>Relationships</b>Set a device-free window (say, the half hour after dinner) rather than banning an app. Phubbing does its damage at the relational level, so the rule belongs there too.</div>
+<div class="role-item"><b>Parenting</b>Put the rule on <b>location</b>: devices charge in the living room. Adults follow it too — modeling outweighs regulation.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Self-Assessment + Common Errors</span>
+<p>Exercise: list every app that can push to you and ask of each — <strong>if this arrived four hours late, would there be a real cost?</strong> Turn off every "no." Most people silence over 80% and can't remember a week later what they turned off.</p>
+</div>
+<div class="misq">
+<b>Common errors:</b> (1) Treating abstinence as moral purification — it easily becomes a new source of self-criticism and raises relapse (contrast Day 6, self-compassion). (2) Assuming less use is automatically better: what matters is <strong>what it was replaced with</strong>.
+</div>
+<div class="refs">
+<b>Key sources</b> · Allcott, Braghieri, Eichmeyer &amp; Gentzkow, <em>The Welfare Effects of Social Media</em> (2020, AER) · Hunt et al., <em>No More FOMO</em> (2018) · Vanman, Baker &amp; Tobin (2018) · Roberts &amp; David (2016)
+</div>
+<div class="practice">
+<b>This Week's Practice + Question</b>After the notification audit, assign the freed time <strong>one concrete replacement action</strong> (not "scroll less" but "read ten pages of paper before bed"). <b>Question:</b> the use you want to cut — what function is it performing for you: relaxing, connecting, or avoiding?
+</div>
+</div>
+
+<div class="deep-title">Going Deeper</div>
+<details><summary>What evidence would actually settle the Haidt–Odgers dispute?</summary><div>Not more cross-sectional correlations, but three kinds: <strong>quasi-natural experiments</strong> (exogenous variation from broadband rollout or staggered platform launches), <strong>individual-level high-frequency longitudinal data</strong> (experience sampling plus objective logs), and <strong>preregistered stratified analyses of high-risk subgroups</strong>. The real disagreement isn't the size of the overall effect but whether heterogeneity has been averaged away — for policy, a near-zero mean means blanket bans buy little; for an individual, the mean carries no information at all.</div></details>
+<details><summary>Is "mindfulness against the attention economy" a real correspondence, or packaging?</summary><div>The real layer: what <strong>sati</strong> trains is precisely metacognitive monitoring of attention and decentering from content — the same layer of mechanism as attention residue and cue-driven automaticity. The packaging layer: stripping it of its ethical context and selling it as an output-boosting tool, which is exactly what Purser's McMindfulness critique targets. Mindfulness changes your relationship to the impulse; it <strong>does not change the environment's reinforcement structure</strong>, and only design does that.</div></details>
+<details><summary>Do known-network platforms and public platforms run the same comparison machinery?</summary><div>No, and this is the field's weakest spot. Public platforms mean comparison against anonymous optima: unbounded pool, no cost to leaving. Known networks (family threads, class groups) offer fewer comparison targets but carry high social cost — not replying is read as a relational signal, and exiting is itself punished. So "use less and you'll feel better," derived from Western public-platform samples, may simply not transfer.</div></details>
+<details><summary>Where do generative AI and AI companionship push this machinery?</summary><div>Recommender systems are limited by existing content; generative systems can customize without limit, which in principle raises the ceiling on variable-ratio reinforcement. But they also supply an experiment that can adjudicate between models: if the harm comes mainly from <strong>social comparison</strong>, highly personalized AI content (no comparable other) should reduce it; if it comes mainly from <strong>displacement and cue-driven use</strong>, it will make things worse. That experiment is running now.</div></details>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Index</a></nav>
+</div>
+</body>
+</html>
