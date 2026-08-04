@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>心理学 Day 61：PTSD 与复杂创伤 — 不是记忆太多，是记忆没归档</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
+.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #d8b8d8;border-radius:10px;padding:14px;font-size:0.88rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+.bar-row{display:flex;align-items:center;margin-bottom:10px;font-size:0.88rem}
+.bar-label{width:132px;color:#5a4a5a;font-weight:600;flex-shrink:0;font-size:0.82rem;line-height:1.4}
+.bar-track{flex:1;height:22px;background:#e8d8e8;border-radius:11px;position:relative;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#a85aa8,#7a3e8c);border-radius:11px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:0.76rem;font-weight:600}
+.viz-note{font-size:0.82rem;color:#8a6a8a;text-align:center;margin-top:10px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4a}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:104px;font-size:0.76rem}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 61 · 创伤心理学</div>
+<h1>PTSD 与复杂创伤：不是记忆太多，是记忆没归档</h1>
+<div class="meta">2026.08.04 · BigCat's Inner World</div>
+<div class="intro">Day 8 讲创伤留在身体里，Day 52 讲韧性。这期补上中间最需要精确的一块：何时是障碍、何时是正常反应，复杂创伤差在哪，哪些疗法真有证据。</div>
+</header>
+<!-- 概念 1: PTSD 的诊断与机制 -->
+<div class="card">
+<h2>PTSD：记忆丢了时间坐标<span class="en">Post-Traumatic Stress Disorder</span></h2>
+<span class="tag">临床心理学 · 神经机制</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>核心异常不是「记得太清楚」，是<strong>创伤记忆没被正常归档</strong>。普通记忆带着「那是去年、在那里、已经结束」的标签，创伤记忆保留了极高强度的感官细节却丢了时间坐标。所以被触发时它不以「回忆」出现，而以<strong>「正在发生」</strong>出现——ICD-11 干脆把这点写进了标准（<em>in the here and now</em>）。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>三个脑区失衡。<strong>杏仁核</strong>在极端唤起下编码增强，把感官碎片与威胁牢牢绑定；同一水平的应激激素却<strong>损害海马</strong>——而海马正是打「何时何地」标签的结构：强度写入，坐标丢失。事后<strong>腹内侧前额叶</strong>对杏仁核的抑制减弱，消退学习学不牢，一个提示音就能重新点着整套反应。两个反直觉的发现：Yehuda 测到患者<strong>皮质醇偏低而非偏高</strong>；Gilbertson 等 (2002) 的越战双胞胎研究中，未参战的同卵双胞胎海马同样偏小——<strong>小海马是易感因素，不只是结果</strong>。</p>
+</div>
+<div class="viz">
+<div class="viz-title">DSM-5 的四组症状：缺一组不构成诊断</div>
+<div class="matrix">
+<div class="matrix-cell"><b>侵入</b>闪回、噩梦、被提示物击中时的生理反应</div>
+<div class="matrix-cell"><b>回避</b>躲开相关的人、地点、话题、内部感受</div>
+<div class="matrix-cell"><b>认知心境负性改变</b>「都是我的错」「哪都不安全」、麻木</div>
+<div class="matrix-cell"><b>唤起反应性改变</b>过度警觉、易惊跳、易怒、睡眠受损</div>
+</div>
+<div class="viz-note">四组都在 · 超过 1 个月 · 造成功能损害 —— 三条同时满足才是诊断</div>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>分清「想起」和「重历」：想起时你知道自己在回忆，重历时身体以为事情正在发生。后者反复出现才是信号。</div>
+<div class="role-item"><b>育儿</b>学龄儿童的创伤反应常是退行、重复性游戏、躯体主诉、突然对抗，而非讲述。别按「没说就是没事」判断。</div>
+<div class="role-item"><b>团队</b>事故或裁员后有人易怒、迟到，先假设是唤起失调而非态度问题。降低不可预测性比开动员会有效。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>工具：<strong>PCL-5</strong>（20 题，美国退伍军人事务部公开发布），31–33 分常作为需进一步评估的参考线。它是筛查，<strong>不是诊断</strong>。</p>
+<div class="misq">
+<b>常见误区：</b>把「经历过可怕的事」等同于「有创伤」。事件是暴露，障碍是反应模式：美国终身患病率约 6%–8%，<strong>绝大多数暴露不发展为障碍</strong>。
+</div>
+</div>
+<div class="refs">
+<b>关键参考</b> · APA《DSM-5-TR》· WHO《ICD-11》6B40 · Gilbertson et al. (2002, Nature Neuroscience) · Yehuda &amp; LeDoux (2007, Neuron)
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>挑一个反复出现的强烈情绪场景，写三行：触发提示、身体先做了什么、当时你相信的那句话。<b>思考题：</b>你有没有一个反应，强度明显超出眼前事件的量级？
+</div>
+</div>
+<!-- 概念 2: 复杂创伤 -->
+<div class="card">
+<h2>复杂创伤：受损的不是记忆，是自我组织<span class="en">Complex PTSD (ICD-11)</span></h2>
+<span class="tag">诊断分类 · 发展性创伤</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>ICD-11（2018）首次把<strong>复杂性 PTSD</strong> 列为独立诊断。它不是「更严重的 PTSD」，而是在 PTSD 三簇之外<strong>多了一整块自我组织损伤</strong>（DSO，见下表）。一个人可以闪回很少却完全符合 CPTSD——损伤在基线，不在记忆回放。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>差异来自创伤的<strong>形态</strong>而非强度。单次、可逃离的事件（车祸、灾害）主要损伤记忆加工；<strong>长期、反复、无法逃离且发生在关系内部</strong>的创伤（童年虐待与忽视、长期家暴）则命中依恋系统与自我概念的形成期，被塑造的是三条基线：情绪调节的默认幅度、自我价值的默认设定、「亲密是否安全」的默认预期——正是 Day 2 与 Day 20 的汇合点。<strong>争议要摆明</strong>：DSM-5 未采纳 CPTSD，理由是与边缘型人格障碍区分度不足；van der Kolk 的「发展性创伤障碍」提案同样被拒。</p>
+</div>
+<div class="viz">
+<div class="viz-title">PTSD 与 CPTSD：共享三簇，多出三簇</div>
+<div class="matrix">
+<div class="matrix-cell"><b>共享：再体验</b>创伤以「此刻正在发生」重现</div>
+<div class="matrix-cell"><b>共享：回避</b>躲开相关提示与内部体验</div>
+<div class="matrix-cell"><b>共享：当前威胁感</b>过度警觉，随时准备应对</div>
+<div class="matrix-cell"><b>多出：情绪调节失调</b>爆发或麻木，很难回基线</div>
+<div class="matrix-cell"><b>多出：消极自我概念</b>「我根本没价值」，弥漫且稳定</div>
+<div class="matrix-cell"><b>多出：关系困难</b>回避亲密，或在靠近与推开间震荡</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>若困难更多是「情绪上来收不回」「总觉得自己不配」而非闪回，该找的是 CPTSD 方向的资源，不是单纯暴露疗法。</div>
+<div class="role-item"><b>关系</b>忽近忽远不是操纵——靠近本身会激活威胁系统。可预测性（说到做到、不突然消失）比热烈表达更有修复力。</div>
+<div class="role-item"><b>育儿</b>形成条件是「长期＋无法逃离＋发生在关系里」。单次冲突不构成，<strong>长期不可预测的情绪环境才构成</strong>。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>工具：<strong>ITQ 国际创伤问卷</strong>（Cloitre 等），按 ICD-11 结构同时测 PTSD 与 DSO 两块，免费可获取。</p>
+<div class="misq">
+<b>常见误区：</b>把 CPTSD 当成随手可贴的自我标签。诊断的意义是<strong>指向不同的治疗路径</strong>；只用来解释自己为什么难相处，反而固化了「我就是坏掉的」这条 DSO 症状本身。
+</div>
+</div>
+<div class="refs">
+<b>关键参考</b> · Cloitre et al.《ITQ》(2018, Acta Psychiatrica Scandinavica) · Brewin et al. (2017, Clinical Psychology Review) · WHO《ICD-11》6B41
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>对照上表六格各写一句「我最近的例子」，写得最快的那格就是主战场。<b>思考题：</b>你的核心困难更靠近「过去的画面追着我」，还是「我对自己与亲密关系的默认设定」？
+</div>
+</div>
+<!-- 概念 3: 什么真的有效 -->
+<div class="card">
+<h2>治疗证据：哪些真有数据支撑<span class="en">Evidence-Based Treatment</span></h2>
+<span class="tag">循证实践 · 疗效评估</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>一线是<strong>创伤聚焦的心理治疗</strong>，不是药物。APA、ISTSS、美国退伍军人事务部三套独立指南高度一致：PE、CPT、EMDR 证据最强，效应量大。<strong>瓶颈不是疗效而是完成率</strong>——脱落是这些疗法最主要的失败模式。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>有效疗法共享一个活性成分：<strong>在生理上处于安全状态时重新接触创伤记忆，并让新信息进入它</strong>。两条通路：消退学习让 vmPFC 重建对杏仁核的抑制；记忆再巩固——Nader 等 (2000) 证明记忆被提取时会短暂回到可修改状态。<strong>PE</strong> 靠系统化重复暴露拆掉回避；<strong>CPT</strong> 不要求反复讲述细节，改的是「我本可以阻止」这类<strong>卡点信念</strong>。<strong>EMDR</strong> 整体疗效有大量试验支持，但拆解研究反复显示<strong>眼动这一成分的增量贡献很小且不稳定</strong>，起效很可能来自暴露加双任务负荷，而非其理论所称机制。</p>
+</div>
+<div class="viz">
+<div class="viz-title">主流方案的证据强度（依 APA / VA 指南等级近似）</div>
+<div class="bar-row"><div class="bar-label">CPT 认知加工</div><div class="bar-track"><div class="bar-fill" style="width:92%">强推荐 · 一线</div></div></div>
+<div class="bar-row"><div class="bar-label">PE 延长暴露</div><div class="bar-track"><div class="bar-fill" style="width:92%">强推荐 · 一线</div></div></div>
+<div class="bar-row"><div class="bar-label">EMDR</div><div class="bar-track"><div class="bar-fill" style="width:74%">推荐 · 机制有争议</div></div></div>
+<div class="bar-row"><div class="bar-label">SSRI 药物</div><div class="bar-track"><div class="bar-fill" style="width:52%">有条件推荐 · 效应中小</div></div></div>
+<div class="bar-row"><div class="bar-label">瑜伽 / 神经反馈</div><div class="bar-track"><div class="bar-fill" style="width:28%">初步证据 · 辅助</div></div></div>
+<div class="viz-note">舍曲林、帕罗西汀经 FDA 批准，适合无法获得心理治疗或共病抑郁者</div>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>找治疗师时直接问：您用哪种创伤聚焦方案、受过何种训练、几次一疗程。答不出具体名称的换人（承接 Day 28）。</div>
+<div class="role-item"><b>关系</b>陪伴者不是治疗师：稳定在场、不追问细节、不替对方下结论，比任何技巧重要。</div>
+<div class="role-item"><b>团队</b>把「有没有 EAP」变成「EAP 里有没有做 PE／CPT 的人」。资源存在和资源对口是两件事。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>工具：用 PCL-5 每 2–4 周自评一次形成曲线。有效治疗通常 4–6 次内出现可见下降；<strong>连续两个月无变化就该讨论换方案</strong>，而非归因于自己不够努力。</p>
+<div class="misq">
+<b>常见误区：</b>「说出来就会好」。无结构的反复讲述与反刍难以区分，可能强化而非消解记忆。起效的是<strong>结构化暴露与含义更新</strong>；「必须挖出全部细节」也不成立——CPT 几乎不复述细节，疗效照样成立。
+</div>
+</div>
+<div class="refs">
+<b>关键参考</b> · APA《PTSD 临床实践指南》(2017) · ISTSS《成人 PTSD 治疗指南》(2019) · Nader, Schafe &amp; LeDoux (2000, Nature) · Resick《Cognitive Processing Therapy》
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>若在考虑求助，本周只做一件事：查清所在地有哪些人明确受训于 PE 或 CPT，列出三个名字——挡住人的常常不是治疗，是搜索成本。<b>思考题：</b>你对「讲出来才有用」的信念，来自研究还是影视叙事？
+</div>
+</div>
+<!-- 概念 4: 障碍还是正常反应 -->
+<div class="card">
+<h2>什么时候不需要治疗<span class="en">Normal Response vs Disorder</span></h2>
+<span class="tag">流行病学 · 干预时机</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>事件后头几周的闪回、失眠、警觉、麻木<strong>是正常应激反应，不是早期 PTSD</strong>。Bonanno 的轨迹研究反复得到同一结果：人群分化成几条轨迹，占多数的是<strong>韧性轨迹</strong>——症状轻、恢复快、不需治疗。把正常反应当病理处理，本身有代价。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>自然消退需要两个条件：<strong>不被强行阻断</strong>，<strong>不被过早固化</strong>。这解释了本领域最重要的反直觉发现——<strong>单次强制性心理事件报告（CISD debriefing）无效，部分研究还提示可能增加后续症状</strong>，Cochrane 综述的结论是不应作为常规提供。原因有二：生理唤起尚未回落时被要求详述细节，等于在高唤起下再编码一次记忆；统一流程也挤掉了自然的社会支持。因此 NICE 指南对轻症建议 <strong>watchful waiting</strong>：一个月内主动监测而非立即治疗，同时守住睡眠、安全、联结。</p>
+</div>
+<div class="viz">
+<div class="viz-title">重大事件后的四条轨迹（Bonanno；比例随事件类型浮动）</div>
+<div class="bar-row"><div class="bar-label">韧性</div><div class="bar-track"><div class="bar-fill" style="width:88%">多数 · 短暂波动后回基线</div></div></div>
+<div class="bar-row"><div class="bar-label">恢复</div><div class="bar-track"><div class="bar-fill" style="width:40%">明显症状，数月内渐降</div></div></div>
+<div class="bar-row"><div class="bar-label">慢性</div><div class="bar-track"><div class="bar-fill" style="width:22%">持续高症状 · 需治疗</div></div></div>
+<div class="bar-row"><div class="bar-label">延迟</div><div class="bar-track"><div class="bar-fill" style="width:14%">数月后才升高</div></div></div>
+<div class="viz-note">延迟轨迹的存在意味着：一个月时没事，不等于半年时也没事</div>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>事件后一个月内先保睡眠、保安全、保联结，别急着评估自己有没有病。</div>
+<div class="role-item"><b>团队</b>危机后别组织强制性集体倾诉。做三件有证据的事：给准确信息、恢复日程的可预测性、告知何处可得专业帮助且求助不影响评价。</div>
+<div class="role-item"><b>育儿</b>孩子最有效的保护因子是稳定的照料者。别追问细节，维持作息与陪伴；反应超过一个月且影响上学社交，找受训于 TF-CBT 的儿童治疗师。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>四条该找专业人士的红线：<strong>症状超过一个月未减轻</strong>、<strong>工作或亲密关系出现实质损害</strong>、<strong>靠酒精或药物压住反应</strong>、<strong>出现自伤或自杀念头</strong>（最后一条不必等观察期）。</p>
+<div class="misq">
+<b>常见误区：</b>把创伤后成长当成应许。Day 52 说过：PTG 的测量大量依赖回溯性自评，与前后实测变化的对应较弱。成长可能发生，但<strong>它不是创伤的报酬，更不该成为对受创者的期待</strong>。
+</div>
+</div>
+<div class="refs">
+<b>关键参考</b> · Bonanno《Loss, Trauma, and Human Resilience》(2004, American Psychologist) · Rose et al.《Psychological debriefing for preventing PTSD》(Cochrane) · NICE《PTSD 指南 NG116》(2018)
+</div>
+<div class="practice">
+<b>本周练习 + 思考题</b>写下你的「红线清单」发给一位信任的人：满足哪两条时请他直接提醒你去求助——判断力受损时外部触发器比自我觉察可靠。<b>思考题：</b>你所在的组织在危机后做的第一件事，是给信息还是要情绪表达？
+</div>
+</div>
+<div class="deep-title">深入思考</div>
+<details><summary>ICD-11 收录 CPTSD、DSM-5 拒绝，哪边更站得住？</summary><div>争的不是现象是否存在，而是<strong>分类是否增加信息</strong>。ICD-11 的理由是临床效用：它指向不同的治疗排序。DSM-5 的理由是判别效度：DSO 三簇与边缘型人格障碍高度重叠，多一个诊断可能只是换个名字。判据很清楚：若按 CPTSD 分流的疗效系统性优于按 BPD 分流，分类就赚到了信息——这类证据目前仍不足。</div></details>
+<details><summary>多迷走神经理论那么流行，证据够吗？</summary><div>不够，得分层看。Porges 的理论在创伤圈影响极大，但 Grossman 等人对其解剖与比较生理学前提提出了实质批评，进化叙事部分并未获广泛支持。<strong>更稳的表述是：迷走张力与情绪调节的相关有数据，那套具体的进化机制故事是假说而非定论。</strong>同样的分层适用于《身体从未忘记》——强调身体维度是真实贡献，但书中推荐的部分疗法证据等级明显低于 PE／CPT。</div></details>
+<details><summary>正念对创伤人群一律有益吗？</summary><div>不是。让创伤者闭眼向内、长时间关注身体感觉，可能直接撞上闪回或解离——这正是 Treleaven 提出「创伤敏感正念」的原因：换锚点（睁眼、外部声音、脚踩地面）、缩短时长、给明确的中止许可。有意思的是这与佛学原始语境反倒一致：正念从来不是孤立技术，它嵌在戒定慧与僧团结构里，有次第也有人看护。<strong>剥离成一个人的十分钟 App 练习，丢掉的恰恰是那层安全脚手架。</strong></div></details>
+<details><summary>PTSD 这个诊断跨文化通用吗？</summary><div>框架可迁移，表达不通用。标准成型于越战后的美国退伍军人研究，症状清单天然偏向那批人群的表达方式。Devon Hinton 等对柬埔寨难民的研究发现，创伤更多以躯体与文化特异的形式呈现（如 khyâl 发作的头晕、颈部不适），只按标准清单筛查会大量漏诊。这是 WEIRD 样本问题（Day 31）在临床端的后果：<strong>生理机制大概率普适，症状被组织与表达的方式却是文化建构的</strong>。</div></details>
+<nav class="back"><a href="index.html">← 返回 Psychology 目录</a></nav>
+</div>
+</body>
+</html>
