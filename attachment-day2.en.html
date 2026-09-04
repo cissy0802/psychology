@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Psychology Day 2: Attachment Theory — Your Relationship Operating System</title>
+<meta content="#1d150f" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#1d150f;color:#cdc2d1;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
 .container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
-header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d8b8d8}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #563656}
 header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
-header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
-header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
-header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
-.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
-.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+header h1{font-size:1.9rem;font-weight:800;color:#ae72c0;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#987898}
+header .intro{margin-top:22px;font-size:0.96rem;color:#b0a0b0;font-style:italic;padding:0 8px}
+.card{background:#0a0a0a;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(0,0,0,0.08);border-left:4px solid #aa5caa}
+.card h2{font-size:1.32rem;color:#ae72c0;font-weight:700;line-height:1.5}
 .card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
-.tag{display:inline-block;background:#f3e3f3;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.tag{display:inline-block;background:#2b1b2b;color:#ae72c0;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
 .section{margin-top:20px}
-.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
-.section p{font-size:0.97rem;color:#3a2a3a;margin-bottom:8px}
+.section .label{font-weight:700;color:#ae72c0;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#c8b8c8;margin-bottom:8px}
 .roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
-.role-item{background:#fbf3fb;border-radius:10px;padding:12px 14px;font-size:0.92rem}
-.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
-.callout{background:#fff5e8;border-left:3px solid #e89a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a4a3a}
-.misq{background:#fde8e8;border-left:3px solid #c84a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
-.refs{background:#f5edf5;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
-.refs b{color:#7a3e8c}
+.role-item{background:#1a121a;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#ae72c0;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.callout{background:#251b0e;border-left:3px solid #be7020;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#beae9e}
+.misq{background:#261111;border-left:3px solid #bb3d3d;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#be9e9e}
+.refs{background:#211921;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#b0a0b0}
+.refs b{color:#ae72c0}
 .eng{background:#2a1f2e;color:#fef6f0;padding:18px 20px;border-radius:10px;margin-top:14px;font-size:0.93rem;font-style:italic}
 .eng b{color:#d8a8d8;font-style:normal}
-.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice{background:linear-gradient(135deg,#763a88,#883a88);color:#ffffff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
 .practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
-.tool-link{display:inline-block;background:#e8d8e8;color:#7a3e8c;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;margin-top:8px;margin-right:8px}
-.tool-link:hover{background:#d8b8d8}
-.viz{margin:20px 0 10px;padding:18px;background:#fbf3fb;border-radius:12px}
-.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
-.axes{position:relative;padding:36px 16px 16px 56px;background:#fff;border-radius:10px}
-.axes .y-label{position:absolute;left:8px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;font-size:0.78rem;color:#7a3e8c;font-weight:700;letter-spacing:1px;white-space:nowrap}
-.axes .x-label{text-align:center;font-size:0.78rem;color:#7a3e8c;font-weight:700;letter-spacing:1px;margin-top:8px}
+.tool-link{display:inline-block;background:#372737;color:#b680c6;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:0.9rem;font-weight:600;margin-top:8px;margin-right:8px}
+.tool-link:hover{background:#563656;color:#c69cd3}
+.viz{margin:20px 0 10px;padding:18px;background:#1a121a;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#ae72c0;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.axes{position:relative;padding:36px 16px 16px 56px;background:#0a0a0a;border-radius:10px}
+.axes .y-label{position:absolute;left:8px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;font-size:0.78rem;color:#ae72c0;font-weight:700;letter-spacing:1px;white-space:nowrap}
+.axes .x-label{text-align:center;font-size:0.78rem;color:#ae72c0;font-weight:700;letter-spacing:1px;margin-top:8px}
 .quad{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .quad-cell{padding:14px 12px;border-radius:8px;font-size:0.86rem;min-height:96px;position:relative}
-.quad-cell b{display:block;font-size:0.95rem;margin-bottom:4px;color:#fff}
+.quad-cell b{display:block;font-size:0.95rem;margin-bottom:4px;color:#ffffff}
 .quad-cell p{font-size:0.82rem;color:rgba(255,255,255,0.92);line-height:1.5}
-.q1{background:linear-gradient(135deg,#7fb069,#5a9050)}
-.q2{background:linear-gradient(135deg,#e89a4a,#c8743a)}
-.q3{background:linear-gradient(135deg,#5a8ac8,#4a6aa8)}
-.q4{background:linear-gradient(135deg,#9a5a5a,#6a3a3a)}
-.axis-marker{display:flex;justify-content:space-between;font-size:0.72rem;color:#8a6a8a;margin-top:6px;padding:0 4px}
+.q1{background:linear-gradient(135deg,#53843d,#4b8141)}
+.q2{background:linear-gradient(135deg,#b06212,#a8541a)}
+.q3{background:linear-gradient(135deg,#2a5a98,#325290)}
+.q4{background:linear-gradient(135deg,#814141,#6a3a3a)}
+.axis-marker{display:flex;justify-content:space-between;font-size:0.72rem;color:#987898;margin-top:6px;padding:0 4px}
 .ladder{margin-top:10px}
 .ladder-step{display:flex;align-items:center;padding:10px 14px;margin-bottom:8px;border-radius:8px;font-size:0.9rem}
-.ladder-step .step-num{width:28px;height:28px;border-radius:50%;background:#7a3e8c;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;margin-right:12px;flex-shrink:0;font-size:0.85rem}
-.ladder-step.s1{background:#fbf3fb}
-.ladder-step.s2{background:#f5e3f5}
-.ladder-step.s3{background:#e8d8e8}
-.ladder-step.s4{background:#d8b8d8}
+.ladder-step .step-num{width:28px;height:28px;border-radius:50%;background:#763a88;color:#ffffff;font-weight:700;display:flex;align-items:center;justify-content:center;margin-right:12px;flex-shrink:0;font-size:0.85rem}
+.ladder-step.s1{background:#1a121a}
+.ladder-step.s2{background:#2b192b}
+.ladder-step.s3{background:#372737}
+.ladder-step.s4{background:#563656}
 nav.back{text-align:center;margin-top:40px}
-nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
-nav.back a:hover{background:#7a3e8c;color:#fff}
+nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.quad{grid-template-columns:1fr}.axes{padding:16px}.axes .y-label{display:none}}
 </style></head><body>
 <div class="container">
@@ -113,7 +117,7 @@ nav.back a:hover{background:#7a3e8c;color:#fff}
 <span class="label">Self-Assessment Tools</span>
 <a class="tool-link" href="https://yourpersonality.net/attachment/" target="_blank">ECR-R (Fraley)</a>
 <a class="tool-link" href="https://www.attachmentproject.com/attachment-style-test/" target="_blank">Attachment Project Quiz</a>
-<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">Professor Fraley's ECR-R is the academic gold standard. The Attachment Project test is a friendlier version with consistent results. Note: adult attachment is <b>dimensional</b> (your position on two axes), not a discrete type.</p>
+<p style="font-size:0.85rem;color:#987898;margin-top:8px">Professor Fraley's ECR-R is the academic gold standard. The Attachment Project test is a friendlier version with consistent results. Note: adult attachment is <b>dimensional</b> (your position on two axes), not a discrete type.</p>
 </div>
 
 <div class="misq">
@@ -228,7 +232,7 @@ nav.back a:hover{background:#7a3e8c;color:#fff}
 <span class="label">Self-Assessment Tools</span>
 <a class="tool-link" href="https://www.circleofsecurityinternational.com/" target="_blank">Circle of Security</a>
 <a class="tool-link" href="https://drdansiegel.com/" target="_blank">Dr Dan Siegel resources</a>
-<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">Circle of Security offers a parent-facing video series. Siegel's <i>Parenting from the Inside Out</i> and <i>The Whole-Brain Child</i> are accessible and highly practical.</p>
+<p style="font-size:0.85rem;color:#987898;margin-top:8px">Circle of Security offers a parent-facing video series. Siegel's <i>Parenting from the Inside Out</i> and <i>The Whole-Brain Child</i> are accessible and highly practical.</p>
 </div>
 
 <div class="misq">
@@ -286,7 +290,7 @@ nav.back a:hover{background:#7a3e8c;color:#fff}
 <span class="label">Self-Assessment Tools</span>
 <a class="tool-link" href="https://www.psychalive.org/adult-attachment-interview/" target="_blank">AAI introduction</a>
 <a class="tool-link" href="https://drdansiegel.com/wheel-of-awareness/" target="_blank">Siegel Wheel of Awareness</a>
-<p style="font-size:0.85rem;color:#8a6a8a;margin-top:8px">A full AAI requires a trained clinical interviewer, but you can ask yourself the 7 core questions in its structure (see the appendix of Siegel's <i>Parenting from the Inside Out</i>). The Wheel of Awareness is a free meditation practice developed by Siegel that supports narrative integration.</p>
+<p style="font-size:0.85rem;color:#987898;margin-top:8px">A full AAI requires a trained clinical interviewer, but you can ask yourself the 7 core questions in its structure (see the appendix of Siegel's <i>Parenting from the Inside Out</i>). The Wheel of Awareness is a free meditation practice developed by Siegel that supports narrative integration.</p>
 </div>
 
 <div class="misq">
