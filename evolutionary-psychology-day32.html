@@ -51,6 +51,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -227,6 +236,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>练习：这周对一个"圈外人"（陌生人 / 不同群体的人）做一件"亲人级别"的善事，观察内心的阻力从哪来。思考：佛学"无缘大慈、同体大悲"主张把慈悲扩展到一切众生，恰是刻意超越亲属选择的默认设置——这是"违反基因编程"的修行，还是激活了人类独有、可被推广的共情回路？（呼应 Day 6 自我同情 ↔ 慈悲）
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>计算机科学 · 无免费午餐定理（Wolpert &amp; Macready，1997）</b>：把所有可能的问题平均起来，没有哪种优化算法比别的强；想在某类问题上赢，就得照那类问题的结构专门设计，这和「瑞士军刀胜过通用 CPU」是同一个论证。不像在于，定理只证明通用算法不能处处占优，大脑是否真分成许多模块，仍要靠实验回答。</li>
+<li><b>投资 · 回测过拟合</b>：一套量化策略在过去的数据上调得完美，市场换了格局就开始亏钱：参数没坏，是环境变了，正是失配的结构。不像的是，策略下周就能重训，基因要许多代的选择才改得动。</li>
+<li><b>东方哲学 · 儒家的「爱有差等」与墨子的「兼爱」</b>：儒家主张由亲及疏地分配关爱，形状和亲缘度 r 的递减阶梯一致；墨子要不分亲疏地爱，被孟子斥为「无父」。不像在于，儒家的差等是伦理主张，靠推己及人往外扩，不是基因的算术。</li>
+<li><b>复杂性科学 · Axelrod 的重复囚徒困境锦标赛（1980）</b>：各路程序反复对局，最简单的「一报还一报」两轮都夺冠：先合作、记住对方、被背叛就回敬，正是互惠利他的计算版。不像的是，程序没有感激与愤怒，人的互惠靠情绪和声誉运转。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>进化心理学把心智看成自然选择塑造的一套专门机制，各自解决祖先反复遇到的适应问题。</li>
+<li>Cosmides 与 Tooby 引用 Wason 选择任务：抽象逻辑版几乎人人做错，换成抓骗子的社会情境，正确率骤升。</li>
+<li>解释一个行为的进化起源不等于为它辩护，从「是」推出「应该」就是自然主义谬误。</li>
+<li>进化失配指基因演化远慢于文化，为采集狩猎优化的机制被放进了食物过剩、屏幕密布的现代环境。</li>
+<li>加工食品、无限下滑这类超常刺激比任何自然刺激都更浓更快，持续劫持大脑的奖赏系统。</li>
+<li>应对进化失配，改环境比靠意志力硬扛有效，例如手机调灰、家里不囤零食。</li>
+<li>Trivers 的亲代投资理论认为投资更多的一方择偶更挑剔，但两性差异只是分布高度重叠的平均值。</li>
+<li>Eagly 与 Wood 的社会角色理论指出，许多性别差异在越平等的社会里越小，更像演化倾向与文化的交互。</li>
+<li>Hamilton 规则 rB &gt; C 说明：帮助携带相同基因的亲属，基因也能复制自己，亲缘越近越舍得付出。</li>
+<li>互惠利他让非亲属间的合作也能演化，前提是能重复相遇、记住彼此、识别骗子。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="23b9192bfe274857">
 <h2>深入思考<span class="en">Questions at the Edge</span></h2>

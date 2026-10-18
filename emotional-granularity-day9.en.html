@@ -50,6 +50,15 @@ details>div{margin-top:10px;font-size:0.92rem;color:#c8b8c8;line-height:1.7}
 .footer-card{background:#0f050d;border-radius:16px;padding:28px 26px;margin-top:28px;box-shadow:0 2px 14px rgba(0,0,0,0.08)}
 .footer-card h3{color:#ae72c0;font-size:1.18rem;margin-bottom:12px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.quad{grid-template-columns:1fr}.compare{grid-template-columns:1fr}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -266,6 +275,26 @@ details>div{margin-top:10px;font-size:0.92rem;color:#c8b8c8;line-height:1.7}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Cybernetics · The Law of Requisite Variety (W. Ross Ashby, 1956)</b>: In <i>An Introduction to Cybernetics</i>, Ashby argued that a regulator must be able to make at least as many distinctions as there are kinds of disturbance, or some disturbance will always get through. Emotional granularity has the same shape: with only one state, "I feel bad," you have one response; split it into disappointment, feeling slighted and guilt, and you get three. Where it differs: Ashby counted actions actually available, and learning more emotion words does not automatically hand you more moves.</li>
+<li><b>Distributed systems · Observability</b>: When an alert just says "service degraded," the on-call engineer restarts things and hopes; with specific metrics and labels, you can find which node failed and how. Naming an emotion precisely is adding structured labels to an inner state. Where it differs: logs only record what already happened, while an emotion label helps shape the very state it describes.</li>
+<li><b>Eastern philosophy · Confucius on the rectification of names</b>: The <i>Analects</i> says that if names are not correct, speech will not flow, and if speech does not flow, affairs will not succeed. A correct name gives action a direction, just as "I'm disappointed because I was ignored" points straight to a fix. Where it differs: Confucius meant social names like ruler and father, a matter of order, not of telling inner feelings apart.</li>
+<li><b>Quantum mechanics · The measurement problem</b>: On the Copenhagen interpretation, some properties of a particle have no definite value until measured, and the act of measuring takes part in the outcome; core affect likewise becomes "anxiety" or "excitement" only once a concept categorizes it. Where it differs: quantum outcomes follow irreducible probabilities, while emotional categorization runs on learned concepts that can be retrained.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>The theory of constructed emotion holds that emotions are not fixed programs set off by the world but are actively built by the brain from past experience and concepts.</li>
+<li>Interoceptive signals have only two dimensions, pleasant–unpleasant and calm–aroused; Barrett calls this core affect, and it is not yet an emotion.</li>
+<li>The same racing heart can be constructed as excitement, anxiety or anger, depending on which emotion concept the brain applies.</li>
+<li>A large 2019 review by Barrett and colleagues challenged the Ekman-derived assumption: emotions have no fixed facial "fingerprint" across cultures and situations.</li>
+<li>Emotional granularity, the precision with which you tell emotions apart, is measurable; high-granularity people drink less, aggress less and regulate more flexibly under stress.</li>
+<li>Low emotional granularity is linked to depression, anxiety and heavy drinking: precision is not wallowing, and vagueness is what lets emotions run wild.</li>
+<li>A 2007 fMRI study by Lieberman and colleagues found that putting emotions into words lowers amygdala activity and raises right ventrolateral prefrontal activity.</li>
+<li>Labeling cools emotion while suppression and rumination heat it up: "I'm angry" helps, but a clenched "I'm fine" raises physiological arousal.</li>
+<li>Schachter and Singer's 1962 two-factor theory proposed that arousal plus a cognitive label makes an emotion, and culture's emotion concepts shape what one can precisely feel.</li>
+<li>Ashby's law of requisite variety mirrors emotional granularity: the more distinctions a regulator can make, the more kinds of disturbance it can handle.</li>
+</ol>
 <!-- Open Questions -->
 <div class="footer-card">
 <h3>Going Deeper · Open Questions</h3>

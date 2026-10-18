@@ -51,6 +51,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.flow{flex-direction:column}}
+.deep-title{color:#ae72c0;font-size:1.2rem;font-weight:700;margin-top:36px;margin-bottom:4px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -253,6 +262,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Neuroscience · Friston's free-energy principle</b>: The brain runs an internal model that predicts the world and tries to minimize surprise. In terror management theory the cultural worldview is such a model, mortality salience is the ultimate surprise, and people respond by shoring the model up. The difference: under the free-energy principle the brain can either act on the world or revise its model, while mortality-salience studies mostly show people clinging to the model rather than updating it.</li>
+<li><b>Computer science · Explore vs. exploit</b>: In a multi-armed bandit, many rounds left means it pays to try new arms; few rounds left means you should milk the best one you know. Carstensen's time horizon traces the same curve: time feels open, so you gather information and meet people; time feels short, so you return to a few deep bonds. The difference: the algorithm only counts payoff, while a person facing a shorter horizon redefines payoff itself, from future gains to emotional meaning.</li>
+<li><b>Complexity science · Holling's ecological resilience (1973)</b>: Holling separated stability (snapping back to equilibrium after a shock) from resilience (swinging widely yet persisting). The Dual Process Model's oscillation between grief and restoration is the second kind: the swinging is not a malfunction. The difference: Bonanno's resilience means relatively steady functioning, which is closer to Holling's stability.</li>
+<li><b>Eastern philosophy · Zhuangzi drumming on a basin</b>: In the Zhuangzi, when his wife dies he first admits he could not help but grieve, then comes to see life and death as turning like the seasons, and only then drums and sings, like a swing from loss-orientation to restoration. The difference: Zhuangzi wants insight to dissolve grief for good, whereas the Dual Process Model never asks grief to end.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Becker saw much of civilization as a project of denying death; terror management theory splits it into a dual buffer of cultural worldview plus self-esteem.</li>
+<li>Mortality salience makes people defend their worldview harder: favoring their in-group, punishing dissenters, chasing symbolic immortality.</li>
+<li>Classic mortality-salience effects proved unstable in a 2019 multi-lab replication, so keep Becker's insight but doubt specific effect sizes.</li>
+<li>Yalom's four ultimate concerns are death, freedom, isolation, and meaninglessness; death anxiety often hides as emptiness, control, or fear of aging.</li>
+<li>Yalom uses Epicurus's symmetry argument to settle death anxiety, and the rippling effect to show a person's influence lives on in others.</li>
+<li>Carstensen's socioemotional selectivity theory: when time feels limited, motivation shifts from information and expansion to emotional meaning and close ties.</li>
+<li>What drives the shift is perceived time horizon, not actual age; young people imagining a move far away also favor close relationships.</li>
+<li>The five stages of grief are a misused myth: Kübler-Ross described the dying, not the bereaved, and grief follows no fixed sequence.</li>
+<li>Stroebe and Schut's Dual Process Model holds that healthy grief oscillates between loss-oriented and restoration-oriented states.</li>
+<li>Bonanno found resilience is the most common response to bereavement, and continuing-bonds research shows an inner tie to the deceased is often adaptive.</li>
+</ol>
 <div class="details-wrap">
 <h2 style="color:#ae72c0;font-size:1.2rem;margin-bottom:4px">Going Deeper</h2>
 <details><summary>Does TMT's replication crisis undermine Becker's whole framework?</summary><div>Not necessarily. Distinguish two layers: Becker's "death-denial drives culture" is an <strong>explanatory framework</strong>—insightful and cross-disciplinarily coherent; "mortality salience → worldview defense" is one of its <strong>falsifiable predictions</strong>. Some classic effects being unstable in large samples suggests the effect may be smaller than early literature claimed, or context-moderated—but that doesn't make the framework fail. The mature stance: keep the heuristic power of the insight while staying calibrated-skeptical about specific causal claims.</div></details>

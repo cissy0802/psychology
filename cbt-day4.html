@@ -74,6 +74,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.distort-grid{grid-template-columns:1fr}.thought-table{font-size:0.76rem}.thought-table th,.thought-table td{padding:6px 4px}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <a href="https://cissy0802.github.io/" style="position:fixed;top:14px;left:14px;font-size:0.82rem;color:#ae72c0;opacity:0.6;text-decoration:none;padding:6px 12px;border:1px solid currentColor;border-radius:20px;z-index:100;backdrop-filter:blur(6px)">← Hub</a>
 <div class="container">
@@ -297,6 +306,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 <div class="practice"><b>本周练习 · 解离 + 价值双实验</b>(1) 找一个反复出现的负面想法，全周尝试加前缀："我注意到我有一个想法，是 ___"。看看它的力量是否减弱。(2) 写下你在四个领域（工作/关系/健康/休闲）真正在意的价值（不是目标），评分本周离它有多近。两个练习不重叠，加起来不超过 20 分钟。</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>佛学 · 唯识「遍计所执」</b>：唯识宗说，苦来自心在事物上额外加的一层虚妄分别；认知三角说痛苦来自解释而不是事件，下的是同一刀。不像在于，CBT 留着一个摄像头式的客观事实可以回头核对，唯识再往下切一层，连那个「事实」也看作心识所现。</li>
+<li><b>分布式系统 · FLP 不可能性（Fischer 等，1985）</b>：异步网络里，节点分不清对方是宕机还是只是慢；同事没回消息，你也分不清「在忙」还是「在生气」。不像的是，工程师用调好的超时判定，人脑常拿核心信念填空。</li>
+<li><b>西方哲学 · 波普尔的可证伪性</b>：理论要敢于接受反驳；回避行为让「我会出丑」这条猜想永不受检验，于是越活越稳。不像在于，波普尔找反例是为推翻理论，CBT 求平衡，允许原想法部分成立。</li>
+<li><b>神经科学 · 预测加工（Karl Friston）</b>：大脑用先验预测输入，靠误差修正模型；核心信念像极强的先验，自动思维是它吐出的预测。不像在于，大脑本能地压低误差，行为实验却是主动去制造误差。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>CBT 的基本公理是：让人痛苦的不是事件本身，而是人对事件的解释。</li>
+<li>Aaron Beck 在 1960 年代发现「自动思维」：快速、消极、不被觉察的念头。</li>
+<li>认知三角里解释决定情绪、情绪驱动行为、行为再强化解释，打断任一环都能撬动循环。</li>
+<li>回避是焦虑维持的引擎：越回避恐惧越大，所以单改思维不够，必须配合行为实验。</li>
+<li>David Burns 把认知扭曲归为 10 类，它们是正常大脑在压力下的系统性偏差。</li>
+<li>给认知扭曲准确命名本身就有疗效，多数人只需认出自己最常用的两三种扭曲。</li>
+<li>思维记录表把模糊的痛苦写进结构化表格，给情绪贴标签能降低边缘系统的活跃度。</li>
+<li>苏格拉底式提问不预设结论，目的是让人自己发现某个想法只是一种解读，不是唯一解读。</li>
+<li>第三波 CBT（ACT、MBCT、DBT）加入正念、接纳和价值，改变人与想法的关系。</li>
+<li>行为激活主张抑郁时先行动、动力随后跟上，对重度抑郁的效果不输认知疗法和药物。</li>
+</ol>
 <nav class="back"><a href="index.html">← 返回目录</a></nav>
 </div>
 <script defer="" src="https://hub.cissychen.com/comments.js"></script>

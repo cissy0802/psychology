@@ -55,6 +55,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:80px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -242,6 +250,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · Supernormal stimuli (Niko Tinbergen)</b>: Tinbergen found that an oystercatcher offered its own egg and an absurdly oversized fake will brood the fake: instinct keys on features, and an exaggerated feature draws an exaggerated response. Highlight reels and an infinite upward-comparison pool are social signals blown up the same way. The difference: the bird can't change its response, but a person can change the source of the signal.</li>
+<li><b>Distributed systems · Context switches and cache warm-up</b>: when an OS switches processes, the expensive part is often not the switch itself but returning to cold caches that must warm up again; attention residue likewise costs you the rebuilt context. The difference: a CPU drops the old task completely, while a person keeps the old task running in the background, holding part of working memory.</li>
+<li><b>Business · Goodhart's law (Charles Goodhart)</b>: once a metric becomes a target, it stops reliably standing for what it used to measure. "The next click" was a proxy for "this content is useful to you"; made the optimization target, the two drift apart. The difference: there, the people being measured game the metric; here, the algorithm faithfully pushes the metric to its limit.</li>
+<li><b>Complexity science · Ergodicity (Ole Peters)</b>: in a non-ergodic process, the average outcome across a crowd can differ sharply from one person's outcome over a lifetime; r ≈ −0.04 is a population mean, not anyone's trajectory. The difference: Peters contrasts time and ensemble averages of one process, whereas here different people are running different processes to begin with.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Across samples of hundreds of thousands, social media use correlates with adolescent well-being at only about r ≈ −0.04, under 0.4% of the variance.</li>
+<li>A small average effect is not a clean bill of health: harms and benefits can cancel out, so the real question is who is harmed, and under which kind of use.</li>
+<li>Passive scrolling predicts lower well-being while active interaction is neutral or even positive, so raw screen time predicts almost nothing.</li>
+<li>Displaced sleep is the most reliable pathway of harm, which is why keeping devices out of the bedroom beats capping daily minutes.</li>
+<li>Festinger saw social comparison as an automatic self-evaluation mechanism; social media makes the comparison pool infinite and shows mostly other people's highlights.</li>
+<li>Przybylski found in 2013 that people high in FOMO have less satisfied needs for autonomy, competence and relatedness, making FOMO a signal of thwarted needs.</li>
+<li>Skinner's variable-ratio reinforcement produces the highest, most extinction-resistant response rates, and infinite scroll and pull-to-refresh share that structure.</li>
+<li>Berridge's split between wanting and liking explains why scrolling can feel unpleasant and still leave you wanting more.</li>
+<li>Allcott and colleagues deactivated Facebook for nearly 3,000 people for four weeks; well-being rose slightly, far less than a psychotherapy-sized effect.</li>
+<li>Digital detox works by restoring sleep, restoring face-to-face contact and reducing cue density, so freed time should go to active connection, not to emptiness.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 <details><summary>What evidence would actually settle the Haidt–Odgers dispute?</summary><div>Not more cross-sectional correlations, but three kinds: <strong>quasi-natural experiments</strong> (exogenous variation from broadband rollout or staggered platform launches), <strong>individual-level high-frequency longitudinal data</strong> (experience sampling plus objective logs), and <strong>preregistered stratified analyses of high-risk subgroups</strong>. The real disagreement isn't the size of the overall effect but whether heterogeneity has been averaged away — for policy, a near-zero mean means blanket bans buy little; for an individual, the mean carries no information at all.</div></details>
 <details><summary>Is "mindfulness against the attention economy" a real correspondence, or packaging?</summary><div>The real layer: what <strong>sati</strong> trains is precisely metacognitive monitoring of attention and decentering from content — the same layer of mechanism as attention residue and cue-driven automaticity. The packaging layer: stripping it of its ethical context and selling it as an output-boosting tool, which is exactly what Purser's McMindfulness critique targets. Mindfulness changes your relationship to the impulse; it <strong>does not change the environment's reinforcement structure</strong>, and only design does that.</div></details>

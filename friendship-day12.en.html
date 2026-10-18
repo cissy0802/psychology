@@ -57,6 +57,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.ties{grid-template-columns:1fr}.layer-num{width:46px;font-size:0.82rem}.hours-label{width:96px;font-size:0.78rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -271,6 +280,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Complexity science · Small-world networks (Watts &amp; Strogatz, 1998)</b>: rewire a few percent of the edges in a regular ring lattice at random and the average path length collapses while local clustering barely moves. Weak ties are those few long-range shortcuts. Where it breaks: the model rewires at random, while human weak ties grow along jobs and interests, so they are biased.</li>
+<li><b>Evolution · Vampire bats raising the stakes (Carter et al., 2020)</b>: Gerald Carter's team housed unfamiliar female vampire bats together for 15 months. They groomed each other first, and only after grooming became frequent did they start regurgitating blood meals for one another. Cheap probes escalate into costly help, the same logic as the 50-, 90- and 200-hour friendship ladder. Where it breaks: the bats are hedging against starvation, while people are spending a time budget.</li>
+<li><b>Computer architecture · The memory hierarchy</b>: registers, cache levels, then main memory, each layer closer to the core is smaller, faster and costlier, and each step outward is several times larger. The 5 / 15 / 50 / 150 layers are also smaller and costlier toward the center, growing about threefold per layer. Where it breaks: caches swap entries automatically by access frequency, while replacing someone in your inner circle takes years.</li>
+<li><b>Investing · The asymmetric payoff of options</b>: a weak tie is cheap to keep and its downside is capped, yet now and then it pays out as a new job, like holding a basket of cheap out-of-the-money options where most expire worthless and a few big winners carry the portfolio. Where it breaks: options die at expiry, while a weak tie dormant for years can still be revived by a single message.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Social network size peaks around age 25 and shrinks steadily afterward, a structural pattern rather than a sign of growing cold.</li>
+<li>Adult friendship decline is driven by three forces: scarce time, geographic mobility, and the shift from passive proximity to active scheduling.</li>
+<li>Extraversion matters far less for the number of adult friends than structural factors like commute distance and parenting stage.</li>
+<li>From the link between primate neocortex ratio and group size, Dunbar estimated the limit of a stable human group at about 150.</li>
+<li>Social circles are layered at 5 / 15 / 50 / 150, with contact and emotional investment rising toward the center.</li>
+<li>Granovetter found in 1973 that 56% of people got their current job through weak ties they saw only occasionally.</li>
+<li>Weak ties matter because they reach non-overlapping information pools, and people bridging separate groups occupy what Burt called structural holes.</li>
+<li>A large 2022 experiment on LinkedIn showed that moderately weak ties have the largest causal effect on job mobility.</li>
+<li>Hall estimated it takes about 50 hours together to become casual friends, about 90 to become friends, and over 200 to become close friends.</li>
+<li>Maintaining a friendship needs four parts running at once: frequency, self-disclosure, shared activities and fixed rituals, not chance.</li>
+</ol>
 <!-- Going Deeper -->
 <div class="deep">
 <h3>Going Deeper</h3>

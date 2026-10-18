@@ -55,6 +55,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.horsemen{grid-template-columns:1fr}.bidflow{flex-direction:column}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -262,6 +271,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · Dunbar's grooming hypothesis</b>: Primates spend hours a day grooming each other to keep alliances alive, and in 1996 Robin Dunbar proposed that human language began as "vocal grooming", letting one chat tend several partners at once. Bids are the same cheap, high-frequency maintenance move. The difference: the grooming budget caps group size, while bids are about the density of a single bond.</li>
+<li><b>Distributed systems · TCP congestion control (Jacobson, 1988)</b>: When acknowledgments stop arriving, the sender assumes the link is congested and shrinks its sending window sharply. A partner who quietly sends fewer bids after repeated turning away is running the same backoff. The difference: TCP then creeps back up to probe again; people who back off often never probe again.</li>
+<li><b>Software engineering · the circuit breaker pattern (Nygard, <i>Release It!</i>, 2007)</b>: When a downstream service is overloaded, you stop calling it, wait out a cooldown, then send a half-open test call so the failure doesn't cascade. The 20-minute break during flooding is a circuit breaker for the relationship, and "I'll come back" is the agreed half-open retry. The difference: a breaker is tripped by the caller, while stonewalling is the overloaded side going silent on its own, unannounced, so it looks like an outage.</li>
+<li><b>Investing · loss aversion (Tversky &amp; Kahneman, 1992)</b>: Prospect theory estimates that a loss stings a bit more than twice as much as an equal gain pleases. The 5:1 magic ratio points to the same asymmetry: negative moments weigh more in the emotional bank account. The difference: loss aversion compares the intensity of single events, while Gottman counts how often interactions happen.</li>
+<li><b>Eastern philosophy · Confucius on "harmony without uniformity"</b>: The <i>Analects</i> says the noble person seeks harmony rather than sameness, while the petty person seeks sameness and finds no harmony. Masters who manage rather than eliminate the 69% of perpetual problems are walking the same path. The difference: Confucius was describing character and social ethics; Gottman is describing frame-by-frame coded data on two people.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Gottman found that four communication patterns, criticism, contempt, defensiveness and stonewalling, predict divorce, and contempt is the single deadliest signal.</li>
+<li>Chronic contempt in a marriage harms more than feelings: it slows wound healing and raises baseline cortisol.</li>
+<li>Stonewalling is rarely malicious; above about 100 bpm a partner is flooded and the prefrontal cortex can no longer process information.</li>
+<li>Volatile, conflict-avoiding and validating marriages can all last; what matters is the ratio of horsemen to repairs, not whether couples fight.</li>
+<li>Relationships run on dozens of small daily bids for connection, and lasting couples turn toward about 86% of them.</li>
+<li>When bids are ignored again and again, the sender quietly stops sending, the earliest and least visible sign that intimacy is fading.</li>
+<li>Repair attempts can be clumsy; what decides a relationship is whether the repair signal is received by the other partner.</li>
+<li>Gottman estimates about 69% of marital conflicts are perpetual problems that can't be solved, only managed, and lasting couples learn to live with them.</li>
+<li>Lasting couples keep positive to negative interactions at about 5:1 during conflict and around 20:1 day to day, which unlocks positive sentiment override.</li>
+<li>Positive sentiment override is a cognitive filter: the same sentence sounds like care when the account is full and like blame when it is overdrawn.</li>
+</ol>
 <!-- Deeper Reflection -->
 <div class="deep">
 <h3>【Deeper Reflection】</h3>

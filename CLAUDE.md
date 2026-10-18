@@ -68,3 +68,36 @@ darken.py 保留色相和彩度，原设计的性格还在，只换明暗。
 收敛成同一种暖黑、四个站长得一模一样；所以「接近中性」的面改用这个色相
 重新上色，真正有颜色的元素保持自己的颜色。改它等于改本站的整体调性，
 不要顺手动。
+
+## 页面结构增补：越界 + 十条要点（2026-10-17 起）
+
+本仓页面结构照旧（header → 3–4 个概念 `.card` → `深入思考` → 返回目录）。**2026-10-17 起**，在最后一个 `.card` 之后、`<div class="deep-title">深入思考</div>` 之前，按顺序插入两节：
+
+1. **越界 · 跨学科的联想**（2026-10-17 起，必写，3–5 条）：写本期心理学里的某个想法和另一个领域的什么东西是同一个结构，像在哪、不像在哪。**每条约 60–90 字（一两句）**，只有展开的那 1 条可到约 120 字。优先挂 BigCat 的深度兴趣：意识、佛学、量子力学、神经科学、东西方哲学、生物进化、复杂性科学、分布式系统；旁支领导力、投资、商业。**别挂回心理学本身**。具体研究、人物、年份必须真实准确，拿不准就换一条。正文里点名引用的研究留在正文；我们自己联想到的只进越界。**不与 `深入思考` 里已经展开的类比重复**（深入思考讲开放问题，越界讲结构同构）。英文页标题 `Crossovers`。
+   ```html
+   <div class="deep-title">越界 · 跨学科的联想</div>
+   <div class="crossx"><ul>
+   <li><b>学科 · 概念/人物</b>：…</li>
+   </ul></div>
+   ```
+2. **十条要点**（2026-10-17 起，必写，正好 10 条）：读者直接拿它记笔记。每条一句完整的话，约 20–45 字，**单独抄出去也能看懂**：写出概念名和研究者名，不用「它」「这个效应」这类要靠上下文的代词。人名不必每条都当主语开头：全组里主角的名字出现两三次就够，其余各条直接写观点、机制或事实。覆盖各张卡片最值得记的观点、实验和机制，可含越界一两条；顺序跟正文走。**只总结正文已经写过的东西**，不加新信息，不放引语。英文页标题 `Ten takeaways`。
+   ```html
+   <div class="deep-title">十条要点</div>
+   <ol class="takeaways">
+   <li>…</li>
+   </ol>
+   ```
+
+CSS（旧页 `<style>` 里没有这两段，照抄旧页样式后**把它追加进去**；照常写浅色，深色交给 `darken.py`）：
+```css
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
+```
+
+篇幅：越界约 400 字、十条要点约 350 字。`.maxchars` 已为这两节从 3500 上调到 4250（2026-10-17）；**正文卡片的篇幅不跟着涨**。`publish.sh` 只对新页卡两条：十条要点正好 10 个 `<li>`，越界 3–5 个 `<li>`。

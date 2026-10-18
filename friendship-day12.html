@@ -58,6 +58,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.ties{grid-template-columns:1fr}.layer-num{width:46px;font-size:0.82rem}.hours-label{width:80px;font-size:0.78rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -234,6 +243,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习</b>建一个"友谊低带宽通道"——3-5 人小群，约定每周一次"今天遇到的一件小事"轻量分享。<b>思考</b>：你是不是仍在用青少年时期的友谊模型（自然发生、不需经营）应对成年世界？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>复杂性科学 · 小世界网络（Watts &amp; Strogatz，1998）</b>：在规则的环形网络里随机重连百分之几的边，平均路径长度骤降，局部聚类几乎不变，弱链接就是这几条长程捷径。不像在：模型里的重连是随机的，人的弱链接沿职业和兴趣生长，带着偏向。</li>
+<li><b>生物进化 · 吸血蝙蝠的「加码」交友（Carter 等，2020）</b>：Gerald Carter 团队把互不相识的雌性吸血蝙蝠关在一起观察 15 个月，它们先互相理毛，理毛越来越频繁之后，才开始给对方反刍血餐。低成本试探逐级升级到高成本互助，和 50、90、200 小时的友谊阶梯是同一种逻辑。不像在：蝙蝠赌的是饿死的风险，人投进去的是时间预算。</li>
+<li><b>计算机体系结构 · 存储层级</b>：寄存器、各级缓存到内存，越靠里越小、越快、越贵，每往外一层容量放大数倍。5 / 15 / 50 / 150 也是越靠里越小、维护越贵，每层约放大三倍。不像在：缓存按访问频率自动换入换出，内圈朋友换人要花好几年。</li>
+<li><b>投资 · 期权的不对称收益</b>：维护一个弱链接成本很低、下行有限，偶尔却兑现成一份新工作，像持有一篮子廉价的虚值期权，单张多半归零，组合靠少数大赢家。不像在：期权到期就作废，弱链接休眠多年，一条消息仍可能把它重新激活。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>社交网络规模在 25 岁左右见顶，之后持续缩小，这是结构性现象，不是人变冷漠了。</li>
+<li>成年友谊衰退由三股力推动：时间稀缺、地理流动，以及从被动相处变成必须主动调度。</li>
+<li>外向度对成年朋友数量的影响，远小于通勤距离和育儿阶段这类结构因素。</li>
+<li>Dunbar 用灵长类新皮层比例与群体规模的关系推算，人类稳定社群的上限约 150 人。</li>
+<li>社交圈不是平的，而是 5 / 15 / 50 / 150 四层，越靠里接触越频繁、情感投入越高。</li>
+<li>Granovetter 1973 年发现，56% 的人是通过偶尔接触的弱链接找到现在的工作的。</li>
+<li>弱链接的价值在于连向不重叠的信息圈，桥接互不相连群体的人占据 Burt 所说的结构洞。</li>
+<li>2022 年基于 LinkedIn 的大规模实验显示，中等强度的弱链接对换工作的因果效应最大。</li>
+<li>Hall 估算从陌生人到普通朋友约需 50 小时共处，到朋友约 90 小时，到亲密朋友超过 200 小时。</li>
+<li>友谊维护需要频率、自我披露、共同活动和固定仪式四个组件同时在线，不靠自然发生。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="deep">
 <h3 data-tts="2942e3c5361127c3">【深入思考】</h3>

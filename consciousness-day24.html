@@ -53,6 +53,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -221,6 +230,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习</b>盯着一个红色物体，试着只用「波长、视锥细胞、神经放电」去<strong>完整</strong>描述你看到的那个「红」。你会撞上一堵墙——那堵墙就是难问题。记下这种「解释到此为止」的感觉。
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>复杂性科学 · 渗流相变</b>：Broadbent 与 Hammersley 1957 年提出渗流理论：随机连通的格点在临界概率以下只有零散小团，一过阈值就突然冒出贯穿全局的巨团。「点燃」也是这种全或无的跃迁；不同在于渗流是静态的几何，点燃是几百毫秒内起落、不断重来的动态事件。</li>
+<li><b>分布式系统 · 无共享架构</b>：Stonebraker 1986 年力推 shared-nothing：节点不共享内存，分片各算各的，靠加机器线性扩展。小脑正是这种结构，神经元多而 Φ 低；不同在于工程上解耦是美德，IIT 却把不可分割当成体验的门槛。</li>
+<li><b>地球物理 · Lehmann 与地核</b>：没人钻得到地心，Inge Lehmann 1936 年凭地震波的异常到时推断出地球有内核。PCI 也是「敲一下、听回响」去推看不见的内部；不同在于地震学读回波路径找边界，PCI 读回响的复杂度判有无。</li>
+<li><b>分布式系统 · 故障检测</b>：Fischer、Lynch 与 Paterson 1985 年的不可能性结果背后有个直觉：异步网络里分不清节点是崩溃了还是只是慢。Owen 的病人同理，没反应不等于不在；不同在于工程只能靠超时去猜，Owen 把想象打网球变成了新的应答通道。</li>
+<li><b>西方哲学 · 莱布尼茨的磨坊</b>：Leibniz 1714 年在《单子论》里设想把会思考的机器放大成磨坊走进去，只会看到零件互相推动，找不到知觉。这正是难问题的结构；不同在于他据此把知觉安放进单子，Chalmers 则让问题悬着。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>全局工作空间理论认为，大部分加工在阈下并行，只有被广播给全脑的少数信息才成为意识。</li>
+<li>Dehaene 的「点燃」：刺激过阈后前额叶-顶叶网络全或无地放大，约 300 毫秒出现 P3b 脑波。</li>
+<li>阈下刺激只激起局部活动，能影响行为却无法被报告，意识因此是一连串离散的点燃。</li>
+<li>Tononi 的整合信息理论用 Φ 衡量意识：信息必须既高度整合、又高度分化。</li>
+<li>小脑神经元约为皮层的 4 倍却几乎不贡献意识，决定意识的是整合结构而非神经元数量。</li>
+<li>IIT 因泛心论倾向和难以证伪，2023 年遭逾百名学者联署批评，宜当作假说而非定论。</li>
+<li>默认模式网络在放空时亮起，编织自传体的「我」；人约 47% 的清醒时间在走神。</li>
+<li>资深禅修者 DMN 活动更低，裸盖菇素瓦解 DMN 时伴随自我消解，自我更像可调的进程。</li>
+<li>Chalmers 的难问题追问加工为何伴随主观感受，与识别、注意、报告等易问题不在一个层次。</li>
+<li>Owen 的网球想象实验和 PCI 表明，没有反应不等于没有意识，意识的有无已能在临床测量。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="deepen">
 <span class="label">深入思考</span>

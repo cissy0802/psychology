@@ -52,6 +52,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.flow{flex-direction:column}.bar-label{width:96px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -212,6 +221,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <div class="practice">
 <b>本周练习 + 思考题</b>观察你在中文和英文里的「性格」有何不同——语速、直接程度、幽默、甚至价值优先级。<strong>思考题：</strong>哪个才是「真正的你」？还是说，这个问题本身就问错了？</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>东方哲学 · 儒家的五伦</b>：儒家把人放进父子、君臣、夫妇、兄弟、朋友五种关系里界定，离开这张网，「我」几乎无从谈起，这是互依自我的古典版本。不像在于，五伦是规范，规定人应当如何；文化心理学只描述人实际如何，不判高下。</li>
+<li><b>量子力学 · Rovelli 的关系诠释（1996）</b>：Carlo Rovelli 主张物理量只相对于另一个系统才有确定的值，没有脱离关系的「本身属性」，和互依自我「我是谁取决于在哪段关系里」同构。不像的是，关系诠释讲的是物理世界的结构，人的自我构念却是文化训练出来、可以改写的默认设置。</li>
+<li><b>进化生物学 · 沙漠蝗的变相</b>：同一只沙漠蝗，稀疏时是独居型，被挤在一起几小时后血清素升高，行为就切换成群居型（Anstey 等，2009，Science）。一套基因装着两套模式，由环境线索唤起，很像文化框架转换。不像的是，蝗虫的体色和体形要跨几代才完全转过去，人的框架几秒内就能来回切。</li>
+<li><b>投资 · 回测过拟合</b>：一个策略只在某一段行情里回测，曲线再漂亮，换个市场也可能失灵；只在 WEIRD 人群里验证的「人性规律」，同样是拿一段特殊行情当了全样本。不像的是，量化圈早把样本外检验当基本功，心理学到 2010 年才被正面点破。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Markus 与 Kitayama 1991 年提出两种自我构念：独立自我由内在属性定义，互依自我由关系角色定义。</li>
+<li>让人介绍自己，独立自我者多写抽象特质，互依自我者多写角色与情境。</li>
+<li>个体主义与集体主义只是群体层面的统计倾向，用国别去预测眼前的具体个人几乎必错。</li>
+<li>Nisbett 综述发现西方人偏分析型认知、东亚人偏整体型：看水下场景，日本被试先说池塘再提鱼。</li>
+<li>基本归因错误在分析型文化里更强，它是只看焦点、不看背景的知觉习惯的延伸。</li>
+<li>认知风格可被情境提示推向另一端，稻作与商业等生态因素的解释力往往强过笼统的东西方二分。</li>
+<li>WEIRD 问题：顶级期刊约 96% 的样本来自只占世界人口约 12% 的西方国家，其中约三分之二是大学生。</li>
+<li>缪勒-莱尔错觉在少见直角建筑的环境里长大的人身上大幅减弱，说明不少「天生」知觉由环境塑造。</li>
+<li>Hong 与 Chiu 让香港双文化被试先看美国或中国符号，归因方式随之在特质与情境之间整体切换。</li>
+<li>文化框架转换与沙漠蝗的变相同构：同一套底子装着两种模式，由环境线索决定唤起哪一种。</li>
+</ol>
 <div class="details-wrap">
 <h2 data-tts="ad159412df91b549" style="color:#ae72c0;font-size:1.2rem;margin-bottom:4px">深入思考</h2>
 <details><summary>互依自我与佛学「无我」，是一回事吗？</summary><div>有真实呼应，但别划等号。互依自我仍是一个<strong>实在的、由关系定义的「我」</strong>——它把边界画得更宽，但「我」依然存在。佛学的无我（anattā）更激进：它指向<strong>「我」这个稳固实体本身是建构、并无自性</strong>，连互依那个更大的自我也在所破之列。互依自我在方向上离无我近一步，但一个是文化塑造的自我形态，一个是对自我实存的根本消解——混为一谈会把解脱论降格成文化风俗。</div></details>

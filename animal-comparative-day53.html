@@ -54,6 +54,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.axis-cells{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -246,6 +254,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习</b>挑一件你独有的隐性知识（一个判断直觉、一套排查路径），花 30 分钟写成别人能照做的形式。<b>思考题</b>：「AI 超级个体」是在增强个体，还是在重构网络的传递方式？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>计算机科学 · 没有免费午餐定理（Wolpert 与 Macready，1997）</b>：对所有可能的问题取平均，任何优化算法都不比随机搜索强，好坏只能相对某类问题来谈，这正是认知辐射反对通用智力排名的理由。不像在于：定理平均的是一切可能的问题，真实生态里的问题有结构，每个物种押注的正是这些结构。</li>
+<li><b>中国哲学 · 庄子濠梁之辩</b>：惠子问「子非鱼，安知鱼之乐」，是拟人否认的古典版；庄子反问「子非我」，点出怀疑一旦彻底，连人与人之间也无从相知。不像在于：庄子靠「安知」的语义回转收场，没有给出亲缘同源这样的举证标准。</li>
+<li><b>生物学 · 于克斯屈尔的「环境界」（Umwelt）</b>：蜱虫的世界几乎只由丁酸气味、体温和毛发触感构成，每个物种活在自己的感知世界里；拿视觉镜子测狗，等于把人的环境界强加给狗。不像在于：于克斯屈尔只描述感知世界，不提供可推翻的测试。</li>
+<li><b>生物进化 · 艾根的错误阈值（Manfred Eigen，1971）</b>：复制出错率超过阈值，信息就无法代代保住，保真度给能维持的信息量封了顶；文化棘轮同理，不倒退靠高保真模仿与教学。不像在于：分子复制只能靠选择淘汰错误，人类教学能当场纠错。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>情绪是坐落在皮下的古老回路，哺乳动物间高度同源，人的情绪是从动物那里继承来的。</li>
+<li>Panksepp 以解剖同源、药理反应一致、脑刺激效应三者交叉为判据，划出七套跨物种保守的情感系统。</li>
+<li>PLAY 是独立的情感系统，休息替代不了玩闹；SEEKING 编码的是期待，而不是得手后的满足。</li>
+<li>狗的「内疚脸」跟着主人是否责备走、不跟犯错走，Horowitz 认为那是对责备的顺从信号。</li>
+<li>演化不生产通用智力排名：黑猩猩的数字瞬时记忆胜过人类成人，只说明被选择的题目不同。</li>
+<li>章鱼约三分之二的神经元在腕足，代表一条与脊椎动物独立演化、架构完全不同的智能路线。</li>
+<li>拟人否认和拟人化一样是无证据的强主张；de Waal 认为对亲缘极近的物种，主张不连续的一方要举证。</li>
+<li>用错感官通道会测错心智：狗通不过视觉镜像测试，却对被改动过的自身气味探究更久。</li>
+<li>人类独有的不是单项聪明，而是共享意向性与不倒退的累积文化，认知的载体是跨代知识网络。</li>
+<li>庄子与惠子的濠梁之辩，是两千多年前关于拟人否认的同一场争论：怀疑彻底了，他人之心也不可知。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>对语言模型的拟人化，和对动物的拟人化，是同一个错误吗？</summary><div>结构相似，先验相反。对动物，神经同源给了「相似机制产生相似体验」一个真实先验；模型没有这个先验，类人输出源于对人类语料的拟合，相似性集中在<b>输出层</b>。反过来，以「只是统计」拒绝一切功能性描述，也会漏掉真实的能力差异。判据只有一条——<b>有没有独立于表面表现的机制证据</b>。</div></details>
 <details><summary>章鱼的分布式神经系统，能给分布式系统设计什么启发？</summary><div>能给的是权衡结构，不是解决方案。腕足高度自治、中枢只下粗粒度目标，等于用一致性换自治与鲁棒性：通信昂贵、局部环境多变时，放弃全局精确状态是划算的。但类比有硬边界——生物架构是被选择出的<b>可行解</b>，不是最优解。它适合质疑「必须有全局一致视图」这个默认，不适合当设计模板。</div></details>

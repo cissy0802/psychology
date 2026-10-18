@@ -55,6 +55,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:72px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -239,6 +248,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>提前查好一条求助路径——你的保险覆盖哪些咨询师、附近的心理诊所、或 EAP 入口，存进手机。危机时不必现找。<br/>思考题：如果是你最好的朋友处在你现在的状态，你会劝 ta 去求助吗？那为什么对自己用了更高的门槛？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>复杂性科学 · 临界慢化（Marten Scheffer 等，2009）</b>：Scheffer 等在《自然》上总结，系统逼近临界点时，受扰后恢复越来越慢，可当预警信号。亚临床状态预示临床发作，是同一种「还能运作、但弹不回来了」。不像在于，DSM 的两周线是人定的刻度，不是动力学上真实存在的分岔。</li>
+<li><b>分布式系统 · 亚稳态故障（Nathan Bronson 等，2021）</b>：一次短暂过载引发重试风暴，触发消失后，系统仍被自己放大的负载困在低吞吐状态；退缩减少正强化又加深退缩，同样是循环自我维持。不同在于，服务器靠外部限流脱困，行为激活得从循环内部迈出第一步。</li>
+<li><b>进化生物学 · 烟雾探测器原理（Randolph Nesse）</b>：漏报一次猛兽要命，误报一百次只费力气，所以自然选择让警报偏灵敏，焦虑的过度预期正是这种设计。不像的是，烟雾报警器不因你躲开而更灵敏，回避却让焦虑得不到校准。</li>
+<li><b>西方哲学 · 亚里士多德的习惯养成</b>：《尼各马可伦理学》说，人做公正的事才成为公正的人，品格跟在行动后面，与行为先于动机同序。不同在于，亚里士多德讲多年塑造品格，行为激活求的是几周内找回正强化，变的是情绪不是人格。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>抑郁和焦虑是一条连续谱，判断看强度、持续时间和功能损害三个量纲，而不是「有没有难过」。</li>
+<li>临床抑郁的核心常是快感缺失和动力枯竭，焦虑则是对未来威胁的过度预期加上回避。</li>
+<li>约一半抑郁的人同时有焦虑障碍，两者共享 HPA 压力轴失调等神经底物。</li>
+<li>亚临床困扰并非「不用管」，它是日后发展为临床障碍的最强预测因子之一。</li>
+<li>行为激活的核心原则是行为先于动机：没有动力也先做小事，情绪随后才跟上。</li>
+<li>回避让焦虑短期缓解、长期维持；暴露疗法靠消退学习，让杏仁核学到威胁并没有发生。</li>
+<li>Moncrieff 等 2022 年的伞状综述显示「血清素低致抑郁」证据薄弱，但 SSRI 对中重度仍有效。</li>
+<li>PHQ-9 和 GAD-7 是免费的筛查量表而非诊断，连续记录的趋势比单次分数更有信息量。</li>
+<li>Nolen-Hoeksema 发现，反刍是抑郁和焦虑共享的维持引擎，只会让抑郁更深、焦虑更久。</li>
+<li>Robert Post 的点燃效应指出，每次未治疗的发作都会降低复发门槛，所以越早求助越好。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="9a2099986ad96864">
 <h2>深入思考<span class="en">Going Deeper</span></h2>

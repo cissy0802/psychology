@@ -56,6 +56,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.horsemen{grid-template-columns:1fr}.bidflow{flex-direction:column}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -225,6 +234,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习</b>3 天内记录你和伴侣的所有互动，标 +/0/−，算比例。<b>思考</b>：这个比例如何反过来塑造你对 ta 的"形象"？账户余额是不是已经在影响你对中性信号的解读？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>生物进化 · Dunbar 的梳毛假说</b>：灵长类每天花大量时间互相梳毛来维系联盟，Dunbar 1996 年提出人类语言起初就是「声音梳毛」，一次闲聊照顾好几个同伴。bids 正是这种低成本、高频率的维系动作。不像的是梳毛预算限制的是群体规模，bids 关心的是一对关系的密度。</li>
+<li><b>分布式系统 · TCP 拥塞控制（Jacobson，1988）</b>：发送方迟迟收不到确认，就判定链路拥堵，把发送窗口大幅收缩。bid 屡遭 turn away 后对方悄悄减发，是同一种退避。不像的是 TCP 之后会一点点加回去试探，人退下去往往就不再试探。</li>
+<li><b>软件工程 · 熔断器模式（Nygard，《Release It!》，2007）</b>：下游过载时先断开调用，冷却一段时间再半开试探，免得故障连锁扩散。flooding 时的 20 分钟暂停就是给关系装熔断器，「我会回来」相当于约好了半开重试。不像的是熔断由调用方主动触发，筑墙却常是过载的一方自己静默，又没事先说明，在对方眼里就像宕机。</li>
+<li><b>投资 · 损失厌恶（Tversky &amp; Kahneman，1992）</b>：前景理论估计，损失的痛感约是同额收益快感的两倍多。5:1 魔法比例指向同一种不对称：负面互动在情感账户里分量更重。不像的是损失厌恶比的是单次强度，Gottman 数的是互动频次。</li>
+<li><b>东方哲学 · 孔子的「和而不同」</b>：《论语》说君子求和谐而不求一致，小人求一致反而不和。masters 管理而不消灭 69% 的永久问题，走的是同一条路。不像的是孔子讲君子人格与群己伦理，Gottman 讲的是能逐帧编码的两人互动数据。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Gottman 发现批评、蔑视、防御、筑墙四种沟通模式能预测离婚，其中蔑视是最致命的单一信号。</li>
+<li>长期充满蔑视的婚姻互动不只伤心理，还会让伤口愈合变慢、皮质醇基线升高。</li>
+<li>筑墙多半不是恶意，而是心率超过 100 后进入情绪淹没，前额叶已无法处理信息。</li>
+<li>火爆型、回避型、确认型婚姻都能长久，关键看四骑士占比和修复频率，不在吵不吵架。</li>
+<li>关系靠每天数十次微小的连接尝试（bids）维系，长寿伴侣约 86% 的 bids 得到转向回应。</li>
+<li>反复被忽视的 bids 会让发送方悄悄停止发送，这是亲密凋零最早也最隐蔽的信号。</li>
+<li>修复尝试的形式可以很笨拙，决定关系存亡的是修复信号能否被对方接收。</li>
+<li>Gottman 统计约 69% 的婚姻冲突是永久问题，无法解决只能管理，长寿伴侣学会与之共处。</li>
+<li>长寿伴侣在冲突中正负互动保持约 5:1，日常可达 20:1，余额充足才进入正向情感优先。</li>
+<li>正向情感优先是一层认知滤镜：同一句话，账户充足时听成关心，透支时听成指责。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="deep">
 <h3 data-tts="7567aacff7391f1e">【深入思考】</h3>

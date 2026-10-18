@@ -51,6 +51,15 @@ details>div{margin-top:10px;font-size:0.92rem;color:#c8b8c8;line-height:1.7}
 .footer-card{background:#0f050d;border-radius:16px;padding:28px 26px;margin-top:28px;box-shadow:0 2px 14px rgba(0,0,0,0.08)}
 .footer-card h3{color:#ae72c0;font-size:1.18rem;margin-bottom:12px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.quad{grid-template-columns:1fr}.compare{grid-template-columns:1fr}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -227,6 +236,26 @@ details>div{margin-top:10px;font-size:0.92rem;color:#c8b8c8;line-height:1.7}
 <b>本周练习</b>学一个你母语里没有的情绪词（如 Schadenfreude、sonder、amae），留意你是否开始「感受到」它。<br/><b>思考题：</b>哪些情绪，是你的文化教你「应该」有的?
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>控制论 · 必要多样性定律（W. Ross Ashby，1956）</b>：Ashby 在《控制论导论》里指出，调节者能做出的区分不能少于它要应对的扰动种类，否则总有扰动压不住。情绪粒度是同一个结构：只有「我感觉不好」一种状态，就只有一种应对；分出失望、被轻视、内疚，才有三套对策。不像在于，Ashby 数的是真实可选的动作，多认识几个情绪词不会自动多出几种做法。</li>
+<li><b>分布式系统 · 可观测性（observability）</b>：告警只写「服务异常」，值班的人只能重启碰运气；带上具体指标和标签，才能定位到哪个节点、哪种故障。精确命名情绪就是给内在状态加结构化标签。不像的是，日志只记录已经发生的事，情绪标签却会反过来参与塑造那个状态。</li>
+<li><b>东方哲学 · 孔子「正名」</b>：《论语·子路》说「名不正，则言不顺；言不顺，则事不成」，名称对了行动才有方向，和「我因为被忽视而失望」直接指向对策是同一个结构。不像在于，孔子要正的是君臣父子的社会名分，管的是秩序，不是内心感受的分辨。</li>
+<li><b>量子力学 · 测量问题</b>：按哥本哈根诠释，测量之前粒子的某些属性没有确定值，测量这个动作参与了结果；核心情感也要经过概念分类，才落成具体的「焦虑」或「兴奋」。不像的是，量子测量的结果服从不可约的概率，情绪分类却由习得的概念决定，可以重新训练。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>情绪建构论认为，情绪不是被外界触发的固定程序，而是大脑用过去经验和概念对身体信号主动建构出来的。</li>
+<li>内感受信号只有愉悦—不悦、平静—激动两个维度，Barrett 称之为核心情感，它本身还不是情绪。</li>
+<li>同一份心跳加速可以被建构成兴奋、焦虑或愤怒，区别在于大脑此刻用了哪个情绪概念。</li>
+<li>Barrett 等 2019 年的大型综述挑战了源自 Ekman 的假设：情绪没有跨文化、跨情境固定的面部「指纹」。</li>
+<li>情绪粒度是区分情绪的精细度，可以测量；高粒度的人在压力下更少酗酒、更少攻击行为、调节策略更灵活。</li>
+<li>低情绪粒度与抑郁、焦虑、酗酒相关：精确区分情绪不等于沉溺，模糊才让情绪失控。</li>
+<li>Lieberman 等 2007 年的 fMRI 研究发现，用词语标注情绪会降低杏仁核激活、提高右腹外侧前额叶激活。</li>
+<li>情绪标注会降温，压抑和反刍会升温：说「我很愤怒」有效，咬牙说「我没事」反而升高生理唤起。</li>
+<li>Schachter 与 Singer 1962 年的双因素理论提出「生理唤起加认知标签等于情绪」，文化提供的情绪概念决定了人能精确感受到什么。</li>
+<li>Ashby 的必要多样性定律与情绪粒度同构：调节者能做出的区分越多，能应对的扰动种类就越多。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="footer-card" data-tts="e66e747139d4ac6c">
 <h3>深入思考 · Open Questions</h3>

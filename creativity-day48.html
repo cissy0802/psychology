@@ -49,6 +49,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -233,6 +241,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>回顾近一年"创造力最好"的时期，核对：那段时间你的睡眠、情绪、关系更好还是更差？多数人会发现<b>更好</b>。<br/>思考：你是否偷偷相信"痛苦让我更深刻"？这信念让你付出什么？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>生物进化 · 变异与选择</b>：发散像突变与重组，大量制造候选；聚合像自然选择，只留下合适的。不像在于：自然选择没有预见，变异是盲的；人的发散带着领域知识的偏置，评判时也能先在脑中预演后果，不必等环境来淘汰。</li>
+<li><b>复杂性科学 · 模拟退火（Kirkpatrick 等，1983）</b>：搜索卡在局部最优时，先“升温”让解随机跳动，再慢慢降温收敛，常能找到更好的解；孵化里的定势消退，很像把锁死的思路加热松动。不像的是，退火的温度由程序按计划调度，孵化却靠离开问题、把控制权交给走神。</li>
+<li><b>物理学史 · 普朗克原理</b>：普朗克在自传里感叹，新的科学真理获胜，往往不是说服了反对者，而是反对者渐渐老去、新一代从小就熟悉它，这正是系统模型里“圈子”的分量。不像在于：物理最终有实验裁决，艺术圈的接纳标准没有这样的外部锚点。</li>
+<li><b>分布式系统 · 共识协议（Lamport 的 Paxos）</b>：一个节点提出的值，要多数派接受才算“提交”；个人的新组合同样要圈子认定才算创造。不像的是，Paxos 只管大家是否一致，不管值好不好，规则也固定；圈子却在评判价值，标准还随时代改变。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>创造力是先大量发散、再精准收敛的两段式过程，真正稀缺的是在两种模式间切换的能力。</li>
+<li>Guilford 在 1950 年 APA 主席演讲中把创造力从智商里分离出来，提出发散思维与聚合思维。</li>
+<li>Beaty 等人 2016 年的脑成像研究发现，高创造力者能动态耦合默认模式网络与执行控制网络。</li>
+<li>头脑风暴常失败，是因为生成和评判同时开着；有效做法是把两段在时间上隔开。</li>
+<li>Sio 与 Ormerod 2009 年的元分析确认，暂时离开难题的孵化期能提升解题率。</li>
+<li>孵化期做低难度、易走神的任务，比完全休息或做高难度任务更能促进创造。</li>
+<li>孵化只对已充分投入的问题有效，顿悟之前几乎总有一段密集的准备期。</li>
+<li>Csikszentmihalyi 的系统模型认为，创造是个人、领域与守门圈子三方互动的结果。</li>
+<li>原创贡献通常要在领域深耕约十年，但专长过深会带来功能固着，跨界者因此常更有创造力。</li>
+<li>“疯癫出天才”是被浪漫化的神话：与创造力相关的是开放性和轻度分裂型特质，而非精神疾病本身。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>如果发散靠 DMN、聚合靠执行控制网络，"训练创造力"本质上在训练什么？</summary><div>更像在训练两个网络之间的<b>切换灵活性</b>，而非单独强化某一个。这与正念/禅修训练"元认知觉察"奇妙呼应：都在练"知道自己此刻处于哪种模式，并能主动切换"。所以创造力训练的核心或许不是"多想点子"，而是提高对自身认知状态的觉察与调度。</div></details>
 <details><summary>孵化、心智游荡、DMN、禅定——是同一回事的不同侧面吗？</summary><div>它们共享同一个神经底座（DMN 自发活动），但态度不同：心智游荡是"被动放任"，禅定是"觉察而不卷入"，孵化是"带着具体问题的放任"。禅修的"不强求"恰好创造了孵化最需要的条件。但别过度浪漫化：禅定首要目的不是产出点子，把它工具化为"创意技巧"反而背离其本身。</div></details>

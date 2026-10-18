@@ -49,6 +49,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -238,6 +246,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Evolution · Variation and selection</b>: Divergence is like mutation and recombination, churning out candidates; convergence is like natural selection, keeping what fits. The difference: selection has no foresight and variation is blind, while human divergence is biased by domain knowledge, and the evaluator can rehearse consequences in the head instead of waiting for the environment to cull.</li>
+<li><b>Complexity science · Simulated annealing (Kirkpatrick et al., 1983)</b>: When a search is stuck in a local optimum, you "heat" it so solutions jump around at random, then cool slowly and often land somewhere better; the fading of mental set during incubation is like heating a locked-in line of thought loose. Unlike annealing, whose temperature follows a programmed schedule, incubation works by walking away and handing control to the wandering mind.</li>
+<li><b>History of physics · Planck's principle</b>: Max Planck observed in his autobiography that a new scientific truth tends to win not by convincing its opponents but because they eventually die and a new generation grows up familiar with it. That is the weight of the "field" in the systems model. The difference: physics ultimately has experiment as arbiter; the art world's standards have no such external anchor.</li>
+<li><b>Distributed systems · Consensus (Lamport's Paxos)</b>: A value proposed by one node counts as committed only once a majority accepts it; a person's new combination likewise counts as creative only once the field accepts it. Unlike a field, Paxos cares only that nodes agree, not whether the value is good, and its rules never change; a field judges worth, and its standards shift with the era.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Creativity is a two-stage process of broad divergence followed by precise convergence, and the scarce skill is switching between the two modes.</li>
+<li>In his 1950 APA presidential address, Guilford separated creativity from IQ and proposed divergent and convergent thinking.</li>
+<li>Beaty and colleagues' 2016 brain-imaging work found that highly creative people dynamically couple the default mode network and the executive control network.</li>
+<li>Brainstorming often fails because generating and judging run at the same time; the fix is to separate the two phases in time.</li>
+<li>A 2009 meta-analysis by Sio and Ormerod confirmed that an incubation period away from a hard problem raises solution rates.</li>
+<li>Doing an easy, mind-wandering-friendly task during incubation helps creativity more than full rest or a demanding task.</li>
+<li>Incubation works only on problems you have already worked hard on; insight is almost always preceded by an intense preparation period.</li>
+<li>Csikszentmihalyi's systems model holds that creativity emerges from the interaction of a person, a domain, and a gatekeeping field.</li>
+<li>Original contributions usually take about ten years of immersion in a domain, yet deep expertise breeds functional fixedness, which is why boundary-crossers are often more creative.</li>
+<li>The mad-genius idea is a romanticized myth: what correlates with creativity is openness and mild schizotypy, not mental illness itself.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 <details><summary>If divergence relies on the DMN and convergence on the executive control network, what is "training creativity" really training?</summary><div>It looks more like training the <b>switching flexibility</b> between the two networks than strengthening either alone. This echoes mindfulness/contemplative training of "metacognitive awareness" in a striking way: both practice "knowing which mode you're in right now, and being able to switch deliberately." So the core of creativity training may not be "having more ideas," but improving awareness and control over your own cognitive states.</div></details>
 <details><summary>Incubation, mind-wandering, the DMN, meditation—are these different facets of the same thing?</summary><div>They share the same neural substrate (spontaneous DMN activity), but differ in stance: mind-wandering is "passive drift," meditation is "aware but not entangled," incubation is "drift while holding a concrete problem." Meditation's "don't force it" happens to create exactly the conditions incubation needs. But don't over-romanticize: the primary aim of meditation isn't idea production, and instrumentalizing it into a "creativity technique" betrays what it is.</div></details>

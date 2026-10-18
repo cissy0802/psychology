@@ -58,6 +58,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.compare{grid-template-columns:1fr}.t1,.t2,.t3,.t4{margin:0}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <a href="https://cissy0802.github.io/" style="position:fixed;top:14px;left:14px;font-size:0.82rem;color:#ae72c0;opacity:0.6;text-decoration:none;padding:6px 12px;border:1px solid currentColor;border-radius:20px;z-index:100;backdrop-filter:blur(6px)">← Hub</a>
 <div class="container">
@@ -234,6 +243,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 <div class="practice"><b>本周练习 · 升级地图</b>画一张你的防御演化图：(1) 20 岁时你最常用什么？ (2) 现在最常用什么？ (3) 你想 50 岁时常用什么？三个版本对比，能看到你的"心理成长轨迹"。把这张图存起来，每年更新一次。</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>生物进化 · 烟雾探测器原理（Randolph Nesse，2001）</b>：发烧、焦虑这类防御宁可误报，因为漏报一次远比多报十次昂贵；不成熟防御同样门槛低、反应快、短期划算。不像在于：Nesse 管何时触发，Vaillant 管触发后用哪种反应。</li>
+<li><b>佛学 · 第二支箭（《箭经》）</b>：凡夫与圣者都会中第一支箭（身体的痛），凡夫还在忧恼里给自己补射第二支；成熟防御承认痛、不加码，结构相同。不同在于，佛学要看穿被保护的「我」，Vaillant 只想让「我」的工具更好用。</li>
+<li><b>分布式系统 · 断路器 vs 吞异常</b>：断路器（Michael Nygard《Release It!》，2007）出错时显式断开、稍后半开重试，像抑制；吞掉异常的代码表面正常，错误却在别处爆出来，像压抑。不像的是，系统留有日志可查，压抑连日志都不留。</li>
+<li><b>东西方哲学 · 斯多葛的「预想恶事」（premeditatio malorum）</b>：塞涅卡劝人预先设想流放、病痛、丧亲，事到临头不被击垮，与「预期」是同一套情绪预演。不像在于，斯多葛借此把外物看作无关紧要，预期则允许自己提前真实地难过。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>防御机制是每个人每天都在用的心理过程，真正的差别在于习惯用哪一层的策略。</li>
+<li>Vaillant 把防御分为病理性、不成熟、神经症性、成熟四级，看扭曲现实的程度、长期代价和是否要他人配合。</li>
+<li>哈佛 Grant Study 从 1938 年追踪 268 名男生，成熟防御对晚年婚姻、收入、健康的预测力超过家庭出身。</li>
+<li>不成熟防御的共同结构是把内心的痛苦转移到外部世界，投射、被动攻击和分裂都属于这一类。</li>
+<li>分裂把同一个人简化成全好或全坏，健康的人能同时持有「对我好但这件事我不满」的复杂图景。</li>
+<li>投射性认同由 Klein 提出、Bion 发展：投射者通过互动让对方真的体验到自己不愿承认的情绪。</li>
+<li>升华、利他、幽默、预期、抑制这些成熟防御承认现实、不否认痛苦，而且是可以训练的技能。</li>
+<li>抑制是有意识地暂缓处理痛苦，压抑是无意识地把痛苦推下去，被压抑的东西会以躯体症状或爆发的形式回来。</li>
+<li>Vaillant 发现防御层级能升级，靠的是持续的安全关系和反复的现实碰撞，结果是恢复更快而非旧防御清零。</li>
+<li>成熟防御近似佛经里的不射第二支箭：痛照样会来，只是不再在痛上叠加更多的反应。</li>
+</ol>
 <nav class="back"><a href="index.html">← 返回目录</a></nav>
 </div>
 <script defer="" src="https://hub.cissychen.com/comments.js"></script>

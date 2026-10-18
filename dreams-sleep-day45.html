@@ -50,6 +50,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -226,6 +234,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>本周挑一天睡满 7.5–8 小时，次日留意对同类烦心事的反应强度有无不同。思考题：若"睡够"能实测提升情绪稳定与决策质量，为什么它在多数人的优先级里仍排在工作和刷手机之后？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · LSM 树的后台合并（compaction）</b>：LSM 树（O'Neil 等，1996）先把写入堆在内存缓冲里，再在后台批量刷进磁盘、合并整理；深睡把记忆从海马体这块“临时缓存”搬进皮层，是同一种“白天快写、离线整理”的架构。不像的是，compaction 只去重、不改内容，睡眠却会抽取要点、丢掉细节，还顺手调低情绪温度。</li>
+<li><b>进化生物学 · 动物游戏是“为意外做训练”</b>：Špinka、Newberry 与 Bekoff 2001 年提出，幼兽打闹是在低风险里反复演练失衡和突发险情；威胁模拟理论里的梦也是一座安全的训练场。不像在于，游戏动用真实肌肉和真实同伴，REM 期身体被麻痹，演练完全在脑内离线进行。</li>
+<li><b>西方哲学 · 笛卡尔的梦境论证</b>：笛卡尔在《第一哲学沉思集》（1641）里发问，有没有可靠标志能分清醒着与做梦；清醒梦的“现实核查”给的是经验答案：梦里的数字和文字看两次会变。不像的是，笛卡尔要绝对确定，现实核查只给概率线索，而且核查这个动作本身也可能被梦出来。</li>
+<li><b>复杂性科学 · 双稳态与临界转变（Marten Scheffer）</b>：浅湖可以稳定在清水或浑水两种状态，正反馈让它一旦翻过临界点就很难回来；失眠让情绪变差、情绪差又毁掉睡眠，是同一种自我锁定的回路。不像在于，湖泊回头往往要大幅削减营养负荷，睡眠与情绪的循环通常有更多可以下手的环节。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>当代梦的理论早已不是弗洛伊德的欲望伪装，记忆巩固、情绪调节、威胁模拟三种功能可能同时成立。</li>
+<li>生动的梦多发生在 REM 期：前额叶相对离线、边缘系统高度活跃，所以梦情绪浓烈却逻辑荒诞。</li>
+<li>深睡把记忆从海马体搬进皮层，REM 把新记忆织进旧知识网，“睡一觉就想通了”有神经基础。</li>
+<li>没有可靠的“梦的字典”，梦境日记里值得追踪的是反复出现的情绪，而不是符号。</li>
+<li>Stephen LaBerge 让受试者用约定的眼动报告“我在做梦”，证明人在 REM 睡眠中可以拥有清醒的自我意识。</li>
+<li>清醒梦是背外侧前额叶在睡眠中重新上线，与正念“观察念头而不卷入”是同一种元认知能力。</li>
+<li>健康的 REM 像过夜情绪理疗：去甲肾上腺素几乎归零，记忆的事实留下，情绪的刺痛减弱。</li>
+<li>创伤噩梦原样重放说明加工卡住了；意象排练疗法（IRT）在清醒时改写噩梦结局，能降低噩梦频率。</li>
+<li>Yoo 与 Walker 2007 年发现，一夜不睡后杏仁核对负面图片的反应放大约 60%，前额叶的刹车连接变弱。</li>
+<li>睡眠差与情绪差互为因果，和复杂性科学里被正反馈锁住的双稳态是同一个结构。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>1. 若梦的功能至今没有共识，那"梦一定有意义"这个直觉，会不会本身是大脑的过度模式识别？</summary><div>很可能一半一半。梦确实参与情绪与记忆的夜间加工，这过程"有功能"；但"每个梦的具体剧情都精确编码了某个隐藏信息"，更像我们擅长找因果的清醒大脑事后强加的叙事——同一台把云看成人脸的机器。更稳的立场：关注梦里反复出现的<strong>情绪基调</strong>（那反映真实的未处理内容），而非执着解码符号。</div></details>
 <details><summary>2. 清醒梦里"知道自己在做梦"的觉察，和正念"观察念头而不卷入"、禅定的觉知，是同一种能力吗？</summary><div>神经上高度重叠——都依赖前额叶的<strong>元认知监控</strong>。差别只在意识背景：清醒梦发生在 REM，正念发生在清醒。藏传"梦瑜伽"正是打通这条线的古老技术，目标不止控制梦，而是训练一种<strong>在任何意识状态下都不被内容彻底裹挟</strong>的觉知——"如梦如幻"从修辞变成可操作的训练对象。</div></details>

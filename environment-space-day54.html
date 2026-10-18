@@ -51,6 +51,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -233,6 +241,27 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习 + 思考题</b>为一个角色设计 30 秒的空间仪式（合上电脑推到桌角 = 下班），每天执行。<b>思考题：</b>哪个角色没有属于它的物理标记？它是不是最容易溢出？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 过载保护（load shedding）</b>：压垮服务器的常常不是流量峰值，而是请求无限排队、没有拒绝的出口；能限流丢包的系统，同样负载下稳得多，和「不可预测加无法退出」同构。不像在于：机器不会因为知道有开关就安心，那个没人按的按钮只对人有效。</li>
+<li><b>哲学 · 延展心智（Andy Clark 与 David Chalmers，1998）</b>：失忆的 Otto 靠笔记本找路，他们主张笔记本就是他记忆的一部分；习惯存在房间里是同一想法。不像在于：Otto 主动查阅笔记本，情境线索却绕过意图直接触发行为。</li>
+<li><b>复杂性科学 · 痕迹协同（stigmergy，Pierre-Paul Grassé，1959）</b>：白蚁筑巢没有蓝图，只对前一只留下的泥团做反应，秩序存在环境里；把 code review 放进必经路径是同一招。不像在于：蚁巢痕迹不断被改写，人的房间常常多年不动。</li>
+<li><b>生物学 · 细胞膜的选择透过性</b>：膜不是墙，离子通道按需开合，太漏和全封都致命；Altman 的隐私也是可调边界，不是接触越少越好。不像在于：通道由浓度和电位自动驱动，人的期望会变，还得说出口别人才知道。</li>
+<li><b>佛学 · 缘起与无我</b>：佛学说「我」不是固定实体，而是众多条件和合的结果；把性格看作环境的稳定输出，走的是同一步。不像在于：佛学借此松开对自我的执著，环境心理学借此找到改变行为的杠杆，也并不否认特质的作用。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>定向注意的耗竭要靠恢复而不是休息，自然之所以有效，主因是软吸引而不是美。</li>
+<li>Kaplan 夫妇提出恢复性环境的四要素：远离、延展、软吸引、契合。</li>
+<li>刷手机是硬吸引，占住注意的同时还要求不断选择、抑制冲动，所以越刷越累。</li>
+<li>每周自然接触约 120 分钟与健康相关，但 White 等的数据是横断相关，不能读成因果。</li>
+<li>密度是每平方米的人数，拥挤是心理体验；真正的压力源是不可预测加无法退出。</li>
+<li>Glass 与 Singer 的噪音实验里几乎没人按停止钮，但知道有开关就让事后表现更好。</li>
+<li>慢性低强度压力源会主观适应、生理不适应，代价常在离开之后以后效应的形式出现。</li>
+<li>日常行为约 43% 发生在几乎相同的情境下，习惯的稳定主要来自情境线索而不是意志。</li>
+<li>改习惯要把决策前移到环境层：想做的事减一步、想戒的事加一步；搬家换工作是改写的窗口。</li>
+<li>Altman 把隐私定义为把实际接触调到期望水平的能力，失败既可能是被侵扰，也可能是孤独。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>「每周 120 分钟自然」这个剂量，能直接搬到高密度东亚城市吗？</summary><div>不能直接搬。方法上，White 等是英国横断样本，无法排除反向因果——更健康的人本来就更常出门。生态上，绿地的<b>可及性与感知安全</b>直接进入剂量—反应关系：换乘两趟才到的公园，实际剂量远低于名义剂量。文化上，园林与水边步道能否提供同等的「远离」与「延展」，仍待检验。可迁移的是<b>机制</b>而非数字。</div></details>
 <details><summary>恢复性环境的「软吸引」，和禅修中的开放监控，是同一种注意结构吗？</summary><div>结构同源，意图不同。两者都不设定单一目标对象、都不主动抑制干扰，因此都不消耗定向注意——这解释了为什么两者都能缓解反刍。差别在于<b>开放监控要求元觉察持续在线</b>，本身是一种努力；恢复性环境不作此要求，你可以完全走神。产物也不同：恢复后是「松了」，长期禅修训练出的是「看见」。</div></details>

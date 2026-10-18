@@ -51,6 +51,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -238,6 +246,27 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Distributed systems · Load shedding</b>: servers usually fall over not from peak traffic but from unbounded queues with no way to refuse work; a system that can throttle and drop requests stays far steadier under the same load, mirroring "unpredictability plus no exit." Where it breaks: a machine is not calmed by knowing a switch exists; the button nobody pressed works only on people.</li>
+<li><b>Philosophy · The extended mind (Andy Clark and David Chalmers, 1998)</b>: they imagined Otto, whose memory is failing, finding his way with a notebook, and argued the notebook is part of his memory; habits stored partly in the room are the same idea. Where it breaks: Otto trusts and deliberately consults his notebook, while context cues bypass intention and trigger behavior directly.</li>
+<li><b>Complexity science · Stigmergy (Pierre-Paul Grass&eacute;, 1959)</b>: termites build without a blueprint, each reacting to the mud pellet the last one left, so the order is stored in the environment; putting code review on a team's mandatory path is the same move. Where it breaks: termites keep rewriting their traces, while a person's room layout often goes untouched for years.</li>
+<li><b>Biology · Selective permeability of the cell membrane</b>: a membrane is not a wall; ion channels open and close as the cell needs, and both too leaky and fully sealed are fatal. Altman's privacy is likewise an adjustable boundary, not "less contact is better." Where it breaks: channels are driven automatically by concentration and voltage, while a person's desired level shifts and has to be spoken aloud before others know it.</li>
+<li><b>Buddhism · Dependent origination and non-self</b>: Buddhism holds that the self is not a fixed entity but the coming-together of many conditions; treating personality as the stable output of an environment takes the same step. Where it breaks: Buddhism uses the insight to loosen attachment to self, environmental psychology uses it to find levers for behavior, and it does not deny that traits matter.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Directed-attention fatigue needs restoration rather than rest, and nature works mainly through soft fascination, not beauty.</li>
+<li>The Kaplans named four ingredients of a restorative environment: being away, extent, soft fascination, and compatibility.</li>
+<li>Scrolling a phone is hard fascination: it holds attention while demanding constant choices and impulse control, so it leaves you more tired.</li>
+<li>About 120 minutes of nature a week tracks with better health, but White et al.'s data are cross-sectional, not causal.</li>
+<li>Density is people per square meter and crowding is an experience; the real stressor is unpredictability plus no way out.</li>
+<li>In Glass and Singer's noise study almost no one pressed the stop button, yet just knowing it existed improved performance afterward.</li>
+<li>Chronic low-level stressors bring subjective but not physiological adaptation, and the cost often arrives as an aftereffect once you leave.</li>
+<li>About 43% of daily behavior happens in nearly identical contexts, so habits are held steady by context cues more than by willpower.</li>
+<li>To change a habit, move the decision into the environment: remove a step from what you want, add one to what you don't; moves and job changes are the best windows.</li>
+<li>Altman defined privacy as the ability to bring actual contact to the desired level, and it fails both as intrusion and as loneliness.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 <details><summary>Does the "120 minutes of nature per week" dose transfer to high-density East Asian cities?</summary><div>Not directly. Methodologically, White et al. is a cross-sectional British sample and cannot rule out reverse causation — healthier people go out more to begin with. Ecologically, the <b>accessibility and perceived safety</b> of green space enter the dose–response relation directly: a park two transfers away delivers far less actual dose than nominal. Culturally, whether classical gardens and waterside walks supply equivalent "being away" and "extent" remains an open empirical question. What transfers is the <b>mechanism</b>, not the number.</div></details>
 <details><summary>Is the "soft fascination" of restorative environments the same attentional structure as open monitoring in meditation?</summary><div>Structurally homologous, different in intent. Neither fixes a single target object nor actively suppresses distraction, so neither consumes directed attention — which explains why both reduce rumination. The difference is that <b>open monitoring requires meta-awareness to stay online</b>, itself a form of effort, while a restorative environment makes no such demand and lets you fully drift. The products differ too: recovery reports feeling "loosened"; long-term meditative training yields "seeing".</div></details>

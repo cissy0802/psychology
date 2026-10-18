@@ -52,6 +52,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.flow{flex-direction:column}}
+.deep-title{color:#ae72c0;font-size:1.2rem;font-weight:700;margin-top:36px;margin-bottom:4px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -218,6 +227,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>对你当前的"战场清单"用 SOC 各划一刀：保留谁、集中谁、外包谁。<strong>思考题：</strong>你是否还在用"年轻时的标准"评判现在的自己？放下哪条标准会让你更自由？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>东西方哲学 · 尼采的 amor fati（爱命运）</b>：尼采在《快乐的科学》（1882）里设想「永恒轮回」——同一生无数次重来，你还愿意吗？和自我整合一样，都是对已发生之事说「是」。不像在于：尼采要的是热烈的肯定，还要拿来检验今后怎么活；Erikson 的整合是回望中的平静接纳。</li>
+<li><b>佛学 · 无我（anattā）</b>：McAdams 说自我是一个持续编写、可以改写的故事，佛学也说「我」不是实体，而是因缘聚合的建构。不像在于：叙事认同要把故事讲得更好，佛学要看穿故事本身，连救赎叙事也不执取。</li>
+<li><b>生物进化 · Kirkwood 的「可抛弃体细胞」理论（1977）</b>：生物能量有限，只能在繁殖和身体维修之间分配，衰老就是少投维修的代价。SOC 是同一种约束下的分配，只是反过来用：资源变少后，主动选定少数目标集中投入，而不是被动让各处一起磨损。</li>
+<li><b>神经科学 · Cabeza 的 HAROLD 模型（2002）</b>：年轻人做某些任务主要用一侧前额叶，老年人常两侧一起调用，表现好的老人尤其如此——像大脑层面的「补偿」。不像的是，这到底是补偿还是神经分化变差，学界仍有争论。</li>
+<li><b>分布式系统 · 优雅降级（graceful degradation）</b>：节点故障时，系统砍掉次要功能、保住核心链路、启用缓存和备用路径，和鲁宾斯坦减曲目、加练、制造速度对比是同一套路。不像在于：系统的「核心」是事先写死的，人却要在每个阶段重新决定什么算核心。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Erikson 把晚年的核心张力定为自我整合 vs 绝望：整合是接纳含遗憾的一生，绝望是觉得时间不够、无法重来。</li>
+<li>Erikson 的八阶段论是启发性框架，不是被严格验证的发展定律，阶段并不按固定年龄线性推进。</li>
+<li>Robert Butler 提出的生命回顾不是衰老的病态，而是整合的工作机制，有引导的生命回顾能改善晚年抑郁。</li>
+<li>中年的生成性指关心并投资比自己更长久的事物，高生成性的人往往有把苦难讲成成长的救赎式人生叙事。</li>
+<li>Dan McAdams 把叙事认同称为人格第三层：救赎序列（苦→好）预测更高幸福，污染序列（好→苦）则相反。</li>
+<li>智慧既不等于智商，也不随年龄自动增长；它来自对经验的反思性加工，而不是时间的沉淀。</li>
+<li>Grossmann 的明智推理有四个可测要素：智识谦逊、识别变化、多元视角、整合调和，水平随情境大幅波动。</li>
+<li>所罗门悖论指人对别人的难题比对自己的更明智，用第三人称思考的自我抽离能当场提升推理质量。</li>
+<li>Baltes 夫妇的 SOC 模型用选择、优化、补偿三步在丧失中适应，适用于任何资源受限的处境，不限老年。</li>
+<li>老化悖论指身体走下坡、平均幸福感却常不降反升，背后是 SOC、时间视野变短和积极效应共同作用。</li>
+</ol>
 <div class="details-wrap">
 <h2 data-tts="203b2855b62b04bd" style="color:#ae72c0;font-size:1.2rem;margin-bottom:4px">深入思考</h2>
 <details><summary>Erikson 的阶段论已被发展心理学质疑，为什么还值得讲？</summary><div>要区分"框架"与"定律"。八阶段作为<strong>线性年龄定律</strong>证据薄弱——危机不按固定年龄发生、可被反复重访、文化差异很大。但作为"人生不同期面对不同核心张力"的<strong>启发式地图</strong>，它有临床与自省价值；且其中若干阶段（生成性、整合）已被 McAdams 等用现代实证方法重新支持。正确用法：把它当镜子，不当时刻表。</div></details>

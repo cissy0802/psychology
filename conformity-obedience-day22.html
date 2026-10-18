@@ -49,6 +49,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -210,6 +219,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>这周抓一次你对他人的负面性格判断（"他真自私"），暂停，写下 3 个情境性解释。思考题：我"对人用性格、对己用情境"的双标，在哪段关系里最严重？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>经济学 · 信息瀑布</b>：Bikhchandani、Hirshleifer 与 Welch 1992 年证明，后来者只看前人的选择、丢掉自己手里的私人信息，整条队伍就可能锁死在错误答案上；只要有一个人公开亮出自己的信息，瀑布就会被打断。像 Asch 的「一个盟友」效应；不像在于瀑布里的每个人都在理性推断，而 Asch 的被试答案明摆着，跟着说错是怕当异类。</li>
+<li><b>生物进化 · 从众传递</b>：Robert Boyd 与 Peter Richerson 1985 年的文化演化模型指出，环境多变、自己摸索代价又高时，「照多数人做」是自然选择偏爱的学习策略。这是信息性影响的进化底子；不同在于 Asch 故意把多数设成错的，暴露出这条捷径在多数出错时的代价。</li>
+<li><b>航空安全 · 机组资源管理</b>：1977 年特内里费空难中，机组对机长擅自起飞只有含糊的质疑，最终 583 人遇难；此后航空业推行 CRM，训练副手用明确的话挑战机长。这和 Milgram 的「代理状态」同构，解法也是把责任拉回每个人手里；不像在于驾驶舱里的权威多数时候是对的，制度要的是让异议说得出口，而不是鼓励不服从。</li>
+<li><b>存在主义哲学 · 萨特的「自欺」</b>：Sartre 在 1943 年的《存在与虚无》里说，人常把自己当成被角色和处境决定的物件，以逃避「我本可以选择」的焦虑。「我只是执行命令」正是这种自欺；但 Sartre 认为选择永远完全在你，正文的现代综合更谨慎：情境设定概率，人只保留真实却有限的选择空间。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Asch 1951 年的线段判断实验中，约 75% 的被试至少有一次跟着群体说出明显错误的答案。</li>
+<li>社会影响分信息性和规范性两种：前者是不确定时把他人当线索，后者是怕被排斥而附和。</li>
+<li>只要有一个同伴敢说真话，Asch 范式的从众率就从 37% 降到 5% 左右。</li>
+<li>Milgram 的服从实验里约 65% 的普通人一路按到了 450 伏，多数人全程痛苦、抗议却没有停手。</li>
+<li>服从率随情境剧变：受害者同室、权威电话遥控或两位权威互相矛盾时，服从都会大幅下降。</li>
+<li>Haslam 与 Reicher 把服从重新解读为投入的追随：越认同实验者代表的事业，被试越肯服从。</li>
+<li>档案显示斯坦福监狱实验的狱警被实验者明确指导去施压，残忍并不是穿上制服就自发出现。</li>
+<li>基本归因错误指系统性地高估性格、低估情境：看别人说他就是这种人，看自己说当时情况特殊。</li>
+<li>情境强大但不机械决定行为，身份认同、领导框架和主动选择在情境与行为之间起中介作用。</li>
+<li>「我只是执行命令」和萨特说的自欺同构：都是把自己当成被处境决定的物件，好逃避选择。</li>
+</ol>
 <div class="deepen">
 <span class="label">深入思考</span>
 <details><summary>这三个实验几乎全是 1950-70 年代的西方被试——它们揭示的是"人性"，还是"那个时代某类人的特性"？</summary>

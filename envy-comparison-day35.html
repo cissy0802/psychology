@@ -45,6 +45,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -197,6 +206,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>每天挑一件平时被你当作"理所当然"的东西（能走路、有热水、孩子健康），停三秒，真正感受它的珍贵。<br/>思考：佛学的"知足"与心理学的"感恩""随喜"如何互相印证？它们是否都在训练同一件事——把心从"比较与匮乏"的默认模式中解放出来？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>神经科学 · 奖赏预测误差（Schultz 等，1997）</b>：猴子的多巴胺神经元对意外的果汁强烈放电；奖赏一旦可预料，放电就移到预示它的信号上，果汁本身不再引起反应。快乐按「实际减预期」计算，和相对剥夺同构；不像的是，这里的预期来自自己的过往，比较的尺子却是别人。</li>
+<li><b>生物进化 · 红皇后假说（Van Valen，1973）</b>：物种得不停进化，才能在同样进化着的对手面前保住位置，适应度是相对的，正是「跑步机不是台阶」。不像的是，物种掉队就是灭绝，人却可以选择不上哪条跑道。</li>
+<li><b>分布式系统 · 逻辑时钟（Lamport，1978）</b>：没有全局时钟，节点只能凭彼此交换的消息排定事件先后，正如没有绝对尺度就靠别人定位。不同在于逻辑时钟按协议保证一致，人挑参照对象却常常随手而偏颇。</li>
+<li><b>投资 · 基准考核与凯恩斯</b>：基金经理按是否跑赢同行被评价，宁愿跟大家一起错；凯恩斯 1936 年就说，循常规而失败更保名声。相对考核让人追排名而非真实回报；不同在于基准写进合同，心里的尺子可以自己换。</li>
+<li><b>东方哲学 · 老子「知足者富」</b>：《道德经》第三十三章把富看作拥有与欲望之比，和相对剥夺的「现实对期望」是同一个式子。不像在于，老子主张直接放低欲望，心理学却发现期望随成就自动上涨，得刻意练习才拉得回来。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Festinger 1954 年的社会比较理论指出：缺乏客观尺度时，人会默认拿别人当尺子衡量自己。</li>
+<li>向上比较既能激发动力也带来挫败，向下比较能安慰自尊，也可能滋生自满。</li>
+<li>Fliessbach 等 2007 年发现，腹侧纹状体编码的是相对报酬而非绝对报酬，多巴胺算的是排名。</li>
+<li>envy 是两方的情绪，想要别人拥有的东西；jealousy 是三方的，害怕已有关系被第三者夺走。</li>
+<li>良性嫉妒驱动自我提升，恶性嫉妒想把对方拉下来；觉得对方应得、自己也够得着时，嫉妒更易走向良性。</li>
+<li>Stouffer《美国士兵》的悖论：晋升快的空军兵比晋升慢的宪兵更不满晋升制度，因为期望被抬高了。</li>
+<li>Easterlin 悖论：国家整体变富，平均幸福感几乎不涨，因为所有人的参照点一起上移。</li>
+<li>满意度取决于现实与「本应得到」之间的落差；参照点随成就上移时，进步就成了跑步机而不是台阶。</li>
+<li>对付比较有证据的路径是向下比较、感恩干预和自我同情，核心是换参照系、看见已有、以成长代替排名。</li>
+<li>多巴胺神经元对超出预期的奖赏放电，和相对剥夺一样，快乐按落差而非绝对值计算。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="10334d9fa8d3cbd8">
 <h2>深入思考<span class="en">Questions at the Edge</span></h2>

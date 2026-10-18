@@ -52,6 +52,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:110px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-size:1.1rem;font-weight:700;margin:40px 0 4px;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -248,6 +257,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Statistical learning · The bias–variance tradeoff</b>: A stereotype behaves like a high-bias, low-variance estimator: using only the category as a feature makes judgments fast and stable, yet systematically wrong about any particular person; individuating information is adding features to the model. Where it breaks: a model's bias can be measured on a validation set, while people rarely notice which category they used.</li>
+<li><b>Evolutionary biology · Ernst Mayr's typological vs. population thinking</b>: Mayr held that Darwin's key move was replacing "each species has an ideal type and individual differences are noise" with "individual variation is what is real." A stereotype is typological thinking; asking one concrete question is population thinking. The difference: biology's group averages are measured, while a stereotype's "average" is mostly cultural input.</li>
+<li><b>Complexity science · Schelling's segregation model (1971)</b>: The economist Thomas Schelling gave agents on a grid only a mild wish not to be a tiny minority, and iteration produced sharply segregated neighborhoods: macro-level inequality that nobody wanted, the minimal model of "unfairness without villains." Where it differs: Schelling's agents start from a fair random layout, while real institutions inherit historically unequal starting conditions, so accumulation stacks on top of emergence.</li>
+<li><b>Distributed systems · Conway's law (1968)</b>: Melvin Conway observed that a system's structure copies the communication structure of the organization that designs it; likewise, a model trained on historical data copies the social structure that wrote the data. The difference: Conway's law is usually accepted as a neutral regularity, whereas what data copies is discrimination, visible only through deliberate audits.</li>
+<li><b>Investing · The factor zoo (Harvey, Liu &amp; Zhu, 2016)</b>: Three finance researchers catalogued hundreds of published "factors" claimed to predict stock returns and argued the significance bar should rise from t&gt;2 to about 3, or most are data-mined false discoveries. As in bias research, "risk premia exist" must be kept apart from "this particular factor works." The difference: markets puncture false factors with real money, and fairly quickly.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Stereotypes are a byproduct of categorization, a normal cognitive function; in 1954 Allport framed prejudice as categorization overgeneralized.</li>
+<li>Bias runs on two systems: explicit attitudes you can report and control, and implicit associations that fire automatically; both can coexist.</li>
+<li>The amygdala reacts fast to unfamiliar out-group faces while the prefrontal cortex regulates afterward, so a sincere "I don't discriminate" can coexist with an automatic association.</li>
+<li>Fiske's Stereotype Content Model places groups on warmth and competence axes, yielding distinct prejudices such as admiration, envy, pity and contempt.</li>
+<li>Intergroup contact reduces prejudice, best under Allport's four conditions: equal status, common goals, intergroup cooperation and institutional support.</li>
+<li>Pettigrew and Tropp's 2006 meta-analysis of 515 studies confirmed that contact reduces prejudice, more weakly but still when the four conditions are not all met.</li>
+<li>Institutional bias needs no villains: historical gaps, seemingly neutral rules and algorithms that inherit biased data can reliably produce inequality.</li>
+<li>In Bertrand and Mullainathan's 2004 résumé study, identical résumés with white-sounding names got significantly more callbacks.</li>
+<li>The replication crisis shook the IAT's individual-level predictive power, implicit bias training and stereotype threat, but field-audit evidence of discrimination remains robust.</li>
+<li>Schelling's segregation model shows that mild individual preferences for similar neighbors, iterated, produce macro-level segregation that nobody intended.</li>
+</ol>
 <div class="deepen">
 <span class="label">Going Deeper</span>
 

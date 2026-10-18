@@ -52,6 +52,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <a href="https://cissy0802.github.io/" style="position:fixed;top:14px;left:14px;font-size:0.82rem;color:#ae72c0;opacity:0.6;text-decoration:none;padding:6px 12px;border:1px solid currentColor;border-radius:20px;z-index:100;backdrop-filter:blur(6px)">← Hub</a>
 <div class="container">
@@ -230,6 +239,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>这周抓一次"自我批评"的瞬间，把那句话原样记下，再改写成你会对一个受惊孩子说的话，大声或默念给自己。<strong>思考题：</strong>哪句"对孩子的话"，你这辈子最想听到却从没听过？那句，正是你最该开始对自己说的。
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>进化生物学 · 节俭表型与预测性适应（Hales &amp; Barker 1992；Gluckman &amp; Hanson 2004）</b>：胎儿在营养匮乏的子宫里把代谢调成「省着用」，押注出生后也是荒年；出生后若食物充足，这次押错就变成糖尿病和心脏病风险。同样是早年按环境定参数、环境变了参数没跟上。不像在于，它调的是代谢，且主要定型于出生前。</li>
+<li><b>分布式系统 · 缓存失效</b>：源数据改了，缓存没收到失效通知，系统照旧值运行且不报错；高敏感的 HPA 轴就是一份没刷新的缓存。不像的是，缓存能一键清空，身体的旧校准只能靠一次次「危机会过去」的新数据慢慢覆盖。</li>
+<li><b>复杂性科学 · 生态韧性（C. S. Holling，1973）</b>：韧性是吸收扰动、仍留在原吸引盆里的能力，越过阈值就落进另一个稳态；可靠成人的缓冲正是把扰动留在盆内。不像在于，生态系统翻盆后常难回头，神经可塑性却给成年人留了路。</li>
+<li><b>西方哲学 · 亚里士多德的习惯化</b>：《尼各马可伦理学》说德性靠反复去做养成，像人靠弹琴成为琴师，再抚育的「每次一点矫正」同属此理。不像的是，亚里士多德看重从小养成的习惯，再抚育押注成年人也能自己补课。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Felitti 与 Anda 1998 年调查 1.7 万名成年人，统计 18 岁前的 10 类童年逆境。</li>
+<li>ACE 分数与成年后抑郁、成瘾、心脏病等风险呈剂量-反应关系：逆境种类越多，风险越高。</li>
+<li>排除吸烟、酗酒等行为后，高 ACE 分数的健康风险依然显著，说明逆境另有生物通路。</li>
+<li>Shonkoff 区分正面、可耐受和毒性三种童年压力，分水岭是有无可靠成人缓冲，不是压力大小。</li>
+<li>长期不安全的童年把应激系统（HPA 轴）调成高度敏感，成年后环境安全了，校准仍在运行。</li>
+<li>Emmy Werner 追踪 Kauai 岛高风险儿童近 40 年，约三分之一在重重逆境中依然发展良好。</li>
+<li>Bethell 2019 年发现正面童年经历（PCEs）越多，成年心理健康越好，且独立于 ACE 分数。</li>
+<li>「习得性安全」的成人童年并不安全，却通过反思与修复关系发展出了安全依恋。</li>
+<li>重新养育自己分三步：认出被激活的内在小孩，不批评地转向它，补上当年缺的安抚、界限或允许。</li>
+<li>节俭表型假说与应激校准同构：早年按环境定好的身体参数，环境变了却没有跟着改。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="385b8a4cfaccc360">
 <h2>深入思考<span class="en">Going Deeper</span></h2>

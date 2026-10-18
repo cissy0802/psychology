@@ -48,6 +48,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc;line-height:1.7}
 .deep-title{font-size:1.1rem;color:#ae72c0;font-weight:700;margin:36px 0 4px;text-align:center;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.quad{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -252,6 +260,27 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc;line-height:1.7}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Complexity science · The edge of chaos (Christopher Langton, 1990)</b>: Working with cellular automata, Langton found that systems process information best at the border between order and chaos; the flow channel likewise sits between boredom (too ordered) and anxiety (too chaotic). Unlike it, flow's border keeps moving up as skill grows.</li>
+<li><b>Neuroscience · Adaptive gain in the locus coeruleus (Aston-Jones and Cohen, 2005)</b>: When baseline firing in the locus coeruleus-norepinephrine system is too low, we are drowsy; at a moderate level, most focused on the task; too high, attention wanders. That is the same inverted U as apathy, flow and anxiety, with a measurable neural switch behind it. The difference: the locus coeruleus tunes the person's arousal, while the flow model tunes the task. One changes the person, the other the work.</li>
+<li><b>Evolution · The Red Queen hypothesis (Leigh Van Valen, 1973)</b>: A species must keep evolving just to hold its place against rivals that are evolving too; once skill grows and the old challenge turns dull, flow also demands constant escalation. Unlike it, the Red Queen's race is forced by opponents and only buys not falling behind, while flow's escalation is chosen and buys real growth.</li>
+<li><b>Eastern philosophy · Zhuangzi's Cook Ding</b>: Cook Ding meets the ox with his spirit, not his eyes, action and awareness as one; at a tangled knot he grows wary and slows his hand, attention tightening the moment difficulty rises. Unlike flow research, Zhuangzi uses the story to teach nurturing life and following nature, not to chase peak experience.</li>
+<li><b>Distributed systems · Context switching</b>: When a CPU switches processes it saves registers, its caches get flushed, and the old task must warm up again on return; attention residue is the brain's version of a cache miss. Unlike a CPU, the brain cannot save the old state cleanly and suspend it, so the last task keeps running in the background.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Flow is a state in which a challenging activity fully absorbs attention: self-consciousness fades, time distorts, and intense focus feels effortless.</li>
+<li>Using the experience sampling method, Csikszentmihalyi found that people are happiest not at leisure but when fully engaged in a hard task.</li>
+<li>Satisfaction from flow mostly arrives afterward, since in the moment people are too absorbed to judge their mood, so flow is not the same as pleasure or relaxation.</li>
+<li>The three key preconditions for flow are clear goals, immediate feedback, and a match between challenge and skill.</li>
+<li>Dietrich's transient hypofrontality hypothesis explains the vanishing self as reduced activity in self-monitoring brain regions, but it remains a theory, not settled fact.</li>
+<li>Flow appears only in a narrow channel where challenge slightly exceeds skill: too hard brings anxiety, too easy brings boredom, and both low brings apathy.</li>
+<li>Growing skill turns old challenges dull, so sustaining flow means steadily raising difficulty, an upward spiral of learning and leveling up.</li>
+<li>Flow cannot be summoned by willpower; it can only be set up with a single goal, fewer interruptions, and long uninterrupted blocks of time.</li>
+<li>Flow is morally neutral: gambling and short-video scrolling also produce addictive flow, and switched-off self-monitoring can blind people to their surroundings.</li>
+<li>The flow channel mirrors the edge of chaos in complexity science, a narrow band between too much order and too much chaos.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 
 <details><summary>1. Are flow and meditation / mindfulness the same state?</summary><div>On the surface both involve "intense focus and a faded sense of self," yet the mechanisms may be opposite. <strong>Flow is attention fully absorbed into its object, immersed</strong>; <strong>mindfulness cultivates meta-awareness, observing thoughts without being swept up</strong> — one merges in, the other steps back. But they do genuinely converge: both come with reduced default-mode-network activity and weakened self-referential thinking, both lead toward a "sense of no-self." Call them two ends of a "focus spectrum" — partly convergent by different routes, but crude to equate outright.</div></details>

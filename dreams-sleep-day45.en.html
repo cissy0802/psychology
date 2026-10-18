@@ -50,6 +50,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:104px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -266,6 +274,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Distributed systems · LSM-tree compaction</b>: An LSM tree (O'Neil et al., 1996) buffers writes in memory, then flushes and merges them to disk in the background; deep sleep moving memories from the hippocampal "cache" into the cortex is the same write-fast-by-day, reorganize-offline architecture. The difference: compaction only deduplicates and never changes content, while sleep extracts the gist, drops detail, and turns down the emotional temperature.</li>
+<li><b>Evolutionary biology · play as "training for the unexpected"</b>: Špinka, Newberry and Bekoff proposed in 2001 that young animals' rough play rehearses loss of balance and sudden danger at low risk; in threat simulation theory, the dream is the same safe training ground. Unlike play, though, dreaming uses no real muscles or real partners: the body is paralyzed in REM, and the rehearsal runs entirely offline.</li>
+<li><b>Western philosophy · Descartes' dream argument</b>: In the Meditations (1641) Descartes asked whether any sure sign separates waking from dreaming; the lucid dreamer's "reality check" gives an empirical answer: in dreams, numbers and text change when you look twice. Unlike Descartes, who wanted certainty, a reality check only offers probabilistic clues, and the check itself can be dreamt.</li>
+<li><b>Complexity science · bistability and critical transitions (Marten Scheffer)</b>: A shallow lake can settle into either a clear or a turbid state, and positive feedback makes it hard to return once it tips; poor sleep worsening mood while low mood ruins sleep is the same self-locking loop. The difference: a lake often needs a drastic cut in nutrient load to flip back, while the sleep-mood cycle usually offers more places to intervene.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Modern dream theory has moved past Freud's disguised wishes: memory consolidation, emotion regulation and threat simulation may all be true at once.</li>
+<li>Vivid dreams mostly occur in REM, when the prefrontal cortex is relatively offline and the limbic system highly active, so dreams feel intense but illogical.</li>
+<li>Deep sleep moves memories from the hippocampus to the cortex, and REM weaves them into older knowledge, which is why "sleeping on it" works.</li>
+<li>There is no reliable "dictionary of dreams"; in a dream journal, track recurring emotions rather than symbols.</li>
+<li>Stephen LaBerge had sleepers signal "I'm dreaming" with agreed eye movements, proving that self-aware consciousness can exist during REM sleep.</li>
+<li>Lucid dreaming reactivates the dorsolateral prefrontal cortex during sleep and draws on the same metacognitive skill as mindful noticing of thoughts.</li>
+<li>Healthy REM works as overnight emotional therapy: with noradrenaline near zero, the facts of a memory stay while its emotional sting fades.</li>
+<li>A trauma nightmare replaying unchanged means processing is stuck; Imagery Rehearsal Therapy rewrites the ending while awake and reduces nightmare frequency.</li>
+<li>Yoo and Walker found in 2007 that after one sleepless night the amygdala reacted about 60% more to negative images, with weaker prefrontal braking.</li>
+<li>Poor sleep and low mood feed each other, the same structure as a bistable system locked in by positive feedback in complexity science.</li>
+</ol>
 <div class="deep-title">Deeper Reflections</div>
 
 <details><summary>1. If the function of dreams still has no consensus, could the intuition that "a dream must mean something" itself be the brain's over-pattern-matching?</summary><div>Probably half and half. Dreams do take part in the overnight processing of emotion and memory, so the process "has a function"; but "each dream's exact plot precisely encodes some hidden message" looks more like a narrative imposed after the fact by our causally-hungry waking brain — the same machine that sees faces in clouds. The steadier stance: attend to the recurring <strong>emotional tone</strong> of a dream (which reflects real unprocessed content) rather than fixating on decoding symbols.</div></details>

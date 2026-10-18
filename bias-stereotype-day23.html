@@ -53,6 +53,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-size:1.1rem;font-weight:700;margin:40px 0 4px;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -213,6 +222,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习</b>回想一个你笃信的"心理学常识"（如某个流行测验或培训有效）。去查它最近 5 年有没有被复制检验，结果如何？<br/><b>思考题：</b>如果连"内隐偏见"这样被广泛传播的概念都在重估，你还有哪些自我认知是建在动摇的证据之上？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>统计学习 · 偏差—方差权衡</b>：刻板印象像一个高偏差、低方差的估计器：只用「类别」一个特征，判断又快又稳，却系统地错估每个具体的人；「个体化」信息就是往模型里加特征。不像在于，模型的偏差能用验证集量出来，人往往觉察不到自己用了哪个类别。</li>
+<li><b>进化生物学 · Ernst Mayr 的类型思维与群体思维</b>：Mayr 认为达尔文的关键一步，是把「物种有理想型、个体差异只是噪声」换成「个体变异本身才是真实的」。刻板印象是类型思维，多问一个具体问题是群体思维。不像的是，生物学的群体平均值是测出来的，刻板印象里的「平均」多半是文化输入。</li>
+<li><b>复杂性科学 · Schelling 隔离模型（1971）</b>：经济学家 Thomas Schelling 让棋盘上的个体只带一点「别让我成为极少数」的轻微偏好，迭代下去却涌现出高度隔离的街区：宏观的不平等不需要任何人想要它，这是「没有坏人也能产出不公」的最小模型。不像在于，Schelling 的格子从公平的随机起点出发，现实制度还背着历史不平等的初始条件，涌现之上再叠一层累积。</li>
+<li><b>分布式系统 · Conway 定律（1968）</b>：Melvin Conway 观察到，系统的结构会复制设计它的组织的沟通结构；同理，用历史数据训练的模型会复制写下这些数据的社会结构。不像的是，Conway 定律常被当作中性规律接受，而数据里被复制的是歧视，要主动审计才看得见。</li>
+<li><b>投资 · 因子动物园（Harvey、Liu、Zhu，2016）</b>：三位金融学者梳理出学界报告过的几百个预测股票收益的「因子」，主张把显著性门槛从 t&gt;2 提到约 3，否则多数是数据挖掘出的假发现。和偏见研究一样，要分清「风险溢价存在」与「这一个因子有效」。不像的是，市场会用真金白银较快戳破假因子。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>刻板印象是范畴化这一正常认知功能的副产品，Allport 在 1954 年就把偏见看作范畴化的过度泛化。</li>
+<li>偏见有双系统：能报告、能控制的外显态度，和自动激活的内隐联想，两者可以同时存在。</li>
+<li>杏仁核对陌生外群面孔有快速威胁反应，前额叶负责事后调控，所以真诚的「我不歧视」能与自动联想并存。</li>
+<li>Fiske 的刻板印象内容模型沿温暖与能力两轴给群体定位，由此生出钦佩、羡慕、怜悯、轻蔑等不同偏见。</li>
+<li>群际接触能减少偏见，最好满足 Allport 的四个条件：平等地位、共同目标、群体间合作、制度支持。</li>
+<li>Pettigrew 与 Tropp 2006 年对 515 项研究的元分析证实接触减偏，四条件不全时也有效，只是更弱。</li>
+<li>制度性偏见不需要坏人：历史差距、看似中立的规则、继承数据偏见的算法，都能稳定产出不平等。</li>
+<li>Bertrand 与 Mullainathan 2004 年的简历实验中，同样的简历配上白人姓名，获得回电的概率显著更高。</li>
+<li>复制危机动摇的是 IAT 的个体预测力、内隐偏见培训和刻板印象威胁，田野审计里的歧视证据依然稳健。</li>
+<li>Schelling 隔离模型显示，个体只有轻微的同类偏好，迭代下去也会涌现宏观隔离，不需要谁想要它。</li>
+</ol>
 <div class="deepen">
 <span class="label">深入思考</span>
 <details><summary>这些研究多基于美国的族裔语境——把"内隐偏见""接触假说"直接搬到东亚的城乡、地域、阶层语境，会失真吗？</summary>

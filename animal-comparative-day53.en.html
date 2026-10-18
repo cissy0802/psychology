@@ -53,6 +53,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.axis-cells{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -251,6 +259,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Computer science · the No Free Lunch theorems (Wolpert &amp; Macready, 1997)</b>: averaged over all possible problems, no optimisation algorithm beats random search, so "better" only means better on some class of problems — the same reason cognitive radiation rejects a general intelligence ranking. The difference: the theorems average over every possible problem, while real ecologies are structured, and each species is a bet on that structure.</li>
+<li><b>Chinese philosophy · Zhuangzi's debate on the Hao River bridge</b>: Huizi's challenge, "You are not a fish; how do you know the fish are happy?", is anthropodenial in classical form. Zhuangzi's retort, "You are not me", shows that radical doubt dissolves even human-to-human understanding. Unlike de Waal, Zhuangzi ends with a semantic twist, not a standard of proof grounded in kinship.</li>
+<li><b>Biology · Jakob von Uexküll's Umwelt</b>: a tick's world consists almost entirely of the smell of butyric acid, body warmth and the touch of hair; every species lives inside its own perceptual world. Testing a dog with a visual mirror imposes the human Umwelt on it. The difference: Uexküll described perceptual worlds but offered no falsifiable test.</li>
+<li><b>Evolution · Manfred Eigen's error threshold (1971)</b>: once the copying error rate passes a threshold, information cannot survive across generations, so fidelity caps how much can be kept. The cultural ratchet works the same way: not slipping back depends on high-fidelity imitation and teaching. The difference: molecules rely on selection to purge errors, while human teaching corrects them on the spot.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Emotions are ancient subcortical circuits shared across mammals, so human emotions are inherited from other animals.</li>
+<li>Panksepp identified seven conserved emotional systems by cross-checking anatomical homology, pharmacology and brain-stimulation effects.</li>
+<li>PLAY is an independent emotional system that rest cannot replace, and SEEKING encodes anticipation rather than the satisfaction of getting.</li>
+<li>A dog's "guilty look" tracks the owner's scolding, not its own misdeed; Horowitz reads it as appeasement.</li>
+<li>Evolution produces no general intelligence ranking: a chimpanzee beating adult humans at numeral memory just reflects a different selected problem.</li>
+<li>About two thirds of an octopus's neurons sit in its arms, an intelligence that evolved independently of vertebrates with a different architecture.</li>
+<li>Anthropodenial is as unevidenced a claim as anthropomorphism; for close relatives, de Waal puts the burden of proof on whoever claims discontinuity.</li>
+<li>Testing through the wrong sense misreads a mind: dogs fail the visual mirror test but investigate altered samples of their own scent longer.</li>
+<li>What is uniquely human is not raw cleverness but shared intentionality and a cumulative culture that does not slip back.</li>
+<li>Zhuangzi and Huizi's debate over the happy fish is an ancient form of the anthropodenial argument: radical doubt makes every other mind unknowable.</li>
+</ol>
 <div class="deep-title">GOING DEEPER</div>
 <details><summary>Is anthropomorphising a language model the same error as anthropomorphising an animal?</summary><div>The structure is similar; the prior runs the opposite way. For animals, neural homology supplies a genuine prior that similar mechanisms yield similar experience; a model has no such prior — its human-like output comes from fitting human text, so the resemblance concentrates at the <b>output layer</b>. Conversely, refusing all functional description on the grounds that "it's just statistics" will miss real differences in capability. There is exactly one workable criterion: <b>is there mechanistic evidence independent of surface performance?</b></div></details>
 <details><summary>What can the octopus's distributed nervous system teach distributed systems design?</summary><div>It offers a trade-off structure, not a solution. Highly autonomous arms with the centre issuing only coarse goals amounts to trading consistency for autonomy and robustness: where communication is expensive and local conditions vary sharply, giving up a globally precise state is a good deal. But the analogy has hard limits — a biological architecture is a <b>feasible</b> solution selected for, not an optimal one. Use it to question the default assumption that you must have a globally consistent view, not as a design template.</div></details>

@@ -50,6 +50,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -263,6 +272,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Computer science · No Free Lunch theorems (Wolpert &amp; Macready, 1997)</b>: averaged over all possible problems, no optimization algorithm beats any other; to win on a class of problems you must design for that class's structure. That is the same argument as "a Swiss Army knife beats a general-purpose CPU." Where it differs: the theorem only proves no general method wins everywhere; whether the brain is actually split into many modules is still an empirical question.</li>
+<li><b>Investing · Backtest overfitting</b>: a quant strategy tuned perfectly on past data starts losing once the market changes regime. The parameters didn't break; the environment moved, which is exactly the shape of mismatch. Where it differs: a strategy can be retrained next week, while genes need many generations of selection to change.</li>
+<li><b>Eastern philosophy · Confucian "graded love" vs. Mozi's "impartial care"</b>: Confucians distribute care outward from kin to strangers, the same descending staircase as relatedness r; Mozi demanded equal care for all, and Mencius attacked him for denying one's father. Where it differs: Confucian gradation is an ethical ideal that expands by extending oneself to others, not gene arithmetic.</li>
+<li><b>Complexity science · Axelrod's iterated Prisoner's Dilemma tournaments (1980)</b>: programs played each other repeatedly, and the simplest entry, Tit for Tat, won both rounds: cooperate first, remember, retaliate against defection. It is reciprocal altruism in code. Where it differs: programs feel no gratitude or anger, while human reciprocity runs on emotion and reputation.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Evolutionary psychology treats the mind as a set of specialized mechanisms shaped by natural selection to solve recurring ancestral problems.</li>
+<li>Cosmides and Tooby point to the Wason selection task: most people fail the abstract version but succeed when it becomes catching a cheater.</li>
+<li>Explaining a behavior's evolutionary origin does not justify it; deriving "ought" from "is" is the naturalistic fallacy.</li>
+<li>Evolutionary mismatch arises because genes evolve far slower than culture, leaving forager-tuned mechanisms in a world of surplus food and screens.</li>
+<li>Supernormal stimuli such as processed food and infinite scroll are stronger and faster than anything natural, and keep hijacking the reward system.</li>
+<li>Against evolutionary mismatch, redesigning the environment works better than willpower: grayscale the phone, keep no snacks at home.</li>
+<li>Trivers's parental investment theory says the more-investing sex is choosier, yet sex differences are averages with heavily overlapping distributions.</li>
+<li>Eagly and Wood's social role theory shows many sex differences shrink in more equal societies, pointing to evolved tendencies interacting with culture.</li>
+<li>Hamilton's rule, rB &gt; C, shows genes can copy themselves by helping relatives who share them, so closer kin get more sacrifice.</li>
+<li>Reciprocal altruism lets cooperation evolve among non-kin, provided individuals meet repeatedly, remember each other, and detect cheaters.</li>
+</ol>
 <!-- Deep Dive -->
 <div class="card">
 <h2>Questions at the Edge<span class="en">Questions at the Edge</span></h2>

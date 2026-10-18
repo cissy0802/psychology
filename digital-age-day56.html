@@ -55,6 +55,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:80px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -236,6 +244,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习 + 思考题</b>通知审计之后，为空出的时间指定<strong>一个具体的替代动作</strong>（不是「少刷手机」，是「睡前读 10 页纸书」）。<b>思考题：</b>你想减少的那个使用，正在替你完成什么功能——放松、连接，还是回避？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>生物进化 · 超常刺激（Niko Tinbergen）</b>：Tinbergen 发现，真蛋和一只大得离谱的假蛋摆在一起，蛎鹬偏要去孵假蛋：本能认的是特征，特征被放大，反应也跟着放大。高光内容和无限的上行比较池，就是被放大的社会信号。不像在于，鸟改不了自己的反应，人可以改信号的来源。</li>
+<li><b>分布式系统 · 上下文切换与缓存预热</b>：操作系统切换进程，贵的往往不是切换那一下，而是切回来后缓存全冷、要重新预热；注意残留的代价同样在「重建上下文」。不像的是，CPU 切走就彻底放下旧任务，人却让旧任务在后台继续占着一部分工作记忆。</li>
+<li><b>商业 · 古德哈特定律（Charles Goodhart）</b>：指标一旦变成目标，就不再能可靠地代表它原本衡量的东西。「下一次点击」本是「内容对你有用」的代理，被当成优化目标后两者就被拉开。不像在于，那里是被考核的人钻空子，这里是算法老实地把指标推到极致。</li>
+<li><b>复杂性科学 · 遍历性（Ole Peters）</b>：在非遍历过程里，一群人的平均结果和一个人一生的结果可以截然不同；r≈−0.04 是人群均值，不是任何一个人的轨迹。不像在于，Peters 讲同一过程的时间平均与群体平均之别，这里是不同的人本就走着不同的过程。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>几十万人的样本里，社媒使用与青少年幸福感的相关只有约 r≈−0.04，解释不到 0.4% 的方差。</li>
+<li>效应均值小不等于没问题：正负效应可能互相抵消，该问的是对谁、在什么用法下有害。</li>
+<li>被动浏览预测幸福感下降，主动互动则不显著甚至为正，笼统的屏幕时长几乎没有预测力。</li>
+<li>屏幕挤占睡眠是最稳定的中介，所以卧室不放设备比限制每日使用时长更有效。</li>
+<li>Festinger 认为社会比较是自动的自我评估机制，社媒把比较池放大到无限，且只给人看别人的高光。</li>
+<li>Przybylski 2013 年发现 FOMO 高的人自主、胜任、关联需求更不满足，FOMO 更像需求受挫的指标。</li>
+<li>Skinner 的变量比率强化让行为频率最高、最抗消退，无限滚动和下拉刷新正是这种结构。</li>
+<li>Berridge 区分 wanting（欲求）与 liking（愉悦），解释了刷完并不愉快却还想继续刷。</li>
+<li>Allcott 等让近三千人停用 Facebook 四周，幸福感小幅提升，但效应远小于心理治疗。</li>
+<li>数字戒断起作用靠恢复睡眠、恢复面对面互动和降低线索密度，空出的时间要换成主动连接。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>Haidt 与 Odgers 的争论，需要什么证据才能判决？</summary><div>不是更多横断相关，而是三类证据：<strong>准自然实验</strong>（宽带铺设或平台分区上线造成的外生变化）、<strong>个体层面高频纵向数据</strong>（体验取样加客观日志）、<strong>高风险子群</strong>的预注册分层分析。分歧点不在总体效应多大，而在异质性是否被均值抹掉——对政策，接近零的均值意味着全面禁令收益有限；对个人，均值没有参考价值。</div></details>
 <details><summary>「用正念对抗注意力经济」是真呼应，还是包装？</summary><div>真实的一层：<strong>念</strong>（sati）训练的正是对注意的元认知监控与去中心化，与线索驱动的自动行为同属一层机制。虚假的一层：把它剥离伦理语境、当成提产出的工具——Purser 的 McMindfulness 批评正指此处。正念改变你与冲动的关系，<strong>不改变环境的强化结构</strong>，后者只能靠设计。</div></details>

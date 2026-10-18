@@ -52,6 +52,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:92px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -232,6 +240,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习</b>拿一张纸画四条轴（生理性别 / 认同 / 表达 / 取向），试着把"你自己"标在每条轴上。你会发现，即使是最"典型"的人，这四点也不必然完全对齐——这正是它们各自独立的证明。
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>群体遗传学 · Lewontin 的人类多样性分配（1972）</b>：Lewontin 算出人类遗传变异约 85% 落在同一族群内部，族群之间只占一小部分，和组内差异远大于组间差异是同一种方差结构。不像的是，Edwards（2003）指出多个位点合起来看仍能分辨群体：单项差异小，不等于整体无差异。</li>
+<li><b>金融 · 银行挤兑与自我实现预言（Merton，1948）</b>：一家本来健康的银行，只因储户相信它要倒，挤兑就真把它挤倒了；刻板印象威胁同样是预言借当事人的担忧兑现。不像的是，挤兑靠众人合力，威胁只发生在一个人的注意力里。</li>
+<li><b>神经科学 · 预测编码</b>：大脑先用预期去解释感官输入，而不是被动接收；Baby X 实验里同一声哭被听成生气或害怕，正是先验压过了数据。不像的是，大脑会用预测误差修正先验，给孩子贴标签的成人却很少收到纠错信号。</li>
+<li><b>生物进化 · 反应规范与温度决定性别</b>：基因型定下的不是一个固定性状，而是一条随环境变化的表型曲线；许多龟类连雌雄都由孵化温度决定，是先天与后天交互的生物版本。不像的是，孵化温度是一次性开关，性别社会化是持续一生的循环。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Janet Hyde 2005 年的性别相似性假说整合 46 项荟萃分析，约 78% 的性别差异效应量 d 小于 0.35。</li>
+<li>数学、语言上的性别差距如今已近乎消失，稳定的中到大差异只出现在投掷、身体攻击等少数领域。</li>
+<li>即使存在平均差异，男女两条分布通常重叠 80–90%，组内差异远大于组间差异。</li>
+<li>人们系统性高估性别差异，源于确认偏误、媒体对惊人差异的偏爱，以及性别本质论。</li>
+<li>Claude Steele 与 Aronson 1995 年证明刻板印象威胁：担心印证群体负面刻板印象，会挤占工作记忆、拉低表现。</li>
+<li>预注册的大样本复制显示刻板印象威胁真实但依情境，效应比早期报告小，不能解释一切群体差距。</li>
+<li>Alice Eagly 的社会角色理论认为，历史分工形成的角色期望，会反过来塑造人们眼中的性别性格。</li>
+<li>Baby X 实验中，成人仅因被告知的婴儿性别不同，就把同一声哭描述为生气或害怕。</li>
+<li>生理性别、性别认同、性别表达与性取向是四个相关但独立的维度，性别认同不预测性取向。</li>
+<li>Lewontin 发现人类遗传变异约 85% 在族群内部，和性别差异研究里组内大于组间是同一种方差结构。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>如果多数心理性别差异都很小，为什么"男女大不同"的叙事如此顽固？</summary><div>它同时满足多重需求：类别化省认知（同 Day 1 里 MBTI 流行的原因）、刻板印象为社会分工提供现成解释、确认偏误让符合预期的个例被牢记而反例被忽略；且"差异"比"相似"更有新闻与商业价值。识破这点本身就是批判性思维训练。</div></details>
 <details><summary>先天与后天在性别上到底如何交互？"生物倾向"会不会被过度否定？</summary><div>现代立场既不否认生物因素（激素、进化史确有影响），也不接受生物决定论。更准确的模型是：小的先天倾向被社会环境系统性放大或抑制，生物性只是众多输入之一，承认它不等于认为差异不可变。危险在两极端：把一切归于天性（合理化不平等），或全归于社会（否认真实的生物变异）。</div></details>
