@@ -50,6 +50,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:110px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <a href="https://cissy0802.github.io/" style="position:fixed;top:14px;left:14px;font-size:0.82rem;color:#ae72c0;opacity:0.6;text-decoration:none;padding:6px 12px;border:1px solid currentColor;border-radius:20px;z-index:100;backdrop-filter:blur(6px)">← Hub</a>
 <div class="container">
@@ -250,6 +259,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Exercise physiology · Noakes's "central governor"</b>: South African sports scientist Tim Noakes argues that fatigue in endurance exercise is a protective sensation the brain issues before muscles actually fail; in 2012 he called fatigue a brain-derived emotion outright. Same structure as "I can't go on" being a motivational signal rather than an empty tank: the feeling precedes, and is not the same as, real depletion. The difference: Noakes's governor guards body temperature and organ safety, while Inzlicht's signal weighs opportunity cost; and the central governor model is still debated in sports science.</li>
+<li><b>Investing · Backtest overfitting</b>: tune a quant strategy on historical data long enough and you always get a beautiful curve that dies in live trading; p-hacking does the same to experimental data, and preregistration is a forced out-of-sample test. Unlike science, markets punish overfitting with losses, while the literature let a false effect live for twenty years.</li>
+<li><b>Lean manufacturing · Poka-yoke (Shigeo Shingo)</b>: Toyota's approach is to make a part physically impossible to install backwards rather than rely on worker vigilance; leaving snacks at the store is the same move of designing the error out. The difference: factory poka-yoke makes the error impossible, while friction in daily life only makes it harder, and you can still get around it.</li>
+<li><b>Distributed systems · Interrupts vs. polling</b>: polling asks "should I do it now?" over and over, burning cycles; an interrupt binds a handler to an event that runs only when the event fires. A vague resolution is polling; an if-then plan registers an interrupt. Unlike hardware interrupts, which always fire, psychological cues can slip past unnoticed.</li>
+<li><b>Eastern philosophy · Confucius at seventy</b>: "I could follow my heart's desire without overstepping the line" describes a state where what you want and what you should do coincide, so no restraint is needed, which is exactly autonomous motivation keeping willpower offstage. The difference: Confucius says it takes a lifetime of cultivation, while self-determination theory holds that motivation can internalize fairly quickly once you find what a task means to you.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>In Baumeister's 1998 radish experiment, people who resisted cookies gave up faster on unsolvable puzzles, launching the idea of ego depletion.</li>
+<li>A 2016 preregistered replication across 23 labs and over 2,000 participants found an ego depletion effect close to zero.</li>
+<li>Self-control tasks burn trivial glucose, and merely rinsing with sugar water restores performance, which looks like reward boosting motivation, not refueling.</li>
+<li>Job, Dweck and Walton (2010) found that people who believe willpower is renewable show no drop in performance after consecutive hard tasks.</li>
+<li>Inzlicht's opportunity-cost model treats "I can't go on" as motivation shifting from have-to toward want-to, a trade-off signal rather than an energy shortage.</li>
+<li>Hofmann's 2012 experience-sampling study found that people high in trait self-control report fewer desire conflicts, winning by avoiding temptation altogether.</li>
+<li>Replicated in a larger sample in 2018, the marshmallow test's power to predict later achievement shrank sharply, much of it explained by family background.</li>
+<li>If-then implementation intentions bind a behavior to a concrete cue in advance, with a meta-analytic effect of about d = 0.65, far beyond vague resolutions.</li>
+<li>Autonomous motivation rooted in values leaves no inner conflict to suppress, so it lasts longer than motivation driven by "should" or fear.</li>
+<li>P-hacking shares a structure with backtest overfitting in quant investing, and preregistration works like a forced out-of-sample test.</li>
+</ol>
 <!-- Going Deeper -->
 <div class="card">
 <h2>Going Deeper<span class="en">深入思考</span></h2>

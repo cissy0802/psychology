@@ -48,6 +48,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.bar-label{width:80px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -192,6 +201,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>这一周，把"我今天开心吗"这个自我监控的问题，替换成"我今天投入了什么、和谁有了真实连接"。<br/><br/>思考：如果幸福有 50% 的遗传天花板，那"追求幸福"的正确姿态，是提升水平，还是改善与自己情绪的关系？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>进化生物学 · 红皇后假说（Leigh Van Valen，1973）</b>：物种必须不停进化，才能在共同进化的对手之间维持原位，名字取自《爱丽丝镜中奇遇》里拼命跑却留在原地的红皇后。享乐跑步机是同一个结构；不像在于红皇后追的是外部对手，跑步机里被悄悄调高的是自己的基线。</li>
+<li><b>神经科学 · 探索与利用</b>：强化学习里的智能体要在尝试新选项和吃老本之间权衡，Daw 等人 2006 年在人脑额极皮层找到了与探索性选择相关的活动。拓展-建构理论里的正情绪像一个把旋钮拧向探索的信号；不像的是，算法按不确定性调旋钮，情绪并不读取不确定性。</li>
+<li><b>西方哲学 · 亚里士多德的中道</b>：《尼各马可伦理学》把德性放在过与不及之间，勇敢介于怯懦和鲁莽，正对应优势用过头会翻转。不像在于，VIA 把 24 项优势分开打分，亚里士多德却认为诸德靠实践智慧统一，单练一项练不成。</li>
+<li><b>西方哲学 · 密尔的幸福悖论</b>：John Stuart Mill 经历 1826 年的精神危机后在《自传》里总结：直接问自己幸不幸福，幸福就溜走，只能在追求别的目标时顺带得到。与快乐悖论同构；不同在于密尔靠内省，Mauss 用实验把机制落到自我监控上。</li>
+<li><b>投资 · Markowitz 组合理论（1952）</b>：把钱分散到相关性低的资产上，同样的期望收益能换来更小的波动。PERMA 不押单一维度也是这个道理；不像的是，五维彼此正相关，一维塌了常连带别的，分散的效果比真正的组合弱。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Seligman 的 PERMA 把繁盛拆成正情绪、投入、关系、意义、成就五个可以分别培养的维度。</li>
+<li>正情绪只占幸福的五分之一，整天追逐好心情会挤掉更持久的意义和关系。</li>
+<li>Fredrickson 的拓展-建构理论认为，正情绪会拓宽当下注意到的选项，并长期积累资源。</li>
+<li>识别签名优势并以新方式使用，在随机对照实验中提升幸福感、降低抑郁，效果约持续半年。</li>
+<li>性格优势用过头会翻转成缺点：好奇过头是分心，勇敢过头是鲁莽，善良过头是失去边界。</li>
+<li>享乐跑步机指人对稳定状态适应极快，加薪、新车、大房子带来的快乐几个月后回到基线。</li>
+<li>多巴胺编码的是比预期好多少的预测误差，好事成为新常态后，误差和兴奋一起归零。</li>
+<li>享乐适应并非万能：长期失业、丧偶、重大残疾会持久压低幸福基线。</li>
+<li>Fredrickson–Losada 的 3:1 积极比背后的数学模型 2013 年被证伪，正情绪没有魔法阈值。</li>
+<li>越把追求快乐当明确目标越不快乐，因为对快乐的持续自我监控本身会杀死快乐。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="75f13e129ce10db5" style="border-left-color:#ae72c0">
 <h2>深入思考<span class="en">Questions at the Edge</span></h2>

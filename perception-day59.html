@@ -48,6 +48,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -213,6 +221,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习 + 思考题</b>为你最常出错的一类工作写一张三项检查清单，本周每次逐条勾。<b>思考题：</b>你今天错过的那件重要的事，是没发生，还是发生了而你没看到？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>通信工程 · 差分编码与视网膜预测编码</b>：1950 年代 Bell 实验室的差分脉冲编码（DPCM）只传「实际值减预测值」的残差，省下大半带宽；1982 年 Srinivasan、Laughlin 与 Dubs 据此重读视网膜的侧抑制，认为它在做同一件事。像在「对得上的不再上送」；不像在解码端：编码器最后要还原原信号，大脑从不还原输入，你体验到的就是预测本身。</li>
+<li><b>投资 · 预期差</b>：财报公布后，股价不看利润高低，看它和市场一致预期差多少；符合预期的好消息常常不动价格，正像被预测掉的输入不再上送。不像的是，市场先验由众人报价聚合而成，错久了有套利者来纠正，个人的强先验没人替你套利。</li>
+<li><b>生物进化 · Uexküll 的环境界（Umwelt）</b>：Jakob von Uexküll 描述蜱虫的世界只剩丁酸气味、体温和毛发几个信号，其余一概不存在；每个物种只「看到」与生存相关的切片。选择性注意是同一结构的个人版。不像在于，环境界由演化定型，注意的过滤器却随任务时时重新分配。</li>
+<li><b>统计学 · 元分析的逆方差加权</b>：合并多项研究时，每项按方差的倒数加权，噪声越大话语权越小，正是 Ernst 与 Banks 测到的视触整合规则。不像的是，元分析的权重写在纸上、可以审计；大脑的权重自动设定，还被母语这类长期经验悄悄调过。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>视网膜有盲点却从不被看见，因为人看到的是大脑基于输入生成的推断，而非感官输入本身。</li>
+<li>Anil Seth 把知觉称为「受控幻觉」：大脑先猜测，感官证据只负责约束和纠正猜测。</li>
+<li>预测加工理论认为，皮层自上而下传递预测，自下而上只传递预测误差。</li>
+<li>精度加权决定知觉结果：感官证据可靠时听感官，信号模糊或人疲惫时更多交给先验。</li>
+<li>Adelson 的棋盘阴影错觉显示，视觉系统输出的是推断出的反射率，而不是像素亮度。</li>
+<li>知道错觉的原理也无法消除错觉，知觉层的偏差只能靠改流程和环境来应对。</li>
+<li>Ernst 与 Banks 2002 年发现，大脑按各感官的可靠度加权整合信息，接近统计最优。</li>
+<li>McGurk 效应说明视听整合是强制发生的，而整合权重会被母语经验长期调制。</li>
+<li>「看不见的大猩猩」实验中约一半人漏看，83% 的放射科医生也没报告 CT 影像里嵌入的大猩猩。</li>
+<li>知觉负载理论指出，任务太简单时多余的注意资源会溢出，人反而更容易分心。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>说知觉是「受控幻觉」，是不是取消了客观世界？</summary><div>不是，但取消了「直接接触」这个假设。Seth 的区分是：幻觉与知觉的差别不在是否建构，而在<strong>是否被感官证据持续约束、是否与他人的建构收敛</strong>。这接近间接实在论：世界独立存在，但只能经由模型接触。实践含义是别争谁看到的是「真的」，去比谁的模型被更多独立证据约束。</div></details>
 <details><summary>预测加工与唯识的对应，是真呼应还是文字游戏？</summary><div>在「境不是现成待取的对象、而是识的建构产物」这一层是真对应，两边的方法也一致：不在境上使劲，在能取的一侧使劲。差异要说清——唯识的「识」承载种子、业力与跨世相续，是本体论与伦理学；预测加工只是计算层面的机制假说。可迁移的是方法论：<strong>把注意力从「事实如何」转向「我用什么模型在看」</strong>。</div></details>

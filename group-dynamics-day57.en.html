@@ -54,6 +54,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -236,6 +244,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Political philosophy · Condorcet's jury theorem (1785)</b>: if each juror judges independently and is right slightly more than half the time, the majority vote approaches certainty as the jury grows; the wisdom of crowds rests on the same independence premise. The difference: the theorem only handles yes-or-no questions, and once votes are correlated, no number of jurors can rescue it.</li>
+<li><b>Distributed systems · Correlated failure and N-version programming</b>: three replicas tolerate faults only if their failures are independent; one shared bug or one shared data center takes them all down together. In 1986 Knight and Leveson had separate teams write programs from the same specification and found the versions often failed on the same inputs, so independence does not come for free. The difference: machines that fail together don't embolden one another, whereas a converging crowd grows more confident.</li>
+<li><b>Evolutionary biology · Fisherian runaway selection</b>: females prefer long tails, long-tailed males leave more offspring, and preference and trait escalate each other until the peacock's tail keeps growing; group polarization is the same positive feedback, with everyone wanting to sit slightly past the average. The difference: a long tail is capped by predation costs, while escalating opinions in a like-minded group cost almost nothing.</li>
+<li><b>Complexity science · Response threshold model (Bonabeau et al.)</b>: in an ant colony the individual with the lowest threshold takes up a task first, the stimulus drops, and the others stand down, so division of labor emerges on its own, the same structure as bystanders where one person moves and the rest stay put. The difference: in the colony standing down is efficient allocation, whereas in human crowds the common failure is that nobody moves first and everyone waits.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>After discussion, like-minded people move further in the direction they already leaned, a pattern called group polarization, with consensus and extremity rising together.</li>
+<li>Group polarization runs on two mechanisms: arguments favoring the initial lean dominate discussion, and everyone wants to be slightly ahead of the average in the valued direction.</li>
+<li>Sunstein and colleagues found the same federal appeals judge votes more extremely on a panel of same-party appointees than on a mixed panel.</li>
+<li>The more people present, the less likely any one of them is to help, yet the chance that at least one person helps rises with group size.</li>
+<li>Philpot and colleagues analyzed CCTV footage of 219 real conflicts and found at least one bystander intervened in over 90% of them.</li>
+<li>Getting from noticing to helping takes five steps: notice, judge it an emergency, take responsibility, know what to do, and act; a block at any step stops action.</li>
+<li>The SIDE model holds that anonymity lowers personal identity and raises social identity, so people follow the current group's norms more closely rather than abandoning norms.</li>
+<li>The diversity prediction theorem states that collective error equals average individual error minus prediction diversity, so more diverse judgments make a more accurate group.</li>
+<li>In Lorenz and colleagues' experiment, seeing others' estimates narrowed the spread of answers without improving accuracy, while individual confidence went up.</li>
+<li>The cheapest way to improve group decisions is to have everyone write down an independent judgment before meeting and let the most senior person speak last.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 <details><summary>Polarization and collective wisdom use the same people — why do they end up opposite?</summary><div>They are two orderings of the same aggregation process. Polarization happens when you "talk first, then form a judgment"; aggregation works when you "form a judgment first, then talk." Independence is the switch. So the actionable lever isn't picking people, it's sequencing the information flow — which explains a counterintuitive fact: more meetings often lower rather than raise judgment quality, because every early exposure spends down diversity.</div></details>
 <details><summary>Does the bystander effect hold in collectivist cultures?</summary><div>Diffusion of responsibility rests on a default assumption: that responsibility can be divided evenly. In more relationally organized cultures, responsibility is often pre-assigned by role and closeness (who is present, who is senior, who is connected to the person in need), which may lower situational ambiguity while also raising the social cost of stepping out of place. The evidence base is still largely WEIRD (see Day 31); Philpot's footage study reaching South Africa is an improvement but not enough to settle it.</div></details>

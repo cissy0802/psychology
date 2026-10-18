@@ -54,6 +54,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}.flow-arrow{transform:rotate(90deg)}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
 </style></head><body>
 <div class="container">
 <header>
@@ -226,6 +234,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>观察自己这周有没有用「诱导式提问」（对孩子、同事、伴侣），换成开放中立的问法试一次。思考：既然目击记忆如此脆弱，法律该如何为它设权重？跨学科：这与<strong>情绪建构论</strong>（情绪也是被建构的）、佛学「识」的现起，如何相互呼应？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 读修复（read repair）</b>：Cassandra 一类数据库读一个键时，若发现副本不一致，会顺手把旧副本改写——读取本身触发写入，和再巩固「一提取就改写」同构。不像的是，读修复按时间戳把副本修向最新的真实写入；回忆却把当下的信念和情绪写回去，越修离原件越远。</li>
+<li><b>信息论 · 有损压缩的代际损失</b>：JPEG 只存「看起来差不多」的信息，解码时再补全；同一张图反复另存，失真会层层累积，像每次回忆都重新编码一遍。不像在：压缩丢什么只看算法，与画面含义无关；记忆的损失却有方向，系统性地滑向自己熟悉的图式。</li>
+<li><b>生物进化 · 祖先状态重建</b>：没人见过祖先的基因序列，系统发育学只能用现存物种的序列加演化模型反推「最可能」的祖先，正像大脑用碎片加图式重建过去。不像在：系统发育的重建会附上概率、明说哪里没把握；记忆交出的重建却不带误差棒，还常常信心十足。</li>
+<li><b>投资 · 结果导向偏差（resulting）</b>：扑克选手出身的 Annie Duke 在《Thinking in Bets》(2018) 里提醒，人会按结果好坏倒推当初决策的好坏。对策和列队指认改革同构：结果揭晓前写下决策日志，先锁住当时的判断与信心。不同在于，投资者可以主动建档，目击者往往来不及。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>大脑只存碎片化的要点（gist），回忆时用图式现场重建，记忆不是录像回放。</li>
+<li>Bartlett 1932 年的「幽灵之战」实验中，被试会把不合自身文化图式的故事细节删掉或改写。</li>
+<li>再巩固研究表明，记忆被提取时会短暂变得不稳定、可被改动，所以每次回忆都在改写记忆。</li>
+<li>以旁观视角「看着自己」的童年记忆几乎一定被重构过，清晰度和准确度是两回事。</li>
+<li>Loftus 的「商场走失」实验里，约四分之一成年人「记起」了被暗示植入的假童年事件。</li>
+<li>来源监控错误指人记住了内容却记错来源，把想象、别人的话或新闻误当成亲历。</li>
+<li>「挑战者号」研究发现，闪光灯记忆 2.5 年后近半细节被改写，主观信心却依然极高。</li>
+<li>情绪唤起会增强「记得很牢」的主观感受和核心情节，但外围细节照样漂移。</li>
+<li>美国经 DNA 平反的冤案中约七成涉及目击者误认，信心可被操纵，不是准确度的可靠指标。</li>
+<li>列队指认改革包括逐一呈现、双盲主持、当场记录初始信心、陪衬者合理相似。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>1. 如果每次回忆都在改写记忆，那「不去回想」反而更能保存真相吗？</summary><div>理论上少提取＝少一次改写；但记忆也会自然衰退，而大脑存记忆本就不为「存档」，而为指导未来行动。Schacter 认为建构性正是为了让我们灵活地<strong>想象未来</strong>（同一套系统既回忆过去也模拟未来）。所以「保鲜」从不是记忆的设计目标——它天生就是为了被改写和重组而存在的。</div></details>
 <details><summary>2. 记忆的建构性，和情绪建构论（Barrett）、预测加工，是同一个大脑原理的不同侧面吗？</summary><div>很可能是。知觉是对当下的预测，情绪是对内感受的建构，记忆是对过去的重建——三者都是大脑用「先验预测 ＋ 碎片证据」现场生成的，共享同一套<strong>预测式建构</strong>机器。这意味着「客观读取现实」在任何时间维度上都不成立：大脑始终在讲一个自洽的故事。</div></details>

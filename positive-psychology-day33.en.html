@@ -47,6 +47,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.bar-label{width:104px;font-size:0.78rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -220,6 +229,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · The Red Queen hypothesis (Leigh Van Valen, 1973)</b>: a species must keep evolving just to hold its place among co-evolving rivals, named for the Red Queen in <i>Through the Looking-Glass</i> who runs flat out to stay where she is. The hedonic treadmill has the same structure; the difference is that the Red Queen chases external rivals, while on the treadmill what quietly moves up is your own baseline.</li>
+<li><b>Neuroscience · Explore vs. exploit</b>: a reinforcement-learning agent must trade off trying new options against cashing in on known ones, and Daw and colleagues (2006) found frontopolar cortex activity tied to exploratory choices in humans. Positive emotion in broaden-and-build works like a signal turning the dial toward exploration; unlike the algorithm, which sets the dial by uncertainty, emotion doesn't read uncertainty at all.</li>
+<li><b>Western philosophy · Aristotle's mean</b>: the <i>Nicomachean Ethics</i> places virtue between excess and deficiency, courage sitting between cowardice and rashness, which matches strengths flipping into flaws when overused. The difference: VIA scores 24 strengths separately, while Aristotle held that the virtues are unified by practical wisdom and can't be trained one at a time.</li>
+<li><b>Western philosophy · Mill's paradox of happiness</b>: after his mental crisis of 1826, John Stuart Mill concluded in his <i>Autobiography</i> that asking yourself whether you're happy makes happiness slip away; it comes only by the way, while aiming at something else. Same structure as the happiness paradox; Mill got there by introspection, Mauss by experiment, pinning the mechanism on self-monitoring.</li>
+<li><b>Investing · Markowitz portfolio theory (1952)</b>: spreading money across weakly correlated assets buys the same expected return with less volatility. Not betting everything on one PERMA dimension follows the same logic; the difference is that the five dimensions correlate positively, so when one collapses it often drags others down, making the diversification weaker than a real portfolio's.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Seligman's PERMA splits flourishing into five separately trainable dimensions: positive emotion, engagement, relationships, meaning, and accomplishment.</li>
+<li>Positive emotion is only one fifth of well-being; chasing good moods all day crowds out the more durable meaning and relationships.</li>
+<li>Fredrickson's broaden-and-build theory holds that positive emotion widens the options you notice and builds resources over time.</li>
+<li>Identifying a signature strength and using it in new ways raised happiness and lowered depression in randomized trials for about six months.</li>
+<li>Overused character strengths flip into flaws: curiosity becomes distraction, courage recklessness, kindness a loss of boundaries.</li>
+<li>On the hedonic treadmill, people adapt fast to stable states, so the joy of a raise, new car, or bigger house returns to baseline within months.</li>
+<li>Dopamine encodes a prediction error, how much better than expected; once a good thing becomes normal, the error and the thrill both drop to zero.</li>
+<li>Hedonic adaptation has limits: long-term unemployment, widowhood, and serious disability can lower the happiness baseline for good.</li>
+<li>The math behind the Fredrickson–Losada 3:1 positivity ratio was debunked in 2013; positive emotion has no magic threshold.</li>
+<li>Making happiness an explicit goal makes people less happy, because constant self-monitoring of happiness itself kills it.</li>
+</ol>
 <!-- Deep reflection -->
 <div class="card" style="border-left-color:#ae72c0">
 <h2>Deeper Reflection<span class="en">Questions at the Edge</span></h2>

@@ -52,6 +52,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:118px;font-size:0.72rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -219,6 +227,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>Practice + Reflection</b>Run one values clarification: three roles, three descriptions, three minimum actions — all executed once this week. <b>Reflection:</b> which goal you're currently chasing will leave a hollow once completed, and what direction sits behind it?
 </div>
 </div>
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Distributed systems · Heartbeats and membership</b>: whether a node counts as "up" is not its own call; other nodes have to keep receiving its heartbeat and answer it. Mattering works the same way: other people confirm it through behavior. The difference: nodes are built to be swapped out, and replacing one is no failure; a person feeling "anyone could do this" is the mattering gap itself.</li>
+<li><b>Investing · Anomaly decay (McLean &amp; Pontiff, 2016)</b>: tracking 97 published stock-return predictors, they found returns 26% lower out of sample and 58% lower after publication; like mortality salience, a result on paper shrank sharply in the real world. The difference: part of that shrinkage is traders arbitraging the anomaly away, so the effect was once real; Many Labs 4 suggests the fast causal chain in the lab may never have stood at all.</li>
+<li><b>Western philosophy · Aristotle's motion vs. actuality</b>: the <i>Metaphysics</i> splits activities in two. Building a house is a motion that ends once the house stands; seeing and living well are actualities, complete at every moment. That is exactly the line between goals and values. The difference: Aristotle describes the nature of the activity itself, while ACT values are directions a person chooses.</li>
+<li><b>Consciousness · Nagel's "What Is It Like to Be a Bat?" (1974)</b>: Thomas Nagel argued that subjective experience is reachable only from the first person, however much others know; existential isolation is that gap being felt. The difference: Nagel's gap cannot be closed in principle, while existential isolation waxes and wanes and eases noticeably in moments of being understood.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Meaning in life splits into three separately measurable components (coherence, purpose, and mattering), and Martela and Steger later added a fourth: experiential appreciation.</li>
+<li>During upheavals such as a career change, loss, or migration, coherence collapses first, because it depends on narrative processing that stitches scattered events into a story.</li>
+<li>Mattering is sustained by outside feedback: specific people confirming through specific behavior that your existence matters to them.</li>
+<li>On the MLQ, presence of meaning tracks well-being reliably, while search for meaning goes with distress only when presence is low.</li>
+<li>Across large samples, average meaning scores sit above the scale midpoint: meaning is the norm, not a prize for a few.</li>
+<li>Yalom's four ultimate concerns are death, freedom, isolation, and meaninglessness, best used as a map for organizing experience rather than a validated theory.</li>
+<li>Existential isolation, the sense that no one sees the world as you do, is separable from social loneliness and independently predicts depression.</li>
+<li>Many Labs 4 failed to replicate the mortality salience effect across 21 labs and about 2,200 participants; citation counts measure popularity, not replicability.</li>
+<li>Breitbart's Meaning-Centered Psychotherapy raised meaning and lowered hopelessness in multiple RCTs with advanced cancer patients, showing meaning can be intervened on.</li>
+<li>ACT treats values as directions, not goals: goals vanish once reached, directions never finish, and people who draw meaning from goals go hollow on arrival.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 <details><summary>Do the three components carry equal weight across cultures?</summary><div>Probably not. Cross-cultural work consistently finds East Asian samples reporting lower purpose than North American ones and higher family embeddedness and role fulfillment. In interdependent-self cultures, <strong>mattering comes more from being needed inside a relational network than from an individualized sense of direction</strong>. Applying North American norms directly therefore misreads people: a low purpose score may not indicate missing meaning, only that the scale measures an individualist expression of it.</div></details>
 <details><summary>Is meaninglessness the same as emptiness in Buddhism?</summary><div>No — they point in opposite directions. Existential meaninglessness is a <strong>loss</strong>: you expected the universe to supply an answer and it didn't. Emptiness is a <strong>removal</strong>: seeing that phenomena lack inherent existence, so the answer is no longer required. The first typically comes with depression and withdrawal; the second is marked by compassion and action. The practical test: if someone's "seeing through it all" makes them colder and more detached, that is depressive meaninglessness wearing Buddhist vocabulary.</div></details>

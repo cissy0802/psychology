@@ -52,6 +52,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -215,6 +223,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>回想一次你用"这不是我"拒绝过的事。它真的违背你的价值，还是只是不熟悉、不舒适？把它重述成"我正在学习____"。<b>思考</b>：如果"真我"其实是你不断选择出来的，而非被发现的，"忠于自己"这句话该怎么重写？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>神经科学 · 预测加工（predictive processing）</b>：大脑先用先验去猜，再拿感官误差校正模型；自我图式就是关于自己的一套强先验，决定哪些反馈能被看见。不像在于：健康的感知会让误差改写先验，自我图式却常把冲突反馈当噪声打折，模型越用越硬。</li>
+<li><b>分布式系统 · 舱壁模式（bulkhead）</b>：Michael Nygard 在《Release It!》（2007）里把线程池和连接按舱壁隔开，一处故障不拖垮全船；自我复杂度是同一种隔离设计。不像的是，系统的舱壁能硬切断，人的各个自我共用一副身体和一套情绪，隔板总会渗水。</li>
+<li><b>神经科学 · Gazzaniga 的「左脑解释者」</b>：裂脑病人的右半球接到指令让左手动作，会说话的左半球并不知道原因，却当场编出流畅的理由；叙事身份像这个解释者的长篇版本，把零散行为黏成一个说得通的我。不像在于：解释者的编造是自动且不自知的，救赎叙事却可以被有意识地重写。</li>
+<li><b>中国哲学 · 荀子「化性起伪」</b>：荀子说人的善是「伪」，即人为，靠礼的反复操练把本性改造成德性，正像先扮演、再长成的真实性观。不像在于：荀子先判定本性为恶、需要矫正；真实性悖论不给本性打道德分，只说自我在选择中演化。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>自我概念不是存好的档案，而是一套自我图式：情境激活哪部分，此刻的工作自我概念就是哪部分。</li>
+<li>Hazel Markus 发现，人在自己在意的维度上加工相关信息更快、记得更牢，这叫自我参照效应。</li>
+<li>「可能自我」包括想成为的我和怕成为的我，这些未来版本强烈驱动着当下的动机。</li>
+<li>自我图式同时是过滤器，与图式冲突的反馈会被忽略或打折，所以自我概念有强烈的自我维持惯性。</li>
+<li>会议室里果断、孩子面前柔软的你都是真实的自我，多个情境化的自我是正常结构，不是虚伪。</li>
+<li>Patricia Linville 的自我复杂度理论：自我分成越多相对独立的面向，一次挫折越难淹没整个自我。</li>
+<li>让碎片自我连成「同一个我」的是故事，Dan McAdams 称之为叙事身份。</li>
+<li>把逆境讲成救赎序列的人心理健康和生成性更高，习惯污染序列的人抑郁风险更高。</li>
+<li>人们普遍相信内心有个道德上良善的真我，把正向改变算作发现真我，这是信念偏差而非观察。</li>
+<li>真实性应当可演化：死守「这才是我的风格」会卡住成长，领导力常要求先扮演、再长成。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>如果没有一个固定的"真我"，那"忠于自己"还剩下什么意义？</summary><div>意义从"忠于既有本质"转移到"对自己选择的价值负责"。忠于自己不再是考古（挖出埋藏的真我并服从），而是承诺（选定我要成为谁，并让行动与之一致）。这反而更有分量：本质论把责任外包给"天生如此"，承诺论要你每天用行为兑现想成为的人——忠于的对象从过去的我，变成你正在写下的那个我。</div></details>
 <details><summary>叙事自我带来的连续感，是"有用的幻觉"还是真实的东西？</summary><div>取决于你问哪种"真实"。从神经层面看没有不变的实体贯穿始终——Derek Parfit 论证人格同一性并非全有或全无，佛学"无我"更直接否认固定自我。但"幻觉"一词有误导：连续感是大脑真实建构的功能产物，像货币价值——由约定与使用支撑，却真实地组织生活。它不是"底层实体"，也远不止"错觉"，说它是"有用且真实的建构"最准确。</div></details>

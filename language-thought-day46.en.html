@@ -50,6 +50,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -194,6 +202,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <div class="practice">
 <b>This Week's Practice + Question</b> This week, run one "emotion granularity check": when you feel bad, force yourself to write the most precise word, not "I'm not okay." Question: if you don't even have a name for an emotion, can you say you've "felt" it — or are you just being pushed around by it?</div>
 </div>
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Neuroscience · Predictive coding</b>: The brain guesses its sensory input from priors, then corrects with prediction error. Weak linguistic relativity looks like a prior weighted by language: Russian speakers expect finer shades of blue, so they tell them apart faster. The difference: priors are mostly learned from experience, while linguistic categories are discrete cuts society hands you whole.</li>
+<li><b>Distributed systems · Required fields in a message schema</b>: When a protocol makes a field mandatory, every sender is forced to collect that data all the time. Kuuk Thaayorre makes cardinal direction a required field, so orientation becomes an always-on process. Unlike a schema, people can add fields at will; it's just that the optional ones rarely get recorded.</li>
+<li><b>Consciousness studies · Julian Jaynes's bicameral mind</b>: In 1976 Jaynes proposed that ancient people heard their own inner speech as commands from gods, and that introspective consciousness arose only once they learned to claim that voice as theirs. It shares the structure of the source-monitoring failure in the main text: mistaking your own words for someone else's. The difference: the bicameral mind is a bold, poorly evidenced hypothesis that mainstream scholars reject, best used as a thought experiment.</li>
+<li><b>Cybernetics · The good regulator theorem</b>: Conant and Ashby argued in 1970 that every good regulator of a system must be a model of that system. People with higher emotional granularity regulate better, which reads as a higher-resolution model: you have to tell disappointment from feeling slighted before you can answer each differently. The difference: the theorem is about structural mapping and doesn't require the model to be made of words.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>The strong claim that language determines thought has been refuted, but the weak claim that language habitually steers attention and perception is well supported.</li>
+<li>Russian has separate basic words for light and dark blue, and Russian speakers discriminate those two blues faster.</li>
+<li>Language exerts influence by making a distinction obligatory and habitual; it shifts default attention, not the ceiling of intelligence.</li>
+<li>The claim that bilingualism boosts executive function has mostly failed to replicate in large samples, and the field shows publication bias.</li>
+<li>The foreign-language effect: deciding in a second language lowers loss aversion and reduces susceptibility to framing effects.</li>
+<li>A foreign language acts like frosted glass for emotion: the emotional associations learned in the native tongue weaken, so slow thinking gains ground.</li>
+<li>Vygotsky held that inner speech is social dialogue internalized through private speech, and that it is a core tool of self-regulation.</li>
+<li>Talking to yourself in the second person or by name creates psychological distance and reduces anxiety more than using "I."</li>
+<li>Lieberman's fMRI studies found that putting a word to an emotion lowers amygdala activity and activates the right ventrolateral prefrontal cortex.</li>
+<li>Higher emotional granularity means better regulation, echoing the good regulator theorem: a regulator must first be a model of what it regulates.</li>
+</ol>
 <div class="deep-title">Deeper Reflections</div>
 <details><summary>1. If language shapes default attention, naming regulates emotion, and inner speech is a self-control engine — is "expanding vocabulary" a badly underrated form of self-improvement?</summary><div>Yes, but distinguish "showing off words" from "real distinctions." What matters isn't memorizing hard words but acquiring <strong>new categories</strong> that carve up reality — each precise new concept gives you one more handle you can notice and regulate; layering multiple conceptual languages is a higher-resolution model of the world. But language can also build cages: being anchored to a bad label ("I'm a failure") is equally language shaping reality. The tool is neutral; the direction is yours.</div></details>
 <details><summary>2. Emotion runs hot in the native tongue and cushioned in a foreign one — so for a child raised multilingual, the "emotional native language" and "thinking language" may not be the same. What does that mean?</summary><div>It means the self may be "layered": emotional memory is anchored in the earliest, most intimate language, while abstract thought flows better in the later, school language. This isn't necessarily a rupture — many multilinguals switch fluidly, even using the "thinking language" to cool the "emotional language." But the hint: for a multilingual child, discussing feelings in their <strong>emotional native language</strong> and reasoning in any language may fit their brain's actual wiring better.</div></details>

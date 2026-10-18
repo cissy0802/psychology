@@ -51,6 +51,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -274,6 +283,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Complexity science · Critical slowing down (Scheffer et al., 2009)</b>: As a system nears a tipping point, the earliest warning is often not bigger swings but slower recovery after each disturbance; lakes and climate records show it. That is why you watch the recovery curve: delayed recovery signals a load near its limit. The difference: ecosystems that tip often stay tipped, while a human stress system can be pulled back through recovery.</li>
+<li><b>Distributed systems · Retry storms</b>: A service slows, callers retry, the retries add load and slow it further, and the failure feeds itself. Chronic stress weakening the hippocampus and prefrontal cortex is the same shape: the problem eats the capacity that would fix it. The difference: engineers break the loop with exponential backoff; the body needs real recovery.</li>
+<li><b>Business · Technical debt (Ward Cunningham, 1992)</b>: Each shortcut taken under deadline looks harmless, but the interest compounds until most effort goes to servicing it. Allostatic load is likewise the sum of countless switches never fully turned off. The difference: a team can halt and refactor; the body repays only in installments of daily recovery.</li>
+<li><b>Eastern philosophy · Zhuangzi's Cook Ding</b>: Cook Ding's knife stays sharp after nineteen years because he follows the gaps between the joints instead of hacking, then wipes the blade and puts it away. Wear depends on how you meet resistance and whether you rest the tool, not just on how much work you do. The difference: Ding's skill avoids resistance, while stress research admits it often can't be avoided, only recovered from.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Allostasis means the body stays stable by changing in advance, such as raising blood pressure before you stand up.</li>
+<li>Bruce McEwen's allostatic load: stress mediators protect in the short run and cause wear when repeatedly switched on and never off.</li>
+<li>Allostatic load has four failure patterns: repeated hits, lack of habituation, delayed recovery and compensatory overload.</li>
+<li>The SAM axis releases adrenaline within seconds; the HPA axis releases cortisol over minutes to hours to sustain mobilization.</li>
+<li>Chronic stress dulls glucocorticoid receptors, so cortisol's negative-feedback brake fails and the stress response can't switch off.</li>
+<li>Robert Sapolsky argues that stress makes us ill not because the response is weak, but because it runs too long for the wrong threats.</li>
+<li>Long-term high cortisol shrinks the hippocampus, sensitizes the amygdala and weakens prefrontal control: louder alarms, looser brakes.</li>
+<li>Epel and Blackburn linked chronic caregiving stress to shorter telomeres, suggesting stress may speed biological aging.</li>
+<li>The four levers of intervention are recovery, exercise, social buffering and reappraisal; the aim is to engineer recovery, not erase stress.</li>
+<li>Reading a racing heart as the body gearing up to help can change the stress response's physiology, but only for controllable challenges.</li>
+</ol>
 <!-- Going Deeper -->
 <div class="card">
 <h2>Going Deeper<span class="en">Open Questions</span></h2>

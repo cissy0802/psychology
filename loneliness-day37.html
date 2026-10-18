@@ -50,6 +50,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:76px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -185,6 +194,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <div class="practice">
 <b>本周练习 + 思考题</b>本周捕捉一次"社交负面自动想法"，用三栏法拆解：<b>情境 → 自动解读 → 更可能的替代解释</b>。<br/>思考题：我的孤独，多少来自客观的连接匮乏，多少来自那副把中性读成拒绝的滤镜？</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 心跳超时与故障误判</b>：节点靠心跳判断同伴是否宕机，超时设得太紧，网络稍慢就把活着的同伴判死，于是自行隔离，反倒真把自己切出了集群。孤独者的社会威胁警觉就是一个调得过紧的超时阈值，把没回的消息当成「对方已离线」。像在误报会自我坐实；不像在于，工程师改个参数就能放宽阈值，人的滤镜只能靠一次次「原来他只是忙」的新证据慢慢调松。</li>
+<li><b>进化生物学 · 超常刺激（Niko Tinbergen）</b>：Tinbergen 发现蛎鹬会撇下自己的蛋，去孵一个大得离谱的假蛋；社交媒体的高光片段同样是放大版信号，把「应得的连接」标准越抬越高。不像在于，鸟的偏好是写死的本能，人的标准是学来的，可以重新校准。</li>
+<li><b>佛学 · 第二支箭（《箭经》）</b>：佛陀说凡夫中了一箭，又自己补射第二箭，身体的痛之外再添心的痛。连接匮乏是第一支箭，「果然没人要我」的解读是第二支，认知干预拔的正是这一支。不像在于，佛学要人不再射第二箭，CBT 只求换一个更可能的解读。</li>
+<li><b>投资 · 对冲的持有成本</b>：长期孤独的身体像一直在买保险，预先调高炎症来防外伤和感染，保费按天扣；风险没来，保费照付，几年下来就是血管和免疫的磨损。不像在于，投资人可以平仓，身体却收不到「威胁已解除」的通知。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>孤独是渴望的连接与实际拥有的连接之间的主观落差，独处则是主动选择、有滋养的独自。</li>
+<li>Cacioppo 认为孤独是进化而来的信号，像饥饿一样逼人修复社会联结，本该只是短暂的推力。</li>
+<li>Holt-Lunstad 的元分析显示，社会联结薄弱者早逝风险上升约 26–32%，可与吸烟相提并论。</li>
+<li>慢性孤独让促炎基因表达上调、抗病毒反应下调（CTRA 模式），身体长期停在防御状态。</li>
+<li>替代假说认为线上轻接触挤占线下深连接，刺激假说认为社交媒体能为外向者增强连接。</li>
+<li>被动刷取与社会比较伤害幸福感，主动对话与共创则中性或有益，使用方式比屏幕时长更重要。</li>
+<li>Orben 与 Przybylski 重新分析大样本，发现屏幕时间与青少年福祉的关联效应量极小。</li>
+<li>Cacioppo 团队的元分析显示，矫正扭曲的社会认知，效果胜过增加社交机会、技能与支持。</li>
+<li>慢性孤独者对社会威胁高度警觉，把中性信号读成拒绝，退缩之后真的把人推开。</li>
+<li>借佛学的「第二支箭」看孤独：连接匮乏是第一支箭，「没人要我」的解读是可以先拔的第二支。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="deep">
 <h2 data-tts="f0e8ce6aa77e099d">深入思考</h2>

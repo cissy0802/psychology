@@ -47,6 +47,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -212,6 +220,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>This Week's Practice + Question</b>Write a three-item checklist for the kind of work you get wrong most often, and tick it every time this week. <b>Question:</b> the important thing you missed today — did it not happen, or did it happen while you weren't looking?
 </div>
 </div>
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Telecommunications · Differential coding and retinal predictive coding</b>: Bell Labs' differential pulse-code modulation (DPCM) of the 1950s transmits only the residual, actual minus predicted, saving most of the bandwidth; in 1982 Srinivasan, Laughlin and Dubs reread lateral inhibition in the retina as doing the same job. The match is "whatever is predicted is not sent on." The mismatch is at the receiving end: a decoder rebuilds the original signal, while the brain never rebuilds the input; what you experience is the prediction itself.</li>
+<li><b>Investing · The earnings surprise</b>: after an earnings release, a stock moves not on how big the profit is but on how far it lands from consensus; good news that was expected often leaves the price flat, just as predicted input is never forwarded. The difference: a market's prior is aggregated from many bids and gets corrected by arbitrageurs when it stays wrong, while nobody arbitrages your personal strong prior.</li>
+<li><b>Evolutionary biology · Uexküll's Umwelt</b>: Jakob von Uexküll described a tick's world as a few signals (butyric acid, body heat, hair) with everything else simply absent; each species "sees" only the slice that matters for survival. Selective attention is the personal version of the same structure. Unlike an Umwelt, which evolution fixes, the attentional filter is reassigned from task to task.</li>
+<li><b>Statistics · Inverse-variance weighting in meta-analysis</b>: when pooling studies, each is weighted by the inverse of its variance, so noisier studies get less say, which is exactly the visual-haptic rule Ernst and Banks measured. The difference: a meta-analysis writes its weights down for audit, while the brain sets them automatically and lets long experience such as native language quietly retune them.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>You never see your retinal blind spot because what you see is an inference the brain builds from input, not the input itself.</li>
+<li>Anil Seth calls perception a "controlled hallucination": the brain guesses first, and sensory evidence only constrains and corrects the guess.</li>
+<li>Predictive processing holds that cortex sends predictions downward and passes only prediction errors upward.</li>
+<li>Precision weighting sets the outcome: reliable evidence gets trusted, while noise or fatigue hands more weight to the prior.</li>
+<li>Adelson's checker-shadow illusion shows that the visual system outputs inferred reflectance, not raw pixel luminance.</li>
+<li>Knowing how an illusion works does not dissolve it, so perceptual-level biases must be handled by changing process and environment.</li>
+<li>Ernst and Banks (2002) found the brain combines the senses weighted by their reliability, close to statistically optimal.</li>
+<li>The McGurk effect shows audiovisual integration is mandatory, and its weights are tuned over years by native-language experience.</li>
+<li>About half of viewers missed the invisible gorilla, and 83% of radiologists failed to report a gorilla embedded in lung CT scans.</li>
+<li>Perceptual load theory says an overly easy task leaves spare attention that spills over, making distraction more likely.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 <details><summary>Does calling perception a "controlled hallucination" abolish the objective world?</summary><div>No, but it abolishes the assumption of direct contact. Seth's distinction is that hallucination and perception differ not in whether they are constructed but in <strong>whether they stay constrained by sensory evidence and converge with other people's constructions</strong>. Philosophically this sits close to indirect realism: the world exists independently, but is reachable only through a model. The practical upshot is to stop arguing over whose view is "real" and start comparing whose model is constrained by more independent evidence.</div></details>
 <details><summary>Is the parallel between predictive processing and Yogācāra real or just wordplay?</summary><div>At the level of "the object is not sitting out there waiting to be grasped but is generated by consciousness," the correspondence is real, and both prescribe the same move: work on the perceiving side, not on the object. The divergence must be stated too — Yogācāra's consciousness carries seeds, karma, and continuity across lifetimes; it is an ontology and an ethics, whereas predictive processing is only a computational hypothesis. What transfers is method: <strong>shift attention from "what is the case" to "which model am I looking through."</strong></div></details>

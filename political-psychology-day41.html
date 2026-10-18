@@ -49,6 +49,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:92px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -189,6 +198,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <div class="practice">
 <b>本周练习 + 思考题</b>本周找一次机会，对一个立场不同的人只做一件事：问「你是怎么开始这么想的？」，然后忍住不反驳，听满三分钟。<br/>思考题：如果被真正听见能松动人心，为什么我们在最重要的分歧上，反而最舍不得先去听？</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>复杂性科学 · 谢林隔离模型（Thomas Schelling，1971）</b>：每个人只要求邻居里别太少同类，这种温和偏好跑上几轮，整座城就分成泾渭分明的两块。像在哪：没人想要极化，极化照样从局部规则里长出来。不像在哪：谢林的格子人只是挪位置，政治部落还会生出对彼此的恨。</li>
+<li><b>神经科学 · 左脑解释器（Michael Gazzaniga）</b>：裂脑病人的右脑看到指令、做了动作，不知情的左脑立刻编出一套顺理成章的理由，自己还深信不疑。这和「理性是保护身份的律师」同构：先有行为，后补说辞。不像的是，解释器是信息缺失下的补洞，动机性推理是信息齐全时的选择性加工。</li>
+<li><b>生物进化 · 绿胡子效应（W. D. Hamilton 1964 提出，Dawkins 1976 命名）</b>：一个基因若能让携带者长出显眼标记、并专门善待同样有标记的个体，就能自我扩散。最小群体实验像一个人造绿胡子：随便贴个标签，偏袒就跟上来了。不像在哪：绿胡子要求标记和利他行为真的连锁在同一基因上，抛硬币分出的队伍什么都不连。</li>
+<li><b>分布式系统 · 网络分区与脑裂（split-brain）</b>：集群断网后，两边各自选出主节点，都以为对面已经宕机，按自己的副本继续写。感知鸿沟就是分区后各自缓存的那份过时的对家。不像的是，机器恢复连接后可以按日志对账合并，人群之间没有一份公认的日志，所以接触只能一次一次地重建信任。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>双生子研究发现，政治态度约三到五成的差异可归因于遗传，遗传塑造的首先是气质而非立场。</li>
+<li>Hibbing 的负性偏向假说认为，偏保守者平均对威胁与失序更敏感，偏自由者对新异与模糊更耐受。</li>
+<li>用惊跳反射等生理指标量出保守派的强版本研究近年多次重复失败，气质只是倾向，不是宿命。</li>
+<li>Dan Kahan 发现，数理能力越高的人越擅长把数据扭成对自己阵营有利的解读。</li>
+<li>身份保护性认知指人在事实威胁到「我这类人是对的」时，加重审查对方证据、放宽检验同盟证据。</li>
+<li>纠错反使人更信谣言的「打脸效应」在大规模重复中基本没有复现，事实澄清多数时候能温和修正认知。</li>
+<li>Tajfel 的最小群体实验显示，哪怕随机分组、毫无利害，人们也会立刻偏袒本队、贬低对队。</li>
+<li>情感极化是更恨、更不信任对方党而非更爱自己党；党派与种族、宗教、地域叠加时，让步就成了背叛。</li>
+<li>感知鸿沟研究一致发现，人们普遍严重高估对立阵营的极端程度，痛恨的对家多半是想象出的稻草人。</li>
+<li>Broockman 与 Kalla 的深度劝说实验中，约十分钟的倾听与交换故事，能显著降低偏见并持续数月。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="deep">
 <h2 data-tts="a35c1317d9641e26">深入思考</h2>

@@ -50,6 +50,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -194,6 +202,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <div class="practice">
 <b>本周练习 + 思考题</b>这周做一次"情绪测颗粒度"：难受时逼自己写下最精确的那个词，而非"我不好"。思考题：如果一种情绪你连名字都没有，你还能说自己"感受"过它吗，还是只是被它推着走？</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>神经科学 · 预测编码</b>：大脑先用先验去猜感官输入，再用误差去修正。语言相对论的弱版很像被语言加了权重的先验：俄语者对蓝的深浅预期更细，所以分得更快。不像的是，先验多半从经验统计里自己学来，语言范畴却是社会整套交给你的离散切分。</li>
+<li><b>分布式系统 · 消息 schema 的必填字段</b>：协议规定哪些字段必须填，发送方就被迫时时采集这项信息。Kuuk Thaayorre 语强制标注东南西北，等于把方位写成必填字段，方向感于是成了常驻进程。不像的是，人随时能自己加字段，只是没被强制的那些很少被记录。</li>
+<li><b>意识研究 · Julian Jaynes 的二分心智</b>：Jaynes 在 1976 年提出，古人把自己的内部言语听成神的指令，后来学会“认领”这个声音，才有了今天的内省意识。这和正文讲的源监控失败是同一结构：把自己的话当成外来的话。不像的是，二分心智是大胆而缺乏证据的假说，主流学界并不接受，只适合当思想实验。</li>
+<li><b>控制论 · 好调节器定理</b>：Conant 与 Ashby 在 1970 年提出，任何好的调节器都必须是被调节系统的一个模型。情绪粒度高的人调节力更强，可以读成模型分辨率更高：先分得清失望和被轻视，才谈得上分别应对。不像的是，定理讲的是结构映射，并不要求这个模型由词语构成。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>“语言决定思维”的强版已被推翻，但语言习惯性引导注意与感知的弱版有可靠证据。</li>
+<li>俄语把浅蓝和深蓝分成两个基本词，俄语使用者区分这两种蓝色的速度更快。</li>
+<li>语言的影响来自把某种区分变成强制、习惯的标记，它改变默认注意，而非智力上限。</li>
+<li>“双语让人执行功能更强”的说法在大样本研究中多未复现，该领域还存在发表偏倚。</li>
+<li>外语效应：用第二语言做决定时，损失厌恶下降，也更少受框架效应左右。</li>
+<li>外语像一层情绪毛玻璃，母语里习得的情绪联结在外语中变弱，慢思考因而占上风。</li>
+<li>维果茨基认为，内部言语由社会对话经私人言语内化而来，是自我调节的核心工具。</li>
+<li>用第二人称或自己的名字跟自己说话能制造心理距离，比用“我”更能降低焦虑。</li>
+<li>Lieberman 的 fMRI 研究发现，给情绪贴上词语标签时，杏仁核活动下降、右腹外侧前额叶被激活。</li>
+<li>情绪粒度越高调节力越强，正如控制论的好调节器定理：调节者必须先是被调节系统的模型。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>1. 如果语言塑造默认注意、命名能调节情绪、内部言语是自控引擎——那"扩充词汇"是不是一种被严重低估的自我提升？</summary><div>是，但要分清"炫词"和"真区分"。有价值的不是背难词，而是获得能切分现实的<strong>新范畴</strong>——每个精确的新概念，都给你多一个可觉察、可调节的把手；把多套概念语言叠加，就是更高分辨率的世界模型。但语言也会造牢笼：被坏标签（"我是失败者"）锚定，同样是语言在塑造现实。工具中性，方向在你。</div></details>
 <details><summary>2. 母语里情绪滚烫、外语里情绪隔层——那在多语环境长大的孩子，"情绪母语"和"思考母语"可能不是同一种，这意味着什么？</summary><div>意味着自我可能是"分层"的：情绪记忆锚在最早、最亲密的那门语言里，抽象思考却在后学的、学校用的语言里更流畅。这未必是撕裂——很多多语者能自如切换，甚至用"思考语言"给"情绪语言"降温。提示：对多语孩子，用他的<strong>情绪母语</strong>谈感受、用任意语言谈道理，更贴合大脑的实际布线。</div></details>

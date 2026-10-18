@@ -48,6 +48,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:92px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -222,6 +231,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>Practice + Question</b>Run one "optimal spending" experiment this week: spend a little money on someone else, or buy back some time (outsource a chore), and record how your mood shifts that day.<br>Question: if "happiness return on investment" were the only criterion, how would I re-order my spending?</div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Investing · Bernoulli's log utility and the Kelly criterion</b>: Solving the St. Petersburg paradox in 1738, Daniel Bernoulli proposed that the utility of wealth grows logarithmically; John Kelly's 1956 betting rule amounts to maximizing the growth of log wealth. Same shape as the income-happiness curve, where only a doubling buys one step. The difference: they prescribe how to choose, while Kahneman measured how days actually feel, and the two need not match.</li>
+<li><b>Distributed systems · The bulkhead pattern</b>: In <i>Release It!</i> (2007) Michael Nygard argues for partitioning resource pools by purpose so one exhausted pool cannot sink the whole system, at the price of idle capacity that can't be shared. Mental accounts are bulkheads for money; but engineers place partitions on purpose, while the brain labels money by where it came from.</li>
+<li><b>Operating systems · Thrashing</b>: In 1968 Peter Denning showed that when a program's working set exceeds memory, the machine spends its time paging and real work nearly stops. The bandwidth tax has that structure: the unpaid bill stays resident and crowds out everything else. Unlike a machine, you can't just add RAM; you free space by cutting load and keeping slack.</li>
+<li><b>Evolutionary biology · Reciprocal altruism (Robert Trivers, 1971)</b>: Trivers explained why non-relatives help each other: favors given now are repaid later, so selection can favor the urge to help. The glow of spending on others may be the proximate reward it installed. The difference: evolution counts long-run payoffs, happiness studies measure today's mood, and the glow alone proves no payoff.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Income and happiness follow a logarithmic curve: income has to double to buy a fixed step of well-being.</li>
+<li>Kahneman and Deaton found in 2010 that daily mood flattens above about $75,000 a year; Killingsworth found no plateau in 2021.</li>
+<li>A 2023 adversarial collaboration reconciled them: happiness rises steadily with income for most people, and stalls only for an already-unhappy minority.</li>
+<li>Hedonic adaptation lifts desires and reference points along with income, so money is better at reducing suffering than at creating joy.</li>
+<li>Richard Thaler's mental accounting: the brain labels money by source and purpose, so identical dollars get treated differently.</li>
+<li>Mental accounts can protect savings, but they also drive the house money effect, sunk-cost thinking and the disposition effect.</li>
+<li>Mullainathan and Shafir argue that scarcity causes tunneling and a bandwidth tax, making people short-sighted in the moment.</li>
+<li>The estimate that poverty costs about 13 IQ points of cognitive load is contested: the direction is credible, the size is unsettled.</li>
+<li>The same money buys noticeably more happiness when spent on experiences, on other people, or on buying back time.</li>
+<li>Scarcity's bandwidth tax mirrors thrashing in an operating system: a resident worry fills memory and other work nearly stops.</li>
+</ol>
 <!-- Deep Reflection -->
 <div class="deep">
 <h2>Deeper Reflection</h2>

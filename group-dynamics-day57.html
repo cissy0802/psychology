@@ -55,6 +55,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -232,6 +240,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习 + 思考题</b>任选一次团队决策，强制「先独立写、后开口」，记录各自判断与最终共识的差距。<b>思考题：</b>你团队里最近一次全体同意，是因为证据收敛，还是因为发言顺序？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>政治哲学 · 孔多塞陪审团定理（1785）</b>：每位陪审员独立判断、正确率略高于一半，人数越多，多数票就越接近必然正确；集体智慧靠的是同一个独立性前提。不像在于，定理只管是非二选一，而且投票一旦彼此相关，人数再多也救不回来。</li>
+<li><b>分布式系统 · 相关故障与 N 版本编程</b>：三副本能容错，前提是故障互不相关，同一个 bug 或同一个机房会让副本一起倒下。Knight 与 Leveson 1986 年让多组程序员按同一规格各写一版，发现各版本常在同样的输入上一起出错，独立性并不会自动成立。不像的是，机器一起出错不会互相壮胆，人群收敛时信心却在上升。</li>
+<li><b>生物进化 · 费希尔失控选择（Fisher runaway）</b>：雌性偏好长尾，长尾雄性多留后代，偏好与性状互相加码，孔雀尾巴越拉越长；群体极化里人人想比平均更进一步，也是正反馈推着均值漂移。不像的是，长尾有被捕食的代价封顶，观点的加码在同质群体里几乎没有成本。</li>
+<li><b>复杂性科学 · 响应阈值模型（Bonabeau 等）</b>：蚁群里阈值最低的个体先接手任务，刺激随之下降，其余个体就停手，分工由此自发形成，这和旁观者「有人先动、其余人不动」是同一结构。不像在于，蚁群的停手是高效分工，人群里常见的却是谁都不先动、大家一起等。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>倾向相近的人讨论之后会整体沿原方向走得更远，这叫群体极化，共识感与极端度同时上升。</li>
+<li>群体极化有两条机制：讨论中支持原倾向的论点更多，人人又想在群体推崇的方向上比平均强一点。</li>
+<li>Sunstein 等人发现，同一位法官在全由同党总统任命的合议庭里，投票明显比在混合合议庭里更极端。</li>
+<li>在场的人越多，单个人出手的概率越低，但至少有一人出手的概率反而随人数上升。</li>
+<li>Philpot 等人分析 219 起真实冲突的监控录像，超过九成事件至少有一位旁观者介入。</li>
+<li>从看见到出手要过五关：注意到、判定紧急、认领责任、知道怎么做、敢于行动，任一关卡住就没有行动。</li>
+<li>SIDE 模型认为，匿名削弱的是个人身份、抬高的是社会身份，人因此更贴合当下群体的规范，而不是失去规范。</li>
+<li>多样性预测定理：群体误差等于个体平均误差减去预测多样性，判断越多样，群体越准。</li>
+<li>Lorenz 等人的实验中，看到他人的估计让答案多样性收窄、准确度没有提高，个体信心却上升了。</li>
+<li>提高群体决策质量最省钱的做法，是会前每人先独立写下判断，最高权力者最后表态。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>群体极化和集体智慧用的是同一批人，为什么结果相反？</summary><div>它们是同一个聚合过程的两种时序。极化发生在「先交流、再形成判断」，聚合有效发生在「先形成判断、再交流」，独立性是那个开关。所以可操作的杠杆不是挑人，是安排信息流的顺序——这也解释了一个反直觉现象：多开会常常降低而非提高判断质量，因为每次提前暴露都在消耗多样性。</div></details>
 <details><summary>旁观者效应在集体主义文化中是否同样成立？</summary><div>责任扩散依赖一个默认假设：责任可以被均分。在关系导向更强的文化里，责任常按角色与亲疏预先分配（谁在场、谁年长、谁与当事人有关系），这既可能压低情境模糊性，也可能抬高「越位相助」的社会代价。现有证据主要来自 WEIRD 样本（见 Day 31），Philpot 的录像研究覆盖南非是个改进，但仍不足以下结论。</div></details>

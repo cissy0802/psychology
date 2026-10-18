@@ -52,6 +52,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -211,6 +219,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>下次想拖延时，暂停 30 秒，写下"此刻我在回避的情绪是____"，然后只做这个任务最小的第一步（2 分钟）。<b>思考题：</b>如果你对自己的拖延像对好友一样宽容，你会对自己说什么？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>量子力学 · Page–Wootters 机制（1983）</b>：惠勒–德维特方程里，整个宇宙没有时间参数；Don Page 与 William Wootters 提出，「时间在流动」只是一个子系统相对于另一个充当时钟的子系统的关联读数。像在：时间都不是被直接读取的，而是靠某个计数器算出来的。不像在：物理里底下没有一只更真的钟，大脑的起搏器之外却仍有客观的钟表时间可对照。</li>
+<li><b>分布式系统 · Lamport 逻辑时钟（1978）</b>：没有可靠的全局时钟时，Leslie Lamport 让每个节点按发生过的事件计数来排先后；回忆里的时长同样是数事件锚点，而不是看表。不像在：逻辑时钟只管顺序不管长短，也从不丢事件，记忆却会把重复的日子合并删掉。</li>
+<li><b>哲学 · Derek Parfit 的未来自我</b>：Parfit 在《理与人》（1984）里说，人格同一靠心理联系，联系随时间变弱，所以少关心遥远的自己未必全然不理性。像在：时间贴现确实把未来的自己当成半个外人。不像在：Parfit 的折扣跟着联系的减弱平滑地走，双曲贴现却在眼前最陡，偏好逆转正出在这里。</li>
+<li><b>政治哲学 · Jon Elster《尤利西斯与塞壬》（1979）</b>：Elster 把宪法看作社会层面的预先承诺，清醒时绑住将来激动时的自己，结构和定投、时段锁一样。不像在：个人绑的是自己，宪法绑的是没表过态的下一代多数人；Elster 后来在《解放的尤利西斯》（2000）里也承认社会不是一个人，这个类比有裂缝。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>大脑没有专门感知时间的器官，主观时间是依注意、情绪和新异程度建构出来的。</li>
+<li>当下越盯着时间越显慢；回忆里的时长则取决于新异经历留下的记忆锚点有多密。</li>
+<li>重复的日子会被记忆压缩成一团，想让人生主观上更长，要增加新异密度。</li>
+<li>人对未来奖励的贴现是双曲线而非指数式的，所以计划时理性、临场时会出现偏好逆转。</li>
+<li>McClure 等人 2004 年的 fMRI 研究发现，即时奖励和远期打算分别牵动边缘系统和前额叶两套回路。</li>
+<li>对付当下偏误，用预先承诺装置提前改造情境，比靠意志硬扛更可靠。</li>
+<li>Watts、Duncan 与 Quan 2018 年的棉花糖实验大样本复制显示，控制家庭背景后延迟满足的预测力大幅缩水。</li>
+<li>Zimbardo 与 Boyd 区分了五种时间观，最健康的不是最看重未来，而是能随情境切换的平衡时间观。</li>
+<li>Edward Hall 区分单向计时和多向计时，跨文化协作的摩擦常来自这两套不同的时间语法。</li>
+<li>拖延是情绪调节的失败而非时间管理问题，事后自责会加重下一轮拖延，自我同情反而能降低拖延。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>如果主观时间由"新异度"决定，那"让一生显长"和"活得平静安定"是否天然冲突？</summary><div>不一定冲突，但需区分两种"长"。记忆密度带来的"显长"靠新异；深度当下（心流、正念）带来的是另一种"饱满"，靠全然投入而非不断求新。理想或许是"结构上稳定、体验上鲜活"：骨架安定，但保留刻意的新异窗口与专注时刻。一味求新会疲惫，一味重复会被记忆压缩，平衡点因人而异。</div></details>
 <details><summary>双曲贴现是"缺陷"，还是一种在不确定环境中被进化选择出来的合理策略？</summary><div>大概率是后者被现代环境放大成了前者。在食物易腐、未来充满风险的祖先环境里，"先拿到再说"是理性的。问题是现代社会奖励长期规划（复利、健康、职业积累），而我们的贴现曲线还停在旧环境。所以出路不是谴责本能，是用制度与情境设计（承诺装置、自动化）替大脑补上它没进化出来的"远见"。</div></details>

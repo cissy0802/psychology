@@ -50,6 +50,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -263,6 +272,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Evolutionary biology · Zahavi's handicap principle (1975)</b>: a peacock that thrives while dragging a heavy tail proves it is strong, and the costlier the signal, the more credible it is; the self-handicapper who "won even with an obstacle" looks more impressive by the same augmenting logic. The difference: the peacock's handicap makes the signal more honest, while the self-handicapper's obstacle is there so that success or failure proves nothing.</li>
+<li><b>Investing · The disposition effect (Shefrin &amp; Statman, 1985)</b>: investors sell winning stocks too early and ride losers too long, because selling makes the loss final; procrastination likewise postpones the verdict of "I'm not good enough." Unlike a paper loss, which must eventually be booked, self-handicapping can keep the verdict suspended forever.</li>
+<li><b>Distributed systems · Netflix's Chaos Monkey (2011)</b>: randomly killing servers in production forces the system to learn fault tolerance, and failures become data to review; it is the engineering version of "deliberately hand it in at 80%." The difference: chaos engineering injects failure to see the system clearly, while self-handicapping injects obstacles to avoid seeing oneself clearly.</li>
+<li><b>Complexity science · Simulated annealing (Kirkpatrick et al., 1983)</b>: an optimizer that accepts worse solutions early on can escape local optima, while a greedy search that only accepts improvements gets stuck. Concern-driven perfectionism resembles that greedy search, refusing any step backward; unlike the algorithm, whose "temperature" cools on a schedule, a person's tolerance for error has to be tuned by self-compassion.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Perfectionism splits into two strands, high personal standards and concern over mistakes, and the concern strand decides whether it is harmful.</li>
+<li>Hewitt and Flett distinguish self-oriented, other-oriented and socially prescribed perfectionism; the socially prescribed kind is most strongly linked to depression, anxiety and suicidal ideation.</li>
+<li>Curran and Hill's 2019 meta-analysis found that all three kinds of perfectionism are rising among college students, socially prescribed perfectionism fastest.</li>
+<li>When self-worth is contingent on performance, every task becomes a trial of "am I good enough," and the brain responds with avoidance rather than engagement.</li>
+<li>Procrastination is not laziness or poor time management but avoidance used to repair mood instantly, letting short-term mood override long-term goals.</li>
+<li>Piers Steel's meta-analysis found that the strongest predictors of procrastination are task aversiveness and impulsivity, not laziness.</li>
+<li>Each burst of relief from putting a task off reinforces the avoidance loop, so procrastination is a habit trained by relief.</li>
+<li>Self-handicapping (Berglas and Jones, 1978) means creating obstacles before an important performance so that failure can be blamed on the obstacle rather than on ability.</li>
+<li>People higher in self-compassion procrastinate less, because self-compassion breaks the loop of delay, self-blame, more negative emotion and more urge to escape.</li>
+<li>Gollwitzer's implementation intentions replace raw willpower with preset if-then triggers for starting an action.</li>
+</ol>
 <!-- Going Deeper -->
 <div class="footer-card">
 <h3>Going Deeper · Open Questions</h3>

@@ -52,6 +52,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -211,6 +219,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>This Week's Practice + Prompt</b> Next time you want to procrastinate, pause 30 seconds and write "The emotion I'm avoiding right now is ____," then do only the smallest first step of the task (2 minutes). <b>Prompt:</b> If you were as forgiving of your procrastination as you'd be with a close friend, what would you say to yourself?
 </div>
 </div>
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Quantum mechanics · the Page–Wootters mechanism (1983)</b>: The Wheeler–DeWitt equation has no time parameter for the universe as a whole; Don Page and William Wootters proposed that "time passing" is just a correlation between one subsystem and another that serves as a clock. The likeness: in both cases time is not read off directly but computed by some counter. The difference: in physics there is no truer clock underneath, while the brain's pacemaker can still be checked against objective clock time.</li>
+<li><b>Distributed systems · Lamport's logical clocks (1978)</b>: With no reliable global clock, Leslie Lamport had each node order events by counting what has happened; remembered duration likewise counts event anchors instead of reading a watch. The difference: a logical clock tracks order, not length, and never drops an event, whereas memory merges and deletes repetitive days.</li>
+<li><b>Philosophy · Derek Parfit on the future self</b>: In <i>Reasons and Persons</i> (1984) Parfit argued that personal identity rests on psychological connectedness, which weakens over time, so caring less about a distant self is not wholly irrational. The likeness: temporal discounting really does treat the future self as half a stranger. The difference: Parfit's discount falls smoothly with connectedness, while hyperbolic discounting is steepest right up close, which is exactly where preference reversals happen.</li>
+<li><b>Political philosophy · Jon Elster, <i>Ulysses and the Sirens</i> (1979)</b>: Elster read constitutions as society-level precommitment, the sober self binding its future excited self, the same structure as automatic investing or a time-locked app. The difference: a person binds only themselves, while a constitution binds later majorities who never agreed; in <i>Ulysses Unbound</i> (2000) Elster himself conceded that a society is not a person and the analogy cracks.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>The brain has no dedicated organ for sensing time; subjective time is constructed from attention, emotion and novelty.</li>
+<li>Watching the clock makes the present drag, while remembered duration depends on how densely novel experiences laid down memory anchors.</li>
+<li>Memory compresses repetitive days into a blur, so making life feel longer means raising the density of novelty.</li>
+<li>People discount future rewards hyperbolically rather than exponentially, so they plan rationally but reverse their preferences in the moment.</li>
+<li>McClure and colleagues' 2004 fMRI study found that immediate rewards and long-term planning engage two circuits: the limbic system and the prefrontal cortex.</li>
+<li>Against present bias, redesigning the situation in advance with a commitment device works better than relying on willpower.</li>
+<li>Watts, Duncan and Quan's large 2018 replication of the marshmallow test found its predictive power shrinks sharply once family background is controlled.</li>
+<li>Zimbardo and Boyd describe five time perspectives; the healthiest is not the most future-oriented but a balanced one that shifts with context.</li>
+<li>Edward Hall's distinction between monochronic and polychronic time explains much of the friction in cross-cultural collaboration.</li>
+<li>Procrastination is a failure of emotion regulation, not time management; self-blame feeds the next round, while self-compassion reduces it.</li>
+</ol>
 <div class="deep-title">Questions to Sit With</div>
 <details><summary>If subjective time is set by "novelty," are "making a life feel long" and "living in calm stability" inherently in conflict?</summary><div>Not necessarily, but distinguish two kinds of "long." The "feels long" from memory density runs on novelty; the "fullness" of deep presence (flow, mindfulness) runs on total absorption, not constant novelty-seeking. The ideal may be "structurally stable, experientially vivid": a settled framework with deliberate windows of novelty and focus. Endless novelty exhausts; pure repetition gets compressed in memory. The balance point is personal.</div></details>
 <details><summary>Is hyperbolic discounting a "flaw," or a strategy that was evolutionarily selected in uncertain environments?</summary><div>Most likely the latter, magnified by the modern world into the former. In ancestral settings where food spoiled and the future was risky, "take it now" was rational. The problem is that modern society rewards long-term planning (compounding, health, career capital), while our discounting curve is still tuned to the old environment. So the way out isn't to condemn instinct but to use institutions and situation design (commitment devices, automation) to supply the "foresight" the brain never evolved.</div></details>

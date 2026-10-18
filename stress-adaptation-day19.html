@@ -52,6 +52,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -234,6 +243,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习</b>做一次"<b>恢复审计</b>"：写下你目前真正能让身体"软下来"的活动（不是刷手机那种伪恢复）。如果不足三项，本周的任务不是少做事，是<b>主动补一项真恢复</b>，并把它排进日历像排会议一样。
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>复杂性科学 · 临界慢化（Scheffer 等，2009）</b>：系统逼近崩溃临界点时，最早的征兆往往不是波动变大，而是被扰动后回到原状越来越慢，湖泊、气候都有此迹象。这正是「盯恢复曲线」的道理：恢复延迟就是负荷将满的预警。不像在于，生态系统一旦翻过临界点常难回头，人的应激系统还能靠恢复慢慢拉回。</li>
+<li><b>分布式系统 · 重试风暴</b>：服务一变慢，调用方纷纷重试，重试又加重负载让服务更慢，故障自我放大。慢性压力削弱海马与前额叶、让刹车更松，同样是问题吞掉了解决它的能力。不像的是，工程上加个指数退避就能断环，身体只能靠真恢复。</li>
+<li><b>商业 · 技术债（Ward Cunningham，1992）</b>：每次赶工留下的小捷径单看无害，利息却悄悄累加，直到大半精力都在还息。累积负荷同理，是无数次没关好的小开关之和。不像在于，技术债可以停工集中重构，身体的债只能在日常恢复里分期偿还。</li>
+<li><b>东方哲学 · 庄子的庖丁解牛</b>：庖丁的刀用了十九年仍像新磨的，因为他顺着骨节间的空隙走、不硬砍，事后还「善刀而藏之」。磨损取决于怎样和阻力相处、用完是否收好，不只取决于活多活少。不像的是，庖丁靠技艺绕开阻力，应激研究承认阻力常绕不开，只能把恢复做足。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>稳态应变（allostasis）指身体靠主动改变来维持稳定，比如起身前先把血压升上去。</li>
+<li>Bruce McEwen 提出累积负荷：应激介质短期有保护作用，反复启动又关不掉才造成磨损。</li>
+<li>累积负荷有四种失调模式：反复触发、缺乏习惯化、恢复延迟和代偿过载。</li>
+<li>SAM 轴在秒级释放肾上腺素，HPA 轴在分钟到小时级释放皮质醇，维持持续动员。</li>
+<li>慢性压力让糖皮质激素受体变迟钝，皮质醇的负反馈刹车失灵，应激反应因此关不掉。</li>
+<li>Robert Sapolsky 认为，人因压力生病不是反应太弱，而是应激反应对错误的威胁开得太久。</li>
+<li>长期高皮质醇使海马萎缩、杏仁核增敏、前额叶调控减弱，结果是警报更响、刹车更松。</li>
+<li>Epel 与 Blackburn 发现长期照护压力与端粒缩短相关，提示压力可能加速生物学衰老。</li>
+<li>有效干预的四个杠杆是恢复、运动、社会缓冲和评估转变，目标是设计恢复而非消除压力。</li>
+<li>把心跳加速解读为身体在帮忙应战，能改变应激的生理曲线，但只适用于可控的挑战性压力。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="6f626550df4b7d1c">
 <h2>深入思考<span class="en">Going Deeper</span></h2>

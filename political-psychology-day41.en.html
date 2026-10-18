@@ -48,6 +48,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:92px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -221,6 +230,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>This Week's Practice + Question</b>This week, take one chance to do just one thing with someone who disagrees: ask "how did you first come to think this?", then hold back from rebutting and listen for a full three minutes.<br>Question: If being truly heard can move people, why, on the disagreements that matter most, are we least willing to listen first?</div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Complexity science · Schelling's segregation model (Thomas Schelling, 1971)</b>: Each agent only asks that not too few neighbors be like itself; run that mild preference for a few rounds and the whole city splits into two clean blocks. The likeness: nobody wants polarization, yet it grows out of local rules anyway. The difference: Schelling's grid agents merely move house, while political tribes also come to hate each other.</li>
+<li><b>Neuroscience · The left-brain interpreter (Michael Gazzaniga)</b>: When a split-brain patient's right hemisphere sees an instruction and acts on it, the uninformed left hemisphere instantly invents a tidy reason and fully believes it. Same shape as "reason as identity's lawyer": action first, justification after. The difference: the interpreter patches missing information, while motivated reasoning processes complete information selectively.</li>
+<li><b>Evolutionary biology · The green-beard effect (proposed by W. D. Hamilton 1964, named by Dawkins 1976)</b>: A gene that gives its carriers a visible marker and makes them favor others with the same marker can spread itself. The minimal group experiment is an artificial green beard: stick on any label and favoritism follows. The difference: a green beard requires the marker and the altruism to be truly linked in one gene, while teams split by a coin toss are linked to nothing.</li>
+<li><b>Distributed systems · Network partitions and split-brain</b>: When a cluster loses its link, each side elects its own leader, assumes the other side is down, and keeps writing to its own replica. The perception gap is the stale copy of the other side each partition keeps cached. The difference: machines can reconcile by replaying logs once reconnected, but groups of people share no agreed log, so contact can only rebuild trust one encounter at a time.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Twin studies find that roughly 30 to 50 percent of the variation in political attitudes is heritable, and genes shape temperament first, not positions.</li>
+<li>Hibbing's negativity bias hypothesis holds that conservatives are on average more sensitive to threat and disorder, liberals more tolerant of novelty and ambiguity.</li>
+<li>The strong claim that physiological measures like the startle reflex can identify conservatives has repeatedly failed to replicate; temperament is a tilt, not a destiny.</li>
+<li>Dan Kahan found that people with stronger numeracy are better at bending data toward readings that favor their own side.</li>
+<li>Identity-protective cognition means scrutinizing hostile evidence harder and waving allied evidence through whenever a fact threatens "people like me are right."</li>
+<li>The backfire effect, where corrections make people believe a myth more, largely failed to replicate at scale; corrections usually nudge beliefs the right way.</li>
+<li>Tajfel's minimal group experiments show that even random teams with nothing at stake instantly favor their own and disparage the other.</li>
+<li>Affective polarization means hating and distrusting the other party more rather than loving one's own; when party stacks with race, religion and region, compromise feels like betrayal.</li>
+<li>Perception-gap research consistently finds that people badly overestimate how extreme the other side is; the opponent they hate is mostly an imagined straw man.</li>
+<li>In Broockman and Kalla's deep canvassing experiments, about ten minutes of listening and swapping stories reduced prejudice significantly, with effects lasting months.</li>
+</ol>
 <!-- Deep thinking -->
 <div class="deep">
 <h2>Going Deeper</h2>

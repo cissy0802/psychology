@@ -51,6 +51,15 @@ details{margin-top:12px;background:#2a1024;border-radius:10px;padding:4px 16px}
 summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:10px 0;font-size:0.95rem}
 details div{font-size:0.93rem;color:#bcacbc;padding:0 0 12px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:72px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -232,6 +241,26 @@ details div{font-size:0.93rem;color:#bcacbc;padding:0 0 12px}
 <b>本周练习 + 思考题</b>下次与父母互动时，试当一次"人类学家"：只观察模式，不接情绪的招。<strong>思考</strong>：当你不再要求"被理解"，这段关系里有什么，反而变得可以承受？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>商业 · 古德哈特定律（Charles Goodhart，1975）</b>：指标一旦变成目标，就不再是好指标。角色化自我是同一种走样：孩子把「懂事、有用、不添麻烦」当成被接纳的指标去优化，指标越漂亮，真实的需要越被挤出去。不像在于，企业可以换一套指标，孩子当年没有别的考核方可选。</li>
+<li><b>投资 · 沉没成本与越跌越补仓</b>：基本面已坏的股票越跌越补，等着回本，和愈合幻想同构：在给不出爱的人身上越付出越多，等那笔「终会兑现」的回报。不像在于，股票可以止损清仓，对父母的放手要经过一次哀悼，也不必断绝关系。</li>
+<li><b>分布式系统 · 熔断器（Michael Nygard《Release It!》，2007）</b>：下游服务反复出错，调用方不去修它，只规定自己失败超过阈值就断开。界限同构：写的是「我会做什么」，不是控制对方。不像的是，熔断器会自动半开重试，对父母何时再试，得你自己决定。</li>
+<li><b>东方哲学 · 庄子「用心若镜」</b>：《应帝王》说至人之心像镜子，「不将不迎，应而不藏」，照见而不留存，所以能胜物而不伤。成熟旁观者同构：看清 ta 的模式，不接招，也不把情绪带走。不像在于，庄子要连自我也淡去，旁观者仍带着保护自己的明确目的。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>情感不成熟的父母可能在养家、尽责上很成熟，却在情绪调节和情感联结上停滞。</li>
+<li>Lindsay Gibson 把情感不成熟的父母分为情感型、驱动型、被动型、拒绝型四种。</li>
+<li>情感不成熟不是正式诊断，而是描述性的连续谱，多数父母只在某些时刻落在上面。</li>
+<li>四种类型共享情感僵化、低应激耐受、以自我为参照和缺乏心智化几个内核。</li>
+<li>这类家庭最深的伤常是情感孤独：身体被照顾，内心却没有人看见。</li>
+<li>角色反转让孩子成为父母的情绪照顾者，并发展出盖过真实自我的「角色化自我」。</li>
+<li>愈合幻想相信只要自己够好，给不出爱的父母终会改变，它驱动成年后的过度付出。</li>
+<li>重新养育自己分三步：唤起内在观察者、练习自我同情、借 IFS 用平静的 Self 照顾各个「部分」。</li>
+<li>Gibson 建议做成熟的旁观者：界限只写「我会做什么」，放下愈合幻想是一次必要的哀悼。</li>
+<li>软件里的熔断器与界限同构：不去修好对方，只规定自己在反复受伤时断开。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="da63832a18620c49">
 <h2>深入思考<span class="en">Going Deeper</span></h2>

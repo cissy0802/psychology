@@ -49,6 +49,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:92px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -199,6 +208,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <div class="practice">
 <b>本周练习 + 思考题</b>选一件近期「后悔的事」，两栏分写：左栏「当时能掌握的信息与选择」，右栏「事后才知的结果」，只用左栏评价那个决定。<br/>思考题：如果道德评判里始终掺着运气，我该如何既对自己诚实、又不因运气差而过度定罪？</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>东方哲学 · 孟子的「四端」</b>：孟子说恻隐、羞恶、辞让、是非之心人皆有之，但只是萌芽，要靠扩充才长成仁义礼智，和「进化写初稿、文化再编辑」是同一个结构。不像在于，孟子认定四端人人相同、方向本善，道德基础理论讲的是各人各文化权重不同，只描述、不判高下。</li>
+<li><b>神经科学 · Gazzaniga 的左脑「解释器」</b>：裂脑病人的右脑接到指令让手去做，不知情的左脑随即编出一个流畅的理由，自己还深信不疑，像是骑象人找说辞的硬件版。不像的是，常人两半脑相连，事后合理化远没有这么泾渭分明。</li>
+<li><b>计算神经科学 · 无模型与基于模型的学习（Daw、Niv 与 Dayan，2005）</b>：一种学习器把价值直接贴在动作上（推人本身就坏），另一种在脑中推演后果（5 大于 1），电车难题像两者在争控制权。不像的是，模型里靠不确定性仲裁，天桥上那声「不行」很少是算出来的。</li>
+<li><b>西方哲学 · 爱比克泰德的控制二分</b>：斯多葛派从「有些事在我们能力之内，有些不在」出发，只拿前者评价自己，正是道德运气悖论里「只评判可控部分」那条原则。不像的是，斯多葛派真按它生活，Nagel 与 Williams 则指出日常的道德实践做不到。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>道德基础理论认为，人类道德建立在多个进化而来的直觉模块上，不同人、不同文化给的权重不同。</li>
+<li>六大道德基础是关怀/伤害、公平/欺骗、忠诚/背叛、权威/颠覆、神圣/堕落，以及后补的自由/压迫。</li>
+<li>政治光谱的左端主要靠关怀与公平两条打分，右端六条较均衡，这是双方常谈不拢的根源。</li>
+<li>Haidt 的社会直觉主义认为：道德判断先由直觉锁定，理性多在事后充当辩护律师而不是法官。</li>
+<li>道德失语实验里，面对无人受伤的禁忌故事，人们的理由被逐条驳倒后仍不改判断。</li>
+<li>电车难题中同样是牺牲 1 人救 5 人，扳道岔多数人愿意、推人多数人拒绝，差别在要不要亲手施害。</li>
+<li>Joshua Greene 的 fMRI 研究发现，亲手施害激活情绪脑区，去人化的伤害更多调用认知控制。</li>
+<li>vmPFC 受损的患者缺少情绪信号，在推人版本的电车难题里明显更愿意牺牲那一个人。</li>
+<li>道德运气指的是：结果、出身、时代这些人控制不了的因素，深刻影响着对一个人的道德评判。</li>
+<li>结果偏差让人按结果好坏倒推决策对错，复盘时应把决策质量和结果分开评估。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="deep">
 <h2 data-tts="bf1a0a67529b8656">深入思考</h2>

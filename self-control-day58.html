@@ -48,6 +48,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -210,6 +218,28 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习 + 思考题</b>挑一个你反复失败的行为，把对策从矩阵右下格搬到左上格：不靠当下克制，改一次环境。<b>思考题：</b>你生活里最有影响力的几个默认值，是谁设的？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>东西方哲学 · Elster《尤利西斯与塞壬》</b>：Jon Elster 在 1979 年把尤利西斯让水手绑住自己、塞住他们耳朵的故事，分析成理性的「预先承诺」：清醒时的自己，替将来会动摇的自己设限。这正是自控矩阵的左上格。不像在哪：Elster 关心理性如何自我约束，环境设计更日常，多数默认值根本不是自己绑上的。</li>
+<li><b>分布式系统 · 断路器模式</b>：Michael Nygard 在《Release It!》(2007) 推广的断路器：下游连续失败后，调用方不再等待，直接快速失败。被放过鸽子的孩子立刻吃糖是同一逻辑。不像在哪：断路器会定时「半开」试探恢复，人的信任恢复慢得多。</li>
+<li><b>生物进化 · Waddington 表观遗传景观</b>：Waddington (1957) 把发育画成小球滚下沟壑起伏的地形，沟越深越难偏离，称为「渠化」。习惯就像刻深的沟，环境设计是改地形，而不是把球推上坡。不像在哪：发育的沟由基因网络刻成，人的沟可以亲手重挖。</li>
+<li><b>商业 · 新乡重夫的防错法</b>：丰田体系里的 poka-yoke 让装错的零件根本装不进去，不靠工人每次都小心，与「改环境胜过靠克制」同构。不像在哪：防错对付的是无心失误，自控对付的是明知故犯的欲望，后者会主动找绕路。</li>
+</ul></div>
+
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>特质自控得分高的人，日常报告的「抵抗诱惑」次数反而更少：他们赢在冲突根本没发生。</li>
+<li>棉花糖实验的大样本复制显示，控制家庭背景与早期认知后，等待时长的预测力缩到一半以下。</li>
+<li>Kidd 等人发现，先经历一次承诺落空的孩子，平均等待时长只有兑现组的约四分之一。</li>
+<li>Mischel 强调能等的孩子靠注意力策略而非硬忍：自控的操作对象是注意力，不是欲望本身。</li>
+<li>诱惑捆绑把一种即时享受限定在做难事时才解锁，健身房实验中到馆频率提高约 27%，效果随时间衰减。</li>
+<li>诱惑捆绑改的是过程体验，贿赂是事后交换，后者会挤掉孩子原本自发的兴趣。</li>
+<li>Wendy Wood 的采样显示约 43% 的日常行为在同一情境重复，自控高分者靠习惯自动化而非搏斗。</li>
+<li>压力、缺觉和认知负荷把控制权从目标导向系统推给习惯系统，累了退回默认行为与品格无关。</li>
+<li>默认选项确实有力，但政府实地试验中 nudge 的平均效应约 1.4 个百分点，远小于期刊报告的 8.7。</li>
+<li>自控策略矩阵里，事前改情境最稳健，事中靠认知克制最贵，却是多数人默认待的那一格。</li>
+</ol>
+
 <div class="deep-title">深入思考</div>
 <details><summary>如果自控主要靠环境，「意志力」还有用吗？</summary><div>有用，但位置要挪：它不是可消耗补充的资源，更像一次性的<strong>元决策</strong>能力——决定改哪个默认、签哪个预先承诺。真正的克制发生在设计的那一刻，不是被诱惑的那一刻。这也解释了「我最近意志力很差」为何常是准确观察配错误解释：变差的往往是设计条件，比如搬家、作息打乱。</div></details>
 <details><summary>延迟满足能力有跨文化差异吗？</summary><div>有，方向还可能与直觉相反。Lamm 等 (2018, Child Development) 比较喀麦隆 Nso 农村儿童与德国中产儿童，Nso 组等待成功率显著更高，策略也不是注意力分散，而是更安静的情绪调节。可见等待能力被养育目标（服从与情绪克制 vs 自主表达）系统性塑造，而现有自控研究几乎全建立在 WEIRD 样本上（见 Day 31）。</div></details>

@@ -49,6 +49,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -219,6 +227,34 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>写一句身份陈述："我是一个 ___ 的人。"然后找出今天能投下这一票的最小行为，做掉它。<br/>思考：你现在哪些坏习惯，其实是在为一个你<b>不想</b>成为的身份反复投票？
 </div>
 </div>
+<!-- 越界 -->
+<div class="card">
+<h2>越界 · 跨学科的联想<span class="en">Crossovers</span></h2>
+<div class="crossx"><ul>
+<li><b>生物进化 · Waddington 的表观遗传景观（1957）</b>：发育生物学家 Waddington 把细胞分化画成小球沿山谷滚下，谷越走越深，小球越难被推出去，他称之为「渠化」。习惯回路也是一条被反复走深的谷，提示一来，行为就滚进去。不像在于：细胞分化基本单向，滚到底就定型；习惯的谷填不平，却能在旁边挖一条新谷，让同一个提示改道。</li>
+<li><b>西方哲学 · Elster《尤利西斯与塞壬》（1979）</b>：Jon Elster 把尤利西斯让水手把自己绑上桅杆，看作理性的预先承诺：清醒时的自己替将来软弱的自己锁门，Wood 的「加摩擦」是同一招。不像的是，绳子彻底断掉了选项，摩擦只是让坏行为变贵，门还开着。</li>
+<li><b>商业 · 丰田的防呆（poka-yoke）</b>：新乡重夫在丰田推广的防呆设计，不指望工人每次都专心，而是让零件装反了根本装不进去，和把零食锁进柜子同理：靠结构，不靠注意力。不像在于，防呆要把错误做成不可能，习惯设计多半只是把它变难。</li>
+<li><b>西方哲学 · 亚里士多德论品格</b>：亚里士多德说德性靠习惯养成，人做公正的事才变得公正，「伦理」（ēthikē）一词本身就从「习惯」（ethos）变化而来，几乎就是「每次重复都在给身份投票」。不像的是，他要求行动者知道自己在做什么、为这件事本身而选，无意识的自动重复在他那里还算不上德性。</li>
+</ul></div>
+</div>
+
+<!-- 十条要点 -->
+<div class="card">
+<h2>十条要点<span class="en">Ten takeaways</span></h2>
+<ol class="takeaways">
+<li>习惯回路由提示、惯常行为、奖赏三段组成，Charles Duhigg 用这个框架把习惯科学带给了大众。</li>
+<li>基底神经节把反复执行的行为「组块化」成一个单元，提示一到就整块触发，负责决策的前额叶随之退场。</li>
+<li>多巴胺在习惯形成中标记的是奖赏预测误差，告诉大脑哪个线索值得重复，而不是快感本身。</li>
+<li>成熟的习惯在奖赏消失后仍会被提示触发，所以坏习惯删不掉，只能用新的惯常行为覆盖旧线索。</li>
+<li>Wendy Wood 的研究显示，约 43% 的日常行为是习惯性的，在固定情境里自动重复，不经过决策。</li>
+<li>看起来自律的人并不更能抵抗诱惑，而是善于安排环境：给好行为减摩擦，给坏行为加摩擦。</li>
+<li>BJ Fogg 的行为模型 B = MAP 指出，行为要求动机、能力、提示同时到位，其中动机最不可靠。</li>
+<li>微习惯的做法是把行为缩到极小，并锚定在一个已稳固的旧习惯之后，比如刷牙后做 1 个深蹲。</li>
+<li>James Clear 认为最持久的改变发生在身份层，每重复一次习惯，都是在为想成为的那种人投一票。</li>
+<li>「21 天养成习惯」是讹传：Lally 2010 年测得自动化平均要 66 天，因人而异，偶尔漏一天几乎无碍。</li>
+</ol>
+</div>
+
 <!-- 深入思考 -->
 <div class="card" data-tts="fda27b699b655006">
 <h2>深入思考<span class="en">Going Deeper</span></h2>

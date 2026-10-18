@@ -51,6 +51,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:88px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <a href="https://cissy0802.github.io/" style="position:fixed;top:14px;left:14px;font-size:0.82rem;color:#ae72c0;opacity:0.6;text-decoration:none;padding:6px 12px;border:1px solid currentColor;border-radius:20px;z-index:100;backdrop-filter:blur(6px)">← Hub</a>
 <div class="container">
@@ -214,6 +223,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习</b>把一个"我要更自律"的模糊目标，翻译成一条具体的 if-then 计划，写下来贴在看得见的地方，执行一周。<br/><b>思考题：</b>当我不再需要"意志力"就能做成越来越多的事，我想把省下来的心力，投到哪件真正重要的事上？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>运动生理学 · Noakes 的「中枢调控器」</b>：南非运动科学家 Tim Noakes 主张，耐力运动里的疲劳是大脑在肌肉真正衰竭之前提前发出的保护性感受，他 2012 年干脆写道疲劳是一种由大脑生成的情绪。这和「撑不住是动机信号、不是油箱见底」是同一个结构：感受先于、也不等于真实的耗竭。不像在于，Noakes 的调控器守的是体温和器官安全，Inzlicht 的信号权衡的是机会成本；而且中枢调控器模型在运动科学界至今仍有争议。</li>
+<li><b>投资 · 回测过拟合</b>：量化策略在历史数据上反复调参，总能调出一条漂亮曲线，一上实盘就失灵；p-hacking 正是在实验数据上做同样的事，预注册就是强制样本外检验。不像的是，市场会用亏损自动惩罚过拟合，学术文献却能让一个假效应活上二十年。</li>
+<li><b>精益生产 · 防呆（poka-yoke，新乡重夫）</b>：丰田的思路是让零件装反了就根本装不上去，而不是靠工人时刻警惕；高自控者把零食留在超市，是同一种「把错误设计掉」。不像在于，工厂防呆是物理上做不到，生活里的摩擦只是变难，想绕仍绕得过去。</li>
+<li><b>分布式系统 · 中断与轮询</b>：轮询是每隔一会儿就问一遍「该不该做」，空耗算力；中断是把处理程序挂在事件上，事件一来才执行。模糊决心像轮询，if-then 计划像注册中断。不像的是，硬件中断必然触发，心理线索却可能被人错过。</li>
+<li><b>东方哲学 · 孔子「从心所欲，不逾矩」</b>：七十岁的境界是想做的和该做的重合，于是无需克制，这正是自主动机让意志不必出场的状态。不像在于，孔子说这要修养一生才到，自我决定论认为找到一件事对自己的意义，动机就能较快内化。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Baumeister 1998 年的萝卜实验中，先忍住不吃饼干的被试，之后在无解谜题上更快放弃，由此提出自我损耗。</li>
+<li>2016 年一项 23 个实验室、逾 2000 人参与的预注册重复实验，测得的自我损耗效应接近于零。</li>
+<li>自控任务消耗的葡萄糖微乎其微；糖水只漱口不咽也能恢复表现，更像是奖励信号激活了动机。</li>
+<li>Job、Dweck 与 Walton 2010 年发现，相信意志力可再生的人，在连续困难任务后表现不会下滑。</li>
+<li>Inzlicht 的机会成本模型认为，「撑不住」是动机从该做的事转向想做的事，是权衡信号而非能量枯竭。</li>
+<li>Hofmann 2012 年的经验取样研究发现，特质自控高的人日常欲望冲突反而更少，赢在诱惑根本没出现。</li>
+<li>棉花糖实验 2018 年在更大样本中重复后，延迟满足对长期成就的预测力大幅缩水，很大部分由家庭背景解释。</li>
+<li>if-then 执行意图把行为预先绑在具体线索上，元分析效应量约 d≈0.65，远超「我要更努力」式的模糊决心。</li>
+<li>源自认同与价值的自主动机没有内在冲突需要压制，比出于「应该」或「害怕」的受控动机更持久。</li>
+<li>p-hacking 和量化投资的回测过拟合是同一个结构，预注册相当于强制做样本外检验。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="004d62e2a9e278cf">
 <h2>深入思考<span class="en">Going Deeper</span></h2>

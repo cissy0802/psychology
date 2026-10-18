@@ -52,6 +52,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:104px;font-size:0.76rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -219,6 +227,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习 + 思考题</b>做一次价值澄清：三个角色、三句形容、三个最小动作，本周全部执行一次。<b>思考题：</b>你现在追的目标里，哪一个完成之后会留下一个空洞？它背后的方向是什么？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 心跳与成员资格</b>：集群里一个节点算不算「在」，不由它自己说了算，要靠别的节点定期收到它的心跳并作出回应；重要性也一样，要由他人用行为确认。不像在于，节点本就被设计成可随时替换，换掉不算失败；人觉得「谁做都一样」，那本身就是重要性的缺口。</li>
+<li><b>投资 · 异象衰减（McLean &amp; Pontiff，2016）</b>：两人追踪 97 个已发表的股票收益预测因子，样本外收益低 26%，发表后低 58%，和死亡突显效应一样，纸面结论一到真实世界就大幅缩水。不像在于，因子缩水有一部分是发表后被交易者套利吃掉，效应曾经真实存在；Many Labs 4 的结果更像在说，实验室里那条快因果链也许从来没站稳过。</li>
+<li><b>西方哲学 · 亚里士多德的「运动」与「实现活动」</b>：《形而上学》把活动分两种：盖房子这类运动，房子建成就终止；「看」和「活得好」这类实现活动，每一刻都已完整，正是目标与价值的分别。不像在于，亚里士多德谈的是活动本身的性质，ACT 的价值是人自己选来定方向的。</li>
+<li><b>意识 · 内格尔「做一只蝙蝠是什么感觉」（1974）</b>：Thomas Nagel 论证主观体验只能从第一人称通达，别人知道得再多也进不去；存在性孤独就是这道缝被人亲身感觉到了。不像在于，内格尔说的是原则上填不上的鸿沟，存在性孤独却有强弱起伏，被理解的时刻会明显变轻。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>意义感可拆成连贯、目的、重要性三块分别测量的成分，Martela 与 Steger 后来又补上第四块：体验性欣赏。</li>
+<li>换赛道、丧失、迁徙这类剧变期，最先崩的是连贯感，因为连贯来自把散落事件缝成故事的叙事加工。</li>
+<li>重要性靠外部反馈维持，需要具体的人用具体的行为确认在意你的存在。</li>
+<li>MLQ 问卷里「拥有意义」与幸福稳定正相关，「寻求意义」只在拥有感低时才与痛苦相关。</li>
+<li>大样本里意义感的均值一直高于量表中点，意义是常态，不是少数人的战利品。</li>
+<li>Yalom 的四个终极关切是死亡、自由、孤独、无意义，适合当组织经验的地图，而非已验证的理论。</li>
+<li>存在性孤独指觉得没有人和自己看见同一个世界，它与社交孤独可分离，并独立预测抑郁。</li>
+<li>Many Labs 4 在 21 个实验室、约 2200 名被试上没有复制出死亡突显效应；引用量衡量流行度，不衡量可复制性。</li>
+<li>Breitbart 的意义中心心理治疗在晚期癌症患者的多项 RCT 中提升意义感、降低绝望，意义可以被结构化干预。</li>
+<li>ACT 强调价值是方向不是目标：目标完成就消失，方向永远做不完，把目标当意义源的人会在达成那天空掉。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>意义的三块部件，在不同文化里权重一样吗？</summary><div>大概率不一样。跨文化研究一致发现东亚样本对「目的」的报告低于北美样本，对家庭嵌入与角色履行的报告更高。在互依型自我文化里，<strong>重要性更多来自在关系网络中被需要，而非个人化的方向感</strong>。所以直接套用北美常模会误判——「目的」分低可能不是意义缺失，而是量表在测一种个体主义式的意义表达。</div></details>
 <details><summary>「无意义感」和佛学的「空」是一回事吗？</summary><div>不是，方向相反。存在主义的无意义是<strong>失落</strong>——期待宇宙给出答案而落空；空是<strong>去除</strong>——看破现象无自性，因此不再需要那个答案。前者常伴抑郁退缩，后者以慈悲与行动为标志。判据很实际：一种「看破」若让人更冷漠抽离，那多半是抑郁性的无意义披了佛学语言。</div></details>

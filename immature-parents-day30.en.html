@@ -50,6 +50,15 @@ details{margin-top:12px;background:#2a1024;border-radius:10px;padding:4px 16px}
 summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:10px 0;font-size:0.95rem}
 details div{font-size:0.93rem;color:#bcacbc;padding:0 0 12px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:72px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 
@@ -271,6 +280,26 @@ details div{font-size:0.93rem;color:#bcacbc;padding:0 0 12px}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Business · Goodhart's law (Charles Goodhart, 1975)</b>: when a measure becomes a target, it stops being a good measure. The role-self drifts the same way: the child optimizes "mature, useful, no trouble" as the metric for acceptance, and the better the metric looks, the more real needs get squeezed out. The difference: a company can swap metrics; the child had no other evaluator to turn to.</li>
+<li><b>Investing · Sunk costs and averaging down</b>: buying more of a broken stock every time it falls, waiting to break even, has the same shape as the healing fantasy: giving ever more to someone who can't love you, waiting for the payout that will "surely come." Unlike a stock, you can't just cut losses; letting go of a parent takes grief, and it doesn't require cutting contact.</li>
+<li><b>Distributed systems · Circuit breaker (Michael Nygard, <i>Release It!</i>, 2007)</b>: when a downstream service keeps failing, the caller doesn't try to fix it; it only decides to disconnect past a failure threshold. A boundary has the same shape: it states what I will do, not how to control the other person. Unlike a breaker, nothing half-opens automatically; when to try again with a parent is your call.</li>
+<li><b>Eastern philosophy · Zhuangzi's mind like a mirror</b>: the sage's mind is a mirror that neither sends off nor welcomes, responds but does not store, and so meets things without being harmed. The mature observer works the same way: see the pattern, don't take the bait, don't carry the feeling home. The difference: Zhuangzi wants even the self to fade, while the observer still has a clear aim of protecting oneself.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Emotionally immature parents may be competent at providing and duty, yet stalled in emotion regulation and emotional connection.</li>
+<li>Lindsay Gibson sorts emotionally immature parents into four types: emotional, driven, passive and rejecting.</li>
+<li>Emotional immaturity is not a formal diagnosis but a descriptive spectrum most parents fall on only at certain moments.</li>
+<li>All four types share rigidity, low stress tolerance, self-referencing and a lack of mentalization.</li>
+<li>The deepest wound in such families is often emotional loneliness: the body is cared for, the inner self goes unseen.</li>
+<li>Parentification turns a child into the parent's emotional caretaker and builds a role-self that covers the true self.</li>
+<li>The healing fantasy holds that being good enough will finally change a parent who can't love, and it drives adult over-giving.</li>
+<li>Reparenting the self takes three steps: summon the inner observer, practice self-compassion, and use IFS to let a calm Self care for the parts.</li>
+<li>Gibson recommends becoming a mature observer: boundaries say what I will do, and dropping the healing fantasy is a necessary grief.</li>
+<li>A software circuit breaker mirrors a boundary: don't try to fix the other side, just disconnect after repeated harm.</li>
+</ol>
 <!-- Going Deeper -->
 <div class="card">
 <h2>Going Deeper<span class="en">Open Questions</span></h2>

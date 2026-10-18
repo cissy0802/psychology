@@ -43,6 +43,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -186,6 +195,27 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>本周练习 + 思考题</b>挑一个你常遇到的套路（限时优惠、权威背书、「就差你了」），写下它的机制和你的一句反驳脚本，存进备忘录。<strong>思考题</strong>：你最近一次「事后才发现被说服」，当时其实错过了哪个信号？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>动物行为学 · 超常刺激（Niko Tinbergen）</b>：Tinbergen 发现蛎鹬会舍下自己的蛋，去孵一个大得离谱的假蛋：关键刺激一出现，固定程序就启动，越夸张越灵。「仅剩 3 件」正是给人造的超大假蛋。不像在于：鸟停不下来，人能察觉开关被按下，在中间插一个「停」。</li>
+<li><b>西方哲学 · 斯宾诺莎的石头（第 58 封信，1674）</b>：一块被抛出的石头若有意识，会以为是自己想飞；人自以为自由，只因知道欲望而不知原因。抗拒里的「我偏不」也像自由，其实是被威胁触发的。不像的是，斯宾诺莎连判断都算进因果链，本篇仍相信觉察能夺回选择。</li>
+<li><b>佛学 · 十二因缘的「触—受—爱」</b>：根尘相触生出感受，感受滑向贪爱，正念的功夫就是在「受」和「爱」之间看见那一刻。元认知打断「咔哒—嗡」是同一个缝隙。不像在于：佛学要熄灭贪爱本身，抗操纵只要校准信任，并不想让人无所求。</li>
+<li><b>分布式系统 · 混沌工程（Netflix Chaos Monkey，2011）</b>：在生产环境里主动随机关掉服务器，逼系统提前练出容错，和接种一样是「小剂量真实攻击＋演练应对」。不像的是，混沌工程打的是已知故障类型，新型操纵往往换了骨架之外的一切。</li>
+<li><b>投资 · 格雷厄姆的「市场先生」（《聪明的投资者》，1949）</b>：市场先生每天情绪化地报价，你可以接也可以不理，用自己的估值作锚。预说服的防线也一样：先定好自己的框架，再听对方开场。不像在于：市场先生没有意图，说服者有。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Cialdini 归纳出六个让人点头的心理捷径：互惠、承诺一致、社会认同、权威、喜好、稀缺。</li>
+<li>影响力六原则触发的是系统 1 的「咔哒—嗡」式自动反应，被按下时人还以为自己在理性选择。</li>
+<li>六原则更该当作看清结构的眼镜；当话术照搬，一旦被识破，信任的损耗远大于那次收益。</li>
+<li>Brehm 1966 年提出心理抗拒：选择自由受到威胁时，人会偏去做被禁止的事，或更看重它。</li>
+<li>用有限选择代替「你必须」，能保住对方的自主感，减少越推越反弹的回旋镖效应。</li>
+<li>预说服指出，说服的成败常在开口前就定了：先把注意力引向什么，信息就落进什么框架。</li>
+<li>先问「你觉得自己爱冒险吗」再推销新产品，购买意愿会上升，因为「尝新」的概念被预先调到了前台。</li>
+<li>McGuire 的接种理论有两步：预警即将被说服，并提前演练反驳，让判断力对真正的攻击产生抗体。</li>
+<li>单是察觉「我正在被说服」，就能打断系统 1 的自动反应，让系统 2 上线接管判断。</li>
+<li>抗操纵的目标是校准的信任：全盘怀疑和全盘轻信，一样是把判断权交了出去。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="card" data-tts="0992b33aecddbcea">
 <h2>深入思考</h2>

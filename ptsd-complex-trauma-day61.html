@@ -52,6 +52,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:104px;font-size:0.76rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -236,6 +244,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>本周练习 + 思考题</b>写下你的「红线清单」发给一位信任的人：满足哪两条时请他直接提醒你去求助——判断力受损时外部触发器比自我觉察可靠。<b>思考题：</b>你所在的组织在危机后做的第一件事，是给信息还是要情绪表达？
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 重放攻击</b>：协议给每条消息盖上时间戳或序号，否则截获的旧消息被重发时，系统会把它当新指令照常执行。创伤记忆缺的正是这枚戳：内容完好，却被当作此刻发生来响应；不同在于网络靠拒收旧消息防御，治疗要做的是给旧消息补上日期，再把它收下归档。</li>
+<li><b>生物进化 · 烟雾探测器原理</b>：Randolph Nesse 2001 年指出，防御反应误报便宜、漏报致命，所以自然选择把警报调得偏敏感。过度警觉就是这台探测器；不同在于 Nesse 说的是物种层面合算的默认值，PTSD 是个人在事件后把阈值卡在了最低档。</li>
+<li><b>复杂性科学 · 替代稳态</b>：Scheffer 等 2001 年在《自然》上描述，浅水湖会从清澈突然翻成浑浊，撤掉污染源也回不去，得用力推过另一侧的阈值。复杂创伤塑造的三条基线同理：伤害停了，基线不自动复位；不同在于湖没有自我叙事，人还能靠改写信念换一个吸引子。</li>
+<li><b>免疫学 · 脱敏疗法</b>：1911 年 Leonard Noon 给花粉症患者注射逐步加量的花粉提取物，让免疫系统不再对无害之物拉警报。延长暴露同样是小剂量、可控、反复地接触触发物；不同在于脱敏改的是抗体与免疫细胞的反应，PE 和 CPT 还要更新「这件事意味着什么」。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>PTSD 的核心不是记得太清楚，而是创伤记忆丢了时间坐标，被触发时以「正在发生」的方式重现。</li>
+<li>极端应激下杏仁核强化感官编码，海马打「何时何地」标签的功能受损，前额叶对杏仁核的抑制也变弱。</li>
+<li>Gilbertson 等的越战双胞胎研究显示，小海马是 PTSD 的易感因素，不只是创伤造成的结果。</li>
+<li>经历可怕事件是暴露而不是障碍：美国 PTSD 终身患病率约 6%–8%，绝大多数暴露者不发病。</li>
+<li>ICD-11 的复杂性 PTSD 在 PTSD 三簇之外，多出情绪调节失调、消极自我概念、关系困难三簇自我组织损伤。</li>
+<li>复杂创伤源于长期、反复、无法逃离且发生在关系内部的创伤；DSM-5 以与边缘型人格障碍难区分为由未予收录。</li>
+<li>PE、CPT、EMDR 是证据最强的一线创伤疗法，它们最主要的失败模式不是无效，而是患者脱落。</li>
+<li>有效创伤疗法的共同活性成分，是在生理安全的状态下重新接触创伤记忆，并让新信息进入记忆。</li>
+<li>事件后头几周的闪回、失眠、警觉多是正常应激反应，Bonanno 的轨迹研究发现多数人走在韧性轨迹上。</li>
+<li>单次强制性心理晤谈（debriefing）无效甚至可能增加症状，轻症更适合一个月内的观察等待。</li>
+</ol>
 <div class="deep-title">深入思考</div>
 <details><summary>ICD-11 收录 CPTSD、DSM-5 拒绝，哪边更站得住？</summary><div>争的不是现象是否存在，而是<strong>分类是否增加信息</strong>。ICD-11 的理由是临床效用：它指向不同的治疗排序。DSM-5 的理由是判别效度：DSO 三簇与边缘型人格障碍高度重叠，多一个诊断可能只是换个名字。判据很清楚：若按 CPTSD 分流的疗效系统性优于按 BPD 分流，分类就赚到了信息——这类证据目前仍不足。</div></details>
 <details><summary>多迷走神经理论那么流行，证据够吗？</summary><div>不够，得分层看。Porges 的理论在创伤圈影响极大，但 Grossman 等人对其解剖与比较生理学前提提出了实质批评，进化叙事部分并未获广泛支持。<strong>更稳的表述是：迷走张力与情绪调节的相关有数据，那套具体的进化机制故事是假说而非定论。</strong>同样的分层适用于《身体从未忘记》——强调身体维度是真实贡献，但书中推荐的部分疗法证据等级明显低于 PE／CPT。</div></details>

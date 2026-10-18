@@ -49,6 +49,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:92px;font-size:0.8rem}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -190,6 +199,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <div class="practice">
 <b>本周练习 + 思考题</b>做一次「最优花钱」小实验：花一小笔钱在别人身上，或用钱买回一段时间（外包一件杂务），记录当天的情绪变化。<br/>思考题：如果「幸福回报率」是唯一标准，我的消费结构该怎么重排？</div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>投资 · 伯努利的对数效用与凯利公式</b>：Daniel Bernoulli 1738 年解圣彼得堡悖论，提出财富的效用按对数增长；Kelly 1956 年的下注公式即最大化对数财富。和幸福曲线同形，都是翻倍才算一份；不像在于他们讲该怎么选，Kahneman 测的是日子实际过得怎样。</li>
+<li><b>分布式系统 · 舱壁模式（bulkhead）</b>：Michael Nygard《Release It!》（2007）主张按用途隔开资源池，一处耗尽不拖垮全局，代价是不能互借。心理账户就是给钱装舱壁；只是工程师有意设计隔板，大脑按来源随手贴。</li>
+<li><b>操作系统 · 抖动（thrashing）</b>：Peter Denning 1968 年指出，工作集超出内存时系统忙于换页，计算几乎停摆。带宽税同构：账单常驻内存，挤走别的任务；不像的是机器能加内存，人只能减负、留缓冲。</li>
+<li><b>进化生物学 · 互惠利他（Robert Trivers，1971）</b>：今天帮人、日后得报，选择会青睐非亲属间的互助倾向；给别人花钱的快乐，或许正是它装进来的近因奖励。不像在于进化算长期回报，幸福研究只测当下心情。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>收入和幸福是对数关系：收入要翻一倍，才换来一份固定的幸福增量。</li>
+<li>Kahneman 与 Deaton 2010 年称日常情绪过 7.5 万美元年收入后趋平，Killingsworth 2021 年没找到平台。</li>
+<li>2023 年的对抗性合作调和了分歧：多数人幸福随收入稳步上升，只有本就不快乐的少数人会到顶。</li>
+<li>享乐适应让欲望和参照点随收入一起上涨，所以钱更擅长减少痛苦，而不是制造快乐。</li>
+<li>Richard Thaler 的心理账户理论：大脑按来源和用途给钱贴标签，同样的钱因此被区别对待。</li>
+<li>心理账户能帮人存钱，也会催生赌资效应、沉没成本和死守亏损的处置效应。</li>
+<li>Mullainathan 与 Shafir 认为匮乏会造成隧道视野和带宽税，让人当场变得短视。</li>
+<li>贫困带来约 13 个 IQ 点认知负荷的估计有复制争议：方向可信，幅度待定。</li>
+<li>同样一笔钱，买体验、花在别人身上、用钱买回时间，换来的幸福明显更多。</li>
+<li>匮乏的带宽税和操作系统的抖动同构：常驻的担忧占满内存，别的任务几乎停摆。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="deep">
 <h2 data-tts="73e5ffb7e26e2027">深入思考</h2>

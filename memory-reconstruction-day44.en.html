@@ -53,6 +53,14 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:96px;font-size:0.8rem}.flow-arrow{transform:rotate(90deg)}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
 </style></head><body>
 <div class="container">
 
@@ -262,6 +270,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 </div>
 </div>
 
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Distributed systems · Read repair</b>: When a database like Cassandra reads a key and finds replicas disagreeing, it rewrites the stale ones on the spot — the read itself triggers a write, the same shape as reconsolidation's "retrieve and it gets rewritten." The difference: read repair pulls replicas toward the latest genuine write by timestamp; recall writes back your present beliefs and mood, so each "repair" drifts further from the original.</li>
+<li><b>Information theory · Generation loss in lossy compression</b>: JPEG keeps only what "looks about right" and fills in the rest on decoding; re-save the same image again and again and the artifacts pile up, much like re-encoding a memory on every recall. Unlike it: what compression throws away depends only on the algorithm, not on what the picture means; memory's losses have a direction, sliding steadily toward your familiar schemas.</li>
+<li><b>Evolutionary biology · Ancestral state reconstruction</b>: No one has seen an ancestor's genome; phylogenetics infers the "most likely" ancestral sequence from living species plus a model of evolution — just as the brain rebuilds the past from fragments plus schemas. Unlike it: a phylogenetic reconstruction comes with probabilities and says where it is unsure; memory hands over its rebuild with no error bars, and often with full confidence.</li>
+<li><b>Investing · Resulting</b>: Former poker pro Annie Duke, in <em>Thinking in Bets</em> (2018), warns that we judge past decisions by how they turned out. The fix mirrors lineup reform: write a decision journal before the outcome is known, locking in your judgment and confidence at the time. The difference is that an investor can keep records on purpose; a witness rarely gets the chance.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>The brain stores fragmentary gist and rebuilds the scene from schemas at recall; memory is not a video replay.</li>
+<li>In Bartlett's 1932 "War of the Ghosts" study, people dropped or rewrote story details that didn't fit their cultural schemas.</li>
+<li>Reconsolidation research shows a retrieved memory briefly becomes unstable and alterable, so every recall can rewrite it.</li>
+<li>A childhood memory seen from an observer's viewpoint has almost certainly been reconstructed; clarity is not accuracy.</li>
+<li>In Loftus's "lost in the mall" study, about one in four adults "remembered" a suggested childhood event that never happened.</li>
+<li>Source-monitoring error means keeping a memory's content but misattributing its source, mistaking imagination, hearsay, or news for experience.</li>
+<li>The Challenger study found nearly half the details of flashbulb memories rewritten after 2.5 years, while confidence stayed very high.</li>
+<li>Emotional arousal strengthens the feeling of remembering and the core gist, but peripheral details still drift.</li>
+<li>About seven in ten U.S. DNA exonerations involved mistaken eyewitness IDs; confidence can be manipulated and is no reliable sign of accuracy.</li>
+<li>Lineup reform means sequential presentation, double-blind administration, recording initial confidence, and plausible fillers.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 
 <details><summary>1. If every recall rewrites the memory, does "not remembering" actually preserve the truth better?</summary><div>In theory, retrieval triggers reconsolidation, so fewer retrievals means fewer chances to rewrite; but memory also decays naturally, and the brain never stored memory to "archive" it — it stored it to guide future action. Schacter argues memory's constructiveness exists precisely so we can flexibly <strong>imagine the future</strong> (one system both recalls the past and simulates what's ahead). So "keeping it fresh" was never the design goal — memory is built to be rewritten and recombined.</div></details>

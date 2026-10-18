@@ -51,6 +51,15 @@ nav.back{text-align:center;margin-top:40px}
 nav.back a{color:#ae72c0;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #aa5caa;border-radius:24px;transition:all 0.2s}
 nav.back a:hover{background:#763a88;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style></head><body>
 <div class="container">
 <header>
@@ -228,6 +237,26 @@ nav.back a:hover{background:#763a88;color:#ffffff}
 <b>关键参考</b> · Sirois《Procrastination and Self-Compassion》· Carol Dweck《Mindset》· Sisk et al.《To What Extent and Under Which Circumstances Are Growth Mindsets Important?》(2018, Psychological Science) · Gollwitzer《Implementation Intentions》(1999)
 </div>
 </div>
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>生物进化 · Zahavi 的累赘原理（handicap principle，1975）</b>：孔雀拖着笨重的尾巴还活得好，恰恰证明它强，代价越高信号越可信；自我设妨碍里「带着障碍还赢了」显得更厉害，用的是同一套加分逻辑。不像的是，孔雀的累赘让信号更诚实，自我设妨碍的障碍却是为了让成败什么也证明不了。</li>
+<li><b>投资 · 处置效应（Shefrin &amp; Statman，1985）</b>：投资者早早卖掉赚钱的股票，却死拿着亏损的不卖，因为一卖亏损就成了定局；拖延同样是在推迟那份「我不够好」的判决。不像在于，账面亏损迟早要认，自我设妨碍却能把判决永远悬着。</li>
+<li><b>分布式系统 · Netflix 的 Chaos Monkey（2011）</b>：在生产环境里故意随机关掉服务器，逼系统学会容错，失败被当成可复盘的数据；这正是「故意做到 80 分就交」的工程版本。不像的是，混沌工程制造故障是为了看清系统，自我设妨碍制造障碍是为了不看清自己。</li>
+<li><b>复杂性科学 · 模拟退火（Kirkpatrick 等，1983）</b>：优化算法早期允许接受更差的解，才能跳出局部最优；只肯接受更好结果的贪心搜索最容易卡死。担忧型完美主义就像拒绝任何退步的贪心搜索，不像的是算法的「温度」会按计划下降，人的容错度要靠自我同情去调。</li>
+</ul></div>
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>完美主义可拆成两束：追求卓越的高个人标准，和对失误的担忧；决定它有害与否的是担忧那一束。</li>
+<li>Hewitt 与 Flett 区分出自我导向、他人导向、社会规定型完美主义，社会规定型与抑郁、焦虑、自杀意念关联最强。</li>
+<li>Curran 与 Hill 2019 年的元分析显示，大学生的三种完美主义都在上升，社会规定型涨得最猛。</li>
+<li>自我价值绑定在表现上时，每个任务都变成「我够不够好」的审判，大脑启动的是回避而非投入。</li>
+<li>拖延不是懒，也不是时间管理差，而是用回避即时修复情绪，让短期心情压过长期目标。</li>
+<li>Piers Steel 的拖延元分析发现，最强的预测因子是任务厌恶感和冲动性，而不是懒。</li>
+<li>每次拖延带来的即时解脱都在强化回避回路，所以拖延是被解脱感训练出来的习惯。</li>
+<li>自我设妨碍（Berglas 与 Jones，1978）是在重要表现前主动制造障碍，让失败能归因于障碍而非能力。</li>
+<li>自我同情更高的人拖延更少，因为自我同情切断了拖延、自责、更多负面情绪、更想逃的循环。</li>
+<li>Gollwitzer 的执行意图用「如果……那我就……」的预设触发来启动行动，替代硬靠意志力。</li>
+</ol>
 <!-- 深入思考 -->
 <div class="footer-card" data-tts="07a4ec43cfaa30ba">
 <h3>深入思考 · Open Questions</h3>

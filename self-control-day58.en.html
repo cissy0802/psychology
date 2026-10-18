@@ -47,6 +47,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -213,6 +221,28 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>This Week + Reflection</b>Pick one behavior you keep failing at and move the strategy from the matrix's bottom-right cell to the top-left: stop relying on in-the-moment restraint, change the environment once. <b>Reflection:</b> the few defaults with the most influence over your life — who set them?
 </div>
 </div>
+
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Philosophy · Elster, Ulysses and the Sirens</b>: In 1979 Jon Elster analyzed Ulysses having his crew bind him to the mast and plug their own ears as rational precommitment: the clear-headed self limiting the self that will waver later. That is the top-left cell of the self-control matrix. Where it differs: Elster asks how reason binds itself, while environment design is more mundane, and most of our defaults were never tied on by us.</li>
+<li><b>Distributed systems · The circuit breaker</b>: Michael Nygard popularized the circuit breaker in Release It! (2007): after repeated downstream failures, the caller stops waiting and fails fast. A child who was just let down eating the marshmallow now runs the same logic. Where it differs: a breaker probes for recovery on a timer (half-open), while human trust recovers far more slowly.</li>
+<li><b>Evolutionary biology · Waddington's epigenetic landscape</b>: Waddington (1957) drew development as a ball rolling down a ridged landscape; the deeper the valley, the harder to leave it, which he called canalization. A habit is a deepened valley, and environment design reshapes the terrain instead of pushing the ball uphill. Where it differs: gene networks carve developmental valleys, while people can re-dig their own.</li>
+<li><b>Business · Shigeo Shingo's poka-yoke</b>: Toyota's mistake-proofing makes a wrong part physically impossible to fit, instead of relying on workers to be careful every time, the same structure as changing the setting beats restraint. Where it differs: poka-yoke prevents unintended slips, while self-control faces knowing desire, which actively hunts for a workaround.</li>
+</ul></div>
+
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>People high in trait self-control report fewer moments of resisting temptation in daily life: they win because the conflict never happens.</li>
+<li>Large replications of the marshmallow test show that, controlling for family background and early cognition, waiting time loses over half its predictive power.</li>
+<li>Kidd and colleagues found that children who first saw a promise broken waited only about a quarter as long as children who saw it kept.</li>
+<li>Mischel stressed that children who wait use attention strategies, not grit: self-control operates on attention, not on desire itself.</li>
+<li>Temptation bundling unlocks an instant pleasure only during a hard task; in a gym field experiment it raised visits by about 27%, then faded.</li>
+<li>Temptation bundling changes the experience of the process, while a bribe is an exchange afterward that can crowd out a child's own interest.</li>
+<li>Wendy Wood's sampling shows about 43% of daily behavior repeats in the same context, and high self-control rests on automated habits, not struggle.</li>
+<li>Stress, sleep loss and cognitive load hand control from the goal-directed system to the habit system, so sliding into defaults when tired is not a character flaw.</li>
+<li>Defaults are genuinely powerful, but in government field trials the average nudge effect is about 1.4 percentage points, far below the 8.7 in journals.</li>
+<li>In the self-control strategy matrix, changing the situation beforehand is most reliable; in-the-moment mental restraint is costliest, yet where most people live.</li>
+</ol>
 
 <div class="deep-title">Going Deeper</div>
 <details><summary>If self-control mostly comes from environment, is "willpower" still a useful concept?</summary><div>Useful, but relocated. It isn't a resource that depletes and refills; it's closer to a one-shot <strong>meta-decision</strong> capacity — deciding which default to change, which precommitment to sign. The real restraint happens at the moment of design, not the moment of temptation. That relocation also explains why "my willpower has been terrible lately" is so often an accurate observation with a wrong explanation: what degraded were the design conditions — a move, a disrupted schedule, a dismantled trigger chain.</div></details>

@@ -52,6 +52,14 @@ summary{cursor:pointer;font-weight:600;color:#ae72c0;padding:12px 0;font-size:0.
 details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 .deep-title{text-align:center;color:#ae72c0;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.bar-label{width:104px;font-size:0.76rem}}
+.crossx{border:1px solid rgba(190,112,32,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#1f0a1b}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#b9a9bd}
+.crossx b{color:#e0964e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(174,114,192,0.28);border-radius:12px;background:#0f050d}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(174,114,192,0.12);font-size:0.94rem;line-height:1.75;color:#cdc2d1}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
 </style>
 </head>
 <body>
@@ -236,6 +244,26 @@ details div{padding:0 0 14px;font-size:0.92rem;color:#bcacbc}
 <b>Practice + Reflection</b>Write your own red-line list and send it to someone you trust: if any two are met, ask them to tell you directly to seek help — when judgment is impaired, an external trigger beats self-awareness. <b>Reflection:</b> after a crisis, what does your organization do first — give information, or ask for emotional expression?
 </div>
 </div>
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Distributed systems · Replay attacks</b>: Protocols stamp each message with a timestamp or sequence number; otherwise an intercepted old message, resent, gets executed as a fresh command. A trauma memory is missing exactly that stamp: the content is intact, but the body answers it as if it were happening now. The difference is that networks defend by rejecting stale messages, while therapy dates the old message and then files it.</li>
+<li><b>Evolution · The smoke detector principle</b>: Randolph Nesse argued in 2001 that false alarms are cheap and misses are lethal, so natural selection tunes defensive responses to be oversensitive. Hypervigilance is that detector; the difference is that Nesse describes a species-level default that pays off, whereas PTSD is one person's threshold stuck at its lowest setting after an event.</li>
+<li><b>Complexity science · Alternative stable states</b>: Scheffer and colleagues described in Nature (2001) how shallow lakes flip suddenly from clear to turbid and stay turbid after the pollution stops, until pushed back past a different threshold. The three baselines complex trauma sets behave the same way: the harm ends, the baseline does not reset. Unlike a lake, a person can rewrite beliefs and move to another attractor.</li>
+<li><b>Immunology · Allergen desensitization</b>: In 1911 Leonard Noon injected hay-fever patients with gradually rising doses of pollen extract until the immune system stopped sounding the alarm at something harmless. Prolonged exposure is likewise small, controlled, repeated contact with the trigger; but desensitization retunes antibodies and immune cells, while PE and CPT must also update what the event means.</li>
+</ul></div>
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>The core of PTSD is not remembering too vividly but a trauma memory that has lost its timestamp, so it returns as happening now.</li>
+<li>Under extreme stress the amygdala boosts sensory encoding, the hippocampus fails to tag when and where, and prefrontal brakes on the amygdala weaken.</li>
+<li>Gilbertson's Vietnam-veteran twin study showed that a smaller hippocampus is a risk factor for PTSD, not only a consequence of trauma.</li>
+<li>Going through something terrible is exposure, not a disorder: US lifetime PTSD prevalence is about 6–8%, and most exposed people never develop it.</li>
+<li>ICD-11 complex PTSD adds three clusters of self-organization damage to PTSD: emotional dysregulation, negative self-concept, and relational difficulty.</li>
+<li>Complex trauma comes from prolonged, repeated, inescapable harm inside relationships; DSM-5 declined the diagnosis over its overlap with borderline personality disorder.</li>
+<li>PE, CPT, and EMDR have the strongest evidence as first-line trauma treatments, and their main failure mode is dropout rather than lack of efficacy.</li>
+<li>The shared active ingredient of effective trauma therapy is revisiting the memory while physiologically safe and letting new information into it.</li>
+<li>Flashbacks, insomnia, and vigilance in the first weeks are mostly normal stress responses; Bonanno found most people follow a resilience trajectory.</li>
+<li>Single-session mandatory psychological debriefing does not work and may increase symptoms; mild cases call for a month of watchful waiting instead.</li>
+</ol>
 <div class="deep-title">Going Deeper</div>
 <details><summary>ICD-11 adopted CPTSD and DSM-5 rejected it — which side holds up?</summary><div>The dispute isn't whether the phenomenon exists; it's whether <strong>the category adds information</strong>. ICD-11's case is clinical utility: it points to a different treatment ordering. DSM-5's case is discriminant validity: the three DSO clusters overlap heavily with borderline personality disorder, so an extra diagnosis may just be a new name. The test is clear enough — if patients triaged as CPTSD do systematically better than those triaged as BPD, the category has earned its information. That head-to-head evidence is still thin.</div></details>
 <details><summary>Polyvagal theory is everywhere — is the evidence sufficient?</summary><div>No, and it needs to be taken in layers. Porges's theory has been enormously influential in trauma circles, but Grossman and others have raised substantive objections to its anatomical and comparative-physiology premises, and the evolutionary narrative has not gained broad support. <strong>The safer statement is that the correlation between vagal tone and emotion regulation has data behind it, while that specific evolutionary mechanism story is a hypothesis, not a settled finding.</strong> The same layering applies to <i>The Body Keeps the Score</i>: the emphasis on the body is a real contribution, but several therapies it recommends sit at a visibly lower evidence tier than PE or CPT.</div></details>
