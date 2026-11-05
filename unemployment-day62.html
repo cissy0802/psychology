@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>心理学 Day 62：失业的心理学 — 丢掉的不只是工资</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d9bfd9}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e6f5;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2f3e;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fdf3f8;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.misq{background:#fdf0f0;border-left:3px solid #c94a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f8eef6;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fdf3f8;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.fn-row{display:grid;grid-template-columns:110px 1fr 1fr;gap:8px;margin-bottom:8px;font-size:0.86rem}
+.fn-row > div{background:#fff;border-radius:8px;padding:8px 10px}
+.fn-row .fn{background:#7a3e8c;color:#fff;font-weight:700;display:flex;align-items:center}
+.fn-row.head > div{background:transparent;color:#7a3e8c;font-weight:700;padding:2px 10px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #e3cfe3;border-radius:10px;padding:14px;font-size:0.88rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+.matrix-cell.hot{border-color:#c94a4a}
+.viz-note{font-size:0.82rem;color:#8a6a8a;text-align:center;margin-top:10px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4e}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.fn-row{grid-template-columns:78px 1fr 1fr;font-size:0.8rem}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 62 · 工作与幸福</div>
+<h1>失业的心理学：丢掉的不只是工资</h1>
+<div class="meta">2026.11.05 · BigCat's Inner World</div>
+<div class="intro">失业是少数几乎不会随时间适应的生活事件。九十多年前一个奥地利小镇已经给出线索：工作除了发钱，还悄悄提供着另外五样东西。</div>
+</header>
+
+<!-- 概念 1 -->
+<div class="card">
+<h2>马林塔尔与潜在剥夺<span class="en">Latent Deprivation Theory (Marie Jahoda)</span></h2>
+<span class="tag">社会心理学 · 经典田野研究</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>工作有一个<strong>显性功能</strong>（收入）和五个<strong>潜在功能</strong>：时间结构、家庭以外的社会接触、超越个人的集体目标、社会身份、规律的活动。失业一次拿走全部五样，而它们恰好对应人的基本心理需要。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>1931–32 年，Marie Jahoda、Paul Lazarsfeld 与 Hans Zeisel 进入维也纳附近的纺织小镇马林塔尔，工厂倒闭后全镇大半家庭失业。研究者预期看到愤怒和激进，看到的却是<strong>「疲惫的社区」</strong>：男人在街上走得更慢、频繁停步，不少人不再戴表；图书馆取消了借阅费，借阅量反而大降。<strong>时间多了，做的事反而少了。</strong>四类家庭态度中人数最多的是「认命型」。女性因为家务仍有固定日程，时间感瓦解得轻得多。</p>
+<p>Jahoda 后来把观察提炼为潜在剥夺理论。Paul 与 Batinic (2010) 用量表检验：失业者五项得分全面低于在职者，五项缺口能解释相当一部分痛苦差异。这五项与 Deci &amp; Ryan 自我决定论里的<strong>胜任与联结需要</strong>高度重叠：组织在发工资的同时，顺带替你满足了它们。</p>
+</div>
+<div class="viz">
+<div class="viz-title">工作的五个潜在功能：失业时失去什么，靠什么替代</div>
+<div class="fn-row head"><div></div><div>失业时</div><div>可替代来源</div></div>
+<div class="fn-row"><div class="fn">时间结构</div><div>日夜界限模糊，时间感瓦解</div><div>固定开工时间、外部截止日</div></div>
+<div class="fn-row"><div class="fn">社会接触</div><div>交往缩回家庭内部</div><div>协作项目、课程、球队</div></div>
+<div class="fn-row"><div class="fn">集体目标</div><div>「我做的事没人需要」</div><div>志愿服务、开源、社区</div></div>
+<div class="fn-row"><div class="fn">社会身份</div><div>「你做什么的？」变成难题</div><div>可说出口的角色与项目名</div></div>
+<div class="fn-row"><div class="fn">规律活动</div><div>无所事事反而更累</div><div>每日固定的身体或专业练习</div></div>
+<div class="viz-note">钱只是第六样。前五样不会随救济金一起发放</div>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>做自由职业、长休或「AI 超级个体」时，离开的组织曾免费提供这五项。现在得自己搭：固定开工钟点、每周至少两次与非家人的协作、一个对外公开承诺的项目。</div>
+<div class="role-item"><b>育儿</b>Conger 的家庭压力模型显示，经济冲击主要经由父母的情绪压力和管教变严伤到孩子。家里有人失业时，先守住起床和晚饭的固定时间，比向孩子解释经济状况更要紧。</div>
+<div class="role-item"><b>团队</b>裁员时只谈补偿不够。保留校友群、主动写推荐、开放过渡期的办公与邮箱权限，补的是身份与联结。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>工具：<strong>五功能自评</strong>。给你当前生活的五项各打 1–5 分；低于 3 分的就是此刻的缺口，在职者也常缺「集体目标」。</p>
+<div class="misq"><b>常见误区：</b>「有了空闲就能去做想做的事。」马林塔尔的图书馆给了反例：<strong>时间结构是行动的脚手架</strong>，撤掉它，主动性往往一起塌掉。</div>
+</div>
+<div class="refs"><b>关键参考</b> · Jahoda, Lazarsfeld &amp; Zeisel《Die Arbeitslosen von Marienthal》(1933) · Jahoda《Employment and Unemployment》(1982) · Paul &amp; Batinic (2010), Journal of Organizational Behavior</div>
+<div class="practice"><b>本周练习 + 思考题</b>做一次五功能自评，挑最低的一项，本周加一个外部锚点（例如每周三上午和一位同行固定通话）。<b>思考题：</b>如果明天起不用上班、收入照发，五项里你最先失去的是哪一项？</div>
+</div>
+
+<!-- 概念 2 -->
+<div class="card">
+<h2>不会适应的伤<span class="en">Unemployment &amp; the Happiness Set Point</span></h2>
+<span class="tag">幸福感研究 · 纵向追踪</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>享乐适应让人对多数变化慢慢回到基线，失业是少数例外：<strong>痛苦不随时间消退，再就业后也未必回到原点</strong>，会留下「疤痕」。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>Lucas、Clark、Georgellis 与 Diener (2004) 用德国社会经济面板 (SOEP) 追踪 15 年：失业期间生活满意度下降，<strong>再就业后也没有完全回升</strong>，相当于基线本身被下调。Clark 等 (2008) 横向比较多种生活事件：结婚、离婚、丧偶、生子，人们几年内大体适应；对失业，男性几乎不适应。</p>
+<p>这是因果还是选择？Paul &amp; Moser (2009) 的元分析汇总数百项研究：失业者中有心理问题的比例约 <strong>34%</strong>，在职者约 <strong>16%</strong>；纵向数据里，人在失业后变差、再就业后好转，说明不只是「心理差的人更容易失业」。</p>
+<p>为什么不适应？丧偶是一次性的失去，失业是<strong>每天重复发生的缺口</strong>：五项潜在功能天天缺席，求职被拒又不断提供失败反馈。Clark、Georgellis 与 Sanfey (2001) 还发现，失业过的人再就业后满意度仍偏低，部分源于对工作不安全感的长期预期。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>别用「过几个月就好了」去等。适应不会自动发生，结构得主动重建。</div>
+<div class="role-item"><b>关系</b>伴侣失业半年仍低落是常态，不是矫情。比起打气，更有用的是帮对方搭日程、牵线外部接触。</div>
+<div class="role-item"><b>团队</b>把简历空窗当负面信号，是对疤痕的二次加码。曾被裁员的新同事更需要明确、规律的反馈来校准不安全感。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>反思题：回想一次你经历过的重大失去。三个月后你是<strong>「等回了基线」</strong>，还是<strong>「搭起了新结构」</strong>？</p>
+<div class="misq"><b>常见误区：</b>「享乐适应说明一切都会过去。」适应程度因事件而异，Lucas (2007) 发现长期残疾也属于适应很不完全的一类。</div>
+</div>
+<div class="refs"><b>关键参考</b> · Lucas et al. (2004), Psychological Science · Clark et al. (2008), Economic Journal · Paul &amp; Moser (2009), Journal of Vocational Behavior</div>
+<div class="practice"><b>本周练习 + 思考题</b>给自己或身边一位正处在空窗期的人，画一张「本周固定日程表」：至少三个每周重复、有他人参与的时间块。<b>思考题：</b>你的幸福感里，有多少其实寄存在「被需要」这件事上？</div>
+</div>
+
+<!-- 概念 3 -->
+<div class="card">
+<h2>钱能补多少<span class="en">Pecuniary vs. Non-pecuniary Costs</span></h2>
+<span class="tag">行为经济学 · 幸福感测量</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>收入下降只解释失业痛苦的一小部分。Winkelmann 夫妇 (1998) 用 SOEP 面板拆分：<strong>非货币成本远大于收入损失本身</strong>。救济金能缓冲，但填不平。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p><strong>缓冲有，填平没有。</strong>Paul &amp; Moser 发现，失业保障更好、收入更平等的国家，失业的心理伤害更轻，但并不消失。芬兰 2017–18 年随机实验给 2000 名失业者每月 560 欧元无条件基本收入：受试者压力更低、对未来更有信心，就业效果却很小。</p>
+<p><strong>评价与体验分家。</strong>Knabe 等 (2010) 用 Kahneman 的日重建法 (DRM) 发现：问「你对生活整体满意吗」，失业者明显更低；逐段回忆一天的情绪，差距却不大，因为不上班多出的时间填进了相对愉快的活动。痛苦主要住在<strong>「我的人生怎么样」这个评价</strong>里，而不是每个时刻里。这指向下一张卡：身份与规范。</p>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>财务上的应急金只保显性功能。再备一份「结构备份」：一个与雇主无关、离职也带得走的社群或长期项目。</div>
+<div class="role-item"><b>关系</b>「钱够花，别焦虑」这类安慰不中靶。对方缺的多半是「我还算个有用的人」的感受。</div>
+<div class="role-item"><b>团队</b>按潜在剥夺理论推论，裁员时提供再就业辅导、引荐和推荐信，比单纯多加一个月补偿更对症。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>工具：分别给出两个分数：「对生活整体打几分」与「昨天各时段的心情」。两者差得多的人，问题通常在<strong>意义和身份</strong>，而不在日常体验。</p>
+<div class="misq"><b>常见误区：</b>「基本收入能解决 AI 时代失业的心理问题。」芬兰数据支持福祉改善，但潜在剥夺论预测它补不上结构与身份。反方是 David Fryer 的<strong>能动性限制模型</strong>：真正伤人的是钱少导致的选择权被剥夺。两派至今各有证据。</div>
+</div>
+<div class="refs"><b>关键参考</b> · Winkelmann &amp; Winkelmann (1998), Economica · Knabe et al. (2010), Economic Journal · Kela《The Basic Income Experiment 2017–2018 in Finland》(2020)</div>
+<div class="practice"><b>本周练习 + 思考题</b>列出你目前「带得走」的身份来源：离开现在的组织后仍然成立的角色、社群和作品各一个。<b>思考题：</b>如果收入有保障，你还愿意为什么而早起？</div>
+</div>
+
+<!-- 概念 4 -->
+<div class="card">
+<h2>不工作 ≠ 失业<span class="en">Social Norms &amp; Identity</span></h2>
+<span class="tag">社会认同 · 规范效应</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>退休者、全职照护者、学生同样不工作，却没有失业那么痛。差别在于<strong>「应该工作却没在工作」</strong>：偏离规范和身份失落，才是失业痛苦的核心成分。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>三条证据从不同方向指向规范。Clark (2003)：所在地区失业率越高、伴侣也失业时，失业者的不幸福越轻，<strong>失业变得常见，羞耻就减少</strong>。Stutzer &amp; Lalive (2004) 把瑞士各社区在 1997 年失业救济公投中的投票当作工作伦理强弱的指标：规范越强的社区，失业者越不快乐，也越快找到工作。最干净的是 Hetschko、Knabe 与 Schöb (2014)：长期失业者到龄转为「退休」那一刻，生活满意度明显上升。<strong>处境没变，只是标签变了。</strong></p>
+</div>
+<div class="viz">
+<div class="viz-title">痛苦来自「不工作」与「被期待工作」的组合</div>
+<div class="matrix">
+<div class="matrix-cell"><b>在工作 · 被期待工作</b>常规在职：五项功能俱全</div>
+<div class="matrix-cell hot"><b>不工作 · 被期待工作</b>失业：功能缺失 + 规范偏离，最痛</div>
+<div class="matrix-cell"><b>在工作 · 不被期待</b>退休后返聘、兴趣兼职：常有增益</div>
+<div class="matrix-cell"><b>不工作 · 不被期待</b>自愿退休、主动间隔：功能缺失但无羞耻</div>
+</div>
+<div class="viz-note">非自愿的提前退休落在右上和右下之间，结果也更接近失业</div>
+</div>
+<div class="section">
+<span class="label">自我应用</span>
+<div class="roles">
+<div class="role-item"><b>自我</b>主动间隔与被动失业的心理成本差很大。给空窗期起一个你认可的名字和目标，是更换规范参照系，不是自欺。</div>
+<div class="role-item"><b>育儿</b>别在孩子面前把「爸爸／妈妈现在没上班」讲成失败。孩子对工作的规范感，主要是在家里学会的。</div>
+<div class="role-item"><b>团队</b>裁员若不是绩效判决，要明确说出来。含糊其辞会让人自己补上「是我不够好」的叙事。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">自我评估工具 + 常见误区</span>
+<p>反思题：如果再也没人问「你是做什么的」，你对自己的评价会<strong>升、降，还是不变</strong>？答案显示你的自我价值有多少挂在职业标签上。</p>
+<div class="misq"><b>常见误区：</b>「既然是面子作祟，想开就好。」规范是社会事实，一句话改不掉；而且 Stutzer 的数据显示强规范并非只有坏处，它也伴随更快的再就业。目标是别让它变成自我攻击。</div>
+</div>
+<div class="refs"><b>关键参考</b> · Clark (2003), Journal of Labor Economics · Stutzer &amp; Lalive (2004), Journal of the European Economic Association · Hetschko, Knabe &amp; Schöb (2014), Economic Journal</div>
+<div class="practice"><b>本周练习 + 思考题</b>写一句不含职位和公司名的自我介绍，在一次新场合真的用一次，留意对方和自己的反应。<b>思考题：</b>你对「不上班的人」的第一反应，是从哪里学来的？</div>
+</div>
+
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 时钟漂移</b>：节点靠 NTP 等外部时钟源校时，一旦断开，本地晶振会慢慢漂移，日志顺序开始错乱。马林塔尔的男人不再戴表、步子变慢，是失去外部同步后的同一种漂移；不同在于节点只能等重连，人可以自建时钟源，比如固定开工时间和对他人的承诺。</li>
+<li><b>宏观经济 · 失业滞后</b>：Blanchard 与 Summers 1986 年提出，欧洲失业率在冲击过后回不到原来的水平，因为长期失业者技能流失、被挤出工资谈判，均衡被历史改写。Lucas 等发现的个人基线下移是同一结构的微观版；不同在于宏观靠政策拉动，个人还能主动重建结构。</li>
+<li><b>哲学 · Arendt《人的境况》</b>：Hannah Arendt 1958 年把人的活动分成维持生命的劳动、制造持久之物的工作、在他人面前展现自己的行动，并警告自动化可能造出「没有劳动可做的劳动者社会」。Jahoda 的五项功能大半落在工作与行动上；不同在于 Arendt 做的是规范性批评，Jahoda 给出的是可测量的变量。</li>
+<li><b>生物进化 · 生态位构建</b>：Odling-Smee、Laland 与 Feldman 2003 年系统阐述，生物改造环境，被改造的环境又反过来塑造生物。工作组织就是人类构建的生态位，不知不觉提供节律与群体；不同在于河狸的坝靠本能代代复制，离开组织的人得有意识地重搭一座。</li>
+</ul></div>
+
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Marie Jahoda 指出，工作除了收入，还提供时间结构、社会接触、集体目标、社会身份和规律活动五个潜在功能。</li>
+<li>马林塔尔研究发现，失业者时间多了反而做得更少：步速变慢、不再戴表，免费图书馆的借阅量也下降。</li>
+<li>Paul 与 Batinic 的量表研究证实，失业者在五项潜在功能上全面低于在职者，缺口能解释部分痛苦差异。</li>
+<li>Lucas 等用德国 SOEP 面板发现，失业会下调生活满意度的基线，再就业后也不能完全恢复。</li>
+<li>Clark 等比较多种生活事件后发现，人们能适应结婚、离婚和丧偶，男性对失业却几乎不适应。</li>
+<li>Paul 与 Moser 的元分析显示，失业者有心理问题的比例约 34%，在职者约 16%，且纵向数据支持因果方向。</li>
+<li>Winkelmann 夫妇的面板分析表明，失业的非货币成本远大于收入损失，救济金能缓冲但填不平痛苦。</li>
+<li>Knabe 等用日重建法发现，失业者对人生整体评价明显更低，逐段回忆的日常情绪却与在职者差距不大。</li>
+<li>Clark 发现地区失业率越高、伴侣也失业时，失业者越不痛苦，说明偏离工作规范是失业痛苦的核心成分。</li>
+<li>长期失业者到龄转为退休时生活满意度上升，处境不变而标签改变，显示身份认同在失业痛苦中的分量。</li>
+</ol>
+
+<div class="deep-title">深入思考</div>
+<details><summary>潜在剥夺还是能动性限制：失业到底伤在哪？</summary><div>Jahoda 认为核心是五项潜在功能的缺失；David Fryer 反驳说，这把人描述得太被动，真正的伤害是<strong>贫困压缩了人规划未来、行使能动性的空间</strong>。两派的预测在一个地方分叉：如果收入充分补足，痛苦还剩多少？芬兰实验与 Knabe 的结果显示，钱能改善压力与日常体验，但对「人生评价」的修复有限，部分支持 Jahoda；而保障越好的国家伤害越轻，又支持 Fryer。更稳的说法是两条通路并存，比例随制度而变。</div></details>
+<details><summary>如果 AI 让工作大量减少，什么能接替五项潜在功能？</summary><div>历史上已有几种「不靠雇佣也能提供结构」的形态：退休社群、志愿组织、宗教团体、开源社区。卡片 4 的证据给出一个关键条件：<strong>只要社会规范不把「不工作」判为失败</strong>，人对缺少雇佣的耐受度会高得多。所以政策问题不只是发钱，还包括重新定义什么算有价值的贡献。未知的是规模：多数人同时离开雇佣时，替代结构能否同样快地长出来，目前没有数据。</div></details>
+<details><summary>在重视家庭与面子的文化里，失业更痛还是更轻？</summary><div>家庭网络能接住时间结构与社会接触，削弱潜在剥夺；而把职业与家庭声誉绑在一起的规范，又会放大 Stutzer 测到的那种规范代价。Paul &amp; Moser 的元分析发现，经济越不发达、收入越不平等、失业保障越弱的地方，失业伤害越大，但现有研究以欧美样本为主，<strong>东亚的「体面」压力如何与家庭支持相互抵消</strong>，仍缺少高质量的纵向数据。</div></details>
+<details><summary>佛学讲放下对身份的执着，能缓冲失业之痛吗？</summary><div>部分能。Hetschko 等的退休研究说明，痛苦很大程度绑在「我是失业者」这个标签上，这正是佛学所说对自我概念的执取。但 Jahoda 提醒，时间结构与群体联结是真实的需要，不是幻觉。有意思的是，<strong>传统寺院生活恰好五项俱全</strong>：严格的作息、僧团、共同的修行目标、明确的身份、每日的劳作与功课。佛学的方案并不是空掉一切结构，而是换一套结构来承载修行。</div></details>
+
+<nav class="back"><a href="index.html">← 返回 Psychology 目录</a></nav>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>
