@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Psychology Day 63: Schema Therapy &amp; Unrelenting Standards — Why "Done" Never Feels Like Enough</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d9bfd9}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e6f5;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2f3e;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fdf3f8;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.misq{background:#fdf0f0;border-left:3px solid #c94a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f8eef6;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fdf3f8;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.fn-row{display:grid;grid-template-columns:110px 1fr 1fr;gap:8px;margin-bottom:8px;font-size:0.86rem}
+.fn-row > div{background:#fff;border-radius:8px;padding:8px 10px}
+.fn-row .fn{background:#7a3e8c;color:#fff;font-weight:700;display:flex;align-items:center}
+.fn-row.head > div{background:transparent;color:#7a3e8c;font-weight:700;padding:2px 10px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #e3cfe3;border-radius:10px;padding:14px;font-size:0.88rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+.matrix-cell.hot{border-color:#c94a4a}
+.viz-note{font-size:0.82rem;color:#8a6a8a;text-align:center;margin-top:10px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4e}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.fn-row{grid-template-columns:78px 1fr 1fr;font-size:0.8rem}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
+.map-row{display:grid;grid-template-columns:140px 1fr;gap:8px;margin-bottom:8px;font-size:0.86rem}
+.map-row > div{background:#fff;border-radius:8px;padding:8px 10px}
+.map-row .dom{background:#7a3e8c;color:#fff;font-weight:700}
+.map-row.hot .dom{background:#c94a4a}
+.map-row.hot > div:last-child{box-shadow:inset 0 0 0 2px #c94a4a}
+.quiz{margin-top:14px;background:#fdf3f8;border-radius:12px;padding:16px 18px}
+.quiz .legend{font-size:0.84rem;color:#8a6a8a}
+.q{background:#fff;border-radius:10px;padding:10px 14px;margin-top:10px}
+.q p{font-size:0.93rem;color:#3a2f3e;margin:0 0 8px}
+.q p b{font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8;margin-right:6px}
+.opts{display:flex;gap:6px;flex-wrap:wrap}
+.opts button{flex:1 1 0;min-width:64px;border:1px solid #d9bfd9;background:#fff;color:#7a3e8c;border-radius:8px;padding:6px 4px;font-size:0.8rem;cursor:pointer;font-family:inherit}
+.opts button[aria-pressed="true"]{background:#7a3e8c;color:#fff;border-color:#7a3e8c}
+.quiz-out{margin-top:14px;background:#fff;border:2px solid #a85aa8;border-radius:10px;padding:10px 16px;font-size:0.92rem;color:#3a2f3e}
+.quiz-out p{margin:6px 0}
+.quiz-out p:first-child{font-weight:700;color:#7a3e8c}
+.quiz-reset{margin-top:10px;background:#fff;border:1px solid #a85aa8;color:#7a3e8c;border-radius:16px;padding:4px 14px;font-size:0.82rem;cursor:pointer;font-family:inherit}
+.quiz .disc{font-size:0.82rem;color:#8a6a8a;margin-top:10px}
+@media(max-width:600px){.map-row{grid-template-columns:1fr}.opts button{min-width:calc(50% - 6px)}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 63 · CLINICAL PSYCHOLOGY / THERAPY MODELS</div>
+<h1>Schema Therapy &amp; Unrelenting Standards: Why "Done" Never Feels Like Enough</h1>
+<div class="meta">2026.11.10 · BigCat's Inner World</div>
+<div class="intro">You hit the mark and feel only relief; once the relief fades, the bar has already moved up a notch. Schema therapy calls this a schema: a survival rule learned in childhood that keeps running on autopilot in adulthood. This issue is hands-on, with a self-check you can take right now.</div>
+</header>
+
+<!-- Concept 1 -->
+<div class="card">
+<h2>Schema Therapy: Defaults Written in Childhood<span class="en">Schema Therapy (Jeffrey Young)</span></h2>
+<span class="tag">Clinical psychology · Integrative therapy</span>
+<div class="section">
+<span class="label">Core insight</span>
+<p>Children have a handful of core emotional needs: secure attachment; autonomy and competence; freedom to express needs and emotions; spontaneity and play; realistic limits. When one goes unmet for long, the child learns a coping rule, an <strong>early maladaptive schema</strong>. The rule made sense back then, keeps running in adulthood, and when triggered, the emotion far exceeds what is actually happening.</p>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Jeffrey Young trained in cognitive therapy with Aaron Beck and noticed that some clients responded poorly to standard CBT: they understood the logic, but their feelings didn't budge. He combined CBT with attachment theory and Gestalt experiential techniques, and in 2003, with Klosko and Weishaar, published <i>Schema Therapy: A Practitioner's Guide</i>, listing 18 schemas in 5 domains. <strong>Unrelenting Standards / Hypercriticalness</strong> sits in the "Overvigilance and Inhibition" domain. A common origin: approval arrived only after good performance, or the adults themselves lived under constant pressure.</p>
+</div>
+<div class="viz">
+<div class="viz-title">A map of the 18 schemas (classic five-domain version)</div>
+<div class="map-row"><div class="dom">Disconnection &amp; Rejection · 5</div><div>Abandonment, mistrust, emotional deprivation, defectiveness/shame, social isolation</div></div>
+<div class="map-row"><div class="dom">Impaired Autonomy &amp; Performance · 4</div><div>Dependence, vulnerability to harm, enmeshment, failure</div></div>
+<div class="map-row"><div class="dom">Impaired Limits · 2</div><div>Entitlement, insufficient self-control</div></div>
+<div class="map-row"><div class="dom">Other-Directedness · 3</div><div>Subjugation, self-sacrifice, approval-seeking</div></div>
+<div class="map-row hot"><div class="dom">Overvigilance &amp; Inhibition · 4</div><div>Negativity, emotional inhibition, <strong>unrelenting standards</strong>, punitiveness</div></div>
+<div class="viz-note">Bach, Lockwood and Young (2018) proposed a data-driven four-domain version, placing unrelenting standards under "Excessive Responsibility and Standards"</div>
+</div>
+<div class="section">
+<span class="label">How it differs from CBT, IFS and perfectionism research</span>
+<div class="fn-row head"><div></div><div>Their view</div><div>What schema therapy adds</div></div>
+<div class="fn-row"><div class="fn"><a href="cbt-day4.en.html" style="color:#fff">CBT · Day 4</a></div><div>Test and rewrite present-day automatic thoughts and rules</div><div>Traces the rule to its childhood origin and uses imagery rescripting and chair work so feelings change too</div></div>
+<div class="fn-row"><div class="fn"><a href="ifs-day5.en.html" style="color:#fff">IFS · Day 5</a></div><div>The inner critic is a well-meaning protector; understand it first</div><div>The punitive parent mode doesn't need soothing; the Healthy Adult sets limits on it</div></div>
+<div class="fn-row"><div class="fn"><a href="perfectionism-day10.en.html" style="color:#fff">Perfectionism · Day 10</a></div><div>Describes a trait as strivings × concerns, and unpacks procrastination</div><div>Explains why one schema produces opposite behaviors, and offers mode dialogues you can practice</div></div>
+</div>
+<div class="refs"><b>Key references</b> · Young, Klosko &amp; Weishaar, <i>Schema Therapy: A Practitioner's Guide</i> (2003) · Lockwood &amp; Perris (2012), Wiley-Blackwell Handbook of Schema Therapy · Bach, Lockwood &amp; Young (2018), Cognitive Behaviour Therapy</div>
+</div>
+
+<!-- Concept 2 -->
+<div class="card">
+<h2>Unrelenting Standards ≠ High Standards<span class="en">Unrelenting Standards / Hypercriticalness</span></h2>
+<span class="tag">Schema · Four signs</span>
+<div class="section">
+<span class="label">Core insight</span>
+<p>High standards aren't the problem. The difference isn't how high the bar is but your relationship to it: <strong>one is a tool you use; the other is a rule that uses you.</strong></p>
+</div>
+<div class="viz">
+<div class="viz-title">Four signs: the schema is likely when all four hold</div>
+<div class="matrix">
+<div class="matrix-cell"><b>① A rule, not a goal</b>Goals can be adjusted; missing a rule means "I did something wrong."</div>
+<div class="matrix-cell"><b>② Only relief</b>Hitting the mark brings no satisfaction, and the bar rises at once.</div>
+<div class="matrix-cell hot"><b>③ Costs have appeared</b>Sleep, health, relationships and play keep giving way to it.</div>
+<div class="matrix-cell hot"><b>④ Fear, not desire</b>Underneath is fear of criticism and shame, not interest in excellence itself.</div>
+</div>
+<div class="viz-note">One or two signs usually just means you're conscientious</div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>Schema therapy uses <strong>modes</strong> to describe who is speaking right now. The <strong>Demanding Parent</strong> says "not enough, again." The <strong>Punitive Parent</strong> says, after a mistake, "you're just not good enough." Opposite them is the <strong>Healthy Adult</strong>: it also wants to do good work, but counts the costs and can say "this is enough." The demanding voice is often modeled on a real parent (see <a href="immature-parents-day30.en.html">Day 30</a>), and after years of hearing it, people mistake it for their own will.</p>
+</div>
+<div class="misq"><b>Misconception:</b> "Drop unrelenting standards and you'll get lazy." Schema therapy targets the link "mistake = I'm not good enough," not the standards themselves; a Healthy Adult can still set ambitious goals.</div>
+</div>
+
+<!-- Concept 3 -->
+<div class="card">
+<h2>One Schema, Three Opposite Faces<span class="en">Three Coping Styles</span></h2>
+<span class="tag">Coping styles · With self-check</span>
+<div class="section">
+<span class="label">Core insight</span>
+<p>Young described three ways of coping with a schema: <strong>surrender</strong> (do what it says), <strong>avoidance</strong> (stay away from what triggers it) and <strong>overcompensation</strong> (do the opposite). So the same unrelenting standards can produce someone who polishes relentlessly, someone who never starts, or someone who acts as if nothing matters. Judge by behavior alone and you'll misread it.</p>
+</div>
+<div class="section">
+<div class="roles">
+<div class="role-item"><b>Surrender</b>All-nighters of polishing, endless rework, carrying everything yourself.</div>
+<div class="role-item"><b>Avoidance</b>Procrastinating whenever you'll be judged, turning down hard projects, not reading feedback.</div>
+<div class="role-item"><b>Overcompensation</b>Suddenly slacking, handing in careless work, or loudly declaring "I don't care"; the rule underneath hasn't loosened at all.</div>
+<div class="role-item"><b>Flowing outward</b>The hypercritical half is often passed on: redoing a direct report's draft, policing a child's mistakes.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">Mechanism</span>
+<p>All three lower anxiety in the short run and feed the schema in the long run: surrender convinces you "only this is safe," avoidance means you never collect evidence that 80% is fine, and overcompensation hides the rule without dismantling it.</p>
+</div>
+<div class="quiz" id="quiz">
+<span class="label">Self-check: how your unrelenting standards operate</span>
+<p class="legend">Score each item 0–3 based on the past month. Items are written for this site.</p>
+<div class="q" data-d="core"><p><b>01</b>Some standards feel like a "must": missing them feels like doing something wrong, not just missing a goal.</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>02</b>After finishing something hard, I mostly feel relief and rarely feel real joy.</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>03</b>Soon after reaching a standard, it feels like "the bare minimum," and I raise the bar.</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>04</b>To meet my standards, I often squeeze out sleep, exercise or time with family and friends.</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>05</b>When resting or playing, I feel guilty, as if I should be doing something useful.</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>06</b>What drives me is more fear of criticism or embarrassment than interest in the work itself.</p><div class="opts"></div></div>
+<div class="q" data-d="surr"><p><b>07</b>Even when no one asks, I take things far beyond what's needed and keep polishing before I hand them in.</p><div class="opts"></div></div>
+<div class="q" data-d="avoid"><p><b>08</b>When I suspect I can't do something well enough, I put off starting or turn it down.</p><div class="opts"></div></div>
+<div class="q" data-d="over"><p><b>09</b>Sometimes I swing the other way: I hand in sloppy work or insist "I don't care."</p><div class="opts"></div></div>
+<div class="q" data-d="out"><p><b>10</b>When others fall short of my standards, I find it hard not to point out errors or redo their work.</p><div class="opts"></div></div>
+<div class="q" data-d="recov"><p><b>11</b>After a small mistake, I replay it in my head for days.</p><div class="opts"></div></div>
+<div class="quiz-out" aria-live="polite"></div>
+<button type="button" class="quiz-reset">Reset</button>
+<p class="disc">A self-awareness tool, not a diagnosis.</p>
+</div>
+</div>
+
+<!-- Concept 4 -->
+<div class="card">
+<h2>Sparring with the Inner Critic<span class="en">Practice: Working with the Demanding Critic</span></h2>
+<span class="tag">Practice · Schema therapy techniques</span>
+<div class="section">
+<span class="label">Six practices</span>
+<div class="roles">
+<div class="role-item"><b>Name it</b>When the urgency hits, say "unrelenting standards again." Turning "I must" into "a voice says I must" buys half a step of distance.</div>
+<div class="role-item"><b>Behavioral experiment</b>Add two steps to <a href="perfectionism-day10.en.html">Day 10</a>'s "hand in the 80% version": before submitting, write down your prediction (who'll be disappointed, how badly, how sure you are), then compare it with what actually happened a week later. Counter-evidence only counts in writing.</div>
+<div class="role-item"><b>Cost ledger</b>For one week, each time you over-polish or work late, note how long it took, what it bought, and what it crowded out.</div>
+<div class="role-item"><b>Designate "good enough"</b>Pick a low-stakes area (weekly report formatting, weeknight dinners), write down the good-enough standard in advance, and stop when you reach it.</div>
+<div class="role-item"><b>Flashcards</b>On one side, the trigger and the critic's exact words. On the other, in the Healthy Adult's voice: where this rule came from, what it costs, what good enough looks like right now. Borrow the tone of <a href="self-compassion-day6.en.html">Day 6</a>'s friend test.</div>
+<div class="role-item"><b>Chair work</b>Seat the critic in the opposite chair, speak its lines in full, then move back and answer as the Healthy Adult. This is a standard schema therapy technique.</div>
+</div>
+</div>
+<div class="section">
+<span class="label">What progress looks like</span>
+<p>Change isn't a switch from "unrelenting" to "relaxed"; it's the slow growth of things you allow to be 80% done. Track three markers: are the <strong>areas where 80% is allowed</strong> growing, spreading to slightly more important things; after handing in 80%, is the <strong>time spent replaying and regretting</strong> getting shorter; and <strong>how fast you recover after a mistake</strong>. Behavior often changes before feelings do: handing in 80% while still feeling afraid is normal, not failure.</p>
+<p>It also helps to separate <strong>being forced to let go from choosing to</strong>. When there's too much to do, triage loosens standards, and that loosening is real and useful, but it depends on overload; when things calm down, standards tend to snap back. The subtler trap: what gets judged "unimportant" and cut first is often sleep, exercise, play and relationships, because to this schema "important" means "useful for performance." That's the schema setting your priorities. A step forward: when you're not busy, still choose one thing to do at 80%; and run the things you assume must be 100% through a triage question: what is the marginal return of that last 20%?</p>
+</div>
+<div class="section">
+<span class="label">When to get help</span>
+<p>If unrelenting standards already bring persistent insomnia, physical symptoms, depression or anxiety, or recurring conflict in relationships, it's worth seeing a professional. Some therapists specialize in schema therapy; the International Society of Schema Therapy (ISST) keeps a directory of certified practitioners, and <a href="find-therapist-day28.en.html">Day 28</a> covers how to choose. The strongest evidence is for personality disorders: Giesen-Bloo et al. (2006) ran a three-year randomized trial with 88 patients with borderline personality disorder, in which schema therapy outperformed transference-focused psychotherapy with less dropout; Bamelis et al. (2014) also found positive results for cluster C personality disorders. Trials targeting unrelenting standards alone are still scarce, so the practices here carry clinical techniques into everyday life.</p>
+</div>
+<div class="refs"><b>Key references</b> · Young &amp; Klosko, <i>Reinventing Your Life</i> (1993) · Giesen-Bloo et al. (2006), Archives of General Psychiatry · Bamelis et al. (2014), American Journal of Psychiatry</div>
+<div class="practice"><b>This week's practice + reflection</b>Write one flashcard, and read it the next time the demanding voice shows up. <b>Reflection:</b> if you lowered your standards by one notch, who are you most afraid would notice first?</div>
+</div>
+
+<div class="deep-title">Crossovers</div>
+<div class="crossx"><ul>
+<li><b>Distributed systems · Error budgets</b>: Google's <i>Site Reliability Engineering</i> (2016) states plainly that 100% is the wrong reliability target; teams agree on a good-enough SLO and spend the unused error budget on risky releases. "Designate good enough" is the same move. The difference: everyone signs off on an SLO, while the inner critic never signs anything.</li>
+<li><b>Economics · The ratchet effect</b>: in 1949 James Duesenberry observed that consumption is slow to fall when income drops, because the reference point stays at the past peak. "Hit it, then raise it" is the same one-way ratchet. The difference: consumption is bounded by income, while an inner bar has no ceiling.</li>
+<li><b>Buddhism · The second arrow</b>: the Sallatha Sutta (SN 36.6) says an untrained person struck by one arrow then shoots a second into himself through distress. A mistake is the first arrow; the punitive parent's replay is the second. The Buddha's remedy is awareness; schema therapy adds talking back to that voice directly.</li>
+<li><b>Evolution · The smoke detector principle</b>: Randolph Nesse argued that when a miss costs far more than a false alarm, natural selection tunes alarms to be oversensitive. In a childhood where criticism was costly, the demanding voice is exactly that kind of oversensitive detector. The difference: the environment has changed, and a person can deliberately recalibrate the threshold.</li>
+</ul></div>
+
+<div class="deep-title">Ten takeaways</div>
+<ol class="takeaways">
+<li>Jeffrey Young's schema therapy holds that core emotional needs left unmet in childhood form early maladaptive schemas that get triggered in adulthood.</li>
+<li>The classic version of schema therapy lists 18 schemas in 5 domains, with unrelenting standards in the Overvigilance and Inhibition domain.</li>
+<li>Unrelenting standards differ from high standards: a rigid rule, only relief on success, visible costs, and fear underneath; all four together suggest the schema.</li>
+<li>Schema therapy describes the critical voice as demanding and punitive parent modes, and the self that weighs costs as the Healthy Adult mode.</li>
+<li>People cope with a schema by surrender, avoidance or overcompensation, so unrelenting standards may look like relentless polishing, never starting, or not caring.</li>
+<li>All three coping styles lower anxiety short-term and feed the schema long-term, because they block evidence that 80% is fine.</li>
+<li>IFS treats the inner critic as a well-meaning protector, while schema therapy asks the Healthy Adult to set limits on the punitive parent.</li>
+<li>A behavioral experiment for unrelenting standards means writing down a prediction before handing in 80%, then checking it against what actually happened.</li>
+<li>Progress against unrelenting standards shows as more areas allowed at 80%, shorter replays and faster recovery after mistakes; behavior often changes before feelings.</li>
+<li>Letting go forced by overload tends to rebound when things calm down, and what gets cut first is often sleep, exercise, play and relationships: the schema setting priorities.</li>
+</ol>
+
+<div class="deep-title">Going Deeper</div>
+<details><summary>High-performance environments reward unrelenting standards. Will letting go mean falling behind?</summary><div>In the short run the schema really does buy output, which is exactly why it's hard to change: surrender brings real rewards. But returns diminish while costs climb, and the last 20% of polish is often invisible to anyone else. The Healthy Adult keeps ambitious goals and drops only the link "mistake = I'm not good enough." As <a href="perfectionism-day10.en.html">Day 10</a> noted, burnout tracks mainly the concern-over-mistakes dimension, not the standards themselves.</div></details>
+<details><summary>Can organizational culture keep feeding this schema?</summary><div>Yes. Young's term <strong>schema perpetuation</strong> describes how people select, or even create, environments that confirm their schemas: someone with unrelenting standards is more likely to join and stay in a high-pressure organization, then read its feedback as proof that "this is just how the world is." Changing environments won't dismantle the rule, but the environment sets how hard the practice is. For managers, a team's tolerance for error is the external variable in this equation.</div></details>
+
+<nav class="back"><a href="index.en.html">← Back to Psychology Index</a></nav>
+</div>
+<script>
+(function(){
+var root=document.getElementById('quiz');
+if(!root)return;
+var EN=(document.documentElement.lang||'').indexOf('en')===0;
+var L=EN?{
+opts:['Not me','Sometimes','Often','Almost always'],
+left:function(n){return n+' question'+(n===1?'':'s')+' left. Results appear when you finish.';},
+head:function(s){return 'Four-sign score: '+s+' / 18';},
+low:'The four signs are faint. Your high standards are most likely still a tool you use.',
+mid:'Some of the four signs are active. Notice where they cluster: rigid rules, no satisfaction, the costs, or fear.',
+high:'All four signs are fairly strong, so Unrelenting Standards is probably running. The practices in card 4 are built for this.',
+copeHead:'Main coping style: ',
+names:{surr:'Surrender (polishing hard)',avoid:'Avoidance (not starting)',over:'Overcompensation (swinging to careless)'},
+sep:'; ',
+noCope:'None of the three coping styles stands out.',
+mix:'Showing more than one is common: the same person can cope differently in different areas of life.',
+out:'The hypercritical side is flowing outward: check whether you hold your team, partner or kids to the same ruler.',
+recov:'Recovery after mistakes is slow. That is one of the best progress markers to track.',
+progress:'Hitting several items does not mean you have made no progress. This snapshot shows today; progress is a trend. Retake it in a few weeks and watch items 4, 5 and 11.',
+disc:'A self-awareness tool, not a diagnosis. The scores have no clinical cutoffs.'
+}:{
+opts:['不像我','偶尔','经常','几乎总是'],
+left:function(n){return '还差 '+n+' 题，答完即显示结果。';},
+head:function(s){return '四点判别得分：'+s+' / 18';},
+low:'判别特征不明显。你的高标准多半还是你在用的工具。',
+mid:'有几条判别特征在起作用。留意它们集中在哪里：规则太死、没有满足感、代价，还是怕。',
+high:'四点判别特征都比较明显，苛刻标准很可能在运转。卡片 4 的练习就是为这种情况准备的。',
+copeHead:'主要应对风格：',
+names:{surr:'顺从（拼命打磨）',avoid:'回避（拖着不开始）',over:'过度补偿（反向摆烂）'},
+sep:'、',
+noCope:'三种应对风格都不突出。',
+mix:'出现不止一种很常见：同一个人在不同领域可能用不同的应对方式。',
+out:'「过度挑剔」在往外流：留意你对团队、伴侣或孩子用的是不是同一把尺子。',
+recov:'出错后的恢复偏慢。这是最值得追踪的进步指标之一。',
+progress:'中了好几条，不等于没有进步。这份自测只拍下此刻，进步看趋势：过几周再做一次，重点看第 4、5、11 题有没有往下走。',
+disc:'这是自我觉察工具，不是诊断，分数没有临床切分点。'
+};
+var qs=[].slice.call(root.querySelectorAll('.q'));
+var out=root.querySelector('.quiz-out');
+var ans={};
+function para(t){var p=document.createElement('p');p.textContent=t;out.appendChild(p);}
+function render(){
+out.textContent='';
+var n=0,k;for(k in ans){if(ans.hasOwnProperty(k))n++;}
+if(n<qs.length){para(L.left(qs.length-n));return;}
+var sum={core:0,surr:0,avoid:0,over:0,out:0,recov:0};
+qs.forEach(function(q,i){sum[q.getAttribute('data-d')]+=ans[i];});
+para(L.head(sum.core));
+para(sum.core<=5?L.low:(sum.core<=11?L.mid:L.high));
+var c=['surr','avoid','over'].filter(function(x){return sum[x]>=2;});
+if(c.length){para(L.copeHead+c.map(function(x){return L.names[x];}).join(L.sep));if(c.length>1)para(L.mix);}
+else para(L.noCope);
+if(sum.out>=2)para(L.out);
+if(sum.recov>=2)para(L.recov);
+if(sum.core>=6)para(L.progress);
+para(L.disc);
+}
+qs.forEach(function(q,i){
+var box=q.querySelector('.opts');
+L.opts.forEach(function(t,v){
+var b=document.createElement('button');
+b.type='button';b.textContent=v+' '+t;b.setAttribute('aria-pressed','false');
+b.addEventListener('click',function(){
+ans[i]=v;
+[].forEach.call(box.children,function(c,j){c.setAttribute('aria-pressed',j===v?'true':'false');});
+render();
+});
+box.appendChild(b);
+});
+});
+var r=root.querySelector('.quiz-reset');
+if(r)r.addEventListener('click',function(){ans={};[].forEach.call(root.querySelectorAll('.opts button'),function(b){b.setAttribute('aria-pressed','false');});render();});
+render();
+})();
+</script>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>

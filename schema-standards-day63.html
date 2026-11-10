@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>心理学 Day 63：图式疗法与苛刻标准 — 做到了，为什么还是不够</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#fef6f0;color:#2a1f2e;line-height:1.78;overflow-wrap:break-word;word-break:break-word}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 80px}
+header{text-align:center;padding:48px 0 36px;border-bottom:1px dashed #d9bfd9}
+header .week-tag{display:inline-block;font-size:0.78rem;color:#a85aa8;letter-spacing:3px;font-weight:700;margin-bottom:12px}
+header h1{font-size:1.9rem;font-weight:800;color:#7a3e8c;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:14px;font-size:0.92rem;color:#8a6a8a}
+header .intro{margin-top:22px;font-size:0.96rem;color:#5a4a5a;font-style:italic;padding:0 8px}
+.card{background:#fff;border-radius:16px;padding:32px 28px;margin-top:28px;box-shadow:0 2px 14px rgba(122,62,140,0.08);border-left:4px solid #a85aa8}
+.card h2{font-size:1.32rem;color:#7a3e8c;font-weight:700;line-height:1.5}
+.card .en{font-size:0.92rem;color:#a85aa8;font-weight:500;display:block;margin-top:4px;font-style:italic}
+.tag{display:inline-block;background:#f3e6f5;color:#7a3e8c;font-size:0.74rem;padding:3px 10px;border-radius:10px;margin-top:10px;letter-spacing:0.5px;font-weight:600}
+.section{margin-top:20px}
+.section .label{font-weight:700;color:#7a3e8c;font-size:0.96rem;display:block;margin-bottom:6px;letter-spacing:0.5px}
+.section p{font-size:0.97rem;color:#3a2f3e;margin-bottom:8px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.role-item{background:#fdf3f8;border-radius:10px;padding:12px 14px;font-size:0.92rem}
+.role-item > b:first-child{color:#7a3e8c;display:block;margin-bottom:4px;font-size:0.86rem;letter-spacing:0.5px}
+.misq{background:#fdf0f0;border-left:3px solid #c94a4a;padding:12px 16px;border-radius:8px;margin-top:10px;font-size:0.93rem;color:#5a3a3a}
+.refs{background:#f8eef6;padding:14px 18px;border-radius:10px;margin-top:14px;font-size:0.9rem;color:#5a4a5a}
+.refs b{color:#7a3e8c}
+.practice{background:linear-gradient(135deg,#7a3e8c,#a85aa8);color:#fff;padding:16px 20px;border-radius:10px;margin-top:14px;font-size:0.95rem}
+.practice > b:first-child{display:block;margin-bottom:6px;letter-spacing:1px;font-size:0.86rem;opacity:0.9}
+.viz{margin:20px 0 10px;padding:18px;background:#fdf3f8;border-radius:12px}
+.viz-title{font-size:0.85rem;color:#7a3e8c;font-weight:700;text-align:center;margin-bottom:12px;letter-spacing:1px}
+.fn-row{display:grid;grid-template-columns:110px 1fr 1fr;gap:8px;margin-bottom:8px;font-size:0.86rem}
+.fn-row > div{background:#fff;border-radius:8px;padding:8px 10px}
+.fn-row .fn{background:#7a3e8c;color:#fff;font-weight:700;display:flex;align-items:center}
+.fn-row.head > div{background:transparent;color:#7a3e8c;font-weight:700;padding:2px 10px}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.matrix-cell{background:#fff;border:2px solid #e3cfe3;border-radius:10px;padding:14px;font-size:0.88rem}
+.matrix-cell b{color:#7a3e8c;display:block;margin-bottom:4px}
+.matrix-cell.hot{border-color:#c94a4a}
+.viz-note{font-size:0.82rem;color:#8a6a8a;text-align:center;margin-top:10px}
+nav.back{text-align:center;margin-top:40px}
+nav.back a{color:#7a3e8c;text-decoration:none;font-size:0.95rem;padding:10px 22px;border:1px solid #a85aa8;border-radius:24px;transition:all 0.2s}
+nav.back a:hover{background:#7a3e8c;color:#fff}
+details{margin-top:12px;background:#fff;border-radius:10px;padding:4px 18px;box-shadow:0 1px 8px rgba(122,62,140,0.06)}
+summary{cursor:pointer;font-weight:600;color:#7a3e8c;padding:12px 0;font-size:0.95rem}
+details div{padding:0 0 14px;font-size:0.92rem;color:#4a3a4e}
+.deep-title{text-align:center;color:#7a3e8c;font-weight:700;margin-top:40px;font-size:1.1rem;letter-spacing:1px}
+@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:22px 18px}.card h2{font-size:1.15rem}.roles{grid-template-columns:1fr}.matrix{grid-template-columns:1fr}.fn-row{grid-template-columns:78px 1fr 1fr;font-size:0.8rem}}
+.crossx{border:1px solid rgba(232,154,74,0.4);border-radius:12px;padding:6px 22px;margin-top:14px;background:#fff9f1}
+.crossx ul{list-style:none;margin-left:0}
+.crossx li{margin:14px 0;font-size:0.94rem;color:#4a3a4e}
+.crossx b{color:#b0661e}
+.takeaways{counter-reset:tk;list-style:none;margin:14px 0 0;padding:0;border:1px solid rgba(122,62,140,0.28);border-radius:12px;background:#fff}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(122,62,140,0.12);font-size:0.94rem;line-height:1.75;color:#2a1f2e}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8}
+.map-row{display:grid;grid-template-columns:140px 1fr;gap:8px;margin-bottom:8px;font-size:0.86rem}
+.map-row > div{background:#fff;border-radius:8px;padding:8px 10px}
+.map-row .dom{background:#7a3e8c;color:#fff;font-weight:700}
+.map-row.hot .dom{background:#c94a4a}
+.map-row.hot > div:last-child{box-shadow:inset 0 0 0 2px #c94a4a}
+.quiz{margin-top:14px;background:#fdf3f8;border-radius:12px;padding:16px 18px}
+.quiz .legend{font-size:0.84rem;color:#8a6a8a}
+.q{background:#fff;border-radius:10px;padding:10px 14px;margin-top:10px}
+.q p{font-size:0.93rem;color:#3a2f3e;margin:0 0 8px}
+.q p b{font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#a85aa8;margin-right:6px}
+.opts{display:flex;gap:6px;flex-wrap:wrap}
+.opts button{flex:1 1 0;min-width:64px;border:1px solid #d9bfd9;background:#fff;color:#7a3e8c;border-radius:8px;padding:6px 4px;font-size:0.8rem;cursor:pointer;font-family:inherit}
+.opts button[aria-pressed="true"]{background:#7a3e8c;color:#fff;border-color:#7a3e8c}
+.quiz-out{margin-top:14px;background:#fff;border:2px solid #a85aa8;border-radius:10px;padding:10px 16px;font-size:0.92rem;color:#3a2f3e}
+.quiz-out p{margin:6px 0}
+.quiz-out p:first-child{font-weight:700;color:#7a3e8c}
+.quiz-reset{margin-top:10px;background:#fff;border:1px solid #a85aa8;color:#7a3e8c;border-radius:16px;padding:4px 14px;font-size:0.82rem;cursor:pointer;font-family:inherit}
+.quiz .disc{font-size:0.82rem;color:#8a6a8a;margin-top:10px}
+@media(max-width:600px){.map-row{grid-template-columns:1fr}.opts button{min-width:calc(50% - 6px)}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="week-tag">DAY 63 · 临床心理学 / 治疗模型</div>
+<h1>图式疗法与苛刻标准：做到了，为什么还是不够</h1>
+<div class="meta">2026.11.10 · BigCat's Inner World</div>
+<div class="intro">做到了，只是松一口气；松完这口气，门槛又往上挪了一格。图式疗法把这叫作一个图式：童年学会的一条生存规则，成年后还在自动运行。本期偏实操，附一份当场能做的自测。</div>
+</header>
+
+<!-- 概念 1 -->
+<div class="card">
+<h2>图式疗法：童年写进去的默认配置<span class="en">Schema Therapy (Jeffrey Young)</span></h2>
+<span class="tag">临床心理学 · 整合疗法</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>孩子有几样核心情感需要：安全的依恋，自主与胜任，表达需要和情绪的自由，自发与玩乐，现实的边界。某一样长期落空，孩子就会学出一条应对规则，即<strong>早期适应不良图式</strong>。规则当年合理，成年后还在自动运行，一被触发，情绪强度远超眼前的事。</p>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>Jeffrey Young 原在 Aaron Beck 身边做认知治疗，发现一部分来访者对标准 CBT 反应差：道理都懂，感受不动。他把 CBT 与依恋理论、格式塔的体验技术整合起来，2003 年与 Klosko、Weishaar 合著《Schema Therapy: A Practitioner's Guide》，列出 18 个图式、5 个领域。<strong>苛刻标准 / 过度挑剔</strong>属于「过度警觉与抑制」领域，常见的来历是：认可只在表现好时才给，或者大人自己就活在高压里。</p>
+</div>
+<div class="viz">
+<div class="viz-title">18 个图式的地图（经典 5 领域版）</div>
+<div class="map-row"><div class="dom">断联与排斥 · 5</div><div>遗弃、不信任、情感剥夺、缺陷与羞耻、社交孤立</div></div>
+<div class="map-row"><div class="dom">自主与表现受损 · 4</div><div>依赖、易受伤害、纠缠、失败</div></div>
+<div class="map-row"><div class="dom">限制受损 · 2</div><div>特权感、自控不足</div></div>
+<div class="map-row"><div class="dom">他人导向 · 3</div><div>屈从、自我牺牲、寻求认可</div></div>
+<div class="map-row hot"><div class="dom">过度警觉与抑制 · 4</div><div>消极悲观、情感抑制、<strong>苛刻标准</strong>、惩罚性</div></div>
+<div class="viz-note">Bach、Lockwood 与 Young (2018) 依数据建议并为 4 个领域，苛刻标准归入「过度责任与标准」</div>
+</div>
+<div class="section">
+<span class="label">和 CBT、IFS、完美主义有什么不同</span>
+<div class="fn-row head"><div></div><div>它们怎么看</div><div>图式疗法多做了什么</div></div>
+<div class="fn-row"><div class="fn"><a href="cbt-day4.html" style="color:#fff">CBT · Day 4</a></div><div>检验并改写当下的自动思维和规则</div><div>追到规则的童年来源，用意象重构、椅子对话让情绪也跟着改</div></div>
+<div class="fn-row"><div class="fn"><a href="ifs-day5.html" style="color:#fff">IFS · Day 5</a></div><div>内在批评者是怀着好意的保护者，先理解它</div><div>惩罚的内在父母不需要被安抚，健康成人要限制它</div></div>
+<div class="fn-row"><div class="fn"><a href="perfectionism-day10.html" style="color:#fff">完美主义 · Day 10</a></div><div>用「追求卓越 × 担忧失误」描述特质，拆开拖延</div><div>解释同一个图式为何长出相反的行为，并给出可练的模式对话</div></div>
+</div>
+<div class="refs"><b>关键参考</b> · Young, Klosko &amp; Weishaar《Schema Therapy: A Practitioner's Guide》(2003) · Lockwood &amp; Perris (2012), Wiley-Blackwell Handbook of Schema Therapy · Bach, Lockwood &amp; Young (2018), Cognitive Behaviour Therapy</div>
+</div>
+
+<!-- 概念 2 -->
+<div class="card">
+<h2>苛刻标准 ≠ 标准高<span class="en">Unrelenting Standards / Hypercriticalness</span></h2>
+<span class="tag">图式 · 四点判别</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>标准高不是问题。区别不在标尺多高，而在你和标尺的关系：<strong>一个是你在用的工具，一个是在用你的规则。</strong></p>
+</div>
+<div class="viz">
+<div class="viz-title">四点判别：同时成立才更像图式</div>
+<div class="matrix">
+<div class="matrix-cell"><b>① 是规则，不是目标</b>目标可以调整；规则没达到就等于「我错了」。</div>
+<div class="matrix-cell"><b>② 只有松口气</b>做到了没有满足感，门槛马上上调。</div>
+<div class="matrix-cell hot"><b>③ 代价已经出现</b>睡眠、健康、关系、玩乐都在给它让路。</div>
+<div class="matrix-cell hot"><b>④ 是怕，不是想</b>底层是怕被批评、怕丢脸，而不是对卓越本身的兴趣。</div>
+</div>
+<div class="viz-note">只中一两条，多半就是认真</div>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>图式疗法用<strong>模式</strong>描述此刻是谁在开口。<strong>苛求的内在父母</strong>说「还不够，再来」；<strong>惩罚的内在父母</strong>在出错后说「你就是不行」。与之相对的是<strong>健康成人</strong>：它也想把事做好，但会算代价，会说「到这里够了」。苛求声音的原型常是真实的家长（见 <a href="immature-parents-day30.html">Day 30</a>），听久了，人会把它当成自己的意志。</p>
+</div>
+<div class="misq"><b>常见误区：</b>「放下苛刻标准，人就会变懒。」图式疗法要拆的是「出错 = 我不行」那条连线，不是标准本身；健康成人照样能定高目标。</div>
+</div>
+
+<!-- 概念 3 -->
+<div class="card">
+<h2>同一个图式，三种相反的样子<span class="en">Three Coping Styles</span></h2>
+<span class="tag">应对风格 · 附自测</span>
+<div class="section">
+<span class="label">核心洞察</span>
+<p>Young 认为人对图式有三种应对：<strong>顺从</strong>（照它说的做）、<strong>回避</strong>（躲开触发它的场合）、<strong>过度补偿</strong>（反着来）。所以同一个苛刻标准，可能长成拼命打磨的人、迟迟不开始的人，也可能长成满不在乎的人。只看行为，很容易认错。</p>
+</div>
+<div class="section">
+<div class="roles">
+<div class="role-item"><b>顺从</b>通宵打磨、反复返工、什么都自己扛。</div>
+<div class="role-item"><b>回避</b>一想到会被评判就拖延，不接难项目，不看反馈。</div>
+<div class="role-item"><b>过度补偿</b>突然摆烂、草率交差，或高调宣称「我才不卷」；底下的规则一点没松。</div>
+<div class="role-item"><b>往外流</b>「过度挑剔」这半边常递给别人：返工下属的稿子，盯孩子的错题。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">机制解读</span>
+<p>三种应对短期都能降焦虑，长期都在喂养图式：顺从让你相信「只有这样才安全」，回避让你永远拿不到「八成也行」的反证，过度补偿把规则藏起来却没拆。</p>
+</div>
+<div class="quiz" id="quiz">
+<span class="label">自测：你的苛刻标准怎么运转</span>
+<p class="legend">按最近一个月给每题打 0–3 分。题目为本站自拟。</p>
+<div class="q" data-d="core"><p><b>01</b>有些标准对我是「必须」，没做到就像犯了错，而不只是没达成目标。</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>02</b>完成一件难事后，我更多是松一口气，很少真的高兴。</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>03</b>刚达到一个标准，我很快觉得「本来就该这样」，又往上加码。</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>04</b>为了达标，我常挤掉睡眠、运动或陪家人朋友的时间。</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>05</b>休息或玩的时候，我会有负罪感，觉得该去做点有用的。</p><div class="opts"></div></div>
+<div class="q" data-d="core"><p><b>06</b>推着我的更多是怕被批评、怕丢脸，而不是对事情本身的兴趣。</p><div class="opts"></div></div>
+<div class="q" data-d="surr"><p><b>07</b>即使没人要求，我也会把事情做到远超需要，反复打磨才肯交。</p><div class="opts"></div></div>
+<div class="q" data-d="avoid"><p><b>08</b>一想到可能做不到位，我就拖着不开始，或干脆不接。</p><div class="opts"></div></div>
+<div class="q" data-d="over"><p><b>09</b>有时我会突然反过来：草率交差，或宣称「我才不在乎」。</p><div class="opts"></div></div>
+<div class="q" data-d="out"><p><b>10</b>别人达不到我的标准时，我很难忍住不挑错或替他们返工。</p><div class="opts"></div></div>
+<div class="q" data-d="recov"><p><b>11</b>犯了小错后，我会在脑子里反复回放好几天。</p><div class="opts"></div></div>
+<div class="quiz-out" aria-live="polite"></div>
+<button type="button" class="quiz-reset">重来</button>
+<p class="disc">自我觉察工具，不是诊断。</p>
+</div>
+</div>
+
+<!-- 概念 4 -->
+<div class="card">
+<h2>和内在苛求者过招<span class="en">Practice: Working with the Demanding Critic</span></h2>
+<span class="tag">实操 · 图式疗法技术</span>
+<div class="section">
+<span class="label">六个练习</span>
+<div class="roles">
+<div class="role-item"><b>命名</b>察觉那股紧迫感时说一句「苛刻标准又来了」。把「我必须」变成「有个声音说我必须」，拉开半步。</div>
+<div class="role-item"><b>行为实验</b>在 <a href="perfectionism-day10.html">Day 10</a> 的「交八成」上加两步：交之前写下预测（谁会失望、多严重、几成把握），一周后对照结果。反证要白纸黑字才算数。</div>
+<div class="role-item"><b>代价账本</b>一周内每次多打磨、多加班，记下花了多久、换来什么、挤掉了什么。</div>
+<div class="role-item"><b>指定「够好」</b>挑一个低风险领域（周报格式、家常饭），提前写下够好的标准，到了就停。</div>
+<div class="role-item"><b>闪卡</b>一面写触发情境和苛求的原话，另一面用健康成人的口吻写：这条规则从哪来、代价是什么、此刻够好的标准是什么。语气可借 <a href="self-compassion-day6.html">Day 6</a> 的朋友测试。</div>
+<div class="role-item"><b>椅子对话</b>把苛求者「请」到对面椅子上，替它把话说完，再坐回来用健康成人回应。这是图式疗法的常用技术。</div>
+</div>
+</div>
+<div class="section">
+<span class="label">进步长什么样</span>
+<p>改变不是从「苛刻」一下变成「不苛刻」，而是允许做到八成的事一点点变多。看三个指标：<strong>允许八成的领域</strong>在不在变多、开始扩到稍重要的事；交出八成后，<strong>反复回想后悔的时间</strong>在不在变短；<strong>出错后多久能缓过来</strong>。行为常常比情绪先变：已经能交出八成，心里还是怕，这很正常，不代表失败。</p>
+<p>还要分清<strong>被迫放手和选择放手</strong>。事情多到做不完时砍优先级，标准也会松，这种松动是真的，但依赖超载，事情一少就容易弹回去。更隐蔽的是，最先被判「不重要」砍掉的，常是睡眠、运动、玩和关系：在这个图式眼里，重要就等于对表现有用，这其实是图式在替你排优先级。往前一步：不忙时也主动选一件事只做到八成；再拿「最后 20% 的边际收益是多少」去审那些你默认必须 100% 的事。</p>
+</div>
+<div class="section">
+<span class="label">何时求助</span>
+<p>若苛刻标准已带来持续失眠、身体症状、抑郁焦虑，或关系里反复为此冲突，就值得找专业的人。有专门做图式疗法的治疗师，可查国际图式疗法学会（ISST）的认证名录；怎么挑人见 <a href="find-therapist-day28.html">Day 28</a>。证据最强在人格障碍：Giesen-Bloo 等 (2006) 对 88 名边缘型人格障碍患者做了三年随机对照试验，图式疗法疗效优于移情焦点治疗，脱落更少；Bamelis 等 (2014) 在 C 类人格障碍中也有正面结果。单独针对苛刻标准的试验还少，本篇练习是把临床技术搬到日常。</p>
+</div>
+<div class="refs"><b>关键参考</b> · Young &amp; Klosko《Reinventing Your Life》(1993) · Giesen-Bloo et al. (2006), Archives of General Psychiatry · Bamelis et al. (2014), American Journal of Psychiatry</div>
+<div class="practice"><b>本周练习 + 思考题</b>写一张闪卡，下次苛求的声音出现时拿出来读一遍。<b>思考题：</b>如果你的标准降一格，你最怕谁先发现？</div>
+</div>
+
+<div class="deep-title">越界 · 跨学科的联想</div>
+<div class="crossx"><ul>
+<li><b>分布式系统 · 错误预算</b>：Google《Site Reliability Engineering》(2016) 明说 100% 可用是错误的目标，团队先约定够好的 SLO，没用完的错误预算拿去冒险发版。「指定够好」是同一招；不像的是，SLO 大家签字认账，内在苛求者从不签字。</li>
+<li><b>经济学 · 棘轮效应</b>：James Duesenberry 1949 年指出，收入回落时消费很难跟着降，因为参照点停在过去的最高点。苛刻标准「做到就上调」也是只进不退的棘轮；不同在于消费受收入约束，内在门槛没有上限。</li>
+<li><b>佛学 · 第二支箭</b>：《箭经》（相应部 36.6）说，凡夫中了第一箭，又因忧苦给自己射第二箭。出错是第一箭，惩罚父母模式的反复回放是第二箭；佛陀的解法是觉察，图式疗法再加上和那个声音正面交涉。</li>
+<li><b>进化 · 烟雾探测器原理</b>：Randolph Nesse 指出，漏报代价远大于误报时，自然选择会把警报调得过敏。在批评代价很高的童年，苛求声音就是这样一台过敏的探测器；不同在于环境变了，人能有意重校阈值。</li>
+</ul></div>
+
+<div class="deep-title">十条要点</div>
+<ol class="takeaways">
+<li>Jeffrey Young 的图式疗法认为，童年核心情感需要长期落空，会形成早期适应不良图式，成年后被触发。</li>
+<li>图式疗法经典版本列出 18 个图式、5 个领域，苛刻标准属于「过度警觉与抑制」领域。</li>
+<li>苛刻标准不等于标准高：标准是死规则、做到只松口气、代价已出现、底层是怕，四条同时成立才更像图式。</li>
+<li>图式疗法用苛求和惩罚的内在父母模式描述苛求声音，用健康成人模式描述能权衡代价的自我。</li>
+<li>对同一个图式有顺从、回避、过度补偿三种应对，所以苛刻标准可能表现为拼命打磨、迟迟不开始或满不在乎。</li>
+<li>三种应对风格短期都能降焦虑，长期都在喂养图式，因为它们让人拿不到「八成也行」的反证。</li>
+<li>IFS 把内在批评者当作怀好意的保护者，图式疗法则要求健康成人限制惩罚的内在父母。</li>
+<li>针对苛刻标准的行为实验，是交出八成之前先写下预测，事后对照实际结果。</li>
+<li>放下苛刻标准的进步看三点：允许八成的领域变多、事后回想变短、出错后恢复变快；行为常比情绪先变。</li>
+<li>超载逼出的放手会在事情变少后反弹，且最先被砍的常是睡眠、运动、玩和关系，这是图式在排优先级。</li>
+</ol>
+
+<div class="deep-title">深入思考</div>
+<details><summary>苛刻标准在高绩效环境里被奖励，放下它会不会掉队？</summary><div>短期内它确实换来产出，这正是图式难改的原因：顺从带来的奖励是真的。但收益递减、代价递增，最后 20% 的打磨往往没人看得出差别。健康成人保留高目标，丢掉的只是「出错 = 我不行」的连线。<a href="perfectionism-day10.html">Day 10</a> 提到，与倦怠挂钩的主要是担忧失误那一维，而不是标准本身。</div></details>
+<details><summary>组织文化会不会持续喂养这个图式？</summary><div>会。Young 用<strong>图式延续</strong>描述人会挑选、甚至制造确认图式的环境：苛刻标准的人更可能进入并留在高压组织，再把那里的反馈当作「世界本来就这样」的证据。换环境不能拆掉规则，但环境决定练习的难度。对管理者来说，团队的容错度就是这道题的外部变量。</div></details>
+
+<nav class="back"><a href="index.html">← 返回 Psychology 目录</a></nav>
+</div>
+<script>
+(function(){
+var root=document.getElementById('quiz');
+if(!root)return;
+var EN=(document.documentElement.lang||'').indexOf('en')===0;
+var L=EN?{
+opts:['Not me','Sometimes','Often','Almost always'],
+left:function(n){return n+' question'+(n===1?'':'s')+' left. Results appear when you finish.';},
+head:function(s){return 'Four-sign score: '+s+' / 18';},
+low:'The four signs are faint. Your high standards are most likely still a tool you use.',
+mid:'Some of the four signs are active. Notice where they cluster: rigid rules, no satisfaction, the costs, or fear.',
+high:'All four signs are fairly strong, so Unrelenting Standards is probably running. The practices in card 4 are built for this.',
+copeHead:'Main coping style: ',
+names:{surr:'Surrender (polishing hard)',avoid:'Avoidance (not starting)',over:'Overcompensation (swinging to careless)'},
+sep:'; ',
+noCope:'None of the three coping styles stands out.',
+mix:'Showing more than one is common: the same person can cope differently in different areas of life.',
+out:'The hypercritical side is flowing outward: check whether you hold your team, partner or kids to the same ruler.',
+recov:'Recovery after mistakes is slow. That is one of the best progress markers to track.',
+progress:'Hitting several items does not mean you have made no progress. This snapshot shows today; progress is a trend. Retake it in a few weeks and watch items 4, 5 and 11.',
+disc:'A self-awareness tool, not a diagnosis. The scores have no clinical cutoffs.'
+}:{
+opts:['不像我','偶尔','经常','几乎总是'],
+left:function(n){return '还差 '+n+' 题，答完即显示结果。';},
+head:function(s){return '四点判别得分：'+s+' / 18';},
+low:'判别特征不明显。你的高标准多半还是你在用的工具。',
+mid:'有几条判别特征在起作用。留意它们集中在哪里：规则太死、没有满足感、代价，还是怕。',
+high:'四点判别特征都比较明显，苛刻标准很可能在运转。卡片 4 的练习就是为这种情况准备的。',
+copeHead:'主要应对风格：',
+names:{surr:'顺从（拼命打磨）',avoid:'回避（拖着不开始）',over:'过度补偿（反向摆烂）'},
+sep:'、',
+noCope:'三种应对风格都不突出。',
+mix:'出现不止一种很常见：同一个人在不同领域可能用不同的应对方式。',
+out:'「过度挑剔」在往外流：留意你对团队、伴侣或孩子用的是不是同一把尺子。',
+recov:'出错后的恢复偏慢。这是最值得追踪的进步指标之一。',
+progress:'中了好几条，不等于没有进步。这份自测只拍下此刻，进步看趋势：过几周再做一次，重点看第 4、5、11 题有没有往下走。',
+disc:'这是自我觉察工具，不是诊断，分数没有临床切分点。'
+};
+var qs=[].slice.call(root.querySelectorAll('.q'));
+var out=root.querySelector('.quiz-out');
+var ans={};
+function para(t){var p=document.createElement('p');p.textContent=t;out.appendChild(p);}
+function render(){
+out.textContent='';
+var n=0,k;for(k in ans){if(ans.hasOwnProperty(k))n++;}
+if(n<qs.length){para(L.left(qs.length-n));return;}
+var sum={core:0,surr:0,avoid:0,over:0,out:0,recov:0};
+qs.forEach(function(q,i){sum[q.getAttribute('data-d')]+=ans[i];});
+para(L.head(sum.core));
+para(sum.core<=5?L.low:(sum.core<=11?L.mid:L.high));
+var c=['surr','avoid','over'].filter(function(x){return sum[x]>=2;});
+if(c.length){para(L.copeHead+c.map(function(x){return L.names[x];}).join(L.sep));if(c.length>1)para(L.mix);}
+else para(L.noCope);
+if(sum.out>=2)para(L.out);
+if(sum.recov>=2)para(L.recov);
+if(sum.core>=6)para(L.progress);
+para(L.disc);
+}
+qs.forEach(function(q,i){
+var box=q.querySelector('.opts');
+L.opts.forEach(function(t,v){
+var b=document.createElement('button');
+b.type='button';b.textContent=v+' '+t;b.setAttribute('aria-pressed','false');
+b.addEventListener('click',function(){
+ans[i]=v;
+[].forEach.call(box.children,function(c,j){c.setAttribute('aria-pressed',j===v?'true':'false');});
+render();
+});
+box.appendChild(b);
+});
+});
+var r=root.querySelector('.quiz-reset');
+if(r)r.addEventListener('click',function(){ans={};[].forEach.call(root.querySelectorAll('.opts button'),function(b){b.setAttribute('aria-pressed','false');});render();});
+render();
+})();
+</script>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body>
+</html>
